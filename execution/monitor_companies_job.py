@@ -1675,6 +1675,9 @@ def scan_single_company(comp: dict, force_rescan: bool = False, scan_batch_id: s
 
     apify_client = ApifyClient(apify_token)
     
+    # Ensure strategies are loaded in this worker (Global state is not shared)
+    fetch_client_strategies(supabase)
+    
     # Run logic
     # We pass scan_start=time.time() so the internal budget guard measures from *this* function's start
     process_company_scan(comp, apify_client, supabase, openai_key, force_rescan=force_rescan, scan_start=time.time(), scan_batch_id=scan_batch_id)
