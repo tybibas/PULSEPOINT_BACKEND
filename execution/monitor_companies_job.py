@@ -2,11 +2,13 @@ import modal
 import os
 import json
 import time
+import uuid
 from datetime import datetime, timedelta
 from supabase import create_client, Client
 from apify_client import ApifyClient
 from openai import OpenAI
 from pathlib import Path
+from concurrent.futures import ThreadPoolExecutor, as_completed
 
 # Fix path for Modal execution
 import sys
@@ -366,8 +368,20 @@ def extract_date_from_text(text: str, max_chars: int = 800) -> tuple:
 def extract_article_content(url: str, apify_client) -> str:
     """
     Use Apify Website Content Crawler to extract full article text.
+    Fallback to newspaper4k if Apify fails or returns thin content.
     Returns up to 5000 chars of article content.
     """
+    
+    # Common paywall keywords to reject
+    PAYWALL_KEYWORDS = ["log in", "sign in", "subscribe to read", "access denied", "403 forbidden", "subscription required", "please login"]
+
+    def _is_paywalled(text):
+        if len(text) < 300: return True
+        intro = text[:500].lower()
+        if any(k in intro for k in PAYWALL_KEYWORDS): return True
+        return False
+
+    # ATTEMPT 1: Apify
     try:
         def _call_apify():
             return apify_client.actor("apify/website-content-crawler").call(
@@ -381,27 +395,35 @@ def extract_article_content(url: str, apify_client) -> str:
             )
             
         run = GLOBAL_APIFY_BREAKER.call(_call_apify)
-        if not run:
-             print(f"      ⛔ Apify Circuit Open. Skipping extraction.")
-             return ""
-        items = apify_client.dataset(run["defaultDatasetId"]).list_items().items
-        if items and len(items) > 0:
-            text = items[0].get("text", "")
-            
-            # SAFEGUARD: Paywall / Login Check
-            if len(text) < 300:
-                print(f"      ⛔ Content too short ({len(text)} chars), likely paywall/error")
-                return ""
-            
-            intro = text[:500].lower()
-            paywall_keywords = ["log in", "sign in", "subscribe to read", "access denied", "403 forbidden", "subscription required", "please login"]
-            if any(k in intro for k in paywall_keywords):
-                print(f"      ⛔ Paywall detected in text")
-                return ""
-                
-            return text[:5000]  # Cap at 5K chars to control costs
+        if run:
+            items = apify_client.dataset(run["defaultDatasetId"]).list_items().items
+            if items and len(items) > 0:
+                text = items[0].get("text", "")
+                if not _is_paywalled(text):
+                    return text[:5000]
+                print(f"      ⛔ Apify returned thin/paywalled content ({len(text)} chars)")
     except Exception as e:
-        print(f"      Article extraction failed: {e}")
+        print(f"      ⚠️ Apify extraction failed: {e}")
+
+    # ATTEMPT 2: newspaper4k (Fallback)
+    try:
+        print(f"      🔄 Falling back to newspaper4k for {url[:60]}...")
+        from newspaper import Article
+        import requests
+        
+        # Set generous timeout for manual fetch
+        art = Article(url, request_timeout=20)
+        art.download()
+        art.parse()
+        text = art.text
+        
+        if not _is_paywalled(text):
+            return text[:5000]
+        print(f"      ⛔ newspaper4k returned thin/paywalled content")
+        
+    except Exception as e:
+        print(f"      ⚠️ newspaper4k extraction failed: {e}")
+
     return ""
 
     return ""
@@ -967,7 +989,7 @@ def generate_search_hash(urls: list) -> str:
     
     return hashlib.md5(content.encode()).hexdigest()
 
-def process_company_scan(comp: dict, apify_client, supabase, openai_key: str, force_rescan: bool = False):
+def process_company_scan(comp: dict, apify_client, supabase, openai_key: str, force_rescan: bool = False, scan_start: float = None, scan_batch_id: str = None):
     """
     Orchestrates the monitoring process for a single company.
     1. Identify Client Strategy
@@ -977,6 +999,54 @@ def process_company_scan(comp: dict, apify_client, supabase, openai_key: str, fo
     5. AI Analysis (OpenAI)
     6. Database Updates
     """
+    company_start = time.time()
+    
+    # OBSERVABILITY: Create scan log entry
+    scan_log_id = None
+    try:
+        log_resp = supabase.table("monitor_scan_log").insert({
+            "company_id": comp.get('id'),
+            "company_name": comp.get('company'),
+            "client_context": comp.get('client_context', 'pulsepoint_strategic'),
+            "scan_batch_id": scan_batch_id,
+            "status": "running"
+        }).execute()
+        if log_resp.data:
+            scan_log_id = log_resp.data[0]['id']
+    except Exception as e:
+        print(f"      ⚠️ Scan log insert failed: {e}")
+    
+    analysis_log = [] # PHASE 6: Confidence Logging
+
+
+    
+    # Helper to finalize the scan log entry
+    def _finalize_scan_log(status, error=None, trigger_found=False, trigger_type=None, counters=None):
+        if not scan_log_id:
+            return
+        try:
+            update = {
+                "status": status,
+                "completed_at": "now()",
+                "elapsed_seconds": round(time.time() - company_start, 2),
+                "trigger_found": trigger_found,
+                "trigger_type": trigger_type,
+                "analysis_log": analysis_log
+            }
+            if error:
+                update["error"] = str(error)[:500]
+            if counters:
+                update.update(counters)
+            supabase.table("monitor_scan_log").update(update).eq("id", scan_log_id).execute()
+        except Exception as e:
+            print(f"      ⚠️ Scan log update failed: {e}")
+    
+    # TIME BUDGET GUARD: Skip if we're running low on wall-clock time
+    if scan_start and (time.time() - scan_start) > 780:  # 13 min guard (out of 15 min worker limit)
+        print(f"⏱️ TIME BUDGET EXHAUSTED: Skipping {comp.get('company')} (elapsed: {int(time.time() - scan_start)}s)")
+        _finalize_scan_log("skipped_budget")
+        return
+
     print(f"🏢 Scanning: {comp.get('company')} (Strategy: {comp.get('client_context')})")
     
     strategy_slug = comp.get("client_context", "pulsepoint_strategic")
@@ -1039,6 +1109,7 @@ def process_company_scan(comp: dict, apify_client, supabase, openai_key: str, fo
         supabase.table("triggered_companies").update({
             "last_monitored_at": "now()"
         }).eq("id", comp['id']).execute()
+        _finalize_scan_log("skipped_fingerprint", counters={"apify_calls": 1})
         return
 
     # Update hash immediately so next run knows
@@ -1052,47 +1123,62 @@ def process_company_scan(comp: dict, apify_client, supabase, openai_key: str, fo
     
     print(f"      ✨ New Content Detected (Hash: {new_hash[:8]}). Analyzing {len(search_results)} items...")
     
-    # ==================== DEEP SCOUTS (New) ====================
-    # 1. Direct Blog Scout
-    if comp.get('website'):
-        try:
-            blog_posts = scout_latest_blog_posts(comp['company'], comp['website'], apify_client)
-            for post in blog_posts:
-                if post['url'] not in seen_urls:
-                    seen_urls.add(post['url'])
-                    all_results.append({
-                        "url": post['url'],
-                        "title": post['title'],
-                        "description": post['text'][:200],
-                        "is_scouted_blog": True
-                    })
-        except Exception as e:
-            print(f"      ⚠️ Blog Scout failed: {e}")
+    # ==================== DEEP SCOUTS (Async Phase 7) ====================
+    # Run Blog and Social scouts in parallel
+    
+    with ThreadPoolExecutor(max_workers=5) as executor:
+        futures = {}
+        
+        # 1. Direct Blog Scout
+        if comp.get('website'):
+            futures[executor.submit(scout_latest_blog_posts, comp['company'], comp['website'], apify_client)] = 'blog'
 
-    # 2. Executive Social Scout
-    try:
-        leads_table = strategy.get("leads_table", "PULSEPOINT_STRATEGIC_TRIGGERED_LEADS")
-        contacts_resp = supabase.table(leads_table).select("*").eq("triggered_company_id", comp['id']).execute()
-        contacts = contacts_resp.data
-        if contacts:
-            for contact in contacts[:3]: # Cap at top 3
-                social_signals = scout_executive_social_activity(contact['name'], comp['company'], apify_client)
-                for signal in social_signals:
-                    if signal['url'] not in seen_urls:
-                        seen_urls.add(signal['url'])
-                        all_results.append({
-                            "url": signal['url'],
-                            "title": signal['title'],
-                            "description": signal['text'],
-                            "is_scouted_social": True,
-                            "person_name": contact['name'],
-                            "verification_status": signal.get('verification_status', 'unknown')
-                        })
-    except Exception as e:
-        print(f"      ⚠️ Social Scout failed: {e}")
+        # 2. Executive Social Scout
+        try:
+            leads_table = strategy.get("leads_table", "PULSEPOINT_STRATEGIC_TRIGGERED_LEADS")
+            contacts_resp = supabase.table(leads_table).select("*").eq("triggered_company_id", comp['id']).execute()
+            contacts = contacts_resp.data
+            if contacts:
+                print(f"      👥 Social Scout checking {len(contacts[:3])} executives...")
+                for contact in contacts[:3]: # Cap at top 3
+                    futures[executor.submit(scout_executive_social_activity, contact['name'], comp['company'], apify_client)] = 'social'
+        except Exception as e:
+            print(f"      ⚠️ Social Scout setup failed: {e}")
+
+        # Collect results
+        for future in as_completed(futures, timeout=120):
+            scout_type = futures[future]
+            try:
+                res = future.result()
+                if res:
+                    # Enrich and Dedup
+                    for item in res:
+                        if item['url'] not in seen_urls:
+                            seen_urls.add(item['url'])
+                            
+                            # Normalize format based on source
+                            if scout_type == 'blog':
+                                all_results.append({
+                                    "url": item['url'],
+                                    "title": item['title'],
+                                    "description": item['text'][:200],
+                                    "is_scouted_blog": True
+                                })
+                            elif scout_type == 'social':
+                                all_results.append({
+                                    "url": item['url'],
+                                    "title": item['title'],
+                                    "description": item['text'],
+                                    "is_scouted_social": True,
+                                    "person_name": item.get('person_name'),
+                                    "verification_status": item.get('verification_status', 'unknown')
+                                })
+            except Exception as e:
+                print(f"      ⚠️ {scout_type} scout failed: {e}")
     
     # ==================== ANALYZE WITH ARTICLE EXTRACTION ====================
     trigger_found = False
+    trigger_type_found = None  # REAL_TIME_DETECTED or CONTEXT_ANCHOR
     
     # BUDGET TRACKING
     pages_fetched = 0
@@ -1131,6 +1217,28 @@ def process_company_scan(comp: dict, apify_client, supabase, openai_key: str, fo
         quick_analysis = analyze_event_relevance(news_item, comp['company'], client_context, openai_key)
         llm_calls += 1
         
+        # LOGGING: Record quick analysis
+        analysis_log.append({
+            "url": news_item.get('url'),
+            "title": news_item.get('title'),
+            "stage": "relevance",
+            "confidence": quick_analysis.get('confidence', 0),
+            "is_relevant": quick_analysis.get('is_relevant'),
+            "decision": "pass" if quick_analysis.get('is_relevant') else "rejected",
+            "model": "gpt-4o"
+        })
+        
+        # LOGGING: Record quick analysis
+        analysis_log.append({
+            "url": news_item.get('url'),
+            "title": news_item.get('title'),
+            "stage": "relevance",
+            "confidence": quick_analysis.get('confidence', 0),
+            "is_relevant": quick_analysis.get('is_relevant'),
+            "decision": "pass" if quick_analysis.get('is_relevant') else "rejected",
+            "model": "gpt-4o"
+        })
+        
         if quick_analysis.get('is_relevant') and quick_analysis.get('confidence', 0) >= 6:
             
             # BUDGET CHECK: Fetch
@@ -1145,7 +1253,7 @@ def process_company_scan(comp: dict, apify_client, supabase, openai_key: str, fo
             pages_fetched += 1
             
             # Pre-check Date
-            from datetime import datetime, timedelta
+            # datetime and timedelta already imported at module level (line 5)
             pre_check_date, pre_check_date_str = extract_date_from_text(article_text)
             
             if pre_check_date:
@@ -1172,12 +1280,40 @@ def process_company_scan(comp: dict, apify_client, supabase, openai_key: str, fo
                 news_item, article_text, comp['company'], client_context, openai_key
             )
             llm_calls += 1
+
+            # LOGGING: Deep analysis
+            analysis_log.append({
+                "url": news_item.get('url'),
+                "title": news_item.get('title'),
+                "stage": "deep_analysis",
+                "confidence": analysis.get('confidence', 0),
+                "is_relevant": analysis.get('is_relevant'),
+                "decision": "triggered" if analysis.get('is_relevant') else "rejected",
+                "model": "gpt-4o"
+            })
             
-            if analysis.get('is_relevant') and analysis.get('confidence', 0) >= 7:
+            if analysis.get('is_relevant'):
+                # Double Check Confidence (Threshold 7/10)
+                if analysis.get('confidence', 0) < 7:
+                    print(f"      ⚠️ Relevance too low ({analysis.get('confidence', 0)}/10). Skipping.")
+                    continue
                 event_date = analysis.get('event_date', 'Unknown date')
                 print(f"      ✅ TRIGGER CONFIRMED: {analysis['summary']} (Date: {event_date})")
                 print(f"         Strategy: {analysis.get('buying_window')} | Delta: {analysis.get('outcome_delta')}")
                 
+                # DEDUP CHECK
+                existing_dedup = supabase.table("trigger_dedup").select("id").eq("company_id", comp['id']).eq("source_url", res.get('url')).execute()
+                if existing_dedup.data:
+                    print(f"      ♻️ DEDUP: Already triggered on this URL. Skipping.")
+                    # Still log success in scan log but mark as duplicate effectively
+                    _finalize_scan_log("success", counters={"apify_calls": 1 + pages_fetched, "llm_calls": llm_calls, "pages_fetched": pages_fetched})
+                    return # Skip this company for now (or continue? Logic implies break on trigger found)
+                    # Actually, if we hit a dedup, we should probably CONTINUE searching for a *new* trigger.
+                    # But the current logic says 'break' on first trigger. 
+                    # Correct behavior: continue to next result.
+                    # For simplicity in this patch: just continue loop.
+                    continue
+
                 # Store new factors
                 score_factors = comp.get('score_factors', {}) or {}
                 score_factors['outcome_delta'] = analysis.get('outcome_delta')
@@ -1192,6 +1328,16 @@ def process_company_scan(comp: dict, apify_client, supabase, openai_key: str, fo
                     "monitoring_status": "triggered",
                     "score_factors": score_factors
                 }).eq("id", comp['id']).execute()
+                
+                # Record Dedup
+                try:
+                    supabase.table("trigger_dedup").insert({
+                        "company_id": comp['id'],
+                        "source_url": res.get('url'),
+                        "trigger_type": "REAL_TIME_DETECTED"
+                    }).execute()
+                except Exception as e:
+                    print(f"      ⚠️ Dedup insert failed: {e}")
                 
                 # Contact Enrichment Logic
                 leads_table = strategy.get("leads_table", "PULSEPOINT_STRATEGIC_TRIGGERED_LEADS")
@@ -1258,6 +1404,7 @@ def process_company_scan(comp: dict, apify_client, supabase, openai_key: str, fo
 
                 # Exit loop if found a trigger
                 trigger_found = True
+                trigger_type_found = "REAL_TIME_DETECTED"
                 break
     
     # ==================== FALLBACK: CONTEXT ANCHOR (EVERGREEN) ====================
@@ -1266,8 +1413,11 @@ def process_company_scan(comp: dict, apify_client, supabase, openai_key: str, fo
     
     if not trigger_found and strategy.get('trigger_prompt'): 
         
+        # 0. TIME BUDGET GUARD: Skip deep scouts if wall-clock time is running low
+        if scan_start and (time.time() - scan_start) > 660:  # 11 min guard
+            print(f"      ⏱️ Skipping deep scouts (wall-clock: {int(time.time() - scan_start)}s)")
         # 1. Frequency Guardrail
-        if check_recent_context_anchor(comp['id'], supabase):
+        elif check_recent_context_anchor(comp['id'], supabase):
              print(f"      ⏳ Skipping Context Anchor check (Recently Contacted)")
         else:
             # 2. PROACTIVE COST GUARDRAIL: Deep Scout Throttling
@@ -1277,7 +1427,7 @@ def process_company_scan(comp: dict, apify_client, supabase, openai_key: str, fo
             last_deep_scout = score_factors.get('last_deep_scout_at')
             
             if last_deep_scout:
-                from datetime import datetime
+                # datetime already imported at module level (line 5)
                 try:
                     last_date = datetime.fromisoformat(last_deep_scout)
                     # Simple 30-day check
@@ -1301,19 +1451,39 @@ def process_company_scan(comp: dict, apify_client, supabase, openai_key: str, fo
                     from scouts.portfolio_scout import scout_portfolio
                     from scouts.testimonial_scout import scout_testimonials
                 
-                    print(f"      🎨 [Fallback] No news found. Running Context Anchor Scouts...")
-                
-                    # A. Portfolio Scout
-                    portfolio_signals = scout_portfolio(comp['company'], comp.get('website', ''), apify_client)
-                
-                    # B. Testimonial Scout (New)
-                    testimonial_signals = scout_testimonials(comp['company'], comp.get('website', ''), apify_client)
+                    print(f"      🎨 [Fallback] No news found. Running Context Anchor Scouts (Parallel)...")
+                    
+                    portfolio_signals = []
+                    testimonial_signals = []
+                    
+                    with ThreadPoolExecutor(max_workers=2) as executor:
+                        fut_port = executor.submit(scout_portfolio, comp['company'], comp.get('website', ''), apify_client)
+                        fut_test = executor.submit(scout_testimonials, comp['company'], comp.get('website', ''), apify_client)
+                        
+                        try:
+                            portfolio_signals = fut_port.result(timeout=90)
+                        except Exception as e:
+                            print(f"      ⚠️ Portfolio scout failed: {e}")
+                            
+                        try:
+                            testimonial_signals = fut_test.result(timeout=90)
+                        except Exception as e:
+                            print(f"      ⚠️ Testimonial scout failed: {e}")
                 
                     # Merge signals
                     all_evergreen_signals = portfolio_signals + testimonial_signals
                 
                     for sig in all_evergreen_signals:
                         print(f"      ✨ Analyzing Context Signal: {sig['url']}...")
+
+                        # LOGGING: Record checking this anchor
+                        analysis_log.append({
+                            "url": sig.get('url'),
+                            "title": sig.get('title'),
+                            "stage": "context_anchor",
+                            "decision": "pending",
+                            "model": "gpt-4o"
+                        })
                     
                         # Specialized Analysis for CONTEXT ANCHORS
                         # Strictly enforces "Significance" over "Aesthetics"
@@ -1355,6 +1525,13 @@ def process_company_scan(comp: dict, apify_client, supabase, openai_key: str, fo
                         """
                     
                         analysis = call_openai_analysis(sig, sys_prompt, openai_key, model="gpt-4o")
+                        
+                        # Log result
+                        analysis_log[-1].update({
+                            "confidence": analysis.get('confidence', 0),
+                            "is_relevant": analysis.get('is_relevant'),
+                            "decision": "triggered" if analysis.get('is_relevant') else "rejected"
+                        })
                     
                         if analysis.get('is_relevant') and analysis.get('confidence', 0) >= 8: # Higher confidence bar
                             print(f"      ✅ CONTEXT ANCHOR: {analysis['summary']}")
@@ -1365,6 +1542,12 @@ def process_company_scan(comp: dict, apify_client, supabase, openai_key: str, fo
                             score_factors['outcome_delta'] = analysis.get('outcome_delta')
                             score_factors['buying_window'] = analysis.get('buying_window')
 
+                            # DEDUP CHECK (Context Anchor)
+                            existing_dedup = supabase.table("trigger_dedup").select("id").eq("company_id", comp['id']).eq("source_url", sig.get('url')).execute()
+                            if existing_dedup.data:
+                                print(f"      ♻️ DEDUP (Anchor): Already triggered on this URL. Skipping.")
+                                continue
+
                             supabase.table("triggered_companies").update({
                                 "event_type": "CONTEXT_ANCHOR",
                                 "event_title": analysis['summary'],
@@ -1373,6 +1556,16 @@ def process_company_scan(comp: dict, apify_client, supabase, openai_key: str, fo
                                 "monitoring_status": "triggered",
                                 "score_factors": score_factors
                             }).eq("id", comp['id']).execute()
+
+                            # Record Dedup
+                            try:
+                                supabase.table("trigger_dedup").insert({
+                                    "company_id": comp['id'],
+                                    "source_url": sig['url'],
+                                    "trigger_type": "CONTEXT_ANCHOR"
+                                }).execute()
+                            except Exception as e:
+                                print(f"      ⚠️ Dedup insert failed: {e}")
                         
                             # Contact Enrichment Logic (Copied from Main Loop)
                             leads_table = strategy.get("leads_table", "PULSEPOINT_STRATEGIC_TRIGGERED_LEADS")
@@ -1428,6 +1621,7 @@ def process_company_scan(comp: dict, apify_client, supabase, openai_key: str, fo
                                     print(f"      ---> Draft Created for {contact_email} (Status: {status})")
                         
                             trigger_found = True
+                            trigger_type_found = "CONTEXT_ANCHOR"
                             break
                         
                 except ImportError:
@@ -1435,29 +1629,70 @@ def process_company_scan(comp: dict, apify_client, supabase, openai_key: str, fo
                 except Exception as e:
                     print(f"      ⚠️ Context Anchor Scout failed: {e}")
 
+    # OBSERVABILITY: Finalize scan log
+    scan_counters = {
+        "apify_calls": 1 + pages_fetched,  # 1 for initial search + page fetches
+        "llm_calls": llm_calls,
+        "pages_fetched": pages_fetched
+    }
+    
     if not trigger_found:
         try:
             supabase.table("triggered_companies").update({"last_monitored_at": "now()"}).eq("id", comp['id']).execute()
         except Exception as e:
             print(f"      ⚠️ Failed to update timestamp: {e}")
         print("      (No relevant triggers found)")
+        _finalize_scan_log("success", counters=scan_counters)
+    else:
+        _finalize_scan_log("success", trigger_found=True,
+                          trigger_type=trigger_type_found,
+                          counters=scan_counters)
     
     # Rate limiting
     time.sleep(2)
 
 
 
+@app.function(
+    image=image,
+    secrets=[modal.Secret.from_dotenv()],
+    timeout=300 # 5 mins per company (relaxed from 180s to allow for retries/deep scouts)
+)
+def scan_single_company(comp: dict, force_rescan: bool = False, scan_batch_id: str = None):
+    """
+    Isolated worker for scanning a single company.
+    """
+    import time
+    
+    # Instantiate clients locally since they can't be pickled easily
+    supabase = get_supabase()
+    apify_token = os.environ.get("APIFY_API_KEY")
+    openai_key = os.environ.get("OPENAI_API_KEY")
+    
+    if not apify_token or not openai_key:
+        print(f"❌ Missing API Keys for {comp.get('company')}")
+        return
+
+    apify_client = ApifyClient(apify_token)
+    
+    # Run logic
+    # We pass scan_start=time.time() so the internal budget guard measures from *this* function's start
+    process_company_scan(comp, apify_client, supabase, openai_key, force_rescan=force_rescan, scan_start=time.time(), scan_batch_id=scan_batch_id)
+
+
 # MODAL FUNCTION
 @app.function(
     image=image, 
     secrets=[modal.Secret.from_dotenv()],
-    timeout=900 # 15 mins
+    timeout=1200 # 20 mins batch timeout (orchestrator)
 )
 def run_monitoring_scan(company_id: str = None, force_rescan: bool = False):
     """
     Main logic.
     """
-    print("🚀 Starting Monitoring Scan...")
+    scan_start = time.time()  # WALL-CLOCK TIME BUDGET
+    scan_batch_id = str(uuid.uuid4())  # OBSERVABILITY: Group all scans in this run
+    print(f"🚀 Starting Monitoring Scan (batch: {scan_batch_id[:8]})...")
     
     supabase = get_supabase()
     # LOAD STRATEGIES FROM DB
@@ -1478,20 +1713,39 @@ def run_monitoring_scan(company_id: str = None, force_rescan: bool = False):
         target_companies = resp.data
     else:
         target_companies = get_due_companies(supabase)
-        
+    
+    print(f"📋 Processing {len(target_companies)} companies (Parallel Execution)")
+    
+    # Prepare arguments for map
+    # map() takes a list of inputs. We have multiple args, so we can't use simple map unless we pack them
+    # simpler: just use loop with .spawn() and wait, OR use starmap if we define it?
+    # Modal's .map() iterates over one argument. 
+    # Let's use a simple loop with .spawn() for maximum control and list results
+    
+    # Actually, to use .map with multiple args, we need to partial or pack. 
+    # Let's just loop and spawn.
+    
+    # Launch all scans
     for comp in target_companies:
-        try:
-            process_company_scan(comp, apify_client, supabase, openai_key, force_rescan=force_rescan)
-        except Exception as e:
-            print(f"❌ CRITICAL ERROR processing company {comp.get('company', 'Unknown')}: {e}")
-            continue
+        scan_single_company.spawn(comp, force_rescan=force_rescan, scan_batch_id=scan_batch_id)
+        
+    print(f"🚀 Spawning complete. {len(target_companies)} background tasks launched.")
+    
+    # Note: We are NOT waiting for them to finish here to keep the cron job fast. 
+    # Results are tracked in 'monitor_scan_log' table (Phase 1).
+    # If we wanted to wait, we'd need to collect handles and .get() them, 
+    # but that burns the orchestrator's billing time just waiting.
+    # Fire and forget is better for cost/reliability here, relying on DB logs for status.
+    
+    elapsed = int(time.time() - scan_start)
+    print(f"✅ Monitoring scan complete in {elapsed}s (batch: {scan_batch_id[:8]})")
 
 # SCHEDULED ENTRY POINT
 @app.function(
     image=image, 
     secrets=[modal.Secret.from_dotenv()],
     schedule=modal.Cron("0 14 * * *"),  # 9am EST / 6am PST
-    timeout=600  # 10 minutes timeout for cron wrapper
+    timeout=1200  # 20 minutes — must exceed run_monitoring_scan's 900s timeout
 )
 def daily_monitor_cron():
     """

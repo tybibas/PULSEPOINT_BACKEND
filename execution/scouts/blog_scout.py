@@ -1,10 +1,17 @@
 import os
+import sys
 import requests
 from bs4 import BeautifulSoup
 from urllib.parse import urljoin, urlparse
 from newspaper import Article
 import datetime
 import re
+
+sys.path.append(os.path.dirname(os.path.dirname(__file__)))
+try:
+    from resilience import retry_with_backoff
+except ImportError:
+    from execution.resilience import retry_with_backoff
 
 def find_sitemaps(base_url):
     """Stage 1: Discover sitemaps via common paths and robots.txt."""
@@ -96,7 +103,10 @@ def find_blog_url_via_apify(company_name, domain, apify_client, widen=False):
             "maxPagesPerQuery": 1,
             "resultsPerPage": 5
         }
-        run = apify_client.actor("apify/google-search-scraper").call(run_input=run_input)
+        @retry_with_backoff(max_retries=1, initial_delay=3)
+        def _search():
+            return apify_client.actor("apify/google-search-scraper").call(run_input=run_input, timeout_secs=45)
+        run = _search()
         
         results = []
         for item in apify_client.dataset(run["defaultDatasetId"]).iterate_items():
@@ -193,7 +203,10 @@ def scout_latest_blog_posts(company_name, company_website, apify_client):
                 "maxPagesPerCrawl": 25,
                 "excludePatterns": ["**/category/**", "**/tag/**", "**/page/**", "**?**"]
             }
-            run = apify_client.actor("apify/website-content-crawler").call(run_input=run_input)
+            @retry_with_backoff(max_retries=1, initial_delay=3)
+            def _crawl():
+                return apify_client.actor("apify/website-content-crawler").call(run_input=run_input, timeout_secs=60)
+            run = _crawl()
             for item in apify_client.dataset(run["defaultDatasetId"]).iterate_items():
                 url = item.get("url")
                 if url and domain in url and url not in article_links:

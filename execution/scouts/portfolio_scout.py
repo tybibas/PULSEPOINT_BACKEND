@@ -4,6 +4,12 @@ from bs4 import BeautifulSoup
 from urllib.parse import urljoin, urlparse
 from apify_client import ApifyClient
 import re
+import sys
+sys.path.append(os.path.dirname(os.path.dirname(__file__)))
+try:
+    from resilience import retry_with_backoff
+except ImportError:
+    from execution.resilience import retry_with_backoff
 
 def find_portfolio_url(company_name, domain, apify_client):
     """
@@ -18,7 +24,10 @@ def find_portfolio_url(company_name, domain, apify_client):
             "maxPagesPerQuery": 1,
             "resultsPerPage": 3
         }
-        run = apify_client.actor("apify/google-search-scraper").call(run_input=run_input)
+        @retry_with_backoff(max_retries=1, initial_delay=3)
+        def _search():
+            return apify_client.actor("apify/google-search-scraper").call(run_input=run_input, timeout_secs=45)
+        run = _search()
         
         for item in apify_client.dataset(run["defaultDatasetId"]).iterate_items():
             for res in item.get("organicResults", []):
@@ -60,7 +69,10 @@ def scout_portfolio(company_name, company_website, apify_client):
                            # V1: Just scrape the index page for "Client Name" cards.
             "maxPagesPerCrawl": 1 
         }
-        run = apify_client.actor("apify/website-content-crawler").call(run_input=run_input)
+        @retry_with_backoff(max_retries=1, initial_delay=3)
+        def _crawl():
+            return apify_client.actor("apify/website-content-crawler").call(run_input=run_input, timeout_secs=45)
+        run = _crawl()
         
         items = list(apify_client.dataset(run["defaultDatasetId"]).iterate_items())
         if not items:

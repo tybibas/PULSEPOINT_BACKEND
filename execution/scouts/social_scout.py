@@ -1,6 +1,13 @@
 import os
+import sys
 from apify_client import ApifyClient
 import datetime
+
+sys.path.append(os.path.dirname(os.path.dirname(__file__)))
+try:
+    from resilience import retry_with_backoff
+except ImportError:
+    from execution.resilience import retry_with_backoff
 
 def scout_executive_social_activity(person_name, company_name, apify_client):
     """
@@ -27,7 +34,10 @@ def scout_executive_social_activity(person_name, company_name, apify_client):
             }
             
             # Start the actor and wait for it to finish
-            run = apify_client.actor("apify/google-search-scraper").call(run_input=run_input)
+            @retry_with_backoff(max_retries=1, initial_delay=3)
+            def _search():
+                return apify_client.actor("apify/google-search-scraper").call(run_input=run_input, timeout_secs=45)
+            run = _search()
             
             # Fetch results from the dataset
             for item in apify_client.dataset(run["defaultDatasetId"]).iterate_items():
