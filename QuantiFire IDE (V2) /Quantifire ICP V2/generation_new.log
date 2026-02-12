@@ -1,0 +1,447 @@
+Loaded 40 DAX companies
+Loaded 3 existing rows
+
+[Processing] adidas AG (ADS.DE)
+  [Context] Archetype: peer_gap, Performance: -34.6%
+Error finding Chief Financial Officer for adidas AG: By launching this job you will exceed your remaining usage of $0.469447.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+  [Secondary] Trying Apollo for Chief Financial Officer...
+Error finding Head of Investor Relations for adidas AG: By launching this job you will exceed your remaining usage of $0.469447.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+  [Secondary] Trying Apollo for Head of Investor Relations...
+Error finding Company Secretary for adidas AG: By launching this job you will exceed your remaining usage of $0.469447.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+  [Secondary] Trying Apollo for Company Secretary...
+  [Fallback] Creating generic IR contact
+  [Done] 1 contacts found for adidas AG
+
+[Processing] Airbus SE (AIR.PA)
+  [Context] Archetype: peer_gap, Performance: 36.6%
+Error finding Chief Financial Officer for Airbus SE: By launching this job you will exceed your remaining usage of $0.469447.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+  [Secondary] Trying Apollo for Chief Financial Officer...
+Error finding Head of Investor Relations for Airbus SE: By launching this job you will exceed your remaining usage of $0.469447.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+  [Secondary] Trying Apollo for Head of Investor Relations...
+Error finding Company Secretary for Airbus SE: By launching this job you will exceed your remaining usage of $0.469447.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+  [Secondary] Trying Apollo for Company Secretary...
+  [Fallback] Creating generic IR contact
+  [Done] 1 contacts found for Airbus SE
+
+[Processing] Allianz SE (ALV.DE)
+  [Context] Archetype: peer_gap, Performance: 28.1%
+Error finding Chief Financial Officer for Allianz SE: By launching this job you will exceed your remaining usage of $0.469447.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+  [Secondary] Trying Apollo for Chief Financial Officer...
+Error finding Head of Investor Relations for Allianz SE: By launching this job you will exceed your remaining usage of $0.469447.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+  [Secondary] Trying Apollo for Head of Investor Relations...
+Error finding Company Secretary for Allianz SE: By launching this job you will exceed your remaining usage of $0.469447.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+  [Secondary] Trying Apollo for Company Secretary...
+  [Fallback] Creating generic IR contact
+  [Done] 1 contacts found for Allianz SE
+
+[Processing] BASF SE (BAS.DE)
+  [Context] Archetype: peer_gap, Performance: 5.4%
+Error finding Chief Financial Officer for BASF SE: By launching this job you will exceed your remaining usage of $0.469447.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+  [Secondary] Trying Apollo for Chief Financial Officer...
+Error finding Head of Investor Relations for BASF SE: By launching this job you will exceed your remaining usage of $0.469447.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+  [Secondary] Trying Apollo for Head of Investor Relations...
+Error finding Company Secretary for BASF SE: By launching this job you will exceed your remaining usage of $0.469447.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+  [Secondary] Trying Apollo for Company Secretary...
+  [Fallback] Creating generic IR contact
+  [Done] 1 contacts found for BASF SE
+
+[Processing] Bayer Aktiengesellschaft (BAYN.DE)
+  [Context] Archetype: transcript_miner, Performance: 94.0%
+Error finding Chief Financial Officer for Bayer Aktiengesellschaft: By launching this job you will exceed your remaining usage of $0.469447.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+  [Secondary] Trying Apollo for Chief Financial Officer...
+Error finding Head of Investor Relations for Bayer Aktiengesellschaft: By launching this job you will exceed your remaining usage of $0.469447.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+  [Secondary] Trying Apollo for Head of Investor Relations...
+Error finding Company Secretary for Bayer Aktiengesellschaft: By launching this job you will exceed your remaining usage of $0.469447.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+  [Secondary] Trying Apollo for Company Secretary...
+  [Fallback] Creating generic IR contact
+  [Done] 1 contacts found for Bayer Aktiengesellschaft
+
+[Processing] Beiersdorf Aktiengesellschaft (BEI.DE)
+  [Context] Archetype: transcript_miner, Performance: -28.3%
+Error finding Chief Financial Officer for Beiersdorf Aktiengesellschaft: By launching this job you will exceed your remaining usage of $0.469447.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+  [Secondary] Trying Apollo for Chief Financial Officer...
+Error finding Head of Investor Relations for Beiersdorf Aktiengesellschaft: By launching this job you will exceed your remaining usage of $0.469447.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+  [Secondary] Trying Apollo for Head of Investor Relations...
+Error finding Company Secretary for Beiersdorf Aktiengesellschaft: By launching this job you will exceed your remaining usage of $0.469447.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+  [Secondary] Trying Apollo for Company Secretary...
+  [Fallback] Creating generic IR contact
+  [Done] 1 contacts found for Beiersdorf Aktiengesellschaft
+
+[Processing] Bayerische Motoren Werke Aktiengesellschaft (BMW.DE)
+  [Context] Archetype: transcript_miner, Performance: 23.2%
+Error finding Chief Financial Officer for Bayerische Motoren Werke Aktiengesellschaft: By launching this job you will exceed your remaining usage of $0.469447.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+  [Secondary] Trying Apollo for Chief Financial Officer...
+Error finding Head of Investor Relations for Bayerische Motoren Werke Aktiengesellschaft: By launching this job you will exceed your remaining usage of $0.469447.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+  [Secondary] Trying Apollo for Head of Investor Relations...
+Error finding Company Secretary for Bayerische Motoren Werke Aktiengesellschaft: By launching this job you will exceed your remaining usage of $0.469447.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+  [Secondary] Trying Apollo for Company Secretary...
+  [Fallback] Creating generic IR contact
+  [Done] 1 contacts found for Bayerische Motoren Werke Aktiengesellschaft
+
+[Processing] Brenntag SE (BNR.DE)
+  [Context] Archetype: peer_gap, Performance: -13.5%
+Error finding Chief Financial Officer for Brenntag SE: By launching this job you will exceed your remaining usage of $0.469447.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+  [Secondary] Trying Apollo for Chief Financial Officer...
+Error finding Head of Investor Relations for Brenntag SE: By launching this job you will exceed your remaining usage of $0.469447.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+  [Secondary] Trying Apollo for Head of Investor Relations...
+Error finding Company Secretary for Brenntag SE: By launching this job you will exceed your remaining usage of $0.469447.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+  [Secondary] Trying Apollo for Company Secretary...
+  [Fallback] Creating generic IR contact
+  [Done] 1 contacts found for Brenntag SE
+
+[Processing] Commerzbank AG (CBK.DE)
+  [Context] Archetype: transcript_miner, Performance: 107.9%
+Error finding Chief Financial Officer for Commerzbank AG: By launching this job you will exceed your remaining usage of $0.469447.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+  [Secondary] Trying Apollo for Chief Financial Officer...
+Error finding Head of Investor Relations for Commerzbank AG: By launching this job you will exceed your remaining usage of $0.469447.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+  [Secondary] Trying Apollo for Head of Investor Relations...
+Error finding Company Secretary for Commerzbank AG: By launching this job you will exceed your remaining usage of $0.469447.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+  [Secondary] Trying Apollo for Company Secretary...
+  [Fallback] Creating generic IR contact
+  [Done] 1 contacts found for Commerzbank AG
+
+[Processing] Continental Aktiengesellschaft (CON.DE)
+  [Context] Archetype: event_context, Performance: 6.9%
+Error finding Chief Financial Officer for Continental Aktiengesellschaft: By launching this job you will exceed your remaining usage of $0.469447.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+  [Secondary] Trying Apollo for Chief Financial Officer...
+Error finding Head of Investor Relations for Continental Aktiengesellschaft: By launching this job you will exceed your remaining usage of $0.469447.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+  [Secondary] Trying Apollo for Head of Investor Relations...
+Error finding Company Secretary for Continental Aktiengesellschaft: By launching this job you will exceed your remaining usage of $0.469447.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+  [Secondary] Trying Apollo for Company Secretary...
+  [Fallback] Creating generic IR contact
+  [Done] 1 contacts found for Continental Aktiengesellschaft
+
+[Processing] Daimler Truck Holding AG (DTG.DE)
+  [Context] Archetype: peer_gap, Performance: 1.4%
+Error finding Chief Financial Officer for Daimler Truck Holding AG: By launching this job you will exceed your remaining usage of $0.469447.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+  [Secondary] Trying Apollo for Chief Financial Officer...
+Error finding Head of Investor Relations for Daimler Truck Holding AG: By launching this job you will exceed your remaining usage of $0.469447.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+  [Secondary] Trying Apollo for Head of Investor Relations...
+Error finding Company Secretary for Daimler Truck Holding AG: By launching this job you will exceed your remaining usage of $0.469447.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+  [Secondary] Trying Apollo for Company Secretary...
+  [Fallback] Creating generic IR contact
+  [Done] 1 contacts found for Daimler Truck Holding AG
+
+[Processing] Deutsche Bank Aktiengesellschaft (DBK.DE)
+  [Context] Archetype: transcript_miner, Performance: 92.6%
+Error finding Chief Financial Officer for Deutsche Bank Aktiengesellschaft: By launching this job you will exceed your remaining usage of $0.469447.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+  [Secondary] Trying Apollo for Chief Financial Officer...
+Error finding Head of Investor Relations for Deutsche Bank Aktiengesellschaft: By launching this job you will exceed your remaining usage of $0.469447.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+  [Secondary] Trying Apollo for Head of Investor Relations...
+Error finding Company Secretary for Deutsche Bank Aktiengesellschaft: By launching this job you will exceed your remaining usage of $0.469447.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+  [Secondary] Trying Apollo for Company Secretary...
+  [Fallback] Creating generic IR contact
+  [Done] 1 contacts found for Deutsche Bank Aktiengesellschaft
+
+[Processing] Deutsche Börse AG (DB1.DE)
+  [Context] Archetype: peer_gap, Performance: -6.5%
+Error finding Chief Financial Officer for Deutsche Börse AG: By launching this job you will exceed your remaining usage of $0.469447.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+  [Secondary] Trying Apollo for Chief Financial Officer...
+Error finding Head of Investor Relations for Deutsche Börse AG: By launching this job you will exceed your remaining usage of $0.469447.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+  [Secondary] Trying Apollo for Head of Investor Relations...
+Error finding Company Secretary for Deutsche Börse AG: By launching this job you will exceed your remaining usage of $0.469447.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+  [Secondary] Trying Apollo for Company Secretary...
+  [Fallback] Creating generic IR contact
+  [Done] 1 contacts found for Deutsche Börse AG
+
+[Processing] Deutsche Post AG (DHL.DE)
+  [Context] Archetype: peer_gap, Performance: 42.0%
+Error finding Chief Financial Officer for Deutsche Post AG: By launching this job you will exceed your remaining usage of $0.469447.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+  [Secondary] Trying Apollo for Chief Financial Officer...
+Error finding Head of Investor Relations for Deutsche Post AG: By launching this job you will exceed your remaining usage of $0.469447.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+  [Secondary] Trying Apollo for Head of Investor Relations...
+Error finding Company Secretary for Deutsche Post AG: By launching this job you will exceed your remaining usage of $0.469447.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+  [Secondary] Trying Apollo for Company Secretary...
+  [Fallback] Creating generic IR contact
+  [Done] 1 contacts found for Deutsche Post AG
+
+[Processing] Deutsche Telekom AG (DTE.DE)
+  [Context] Archetype: event_context, Performance: -6.7%
+Error finding Chief Financial Officer for Deutsche Telekom AG: By launching this job you will exceed your remaining usage of $0.469447.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+  [Secondary] Trying Apollo for Chief Financial Officer...
+Error finding Head of Investor Relations for Deutsche Telekom AG: By launching this job you will exceed your remaining usage of $0.469447.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+  [Secondary] Trying Apollo for Head of Investor Relations...
+Error finding Company Secretary for Deutsche Telekom AG: By launching this job you will exceed your remaining usage of $0.469447.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+  [Secondary] Trying Apollo for Company Secretary...
+  [Fallback] Creating generic IR contact
+  [Done] 1 contacts found for Deutsche Telekom AG
+
+[Processing] E.ON SE (EOAN.DE)
+  [Context] Archetype: transcript_miner, Performance: 51.0%
+Error finding Chief Financial Officer for E.ON SE: By launching this job you will exceed your remaining usage of $0.469447.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+  [Secondary] Trying Apollo for Chief Financial Officer...
+Error finding Head of Investor Relations for E.ON SE: By launching this job you will exceed your remaining usage of $0.469447.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+  [Secondary] Trying Apollo for Head of Investor Relations...
+Error finding Company Secretary for E.ON SE: By launching this job you will exceed your remaining usage of $0.469447.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+  [Secondary] Trying Apollo for Company Secretary...
+  [Fallback] Creating generic IR contact
+  [Done] 1 contacts found for E.ON SE
+
+[Processing] Fresenius SE & Co. KGaA (FRE.DE)
+  [Context] Archetype: transcript_miner, Performance: 39.6%
+Error finding Chief Financial Officer for Fresenius SE & Co. KGaA: By launching this job you will exceed your remaining usage of $0.469447.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+  [Secondary] Trying Apollo for Chief Financial Officer...
+Error finding Head of Investor Relations for Fresenius SE & Co. KGaA: By launching this job you will exceed your remaining usage of $0.469447.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+  [Secondary] Trying Apollo for Head of Investor Relations...
+Error finding Company Secretary for Fresenius SE & Co. KGaA: By launching this job you will exceed your remaining usage of $0.469447.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+  [Secondary] Trying Apollo for Company Secretary...
+  [Fallback] Creating generic IR contact
+  [Done] 1 contacts found for Fresenius SE & Co. KGaA
+
+[Processing] Fresenius Medical Care AG (FME.DE)
+  [Context] Archetype: peer_gap, Performance: -10.1%
+Error finding Chief Financial Officer for Fresenius Medical Care AG: By launching this job you will exceed your remaining usage of $0.469447.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+  [Secondary] Trying Apollo for Chief Financial Officer...
+Error finding Head of Investor Relations for Fresenius Medical Care AG: By launching this job you will exceed your remaining usage of $0.469447.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+  [Secondary] Trying Apollo for Head of Investor Relations...
+Error finding Company Secretary for Fresenius Medical Care AG: By launching this job you will exceed your remaining usage of $0.469447.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+  [Secondary] Trying Apollo for Company Secretary...
+  [Fallback] Creating generic IR contact
+  [Done] 1 contacts found for Fresenius Medical Care AG
+
+[Processing] GEA Group Aktiengesellschaft (G1A.DE)
+  [Context] Archetype: peer_gap, Performance: 19.4%
+Error finding Chief Financial Officer for GEA Group Aktiengesellschaft: By launching this job you will exceed your remaining usage of $0.469447.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+  [Secondary] Trying Apollo for Chief Financial Officer...
+Error finding Head of Investor Relations for GEA Group Aktiengesellschaft: By launching this job you will exceed your remaining usage of $0.469447.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+  [Secondary] Trying Apollo for Head of Investor Relations...
+Error finding Company Secretary for GEA Group Aktiengesellschaft: By launching this job you will exceed your remaining usage of $0.469447.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+  [Secondary] Trying Apollo for Company Secretary...
+  [Fallback] Creating generic IR contact
+  [Done] 1 contacts found for GEA Group Aktiengesellschaft
+
+[Processing] Hannover Rück SE (HNR1.DE)
+  [Context] Archetype: peer_gap, Performance: -2.7%
+Error finding Chief Financial Officer for Hannover Rück SE: By launching this job you will exceed your remaining usage of $0.469447.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+  [Secondary] Trying Apollo for Chief Financial Officer...
+Error finding Head of Investor Relations for Hannover Rück SE: By launching this job you will exceed your remaining usage of $0.469447.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+  [Secondary] Trying Apollo for Head of Investor Relations...
+Error finding Company Secretary for Hannover Rück SE: By launching this job you will exceed your remaining usage of $0.469447.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+  [Secondary] Trying Apollo for Company Secretary...
+  [Fallback] Creating generic IR contact
+  [Done] 1 contacts found for Hannover Rück SE
+
+[Processing] Heidelberg Materials AG (HEI.DE)
+  [Context] Archetype: transcript_miner, Performance: 79.6%
+Error finding Chief Financial Officer for Heidelberg Materials AG: By launching this job you will exceed your remaining usage of $0.469447.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+  [Secondary] Trying Apollo for Chief Financial Officer...
+Error finding Head of Investor Relations for Heidelberg Materials AG: By launching this job you will exceed your remaining usage of $0.469447.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+  [Secondary] Trying Apollo for Head of Investor Relations...
+Error finding Company Secretary for Heidelberg Materials AG: By launching this job you will exceed your remaining usage of $0.469447.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+  [Secondary] Trying Apollo for Company Secretary...
+  [Fallback] Creating generic IR contact
+  [Done] 1 contacts found for Heidelberg Materials AG
+
+[Processing] Henkel AG & Co. KGaA (HEN3.DE)
+  [Context] Archetype: event_context, Performance: -18.9%
+Error finding Chief Financial Officer for Henkel AG & Co. KGaA: By launching this job you will exceed your remaining usage of $0.469447.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+  [Secondary] Trying Apollo for Chief Financial Officer...
+Error finding Head of Investor Relations for Henkel AG & Co. KGaA: By launching this job you will exceed your remaining usage of $0.469447.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+  [Secondary] Trying Apollo for Head of Investor Relations...
+Error finding Company Secretary for Henkel AG & Co. KGaA: By launching this job you will exceed your remaining usage of $0.469447.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+  [Secondary] Trying Apollo for Company Secretary...
+  [Fallback] Creating generic IR contact
+  [Done] 1 contacts found for Henkel AG & Co. KGaA
+
+[Processing] Infineon Technologies AG (IFX.DE)
+  [Context] Archetype: transcript_miner, Performance: 30.5%
+Error finding Chief Financial Officer for Infineon Technologies AG: By launching this job you will exceed your remaining usage of $0.469447.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+  [Secondary] Trying Apollo for Chief Financial Officer...
+Error finding Head of Investor Relations for Infineon Technologies AG: By launching this job you will exceed your remaining usage of $0.469447.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+  [Secondary] Trying Apollo for Head of Investor Relations...
+Error finding Company Secretary for Infineon Technologies AG: By launching this job you will exceed your remaining usage of $0.469447.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+  [Secondary] Trying Apollo for Company Secretary...
+  [Fallback] Creating generic IR contact
+  [Done] 1 contacts found for Infineon Technologies AG
+
+[Processing] Mercedes-Benz Group AG (MBG.DE)
+  [Context] Archetype: event_context, Performance: 13.8%
+Error finding Chief Financial Officer for Mercedes-Benz Group AG: By launching this job you will exceed your remaining usage of $0.469447.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+  [Secondary] Trying Apollo for Chief Financial Officer...
+Error finding Head of Investor Relations for Mercedes-Benz Group AG: By launching this job you will exceed your remaining usage of $0.469447.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+  [Secondary] Trying Apollo for Head of Investor Relations...
+Error finding Company Secretary for Mercedes-Benz Group AG: By launching this job you will exceed your remaining usage of $0.469447.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+  [Secondary] Trying Apollo for Company Secretary...
+  [Fallback] Creating generic IR contact
+  [Done] 1 contacts found for Mercedes-Benz Group AG
+
+[Processing] Merck KGaA (MRK.DE)
+  [Context] Archetype: peer_gap, Performance: -10.3%
+Error finding Chief Financial Officer for Merck KGaA: By launching this job you will exceed your remaining usage of $0.469447.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+  [Secondary] Trying Apollo for Chief Financial Officer...
+Error finding Head of Investor Relations for Merck KGaA: By launching this job you will exceed your remaining usage of $0.469447.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+  [Secondary] Trying Apollo for Head of Investor Relations...
+Error finding Company Secretary for Merck KGaA: By launching this job you will exceed your remaining usage of $0.469447.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+  [Secondary] Trying Apollo for Company Secretary...
+  [Fallback] Creating generic IR contact
+  [Done] 1 contacts found for Merck KGaA
+
+[Processing] MTU Aero Engines AG (MTX.DE)
+  [Context] Archetype: peer_gap, Performance: 22.7%
+Error finding Chief Financial Officer for MTU Aero Engines AG: By launching this job you will exceed your remaining usage of $0.469447.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+  [Secondary] Trying Apollo for Chief Financial Officer...
+Error finding Head of Investor Relations for MTU Aero Engines AG: By launching this job you will exceed your remaining usage of $0.469447.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+  [Secondary] Trying Apollo for Head of Investor Relations...
+Error finding Company Secretary for MTU Aero Engines AG: By launching this job you will exceed your remaining usage of $0.469447.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+  [Secondary] Trying Apollo for Company Secretary...
+  [Fallback] Creating generic IR contact
+  [Done] 1 contacts found for MTU Aero Engines AG
+
+[Processing] Münchener Rückversicherungs-Gesellschaft Aktiengesellschaft in München (MUV2.DE)
+  [Context] Archetype: peer_gap, Performance: 6.8%
+Error finding Chief Financial Officer for Münchener Rückversicherungs-Gesellschaft Aktiengesellschaft in München: By launching this job you will exceed your remaining usage of $0.469447.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+  [Secondary] Trying Apollo for Chief Financial Officer...
+Error finding Head of Investor Relations for Münchener Rückversicherungs-Gesellschaft Aktiengesellschaft in München: By launching this job you will exceed your remaining usage of $0.469447.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+  [Secondary] Trying Apollo for Head of Investor Relations...
+Error finding Company Secretary for Münchener Rückversicherungs-Gesellschaft Aktiengesellschaft in München: By launching this job you will exceed your remaining usage of $0.469447.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+  [Secondary] Trying Apollo for Company Secretary...
+  [Fallback] Creating generic IR contact
+  [Done] 1 contacts found for Münchener Rückversicherungs-Gesellschaft Aktiengesellschaft in München
+
+[Processing] Porsche Automobil Holding SE (PAH3.DE)
+  [Context] Archetype: event_context, Performance: 8.6%
+Error finding Chief Financial Officer for Porsche Automobil Holding SE: By launching this job you will exceed your remaining usage of $0.469447.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+  [Secondary] Trying Apollo for Chief Financial Officer...
+Error finding Head of Investor Relations for Porsche Automobil Holding SE: By launching this job you will exceed your remaining usage of $0.469447.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+  [Secondary] Trying Apollo for Head of Investor Relations...
+Error finding Company Secretary for Porsche Automobil Holding SE: By launching this job you will exceed your remaining usage of $0.469447.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+  [Secondary] Trying Apollo for Company Secretary...
+  [Fallback] Creating generic IR contact
+  [Done] 1 contacts found for Porsche Automobil Holding SE
+
+[Processing] Qiagen N.V. (QIA.DE)
+  [Context] Archetype: peer_gap, Performance: -11.4%
+Error finding Chief Financial Officer for Qiagen N.V.: By launching this job you will exceed your remaining usage of $0.469447.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+  [Secondary] Trying Apollo for Chief Financial Officer...
+Error finding Head of Investor Relations for Qiagen N.V.: By launching this job you will exceed your remaining usage of $0.469447.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+  [Secondary] Trying Apollo for Head of Investor Relations...
+Error finding Company Secretary for Qiagen N.V.: By launching this job you will exceed your remaining usage of $0.469447.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+  [Secondary] Trying Apollo for Company Secretary...
+  [Fallback] Creating generic IR contact
+  [Done] 1 contacts found for Qiagen N.V.
+
+[Processing] Rheinmetall AG (RHM.DE)
+  [Context] Archetype: transcript_miner, Performance: 181.1%
+Error finding Chief Financial Officer for Rheinmetall AG: By launching this job you will exceed your remaining usage of $0.469447.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+  [Secondary] Trying Apollo for Chief Financial Officer...
+Error finding Head of Investor Relations for Rheinmetall AG: By launching this job you will exceed your remaining usage of $0.469447.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+  [Secondary] Trying Apollo for Head of Investor Relations...
+Error finding Company Secretary for Rheinmetall AG: By launching this job you will exceed your remaining usage of $0.469447.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+  [Secondary] Trying Apollo for Company Secretary...
+  [Fallback] Creating generic IR contact
+  [Done] 1 contacts found for Rheinmetall AG
+
+[Processing] RWE Aktiengesellschaft (RWE.DE)
+  [Context] Archetype: transcript_miner, Performance: 68.1%
+Error finding Chief Financial Officer for RWE Aktiengesellschaft: By launching this job you will exceed your remaining usage of $0.469447.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+  [Secondary] Trying Apollo for Chief Financial Officer...
+Error finding Head of Investor Relations for RWE Aktiengesellschaft: By launching this job you will exceed your remaining usage of $0.469447.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+  [Secondary] Trying Apollo for Head of Investor Relations...
+Error finding Company Secretary for RWE Aktiengesellschaft: By launching this job you will exceed your remaining usage of $0.469447.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+  [Secondary] Trying Apollo for Company Secretary...
+  [Fallback] Creating generic IR contact
+  [Done] 1 contacts found for RWE Aktiengesellschaft
+
+[Processing] SAP SE (SAP.DE)
+  [Context] Archetype: peer_gap, Performance: -15.0%
+Error finding Chief Financial Officer for SAP SE: By launching this job you will exceed your remaining usage of $0.469447.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+  [Secondary] Trying Apollo for Chief Financial Officer...
+Error finding Head of Investor Relations for SAP SE: By launching this job you will exceed your remaining usage of $0.469447.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+  [Secondary] Trying Apollo for Head of Investor Relations...
+Error finding Company Secretary for SAP SE: By launching this job you will exceed your remaining usage of $0.469447.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+  [Secondary] Trying Apollo for Company Secretary...
+  [Fallback] Creating generic IR contact
+  [Done] 1 contacts found for SAP SE
+
+[Processing] Scout24 SE (G24.DE)
+  [Context] Archetype: event_context, Performance: -5.7%
+Error finding Chief Financial Officer for Scout24 SE: By launching this job you will exceed your remaining usage of $0.469447.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+  [Secondary] Trying Apollo for Chief Financial Officer...
+Error finding Head of Investor Relations for Scout24 SE: By launching this job you will exceed your remaining usage of $0.469447.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+  [Secondary] Trying Apollo for Head of Investor Relations...
+Error finding Company Secretary for Scout24 SE: By launching this job you will exceed your remaining usage of $0.469447.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+  [Secondary] Trying Apollo for Company Secretary...
+  [Fallback] Creating generic IR contact
+  [Done] 1 contacts found for Scout24 SE
+
+[Processing] Siemens Aktiengesellschaft (SIE.DE)
+  [Context] Archetype: peer_gap, Performance: 30.3%
+Error finding Chief Financial Officer for Siemens Aktiengesellschaft: By launching this job you will exceed your remaining usage of $0.469447.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+  [Secondary] Trying Apollo for Chief Financial Officer...
+Error finding Head of Investor Relations for Siemens Aktiengesellschaft: By launching this job you will exceed your remaining usage of $0.469447.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+  [Secondary] Trying Apollo for Head of Investor Relations...
+Error finding Company Secretary for Siemens Aktiengesellschaft: By launching this job you will exceed your remaining usage of $0.469447.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+  [Secondary] Trying Apollo for Company Secretary...
+  [Fallback] Creating generic IR contact
+  [Done] 1 contacts found for Siemens Aktiengesellschaft
+
+[Processing] Siemens Energy AG (ENR.DE)
+  [Context] Archetype: transcript_miner, Performance: 149.3%
+Error finding Chief Financial Officer for Siemens Energy AG: By launching this job you will exceed your remaining usage of $0.469447.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+  [Secondary] Trying Apollo for Chief Financial Officer...
+Error finding Head of Investor Relations for Siemens Energy AG: By launching this job you will exceed your remaining usage of $0.469447.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+  [Secondary] Trying Apollo for Head of Investor Relations...
+Error finding Company Secretary for Siemens Energy AG: By launching this job you will exceed your remaining usage of $0.469447.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+  [Secondary] Trying Apollo for Company Secretary...
+  [Fallback] Creating generic IR contact
+  [Done] 1 contacts found for Siemens Energy AG
+
+[Processing] Siemens Healthineers AG (SHL.DE)
+  [Context] Archetype: peer_gap, Performance: -9.3%
+Error finding Chief Financial Officer for Siemens Healthineers AG: By launching this job you will exceed your remaining usage of $0.469447.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+  [Secondary] Trying Apollo for Chief Financial Officer...
+Error finding Head of Investor Relations for Siemens Healthineers AG: By launching this job you will exceed your remaining usage of $0.469447.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+  [Secondary] Trying Apollo for Head of Investor Relations...
+Error finding Company Secretary for Siemens Healthineers AG: By launching this job you will exceed your remaining usage of $0.469447.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+  [Secondary] Trying Apollo for Company Secretary...
+  [Fallback] Creating generic IR contact
+  [Done] 1 contacts found for Siemens Healthineers AG
+
+[Processing] Symrise AG (SY1.DE)
+  [Context] Archetype: peer_gap, Performance: -30.5%
+Error finding Chief Financial Officer for Symrise AG: By launching this job you will exceed your remaining usage of $0.469447.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+  [Secondary] Trying Apollo for Chief Financial Officer...
+Error finding Head of Investor Relations for Symrise AG: By launching this job you will exceed your remaining usage of $0.469447.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+  [Secondary] Trying Apollo for Head of Investor Relations...
+Error finding Company Secretary for Symrise AG: By launching this job you will exceed your remaining usage of $0.469447.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+  [Secondary] Trying Apollo for Company Secretary...
+  [Fallback] Creating generic IR contact
+  [Done] 1 contacts found for Symrise AG
+
+[Processing] Volkswagen AG (VOW3.DE)
+  [Context] Archetype: event_context, Performance: 13.9%
+Error finding Chief Financial Officer for Volkswagen AG: By launching this job you will exceed your remaining usage of $0.469447.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+  [Secondary] Trying Apollo for Chief Financial Officer...
+Error finding Head of Investor Relations for Volkswagen AG: By launching this job you will exceed your remaining usage of $0.469447.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+  [Secondary] Trying Apollo for Head of Investor Relations...
+Error finding Company Secretary for Volkswagen AG: By launching this job you will exceed your remaining usage of $0.469447.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+  [Secondary] Trying Apollo for Company Secretary...
+  [Fallback] Creating generic IR contact
+  [Done] 1 contacts found for Volkswagen AG
+
+[Processing] Vonovia SE (VNA.DE)
+  [Context] Archetype: event_context, Performance: -9.7%
+Error finding Chief Financial Officer for Vonovia SE: By launching this job you will exceed your remaining usage of $0.469447.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+  [Secondary] Trying Apollo for Chief Financial Officer...
+Error finding Head of Investor Relations for Vonovia SE: By launching this job you will exceed your remaining usage of $0.469447.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+  [Secondary] Trying Apollo for Head of Investor Relations...
+Error finding Company Secretary for Vonovia SE: By launching this job you will exceed your remaining usage of $0.469447.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+  [Secondary] Trying Apollo for Company Secretary...
+  [Fallback] Creating generic IR contact
+  [Done] 1 contacts found for Vonovia SE
+
+[Processing] Zalando SE (ZAL.DE)
+  [Context] Archetype: peer_gap, Performance: -15.5%
+Error finding Chief Financial Officer for Zalando SE: By launching this job you will exceed your remaining usage of $0.469447.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+  [Secondary] Trying Apollo for Chief Financial Officer...
+Error finding Head of Investor Relations for Zalando SE: By launching this job you will exceed your remaining usage of $0.469447.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+  [Secondary] Trying Apollo for Head of Investor Relations...
+Error finding Company Secretary for Zalando SE: By launching this job you will exceed your remaining usage of $0.469447.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+  [Secondary] Trying Apollo for Company Secretary...
+  [Fallback] Creating generic IR contact
+  [Done] 1 contacts found for Zalando SE
+
+============================================================
+COMPLETE: 40 valid rows in master_universe_queue.json
+Removed 0 rows with blank Email/First_Name
+============================================================

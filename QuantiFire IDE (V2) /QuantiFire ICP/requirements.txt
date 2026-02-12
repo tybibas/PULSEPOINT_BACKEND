@@ -1,0 +1,14 @@
+yfinance
+pandas
+beautifulsoup4
+requests
+openai
+lxml
+wcwidth
+duckduckgo-search
+apify-client
+gspread
+google-auth
+google-auth-oauthlib
+google-auth-httplib2
+

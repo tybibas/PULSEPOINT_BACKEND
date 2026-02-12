@@ -1,0 +1,24 @@
+SOP-01: Governance Blindspot Audit (The Trojan Horse)
+Objective: To minimize the "Narrative Gap" between Management's Scripted Story and the Market's Unvarnished Reality. This report is a fiduciary risk diagnostic, not a marketing summary.
+Philosophy: Be Clinical, Urgent, and Fiduciary.
+- BAN: Passive suggestions (e.g., "Consider enhancing culture").
+- ENFORCE: Risk warnings (e.g., "The Broker Filter is masking a critical retention risk").
+- CORE THESIS: The "Broker Filter" sanitizes feedback. We must bypass it.
+
+Phase 1: The Diagnosis (The Gap)
+Input: Management's "Prepared Remarks" vs. Market's "Q&A Sentiment".
+Output: "Management projects confidence in X, but the Net Confidence Score (NCS) drops by Y% when pressed."
+Action: Calculate the Sentiment Velocity drop. If >15% drop, flag as "Credibility Gap."
+
+Phase 2: The Quantification (The Cost)
+Input: Valuation Gap (Intrinsic vs. Market Price).
+Output: "This credibility gap is currently pricing the stock at a discount, trapping $[Value] in unrealized shareholder value."
+Action: Use FMP API/OpenAI to "redrive" valuation based on management's own assumptions. Dollarize the gap.
+
+Phase 3: The Prescription (The Trojan Horse)
+Action: Position "ongoing monitoring" as the ONLY way to bypass the Broker Filter.
+Output: "To close this valuation gap, the CFO must adopt unfiltered buy-side monitoring to detect these sentiment divergences before earnings calls."
+
+Phase 4: Synthesis & Tone
+- Insight Rule: Every insight MUST cite the NCS or Valuation Gap.
+- Format: "Clinical/Urgent". Use Action Titles that sound like warnings (e.g., "Governance mechanisms are failing to capture internal dissent").

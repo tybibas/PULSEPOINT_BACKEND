@@ -1,0 +1,13 @@
+id,triggered_company_id,name,title,email,contact_status,email_subject,email_body,thread_id,last_message_id,last_sent_at,nudge_count,next_nudge_at,replied_at,bounced_at,is_selected,created_at,updated_at,linkedin_url,linkedin_profile_picture_url,last_linkedin_interaction_at,video_pitch_sent,linkedin_comment_draft,video_script,loom_link,intent_score
+32c696ad-7960-4f3d-8ce2-7eb7819280ef,2e6a837a-9c1c-5e66-8635-36c3bbb9c486,Marin Gertler,Chief Design Officer,mgertler@carrierjohnson.com,pending,Custom Murals That Elevate Your Design Vision,"Hi Marin,
+
+Congratulations on being named Chief Design Officer. It's fantastic to see the focus on design leadership at Carrier Johnson.
+
+We create hand-painted murals and custom environmental graphics for commercial and institutional spaces. Unlike sign shops or art consultants sourcing existing work, we design and execute original pieces tailored to each project's architecture and brand story.
+
+I'd love to show you some examples of how we've helped architects translate design intent into memorable moments within their buildings. Worth a quick conversation?
+
+Best,
+Mike Ecker
+Ecker Design Co.
+eckerdesignco.com",,,,0,,,,true,2026-01-30 05:24:00.055034+00,2026-01-30 05:24:00.055034+00,,,,false,,,,MEDIUM

@@ -1,0 +1,42 @@
+{
+  "_generated_at": "2026-02-06T11:32:43.506214",
+  "_icp_source": "pulsepoint_strategic/directives/icp_definition.md",
+  "client_name": "PulsePoint Strategic",
+  "client_context": "pulsepoint_strategic",
+  "companies": [
+    {
+      "name": "Branding Studios Inc",
+      "website": "",
+      "event_type": "Service Offering",
+      "event_title": "Branding Services Announcement",
+      "event_context": "Branding Studios Inc. offers unique brand identities and marketing strategies, catering to businesses looking for distinctive branding solutions.",
+      "event_source_url": "https://clutch.co/profile/branding-studios",
+      "contacts": [
+        {
+          "name": "[TO BE ENRICHED]",
+          "title": "CEO",
+          "email": "",
+          "linkedin_url": "",
+          "needs_enrichment": true
+        }
+      ]
+    },
+    {
+      "name": "York IE",
+      "website": "",
+      "event_type": "Company differentiation in service offerings",
+      "event_title": "York IE's approach to development and culture",
+      "event_context": "York IE emphasizes that their India team is fully integrated into the company culture, contrasting with traditional outsourced development shops. This indicates a strong commitment to client work while promoting their internal capabilities.",
+      "event_source_url": "https://york.ie/blog/how-york-ie-is-different-from-outsourced-dev-shops/",
+      "contacts": [
+        {
+          "name": "[TO BE ENRICHED]",
+          "title": "CEO",
+          "email": "",
+          "linkedin_url": "",
+          "needs_enrichment": true
+        }
+      ]
+    }
+  ]
+}

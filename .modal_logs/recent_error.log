@@ -1,0 +1,49 @@
+/root/modal_email_dispatcher.py:242: DeprecationError: 2025-03-05: The `@modal.web_endpoint` decorator has been renamed to `@modal.fastapi_endpoint`.
+  @modal.web_endpoint(method="POST")
+⏰ Cron Trigger: Checking for scheduled emails...
+/root/modal_email_dispatcher.py:242: DeprecationError: 2025-03-05: The `@modal.web_endpoint` decorator has been renamed to `@modal.fastapi_endpoint`.
+  @modal.web_endpoint(method="POST")
+🚀 Starting Email Dispatch (Limit: 50)
+✅ No pending emails found.
+/root/modal_email_dispatcher.py:242: DeprecationError: 2025-03-05: The `@modal.web_endpoint` decorator has been renamed to `@modal.fastapi_endpoint`.
+  @modal.web_endpoint(method="POST")
+⏰ Cron Trigger: Checking for scheduled emails...
+/root/modal_email_dispatcher.py:242: DeprecationError: 2025-03-05: The `@modal.web_endpoint` decorator has been renamed to `@modal.fastapi_endpoint`.
+  @modal.web_endpoint(method="POST")
+🚀 Starting Email Dispatch (Limit: 50)
+✅ No pending emails found.
+/root/modal_email_dispatcher.py:242: DeprecationError: 2025-03-05: The `@modal.web_endpoint` decorator has been renamed to `@modal.fastapi_endpoint`.
+  @modal.web_endpoint(method="POST")
+⏰ Cron Trigger: Checking for scheduled emails...
+/root/modal_email_dispatcher.py:242: DeprecationError: 2025-03-05: The `@modal.web_endpoint` decorator has been renamed to `@modal.fastapi_endpoint`.
+  @modal.web_endpoint(method="POST")
+🚀 Starting Email Dispatch (Limit: 50)
+✅ No pending emails found.
+/root/modal_email_dispatcher.py:242: DeprecationError: 2025-03-05: The `@modal.web_endpoint` decorator has been renamed to `@modal.fastapi_endpoint`.
+  @modal.web_endpoint(method="POST")
+⏰ Cron Trigger: Checking for scheduled emails...
+/root/modal_email_dispatcher.py:242: DeprecationError: 2025-03-05: The `@modal.web_endpoint` decorator has been renamed to `@modal.fastapi_endpoint`.
+  @modal.web_endpoint(method="POST")
+🚀 Starting Email Dispatch (Limit: 50)
+✅ No pending emails found.
+/root/modal_email_dispatcher.py:242: DeprecationError: 2025-03-05: The `@modal.web_endpoint` decorator has been renamed to `@modal.fastapi_endpoint`.
+  @modal.web_endpoint(method="POST")
+⏰ Cron Trigger: Checking for scheduled emails...
+/root/modal_email_dispatcher.py:242: DeprecationError: 2025-03-05: The `@modal.web_endpoint` decorator has been renamed to `@modal.fastapi_endpoint`.
+  @modal.web_endpoint(method="POST")
+🚀 Starting Email Dispatch (Limit: 50)
+✅ No pending emails found.
+/root/modal_email_dispatcher.py:242: DeprecationError: 2025-03-05: The `@modal.web_endpoint` decorator has been renamed to `@modal.fastapi_endpoint`.
+  @modal.web_endpoint(method="POST")
+⏰ Cron Trigger: Checking for scheduled emails...
+/root/modal_email_dispatcher.py:242: DeprecationError: 2025-03-05: The `@modal.web_endpoint` decorator has been renamed to `@modal.fastapi_endpoint`.
+  @modal.web_endpoint(method="POST")
+🚀 Starting Email Dispatch (Limit: 50)
+✅ No pending emails found.
+/root/modal_email_dispatcher.py:242: DeprecationError: 2025-03-05: The `@modal.web_endpoint` decorator has been renamed to `@modal.fastapi_endpoint`.
+  @modal.web_endpoint(method="POST")
+⏰ Cron Trigger: Checking for scheduled emails...
+/root/modal_email_dispatcher.py:242: DeprecationError: 2025-03-05: The `@modal.web_endpoint` decorator has been renamed to `@modal.fastapi_endpoint`.
+  @modal.web_endpoint(method="POST")
+🚀 Starting Email Dispatch (Limit: 50)
+✅ No pending emails found.

@@ -1,0 +1,59 @@
+{
+  "_generated_at": "2026-02-06T11:34:58.628891",
+  "_icp_source": "pulsepoint_strategic/directives/icp_definition.md",
+  "client_name": "PulsePoint Strategic",
+  "client_context": "pulsepoint_strategic",
+  "companies": [
+    {
+      "name": "Branding Studios Inc",
+      "website": "",
+      "event_type": "Business Service",
+      "event_title": "Branding Services Offered",
+      "event_context": "Branding Studios Inc. specializes in crafting unique brand identities and marketing strategies for businesses, indicating they may serve mid-sized firms needing brand development and marketing support.",
+      "event_source_url": "https://clutch.co/profile/branding-studios",
+      "contacts": [
+        {
+          "name": "[TO BE ENRICHED]",
+          "title": "CEO",
+          "email": "",
+          "linkedin_url": "",
+          "needs_enrichment": true
+        }
+      ]
+    },
+    {
+      "name": "Dev Shop",
+      "website": "",
+      "event_type": "Informational article",
+      "event_title": "Dev Shop: How to Choose Wisely and Hire the Best One",
+      "event_context": "The article provides insights for businesses on how to select a development shop, indicating a growing demand for web development services, which aligns with the interests of mid-sized agencies looking for reliable tech partners.",
+      "event_source_url": "https://devsdata.com/dev-shop/",
+      "contacts": [
+        {
+          "name": "[TO BE ENRICHED]",
+          "title": "CEO",
+          "email": "",
+          "linkedin_url": "",
+          "needs_enrichment": true
+        }
+      ]
+    },
+    {
+      "name": "Xamun",
+      "website": "",
+      "event_type": "product launch",
+      "event_title": "Launch of AI-Native SDLC Platform",
+      "event_context": "Xamun has recently launched an AI-native software development lifecycle platform aimed specifically at dev shops, enhancing the speed and simplicity of designing and building enterprise-grade software.",
+      "event_source_url": "https://www.xamun.ai/ai-native-sdlc-software-development-dev-shops",
+      "contacts": [
+        {
+          "name": "[TO BE ENRICHED]",
+          "title": "CEO",
+          "email": "",
+          "linkedin_url": "",
+          "needs_enrichment": true
+        }
+      ]
+    }
+  ]
+}

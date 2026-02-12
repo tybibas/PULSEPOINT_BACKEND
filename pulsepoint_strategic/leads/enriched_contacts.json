@@ -1,0 +1,250 @@
+[
+  {
+    "company": "Chetu",
+    "contact_name": "Atal Bansal",
+    "title": "CEO",
+    "email": "atalb@chetu.com",
+    "website": "https://www.chetu.com/careers",
+    "verification_status": "verified"
+  },
+  {
+    "company": "DigiCert",
+    "contact_name": "Amit Sinha",
+    "title": "CEO",
+    "email": "amit.sinha@digicert.com",
+    "website": "https://careers.digicert.com/",
+    "verification_status": "verified"
+  },
+  {
+    "company": "Flagright",
+    "contact_name": "Baran Ozkan",
+    "title": "CEO",
+    "email": "baran.ozkan@flagright.com",
+    "website": "https://flagright.com/careers",
+    "verification_status": "verified"
+  },
+  {
+    "company": "Hightouch",
+    "contact_name": "Kashish Gupta",
+    "title": "Co-CEO",
+    "email": "kashishgupta@hightouch.com",
+    "website": "https://hightouch.com/careers",
+    "verification_status": "verified"
+  },
+  {
+    "company": "Capital One Software",
+    "contact_name": "Ravi Raghu",
+    "title": "Head of Software",
+    "email": "ravi.raghu@capitalone.com",
+    "website": "https://www.capitalonecareers.com/",
+    "verification_status": "verified"
+  },
+  {
+    "company": "ScaleneWorks",
+    "contact_name": "Sanjay Shelvankar",
+    "title": "CEO",
+    "email": "sanjays@scaleneworks.com",
+    "website": "https://www.scaleneworks.com/careers",
+    "verification_status": "verified"
+  },
+  {
+    "company": "OutSystems",
+    "contact_name": "Paulo Rosado",
+    "title": "CEO",
+    "email": "paulo.rosado@outsystems.com",
+    "website": "https://www.outsystems.com/careers/",
+    "verification_status": "verified"
+  },
+  {
+    "company": "Ramp",
+    "contact_name": "Eric Glyman",
+    "title": "CEO",
+    "email": "eric.glyman@ramp.com",
+    "website": "https://ramp.com/careers",
+    "verification_status": "verified"
+  },
+  {
+    "company": "Hostaway",
+    "contact_name": "Marcus R\u00e4der",
+    "title": "CEO",
+    "email": "marcus.rader@hostaway.com",
+    "website": "https://www.hostaway.com/careers/",
+    "verification_status": "verified"
+  },
+  {
+    "company": "Atlassian",
+    "contact_name": "Mike Cannon-Brookes",
+    "title": "Co-CEO",
+    "email": "mcannon@atlassian.com",
+    "website": "https://www.atlassian.com/company/careers",
+    "verification_status": "verified"
+  },
+  {
+    "company": "Everway",
+    "contact_name": "Martin McKay",
+    "title": "Executive Chairman",
+    "email": "m.mckay@everway.com",
+    "website": "https://www.everway.com/careers",
+    "verification_status": "verified"
+  },
+  {
+    "company": "DigiCert",
+    "contact_name": "Amit Sinha",
+    "title": "CEO",
+    "email": "amit.sinha@digicert.com",
+    "website": "digicert.com",
+    "verification_status": "verified"
+  },
+  {
+    "company": "Veeva",
+    "contact_name": "Peter Gassner",
+    "title": "CEO",
+    "email": "peter.gassner@veeva.com",
+    "website": "https://careers.veeva.com/",
+    "verification_status": "verified"
+  },
+  {
+    "company": "Hopper",
+    "contact_name": "Frederic Lalonde",
+    "title": "CEO",
+    "email": "flalonde@hopper.com",
+    "website": "https://www.hopper.com/careers",
+    "verification_status": "verified"
+  },
+  {
+    "company": "Deepgram",
+    "contact_name": "Scott Stephenson",
+    "title": "CEO",
+    "email": "scott@deepgram.com",
+    "website": "https://deepgram.com/careers",
+    "verification_status": "verified"
+  },
+  {
+    "company": "Skanska",
+    "contact_name": "Richard Kennedy",
+    "title": "CEO",
+    "email": "richard.kennedy@skanska.com",
+    "website": "https://www.skanska.com/",
+    "verification_status": "verified"
+  },
+  {
+    "company": "Parsons Transportation Group",
+    "contact_name": "Carey Smith",
+    "title": "CEO",
+    "email": "carey.smith@parsons.com",
+    "website": "https://www.parsons.com/news/",
+    "verification_status": "verified"
+  },
+  {
+    "company": "Costain",
+    "contact_name": "Alex Vaughan",
+    "title": "CEO",
+    "email": "alex.vaughan@costain.com",
+    "website": "https://www.costain.com/news/",
+    "verification_status": "verified"
+  },
+  {
+    "company": "Levellr",
+    "contact_name": "Tom Gayner",
+    "title": "CEO",
+    "email": "tomgayner@levellr.com",
+    "website": "https://levellr.com/blog",
+    "verification_status": "verified"
+  },
+  {
+    "company": "Legato",
+    "contact_name": "Dana Rochman",
+    "title": "CEO",
+    "email": "dana.rochman@legato.com",
+    "website": "https://legato.com/news",
+    "verification_status": "verified"
+  },
+  {
+    "company": "Materialspace",
+    "contact_name": "Yoash Palmor",
+    "title": "CEO",
+    "email": "yoash.palmor@materialspace.com",
+    "website": "https://materialspace.com",
+    "verification_status": "verified"
+  },
+  {
+    "company": "Larsen & Toubro",
+    "contact_name": "S.N. Subrahmanyan",
+    "title": "CEO",
+    "email": "ss@larsentoubro.com",
+    "website": "https://www.larsentoubro.com/corporate/news-events/news/",
+    "verification_status": "verified"
+  },
+  {
+    "company": "Egis",
+    "contact_name": "Laurent Germain",
+    "title": "CEO",
+    "email": "laurent.germain@egis-group.com",
+    "website": "https://www.egis-group.com/news",
+    "verification_status": "verified"
+  },
+  {
+    "company": "AECOM",
+    "contact_name": "Troy Rudd",
+    "title": "CEO",
+    "email": "troy.rudd@aecom.com",
+    "website": "https://aecom.com/news/",
+    "verification_status": "verified"
+  },
+  {
+    "company": "Duvall Decker",
+    "contact_name": "Anne Marie Duvall Decker",
+    "title": "Principal",
+    "email": "amd@duvalldecker.com",
+    "website": "https://duvalldecker.com/news/",
+    "verification_status": "verified"
+  },
+  {
+    "company": "Architectus",
+    "contact_name": "Ray Brown",
+    "title": "CEO",
+    "email": "ray.brown@architectus.com.au",
+    "website": "https://architectus.com.au/news/",
+    "verification_status": "verified"
+  },
+  {
+    "company": "LimX Dynamics",
+    "contact_name": "Wei Zhang",
+    "title": "Founder",
+    "email": "zhangwei@limxdynamics.com",
+    "website": "https://www.limxdynamics.com/en/news",
+    "verification_status": "verified"
+  },
+  {
+    "company": "Talos",
+    "contact_name": "Anton Katz",
+    "title": "CEO",
+    "email": "anton.katz@talos.com",
+    "website": "https://talos.com/news",
+    "verification_status": "verified"
+  },
+  {
+    "company": "Sixfold",
+    "contact_name": "Alex Schmelkin",
+    "title": "CEO",
+    "email": "alex@sixfold.ai",
+    "website": "https://sixfold.ai/blog",
+    "verification_status": "verified"
+  },
+  {
+    "company": "Zocks",
+    "contact_name": "Mark Gilbert",
+    "title": "CEO",
+    "email": "mark.gilbert@zocks.io",
+    "website": "https://zocks.io/blog",
+    "verification_status": "verified"
+  },
+  {
+    "company": "Datadog",
+    "contact_name": "Olivier Pomel",
+    "title": "CEO",
+    "email": "olivier.pomel@datadoghq.com",
+    "website": "https://careers.datadoghq.com/",
+    "verification_status": "verified"
+  }
+]

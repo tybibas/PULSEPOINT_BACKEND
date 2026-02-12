@@ -1,0 +1,292 @@
+<!-- 
+  Lead Card Component
+  PulsePoint Growth Design System
+-->
+<article class="lead-card card animate-slide-up">
+    <!-- Card Header: Intent Badge + Timestamp -->
+    <header class="lead-card__header">
+        <span class="badge badge-intent-high">
+            <span class="intent-dot"></span>
+            HIGH INTENT
+        </span>
+        <span class="lead-card__timestamp text-muted text-sm">2 hours ago</span>
+        <button class="btn btn-icon btn-ghost lead-card__menu" aria-label="More options">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                <circle cx="8" cy="3" r="1.5" />
+                <circle cx="8" cy="8" r="1.5" />
+                <circle cx="8" cy="13" r="1.5" />
+            </svg>
+        </button>
+    </header>
+
+    <!-- Company Info -->
+    <div class="lead-card__company">
+        <div class="avatar" aria-label="Company initials">LO</div>
+        <div class="lead-card__company-info">
+            <h3 class="lead-card__company-name">Longfellow Real Estate Partners</h3>
+            <p class="lead-card__trigger">
+                <span class="trigger-icon">✨</span>
+                Centerpark Labs Named Life Science Campus of the Year
+            </p>
+            <p class="lead-card__meta text-muted text-sm">
+                <span>📍 San Diego, CA</span>
+                <span class="meta-separator">•</span>
+                <span>5 leads</span>
+                <span class="meta-separator">•</span>
+                <span>$250M+ AUM</span>
+            </p>
+        </div>
+        <div class="lead-card__company-actions">
+            <button class="btn btn-icon btn-ghost" aria-label="Open company in new tab">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor">
+                    <path d="M10 1h3v3M13 1L7 7M11 8v4a1 1 0 01-1 1H2a1 1 0 01-1-1V4a1 1 0 011-1h4" />
+                </svg>
+            </button>
+            <button class="btn btn-icon btn-ghost lead-card__expand" aria-label="Expand card">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor">
+                    <path d="M3 5l4 4 4-4" />
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <!-- Context Banner -->
+    <div class="lead-card__context">
+        <span class="context-label text-label">CONTEXT</span>
+        <p class="context-text text-sm">
+            Awarded by San Diego Business Journal for transforming the 256,000 sq ft campus into a premier life science
+            destination.
+        </p>
+    </div>
+
+    <!-- Contacts List -->
+    <div class="lead-card__contacts">
+        <!-- Contact Row -->
+        <div class="contact-row">
+            <input type="checkbox" class="checkbox contact-checkbox" aria-label="Select Brandon Maddox">
+            <div class="avatar avatar-sm">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" opacity="0.6">
+                    <path
+                        d="M12 12c2.7 0 5-2.3 5-5s-2.3-5-5-5-5 2.3-5 5 2.3 5 5 5zm0 2c-3.3 0-10 1.7-10 5v2h20v-2c0-3.3-6.7-5-10-5z" />
+                </svg>
+            </div>
+            <div class="contact-info">
+                <div class="contact-name-row">
+                    <span class="contact-name">Brandon Maddox</span>
+                    <span class="badge badge-status-not-contacted">Not Contacted</span>
+                </div>
+                <div class="contact-details text-sm text-muted">
+                    <span class="contact-title">Senior Project Manager</span>
+                    <span class="meta-separator">•</span>
+                    <span class="contact-email">📧 bmaddox@lfrep.com</span>
+                </div>
+            </div>
+            <div class="contact-timing text-sm text-muted">
+                <span>⏱ Best: Tue 9AM</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Email Preview -->
+    <div class="lead-card__email">
+        <div class="email-subject">
+            <span class="email-label text-label">EMAIL DRAFT</span>
+            <button class="btn btn-ghost btn-sm email-edit-btn">
+                <span class="text-accent">✏ Edit</span>
+            </button>
+        </div>
+        <h4 class="email-subject-line">Making SOVA the Campus Everyone Wants to Visit</h4>
+        <p class="email-preview text-sm text-secondary">
+            Hi Brandon, Saw that Centerpark Labs just won Life Science Campus of the Year – congrats to the whole team.
+            Creating award-winning spaces is no small feat. As you continue shaping projects like SOVA and Bioterra, I
+            wanted to share how hand-painted murals are helping similar campuses become destinations, not just
+            buildings. We've been working with commercial developers across San Diego to create lobby experiences that
+            tenants actually take photos in front of. I have some...
+        </p>
+    </div>
+</article>
+
+<style>
+    /* Lead Card Specific Styles (extends design-system.css) */
+
+    .lead-card {
+        display: flex;
+        flex-direction: column;
+        gap: var(--space-4);
+        padding: 0;
+        overflow: hidden;
+    }
+
+    .lead-card__header {
+        display: flex;
+        align-items: center;
+        gap: var(--space-3);
+        padding: var(--space-4) var(--space-5);
+        background-color: var(--color-bg-tertiary);
+        border-bottom: 1px solid var(--color-border-default);
+    }
+
+    .lead-card__timestamp {
+        margin-left: auto;
+    }
+
+    .lead-card__menu {
+        opacity: 0;
+        transition: opacity var(--transition-fast);
+    }
+
+    .lead-card:hover .lead-card__menu {
+        opacity: 1;
+    }
+
+    .intent-dot {
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background-color: currentColor;
+        animation: pulse 2s infinite;
+    }
+
+    /* Company Section */
+    .lead-card__company {
+        display: flex;
+        align-items: flex-start;
+        gap: var(--space-4);
+        padding: var(--space-4) var(--space-5);
+    }
+
+    .lead-card__company-info {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: var(--space-1);
+    }
+
+    .lead-card__company-name {
+        font-family: var(--font-display);
+        font-size: var(--text-lg);
+        font-weight: var(--font-semibold);
+        color: var(--color-text-primary);
+    }
+
+    .lead-card__trigger {
+        font-size: var(--text-sm);
+        color: var(--color-accent-primary);
+        display: flex;
+        align-items: center;
+        gap: var(--space-2);
+    }
+
+    .trigger-icon {
+        font-size: var(--text-base);
+    }
+
+    .lead-card__meta {
+        display: flex;
+        align-items: center;
+        gap: var(--space-2);
+    }
+
+    .meta-separator {
+        color: var(--color-text-muted);
+    }
+
+    .lead-card__company-actions {
+        display: flex;
+        gap: var(--space-1);
+    }
+
+    /* Context */
+    .lead-card__context {
+        padding: var(--space-3) var(--space-5);
+        background-color: var(--color-accent-muted);
+        border-left: 3px solid var(--color-accent-primary);
+        margin: 0 var(--space-4);
+        border-radius: 0 var(--radius-md) var(--radius-md) 0;
+    }
+
+    .context-label {
+        display: block;
+        margin-bottom: var(--space-1);
+    }
+
+    .context-text {
+        color: var(--color-text-secondary);
+        line-height: var(--leading-relaxed);
+    }
+
+    /* Contacts */
+    .lead-card__contacts {
+        padding: 0 var(--space-5);
+    }
+
+    .contact-row {
+        display: flex;
+        align-items: center;
+        gap: var(--space-3);
+        padding: var(--space-3) 0;
+        border-bottom: 1px solid var(--color-border-default);
+    }
+
+    .contact-row:last-child {
+        border-bottom: none;
+    }
+
+    .contact-info {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: var(--space-1);
+    }
+
+    .contact-name-row {
+        display: flex;
+        align-items: center;
+        gap: var(--space-2);
+    }
+
+    .contact-name {
+        font-weight: var(--font-medium);
+        color: var(--color-text-primary);
+    }
+
+    .contact-details {
+        display: flex;
+        align-items: center;
+        gap: var(--space-2);
+    }
+
+    /* Email Preview */
+    .lead-card__email {
+        padding: var(--space-4) var(--space-5);
+        background-color: var(--color-bg-tertiary);
+        border-top: 1px solid var(--color-border-default);
+    }
+
+    .email-subject {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: var(--space-2);
+    }
+
+    .email-subject-line {
+        font-size: var(--text-base);
+        font-weight: var(--font-semibold);
+        color: var(--color-text-primary);
+        margin-bottom: var(--space-2);
+    }
+
+    .email-preview {
+        line-height: var(--leading-relaxed);
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    .btn-sm {
+        padding: var(--space-1) var(--space-2);
+        font-size: var(--text-xs);
+    }
+</style>

@@ -1,0 +1,301 @@
+/* Modern Annual Report Style (Dark Mode / Governance Blindspot) */
+
+:root {
+    --color-bg: #121212;
+    /* Rich Black */
+    --color-primary: #FFFFFF;
+    /* White Text */
+    --color-secondary: #B0B0B0;
+    /* Light Grey */
+    --color-accent: #FF6B00;
+    /* QuantiFire Orange */
+    --color-surface: #1E1E1E;
+    /* Dark Grey Surface */
+    --color-border: #333333;
+
+    --font-heading: 'Helvetica Neue', Arial, sans-serif;
+    --font-body: 'Georgia', serif;
+}
+
+@page {
+    size: A4;
+    margin: 1.0cm;
+    background-color: #121212;
+    /* Ensure PDF background is black */
+}
+
+body {
+    font-family: var(--font-body);
+    color: var(--color-primary);
+    background-color: var(--color-bg);
+    line-height: 1.6;
+    margin: 0;
+    -webkit-print-color-adjust: exact;
+    /* Force background colors */
+    print-color-adjust: exact;
+}
+
+/* Header */
+header {
+    border-bottom: 2px solid var(--color-accent);
+    /* Orange Line */
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* Centered visually */
+}
+
+/* Added specific right alignment container */
+.header-text {
+    text-align: right;
+}
+
+.main-title {
+    font-family: var(--font-heading);
+    font-size: 18px;
+    /* Professional refinement */
+    font-weight: 500;
+    /* Medium weight */
+    color: var(--color-primary);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+.meta-date {
+    font-family: var(--font-heading);
+    color: var(--color-accent);
+    /* Orange Date */
+    font-size: 11px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+/* Grid Layout */
+.grid-container {
+    display: flex;
+    gap: 50px;
+    /* Increased gap */
+    min-height: 800px;
+    /* Force layout expansion */
+}
+
+/* Executive Summary - Full Width on Page 1 */
+.col-sidebar {
+    width: 100%;
+    border-right: none;
+    padding-right: 0;
+    margin-bottom: 20px;
+}
+
+.exec-summary-box {
+    background-color: var(--color-surface);
+    padding: 20px 30px;
+    border-left: 4px solid var(--color-accent);
+    margin-bottom: 15px;
+}
+
+.sidebar-header {
+    font-family: var(--font-heading);
+    font-size: 13px;
+    color: var(--color-secondary);
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--color-border);
+    padding-bottom: 8px;
+}
+
+.exec-headline {
+    font-family: var(--font-heading);
+    font-weight: bold;
+    color: var(--color-primary);
+    font-size: 18px;
+    line-height: 1.4;
+    margin-bottom: 15px;
+}
+
+.exec-text {
+    font-size: 14px;
+    /* Larger body text */
+    color: #DDDDDD;
+}
+
+.focus-area-box {
+    margin-top: 20px;
+}
+
+.focus-list {
+    list-style: none;
+    padding: 0;
+    font-family: var(--font-heading);
+    font-size: 14px;
+    color: var(--color-primary);
+}
+
+.focus-list li {
+    margin-bottom: 15px;
+    padding-left: 15px;
+    border-left: 2px solid var(--color-accent);
+}
+
+/* Main Column */
+.col-main {
+    width: 70%;
+}
+
+.section-block {
+    margin-bottom: 20px;
+    /* Tight spacing for 3-page fit */
+}
+
+.section-title {
+    font-family: var(--font-heading);
+    color: var(--color-accent);
+    /* Orange Headers */
+    font-size: 22px;
+    /* Larger Headers */
+    font-weight: bold;
+    text-align: left;
+    border-bottom: 1px solid var(--color-border);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.section-text {
+    font-size: 15px;
+    /* Larger main text */
+    color: #EEEEEE;
+    margin-bottom: 25px;
+}
+
+/* Components */
+.chart-wrapper {
+    margin: 15px 0;
+    padding: 8px;
+    background-color: var(--color-surface);
+    /* Dark container for charts */
+    border-radius: 4px;
+}
+
+.chart-wrapper img {
+    max-width: 100%;
+}
+
+.insight-block {
+    background-color: transparent;
+    border: 1px solid var(--color-accent);
+    color: #E0E0E0;
+    padding: 12px;
+    font-family: var(--font-heading);
+    font-size: 13px;
+    margin-top: 12px;
+}
+
+.insight-label {
+    font-weight: bold;
+    color: var(--color-accent);
+    text-transform: uppercase;
+    margin-right: 8px;
+}
+
+/* Valuation Big Number */
+.valuation-container {
+    text-align: center;
+    background-color: var(--color-surface);
+    padding: 25px;
+    border: 1px solid var(--color-border);
+}
+
+.big-number {
+    display: block;
+    font-family: var(--font-heading);
+    font-size: 48px;
+    font-weight: bold;
+    color: var(--color-primary);
+    line-height: 1;
+}
+
+.valuation-label {
+    font-family: var(--font-heading);
+    font-size: 14px;
+    letter-spacing: 3px;
+    color: var(--color-accent);
+    display: block;
+    margin-top: 15px;
+}
+
+.valuation-desc {
+    margin-top: 20px;
+    color: var(--color-secondary);
+    font-size: 14px;
+}
+
+/* Table */
+.prescription-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: var(--font-heading);
+    font-size: 14px;
+}
+
+.prescription-table th {
+    text-align: left;
+    color: var(--color-secondary);
+    border-bottom: 2px solid var(--color-accent);
+    padding: 15px 10px;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.prescription-table td {
+    padding: 15px 10px;
+    border-bottom: 1px solid var(--color-border);
+    vertical-align: top;
+    color: #DDDDDD;
+}
+
+/* Column Widths - 25/35/40 for readability */
+.prescription-table .col-initiative {
+    width: 25%;
+}
+
+.prescription-table .col-evidence {
+    width: 35%;
+    white-space: nowrap;
+}
+
+.prescription-table .col-action {
+    width: 40%;
+}
+
+.table-bold {
+    font-weight: bold;
+    color: var(--color-primary);
+}
+
+.table-warn {
+    color: var(--color-accent);
+    /* Warn in Orange */
+    font-weight: bold;
+}
+
+.footer {
+    margin-top: 30px;
+    padding-top: 15px;
+    border-top: 1px solid var(--color-border);
+    text-align: center;
+    font-family: var(--font-heading);
+    font-size: 11px;
+    color: var(--color-secondary);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.footer-cta {
+    font-size: 13px;
+    color: var(--color-accent);
+    margin-bottom: 12px;
+}

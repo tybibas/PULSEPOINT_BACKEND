@@ -1,0 +1,16 @@
+# API Key Requirements (Synthetic Analyst Stack)
+
+# 1. The Brain (REQUIRED)
+# Used for all qualitative analysis and synthesis.
+OPENAI_API_KEY=sk-...
+
+# 2. The Hands (HIGHLY RECOMMENDED)
+# Used to scrape transcripts, reviews, and news to feed The Brain.
+# Without this, scripts fall back to mock data or limited internal knowledge.
+APIFY_API_KEY=apify_api_...
+
+# 3. The Data (OPTIONAL - FREE TIER AVAILABLE)
+# Used for clean financial statements (P/E, Revenue, Margins).
+# Much more reliable than scraping Yahoo Finance.
+FMP_API_KEY=...
+# Get key here: https://site.financialmodelingprep.com/developer/docs (Free Tier)

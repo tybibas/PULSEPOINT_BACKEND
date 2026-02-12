@@ -1,0 +1,100 @@
+[
+  {
+    "company": "Longfellow Real Estate Partners",
+    "domain": "lfrep.com",
+    "contacts": [
+      {
+        "name": "Peter Fritz",
+        "role": "Managing Director",
+        "email": "pfritz@lfrep.com",
+        "source": "anymailfinder",
+        "verified": true,
+        "validation": "valid"
+      },
+      {
+        "name": "Brandon Maddox",
+        "role": "Senior Project Manager",
+        "email": "bmaddox@lfrep.com",
+        "source": "anymailfinder",
+        "verified": true,
+        "validation": "valid"
+      },
+      {
+        "name": "Eric Hotovy",
+        "role": "Project Executive",
+        "email": "ehotovy@lfrep.com",
+        "source": "anymailfinder",
+        "verified": true,
+        "validation": "valid"
+      },
+      {
+        "name": "Daniel Mejia",
+        "role": "Senior Project Manager",
+        "email": "dmejia@lfrep.com",
+        "source": "anymailfinder",
+        "verified": true,
+        "validation": "valid"
+      },
+      {
+        "name": "Nick Frasco",
+        "role": "Partner, West Region",
+        "email": "nfrasco@lfrep.com",
+        "source": "anymailfinder",
+        "verified": true,
+        "validation": "valid"
+      }
+    ]
+  },
+  {
+    "company": "Carrier Johnson + Culture",
+    "domain": "carrierjohnson.com",
+    "contacts": [
+      {
+        "name": "Jackie Angel",
+        "role": "Director of Operations",
+        "email": "jangel@carrierjohnson.com",
+        "source": "anymailfinder",
+        "verified": true,
+        "validation": "valid"
+      },
+      {
+        "name": "Claudia Escala",
+        "role": "Co-President",
+        "email": "cescala@carrierjohnson.com",
+        "source": "pattern_guess",
+        "verified": false,
+        "note": "Pattern based on jangel format. Alternative: ce@carrierjohnson.com"
+      },
+      {
+        "name": "David Huchteman",
+        "role": "CEO",
+        "email": "deh@carrierjohnson.com",
+        "source": "web_search",
+        "verified": true,
+        "note": "Found via journoportfolio.com"
+      },
+      {
+        "name": "Marin Gertler",
+        "role": "Chief Design Officer",
+        "email": "mgertler@carrierjohnson.com",
+        "source": "pattern_guess",
+        "verified": false,
+        "note": "Pattern based on jangel format. Media inquiries: carrierjohnson@upspringpr.com"
+      }
+    ]
+  },
+  {
+    "company": "Trammell Crow Company",
+    "domain": "trammellcrow.com",
+    "contacts": [
+      {
+        "name": "Christopher Tipre",
+        "role": "Principal",
+        "email": "ctipre@trammellcrow.com",
+        "source": "anymailfinder",
+        "verified": true,
+        "validation": "valid"
+      }
+    ]
+  }
+]

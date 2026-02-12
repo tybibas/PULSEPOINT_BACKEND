@@ -1,0 +1,272 @@
+[36m[apify.google-search-scraper runId:GOWr4J65Val0vOQwL][0m -> Status: RUNNING, Message: 
+[36m[apify.google-search-scraper runId:GOWr4J65Val0vOQwL][0m -> 2026-02-08T23:50:59.270Z ACTOR: Pulling container image of build 7SQ7UrT5GX04y6g5S from registry.
+[36m[apify.google-search-scraper runId:GOWr4J65Val0vOQwL][0m -> 2026-02-08T23:50:59.272Z ACTOR: Creating container.
+[36m[apify.google-search-scraper runId:GOWr4J65Val0vOQwL][0m -> 2026-02-08T23:50:59.342Z ACTOR: Starting container.
+[36m[apify.google-search-scraper runId:GOWr4J65Val0vOQwL][0m -> 2026-02-08T23:50:59.343Z ACTOR: Running under "LIMITED_PERMISSIONS" permission level.
+[36m[apify.google-search-scraper runId:GOWr4J65Val0vOQwL][0m -> 2026-02-08T23:50:59.543Z Will run command: xvfb-run -a -s "-ac -screen 0 1920x1080x24+32 -nolisten tcp" /bin/sh -c node dist/src/main.js
+[36m[apify.google-search-scraper runId:GOWr4J65Val0vOQwL][0m -> 2026-02-08T23:51:00.134Z [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[36m[apify.google-search-scraper runId:GOWr4J65Val0vOQwL][0m -> 2026-02-08T23:51:00.311Z [32mINFO[39m  System info[90m {"apifyVersion":"3.5.1","apifyClientVersion":"2.18.0","crawleeVersion":"3.14.1","osType":"Linux","nodeVersion":"v20.20.0"}[39m
+[36m[apify.google-search-scraper runId:GOWr4J65Val0vOQwL][0m -> 2026-02-08T23:51:00.432Z [32mINFO[39m
+[36m[apify.google-search-scraper runId:GOWr4J65Val0vOQwL][0m -> 2026-02-08T23:51:00.434Z  _______  _______  _______  _______  _______ _________ _        _______
+[36m[apify.google-search-scraper runId:GOWr4J65Val0vOQwL][0m -> 2026-02-08T23:51:00.436Z (  ____ \(  ____ \(  ____ )(  ___  )(  ____ )\__   __/( (    /|(  ____ \
+[36m[apify.google-search-scraper runId:GOWr4J65Val0vOQwL][0m -> 2026-02-08T23:51:00.437Z | (    \/| (    \/| (    )|| (   ) || (    )|   ) (   |  \  ( || (    \/
+[36m[apify.google-search-scraper runId:GOWr4J65Val0vOQwL][0m -> 2026-02-08T23:51:00.439Z | (_____ | |      | (____)|| (___) || (____)|   | |   |   \ | || |
+[36m[apify.google-search-scraper runId:GOWr4J65Val0vOQwL][0m -> 2026-02-08T23:51:00.441Z (_____  )| |      |     __)|  ___  ||  _____)   | |   | (\ \) || | ____
+[36m[apify.google-search-scraper runId:GOWr4J65Val0vOQwL][0m -> 2026-02-08T23:51:00.443Z       ) || |      | (\ (   | (   ) || (         | |   | | \   || | \_  )
+[36m[apify.google-search-scraper runId:GOWr4J65Val0vOQwL][0m -> 2026-02-08T23:51:00.444Z /\____) || (____/\| ) \ \__| )   ( || )      ___) (___| )  \  || (___) |
+[36m[apify.google-search-scraper runId:GOWr4J65Val0vOQwL][0m -> 2026-02-08T23:51:00.446Z \_______)(_______/|/   \__/|/     \||/       \_______/|/    )_)(_______)
+[36m[apify.google-search-scraper runId:GOWr4J65Val0vOQwL][0m -> 2026-02-08T23:51:00.448Z
+[36m[apify.google-search-scraper runId:GOWr4J65Val0vOQwL][0m -> 2026-02-08T23:51:00.450Z  _______  _______  _______  _______  _        _______     _______  _______  _______
+[36m[apify.google-search-scraper runId:GOWr4J65Val0vOQwL][0m -> 2026-02-08T23:51:00.452Z (  ____ \(  ___  )(  ___  )(  ____ \( \      (  ____ \   (  ____ \(  ___  )(       )
+[36m[apify.google-search-scraper runId:GOWr4J65Val0vOQwL][0m -> 2026-02-08T23:51:00.453Z | (    \/| (   ) || (   ) || (    \/| (      | (    \/   | (    \/| (   ) || () () |
+[36m[apify.google-search-scraper runId:GOWr4J65Val0vOQwL][0m -> 2026-02-08T23:51:00.455Z | |      | |   | || |   | || |      | |      | (__       | |      | |   | || || || |
+[36m[apify.google-search-scraper runId:GOWr4J65Val0vOQwL][0m -> 2026-02-08T23:51:00.457Z | | ____ | |   | || |   | || | ____ | |      |  __)      | |      | |   | || |(_)| |
+[36m[apify.google-search-scraper runId:GOWr4J65Val0vOQwL][0m -> 2026-02-08T23:51:00.459Z | | \_  )| |   | || |   | || | \_  )| |      | (         | |      | |   | || |   | |
+[36m[apify.google-search-scraper runId:GOWr4J65Val0vOQwL][0m -> 2026-02-08T23:51:00.461Z | (___) || (___) || (___) || (___) || (____/\| (____/\ _ | (____/\| (___) || )   ( |
+[36m[apify.google-search-scraper runId:GOWr4J65Val0vOQwL][0m -> 2026-02-08T23:51:00.463Z (_______)(_______)(_______)(_______)(_______/(_______/(_)(_______/(_______)|/     \|
+[36m[apify.google-search-scraper runId:GOWr4J65Val0vOQwL][0m -> 2026-02-08T23:51:00.465Z
+[36m[apify.google-search-scraper runId:GOWr4J65Val0vOQwL][0m -> 2026-02-08T23:51:00.466Z [32mINFO[39m [33m CheerioCrawler:[39m Using the old RequestQueue implementation without request locking.
+[36m[apify.google-search-scraper runId:GOWr4J65Val0vOQwL][0m -> 2026-02-08T23:51:00.639Z [32mINFO[39m [33m CheerioCrawler:[39m Starting the crawler.
+[36m[apify.google-search-scraper runId:GOWr4J65Val0vOQwL][0m -> Status: RUNNING, Message: Starting the crawler.
+[36m[apify.google-search-scraper runId:GOWr4J65Val0vOQwL][0m -> 2026-02-08T23:51:00.701Z [32mINFO[39m  Querying "top ux design agencies New York" page 1 ...
+[36m[apify.google-search-scraper runId:GOWr4J65Val0vOQwL][0m -> 2026-02-08T23:51:11.633Z [32mINFO[39m  Not enqueueing next page for query "top ux design agencies New York" because the "maxPagesPerQuery" limit has been reached.
+[36m[apify.google-search-scraper runId:GOWr4J65Val0vOQwL][0m -> 2026-02-08T23:51:11.749Z [32mINFO[39m  Finished query "top ux design agencies New York" page 1 (organicResults: 8, paidResults: 0, paidProducts: 0, relatedQueries: 10, aiOverview: 0)
+[36m[apify.google-search-scraper runId:GOWr4J65Val0vOQwL][0m -> Status: RUNNING, Message: Processed 0 queries on 0 pages. Extracted: 0 organicResults, 0 paidResults, 0 paidProducts, 0 relatedQueries, 0 aiOverviews, 0 aiModeResults, 0 perplexitySearchResults, 0 chatGptSearchResults, 0 itemsPushed
+[36m[apify.google-search-scraper runId:GOWr4J65Val0vOQwL][0m -> 2026-02-08T23:51:11.859Z [32mINFO[39m [33m CheerioCrawler:[39m All requests from the queue have been processed, the crawler will shut down.
+[36m[apify.google-search-scraper runId:GOWr4J65Val0vOQwL][0m -> 2026-02-08T23:51:12.003Z [32mINFO[39m [33m CheerioCrawler:[39m Final request statistics:[90m {"requestsFinished":1,"requestsFailed":0,"retryHistogram":[1],"requestAvgFailedDurationMillis":null,"requestAvgFinishedDurationMillis":11083,"requestsFinishedPerMinute":5,"requestsFailedPerMinute":0,"requestTotalDurationMillis":11083,"requestsTotal":1,"crawlerRuntimeMillis":11539}[39m
+[36m[apify.google-search-scraper runId:GOWr4J65Val0vOQwL][0m -> 2026-02-08T23:51:12.005Z [32mINFO[39m [33m CheerioCrawler:[39m Finished! Total 1 requests: 1 succeeded, 0 failed.[90m {"terminal":true}[39m
+[36m[apify.google-search-scraper runId:GOWr4J65Val0vOQwL][0m -> 2026-02-08T23:51:12.018Z [32mINFO[39m  Scraping is finished, see you next time.
+[36m[apify.google-search-scraper runId:GOWr4J65Val0vOQwL][0m -> 2026-02-08T23:51:12.019Z
+[36m[apify.google-search-scraper runId:GOWr4J65Val0vOQwL][0m -> 2026-02-08T23:51:12.022Z Full results in JSON format:
+[36m[apify.google-search-scraper runId:GOWr4J65Val0vOQwL][0m -> 2026-02-08T23:51:12.023Z https://api.apify.com/v2/datasets/lPlS0Gv35yrg4B8Wv/items?format=json
+[36m[apify.google-search-scraper runId:GOWr4J65Val0vOQwL][0m -> 2026-02-08T23:51:12.025Z
+[36m[apify.google-search-scraper runId:GOWr4J65Val0vOQwL][0m -> 2026-02-08T23:51:12.027Z Simplified organic results in JSON format:
+[36m[apify.google-search-scraper runId:GOWr4J65Val0vOQwL][0m -> 2026-02-08T23:51:12.029Z https://api.apify.com/v2/datasets/lPlS0Gv35yrg4B8Wv/items?format=json&fields=searchQuery,organicResults&unwind=organicResults
+[36m[apify.google-search-scraper runId:GOWr4J65Val0vOQwL][0m -> 2026-02-08T23:51:12.031Z [32mINFO[39m  [Status message]: Processed 1 queries on 1 pages. Extracted: 8 organicResults, 0 paidResults, 0 paidProducts, 10 relatedQueries, 0 aiOverviews, 0 aiModeResults, 0 perplexitySearchResults, 0 chatGptSearchResults, 1 itemsPushed
+[36m[apify.google-search-scraper runId:GOWr4J65Val0vOQwL][0m -> Status: SUCCEEDED, Message: Processed 1 queries on 1 pages. Extracted: 8 organicResults, 0 paidResults, 0 paidProducts, 10 relatedQueries, 0 aiOverviews, 0 aiModeResults, 0 perplexitySearchResults, 0 chatGptSearchResults, 1 itemsPushed
+[36m[apify.google-search-scraper runId:5IvWo9mVJAYzfBzB5][0m -> Status: RUNNING, Message: 
+[36m[apify.google-search-scraper runId:5IvWo9mVJAYzfBzB5][0m -> 2026-02-08T23:51:24.448Z ACTOR: Pulling container image of build 7SQ7UrT5GX04y6g5S from registry.
+[36m[apify.google-search-scraper runId:5IvWo9mVJAYzfBzB5][0m -> 2026-02-08T23:51:24.450Z ACTOR: Creating container.
+[36m[apify.google-search-scraper runId:5IvWo9mVJAYzfBzB5][0m -> 2026-02-08T23:51:24.497Z ACTOR: Starting container.
+[36m[apify.google-search-scraper runId:5IvWo9mVJAYzfBzB5][0m -> 2026-02-08T23:51:24.498Z ACTOR: Running under "LIMITED_PERMISSIONS" permission level.
+[36m[apify.google-search-scraper runId:5IvWo9mVJAYzfBzB5][0m -> 2026-02-08T23:51:24.732Z Will run command: xvfb-run -a -s "-ac -screen 0 1920x1080x24+32 -nolisten tcp" /bin/sh -c node dist/src/main.js
+[36m[apify.google-search-scraper runId:5IvWo9mVJAYzfBzB5][0m -> 2026-02-08T23:51:25.443Z [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[36m[apify.google-search-scraper runId:5IvWo9mVJAYzfBzB5][0m -> 2026-02-08T23:51:25.649Z [32mINFO[39m  System info[90m {"apifyVersion":"3.5.1","apifyClientVersion":"2.18.0","crawleeVersion":"3.14.1","osType":"Linux","nodeVersion":"v20.20.0"}[39m
+[36m[apify.google-search-scraper runId:5IvWo9mVJAYzfBzB5][0m -> 2026-02-08T23:51:25.798Z [32mINFO[39m
+[36m[apify.google-search-scraper runId:5IvWo9mVJAYzfBzB5][0m -> 2026-02-08T23:51:25.801Z  _______  _______  _______  _______  _______ _________ _        _______
+[36m[apify.google-search-scraper runId:5IvWo9mVJAYzfBzB5][0m -> 2026-02-08T23:51:25.802Z (  ____ \(  ____ \(  ____ )(  ___  )(  ____ )\__   __/( (    /|(  ____ \
+[36m[apify.google-search-scraper runId:5IvWo9mVJAYzfBzB5][0m -> 2026-02-08T23:51:25.803Z | (    \/| (    \/| (    )|| (   ) || (    )|   ) (   |  \  ( || (    \/
+[36m[apify.google-search-scraper runId:5IvWo9mVJAYzfBzB5][0m -> 2026-02-08T23:51:25.804Z | (_____ | |      | (____)|| (___) || (____)|   | |   |   \ | || |
+[36m[apify.google-search-scraper runId:5IvWo9mVJAYzfBzB5][0m -> 2026-02-08T23:51:25.806Z (_____  )| |      |     __)|  ___  ||  _____)   | |   | (\ \) || | ____
+[36m[apify.google-search-scraper runId:5IvWo9mVJAYzfBzB5][0m -> 2026-02-08T23:51:25.807Z       ) || |      | (\ (   | (   ) || (         | |   | | \   || | \_  )
+[36m[apify.google-search-scraper runId:5IvWo9mVJAYzfBzB5][0m -> 2026-02-08T23:51:25.808Z /\____) || (____/\| ) \ \__| )   ( || )      ___) (___| )  \  || (___) |
+[36m[apify.google-search-scraper runId:5IvWo9mVJAYzfBzB5][0m -> 2026-02-08T23:51:25.809Z \_______)(_______/|/   \__/|/     \||/       \_______/|/    )_)(_______)
+[36m[apify.google-search-scraper runId:5IvWo9mVJAYzfBzB5][0m -> 2026-02-08T23:51:25.810Z
+[36m[apify.google-search-scraper runId:5IvWo9mVJAYzfBzB5][0m -> 2026-02-08T23:51:25.811Z  _______  _______  _______  _______  _        _______     _______  _______  _______
+[36m[apify.google-search-scraper runId:5IvWo9mVJAYzfBzB5][0m -> 2026-02-08T23:51:25.812Z (  ____ \(  ___  )(  ___  )(  ____ \( \      (  ____ \   (  ____ \(  ___  )(       )
+[36m[apify.google-search-scraper runId:5IvWo9mVJAYzfBzB5][0m -> 2026-02-08T23:51:25.813Z | (    \/| (   ) || (   ) || (    \/| (      | (    \/   | (    \/| (   ) || () () |
+[36m[apify.google-search-scraper runId:5IvWo9mVJAYzfBzB5][0m -> 2026-02-08T23:51:25.814Z | |      | |   | || |   | || |      | |      | (__       | |      | |   | || || || |
+[36m[apify.google-search-scraper runId:5IvWo9mVJAYzfBzB5][0m -> 2026-02-08T23:51:25.816Z | | ____ | |   | || |   | || | ____ | |      |  __)      | |      | |   | || |(_)| |
+[36m[apify.google-search-scraper runId:5IvWo9mVJAYzfBzB5][0m -> 2026-02-08T23:51:25.817Z | | \_  )| |   | || |   | || | \_  )| |      | (         | |      | |   | || |   | |
+[36m[apify.google-search-scraper runId:5IvWo9mVJAYzfBzB5][0m -> 2026-02-08T23:51:25.818Z | (___) || (___) || (___) || (___) || (____/\| (____/\ _ | (____/\| (___) || )   ( |
+[36m[apify.google-search-scraper runId:5IvWo9mVJAYzfBzB5][0m -> 2026-02-08T23:51:25.821Z (_______)(_______)(_______)(_______)(_______/(_______/(_)(_______/(_______)|/     \|
+[36m[apify.google-search-scraper runId:5IvWo9mVJAYzfBzB5][0m -> 2026-02-08T23:51:25.822Z
+[36m[apify.google-search-scraper runId:5IvWo9mVJAYzfBzB5][0m -> 2026-02-08T23:51:25.829Z [32mINFO[39m [33m CheerioCrawler:[39m Using the old RequestQueue implementation without request locking.
+[36m[apify.google-search-scraper runId:5IvWo9mVJAYzfBzB5][0m -> 2026-02-08T23:51:26.334Z [32mINFO[39m [33m CheerioCrawler:[39m Starting the crawler.
+[36m[apify.google-search-scraper runId:5IvWo9mVJAYzfBzB5][0m -> Status: RUNNING, Message: Starting the crawler.
+[36m[apify.google-search-scraper runId:5IvWo9mVJAYzfBzB5][0m -> 2026-02-08T23:51:26.405Z [32mINFO[39m  Querying "top management consulting firms San Francisco" page 1 ...
+[36m[apify.google-search-scraper runId:5IvWo9mVJAYzfBzB5][0m -> 2026-02-08T23:51:29.495Z [32mINFO[39m  Not enqueueing next page for query "top management consulting firms San Francisco" because the "maxPagesPerQuery" limit has been reached.
+[36m[apify.google-search-scraper runId:5IvWo9mVJAYzfBzB5][0m -> 2026-02-08T23:51:29.600Z [32mINFO[39m  Finished query "top management consulting firms San Francisco" page 1 (organicResults: 11, paidResults: 0, paidProducts: 0, relatedQueries: 16, aiOverview: 0)
+[36m[apify.google-search-scraper runId:5IvWo9mVJAYzfBzB5][0m -> 2026-02-08T23:51:29.680Z [32mINFO[39m [33m CheerioCrawler:[39m All requests from the queue have been processed, the crawler will shut down.
+[36m[apify.google-search-scraper runId:5IvWo9mVJAYzfBzB5][0m -> 2026-02-08T23:51:29.767Z [32mINFO[39m [33m CheerioCrawler:[39m Final request statistics:[90m {"requestsFinished":1,"requestsFailed":0,"retryHistogram":[1],"requestAvgFailedDurationMillis":null,"requestAvgFinishedDurationMillis":3229,"requestsFinishedPerMinute":15,"requestsFailedPerMinute":0,"requestTotalDurationMillis":3229,"requestsTotal":1,"crawlerRuntimeMillis":3938}[39m
+[36m[apify.google-search-scraper runId:5IvWo9mVJAYzfBzB5][0m -> 2026-02-08T23:51:29.768Z [32mINFO[39m [33m CheerioCrawler:[39m Finished! Total 1 requests: 1 succeeded, 0 failed.[90m {"terminal":true}[39m
+[36m[apify.google-search-scraper runId:5IvWo9mVJAYzfBzB5][0m -> 2026-02-08T23:51:29.788Z [32mINFO[39m  Scraping is finished, see you next time.
+[36m[apify.google-search-scraper runId:5IvWo9mVJAYzfBzB5][0m -> 2026-02-08T23:51:29.790Z
+[36m[apify.google-search-scraper runId:5IvWo9mVJAYzfBzB5][0m -> 2026-02-08T23:51:29.791Z Full results in JSON format:
+[36m[apify.google-search-scraper runId:5IvWo9mVJAYzfBzB5][0m -> 2026-02-08T23:51:29.792Z https://api.apify.com/v2/datasets/6AriewG0jY3c0PgaH/items?format=json
+[36m[apify.google-search-scraper runId:5IvWo9mVJAYzfBzB5][0m -> 2026-02-08T23:51:29.793Z
+[36m[apify.google-search-scraper runId:5IvWo9mVJAYzfBzB5][0m -> 2026-02-08T23:51:29.794Z Simplified organic results in JSON format:
+[36m[apify.google-search-scraper runId:5IvWo9mVJAYzfBzB5][0m -> 2026-02-08T23:51:29.794Z https://api.apify.com/v2/datasets/6AriewG0jY3c0PgaH/items?format=json&fields=searchQuery,organicResults&unwind=organicResults
+[36m[apify.google-search-scraper runId:5IvWo9mVJAYzfBzB5][0m -> 2026-02-08T23:51:29.799Z [32mINFO[39m  [Status message]: Processed 1 queries on 1 pages. Extracted: 11 organicResults, 0 paidResults, 0 paidProducts, 16 relatedQueries, 0 aiOverviews, 0 aiModeResults, 0 perplexitySearchResults, 0 chatGptSearchResults, 1 itemsPushed
+[36m[apify.google-search-scraper runId:5IvWo9mVJAYzfBzB5][0m -> Status: SUCCEEDED, Message: Processed 1 queries on 1 pages. Extracted: 11 organicResults, 0 paidResults, 0 paidProducts, 16 relatedQueries, 0 aiOverviews, 0 aiModeResults, 0 perplexitySearchResults, 0 chatGptSearchResults, 1 itemsPushed
+[36m[apify.google-search-scraper runId:AyFnijcTdAQy9a3Hy][0m -> Status: RUNNING, Message: 
+[36m[apify.google-search-scraper runId:AyFnijcTdAQy9a3Hy][0m -> 2026-02-08T23:51:43.704Z ACTOR: Pulling container image of build 7SQ7UrT5GX04y6g5S from registry.
+[36m[apify.google-search-scraper runId:AyFnijcTdAQy9a3Hy][0m -> 2026-02-08T23:51:43.706Z ACTOR: Creating container.
+[36m[apify.google-search-scraper runId:AyFnijcTdAQy9a3Hy][0m -> 2026-02-08T23:51:43.757Z ACTOR: Starting container.
+[36m[apify.google-search-scraper runId:AyFnijcTdAQy9a3Hy][0m -> 2026-02-08T23:51:43.759Z ACTOR: Running under "LIMITED_PERMISSIONS" permission level.
+[36m[apify.google-search-scraper runId:AyFnijcTdAQy9a3Hy][0m -> 2026-02-08T23:51:44.034Z Will run command: xvfb-run -a -s "-ac -screen 0 1920x1080x24+32 -nolisten tcp" /bin/sh -c node dist/src/main.js
+[36m[apify.google-search-scraper runId:AyFnijcTdAQy9a3Hy][0m -> 2026-02-08T23:51:45.001Z [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[36m[apify.google-search-scraper runId:AyFnijcTdAQy9a3Hy][0m -> 2026-02-08T23:51:45.225Z [32mINFO[39m  System info[90m {"apifyVersion":"3.5.1","apifyClientVersion":"2.18.0","crawleeVersion":"3.14.1","osType":"Linux","nodeVersion":"v20.20.0"}[39m
+[36m[apify.google-search-scraper runId:AyFnijcTdAQy9a3Hy][0m -> 2026-02-08T23:51:45.344Z [32mINFO[39m
+[36m[apify.google-search-scraper runId:AyFnijcTdAQy9a3Hy][0m -> 2026-02-08T23:51:45.346Z  _______  _______  _______  _______  _______ _________ _        _______
+[36m[apify.google-search-scraper runId:AyFnijcTdAQy9a3Hy][0m -> 2026-02-08T23:51:45.348Z (  ____ \(  ____ \(  ____ )(  ___  )(  ____ )\__   __/( (    /|(  ____ \
+[36m[apify.google-search-scraper runId:AyFnijcTdAQy9a3Hy][0m -> 2026-02-08T23:51:45.350Z | (    \/| (    \/| (    )|| (   ) || (    )|   ) (   |  \  ( || (    \/
+[36m[apify.google-search-scraper runId:AyFnijcTdAQy9a3Hy][0m -> 2026-02-08T23:51:45.352Z | (_____ | |      | (____)|| (___) || (____)|   | |   |   \ | || |
+[36m[apify.google-search-scraper runId:AyFnijcTdAQy9a3Hy][0m -> 2026-02-08T23:51:45.354Z (_____  )| |      |     __)|  ___  ||  _____)   | |   | (\ \) || | ____
+[36m[apify.google-search-scraper runId:AyFnijcTdAQy9a3Hy][0m -> 2026-02-08T23:51:45.356Z       ) || |      | (\ (   | (   ) || (         | |   | | \   || | \_  )
+[36m[apify.google-search-scraper runId:AyFnijcTdAQy9a3Hy][0m -> 2026-02-08T23:51:45.358Z /\____) || (____/\| ) \ \__| )   ( || )      ___) (___| )  \  || (___) |
+[36m[apify.google-search-scraper runId:AyFnijcTdAQy9a3Hy][0m -> 2026-02-08T23:51:45.360Z \_______)(_______/|/   \__/|/     \||/       \_______/|/    )_)(_______)
+[36m[apify.google-search-scraper runId:AyFnijcTdAQy9a3Hy][0m -> 2026-02-08T23:51:45.362Z
+[36m[apify.google-search-scraper runId:AyFnijcTdAQy9a3Hy][0m -> 2026-02-08T23:51:45.364Z  _______  _______  _______  _______  _        _______     _______  _______  _______
+[36m[apify.google-search-scraper runId:AyFnijcTdAQy9a3Hy][0m -> 2026-02-08T23:51:45.366Z (  ____ \(  ___  )(  ___  )(  ____ \( \      (  ____ \   (  ____ \(  ___  )(       )
+[36m[apify.google-search-scraper runId:AyFnijcTdAQy9a3Hy][0m -> 2026-02-08T23:51:45.368Z | (    \/| (   ) || (   ) || (    \/| (      | (    \/   | (    \/| (   ) || () () |
+[36m[apify.google-search-scraper runId:AyFnijcTdAQy9a3Hy][0m -> 2026-02-08T23:51:45.370Z | |      | |   | || |   | || |      | |      | (__       | |      | |   | || || || |
+[36m[apify.google-search-scraper runId:AyFnijcTdAQy9a3Hy][0m -> 2026-02-08T23:51:45.372Z | | ____ | |   | || |   | || | ____ | |      |  __)      | |      | |   | || |(_)| |
+[36m[apify.google-search-scraper runId:AyFnijcTdAQy9a3Hy][0m -> 2026-02-08T23:51:45.373Z | | \_  )| |   | || |   | || | \_  )| |      | (         | |      | |   | || |   | |
+[36m[apify.google-search-scraper runId:AyFnijcTdAQy9a3Hy][0m -> 2026-02-08T23:51:45.375Z | (___) || (___) || (___) || (___) || (____/\| (____/\ _ | (____/\| (___) || )   ( |
+[36m[apify.google-search-scraper runId:AyFnijcTdAQy9a3Hy][0m -> 2026-02-08T23:51:45.377Z (_______)(_______)(_______)(_______)(_______/(_______/(_)(_______/(_______)|/     \|
+[36m[apify.google-search-scraper runId:AyFnijcTdAQy9a3Hy][0m -> 2026-02-08T23:51:45.379Z
+[36m[apify.google-search-scraper runId:AyFnijcTdAQy9a3Hy][0m -> 2026-02-08T23:51:45.381Z [32mINFO[39m [33m CheerioCrawler:[39m Using the old RequestQueue implementation without request locking.
+[36m[apify.google-search-scraper runId:AyFnijcTdAQy9a3Hy][0m -> 2026-02-08T23:51:45.557Z [32mINFO[39m [33m CheerioCrawler:[39m Starting the crawler.
+[36m[apify.google-search-scraper runId:AyFnijcTdAQy9a3Hy][0m -> Status: RUNNING, Message: Starting the crawler.
+[36m[apify.google-search-scraper runId:AyFnijcTdAQy9a3Hy][0m -> 2026-02-08T23:51:45.632Z [32mINFO[39m  Querying "top mobile app development companies Seattle" page 1 ...
+[36m[apify.google-search-scraper runId:AyFnijcTdAQy9a3Hy][0m -> 2026-02-08T23:51:47.761Z [32mINFO[39m  Not enqueueing next page for query "top mobile app development companies Seattle" because the "maxPagesPerQuery" limit has been reached.
+[36m[apify.google-search-scraper runId:AyFnijcTdAQy9a3Hy][0m -> 2026-02-08T23:51:47.852Z [32mINFO[39m  Finished query "top mobile app development companies Seattle" page 1 (organicResults: 9, paidResults: 0, paidProducts: 0, relatedQueries: 4, aiOverview: 0)
+[36m[apify.google-search-scraper runId:AyFnijcTdAQy9a3Hy][0m -> 2026-02-08T23:51:47.916Z [32mINFO[39m [33m CheerioCrawler:[39m All requests from the queue have been processed, the crawler will shut down.
+[36m[apify.google-search-scraper runId:AyFnijcTdAQy9a3Hy][0m -> 2026-02-08T23:51:48.022Z [32mINFO[39m [33m CheerioCrawler:[39m Final request statistics:[90m {"requestsFinished":1,"requestsFailed":0,"retryHistogram":[1],"requestAvgFailedDurationMillis":null,"requestAvgFinishedDurationMillis":2250,"requestsFinishedPerMinute":23,"requestsFailedPerMinute":0,"requestTotalDurationMillis":2250,"requestsTotal":1,"crawlerRuntimeMillis":2642}[39m
+[36m[apify.google-search-scraper runId:AyFnijcTdAQy9a3Hy][0m -> 2026-02-08T23:51:48.025Z [32mINFO[39m [33m CheerioCrawler:[39m Finished! Total 1 requests: 1 succeeded, 0 failed.[90m {"terminal":true}[39m
+[36m[apify.google-search-scraper runId:AyFnijcTdAQy9a3Hy][0m -> 2026-02-08T23:51:48.041Z [32mINFO[39m  Scraping is finished, see you next time.
+[36m[apify.google-search-scraper runId:AyFnijcTdAQy9a3Hy][0m -> 2026-02-08T23:51:48.043Z
+[36m[apify.google-search-scraper runId:AyFnijcTdAQy9a3Hy][0m -> 2026-02-08T23:51:48.045Z Full results in JSON format:
+[36m[apify.google-search-scraper runId:AyFnijcTdAQy9a3Hy][0m -> 2026-02-08T23:51:48.047Z https://api.apify.com/v2/datasets/RlD0i5vO6K39XUOec/items?format=json
+[36m[apify.google-search-scraper runId:AyFnijcTdAQy9a3Hy][0m -> 2026-02-08T23:51:48.049Z
+[36m[apify.google-search-scraper runId:AyFnijcTdAQy9a3Hy][0m -> 2026-02-08T23:51:48.051Z Simplified organic results in JSON format:
+[36m[apify.google-search-scraper runId:AyFnijcTdAQy9a3Hy][0m -> 2026-02-08T23:51:48.053Z https://api.apify.com/v2/datasets/RlD0i5vO6K39XUOec/items?format=json&fields=searchQuery,organicResults&unwind=organicResults
+[36m[apify.google-search-scraper runId:AyFnijcTdAQy9a3Hy][0m -> 2026-02-08T23:51:48.054Z [32mINFO[39m  [Status message]: Processed 1 queries on 1 pages. Extracted: 9 organicResults, 0 paidResults, 0 paidProducts, 4 relatedQueries, 0 aiOverviews, 0 aiModeResults, 0 perplexitySearchResults, 0 chatGptSearchResults, 1 itemsPushed
+[36m[apify.google-search-scraper runId:AyFnijcTdAQy9a3Hy][0m -> Status: SUCCEEDED, Message: Processed 1 queries on 1 pages. Extracted: 9 organicResults, 0 paidResults, 0 paidProducts, 4 relatedQueries, 0 aiOverviews, 0 aiModeResults, 0 perplexitySearchResults, 0 chatGptSearchResults, 1 itemsPushed
+[36m[apify.google-search-scraper runId:NKuYaaf4AYMrmeIb0][0m -> Status: RUNNING, Message: 
+[36m[apify.google-search-scraper runId:NKuYaaf4AYMrmeIb0][0m -> 2026-02-08T23:51:55.777Z ACTOR: Pulling container image of build 7SQ7UrT5GX04y6g5S from registry.
+[36m[apify.google-search-scraper runId:NKuYaaf4AYMrmeIb0][0m -> 2026-02-08T23:51:55.779Z ACTOR: Creating container.
+[36m[apify.google-search-scraper runId:NKuYaaf4AYMrmeIb0][0m -> 2026-02-08T23:51:55.924Z ACTOR: Starting container.
+[36m[apify.google-search-scraper runId:NKuYaaf4AYMrmeIb0][0m -> 2026-02-08T23:51:55.926Z ACTOR: Running under "LIMITED_PERMISSIONS" permission level.
+[36m[apify.google-search-scraper runId:NKuYaaf4AYMrmeIb0][0m -> 2026-02-08T23:51:56.155Z Will run command: xvfb-run -a -s "-ac -screen 0 1920x1080x24+32 -nolisten tcp" /bin/sh -c node dist/src/main.js
+[36m[apify.google-search-scraper runId:NKuYaaf4AYMrmeIb0][0m -> 2026-02-08T23:51:57.098Z [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[36m[apify.google-search-scraper runId:NKuYaaf4AYMrmeIb0][0m -> 2026-02-08T23:51:57.272Z [32mINFO[39m  System info[90m {"apifyVersion":"3.5.1","apifyClientVersion":"2.18.0","crawleeVersion":"3.14.1","osType":"Linux","nodeVersion":"v20.20.0"}[39m
+[36m[apify.google-search-scraper runId:NKuYaaf4AYMrmeIb0][0m -> 2026-02-08T23:51:57.413Z [32mINFO[39m
+[36m[apify.google-search-scraper runId:NKuYaaf4AYMrmeIb0][0m -> 2026-02-08T23:51:57.415Z  _______  _______  _______  _______  _______ _________ _        _______
+[36m[apify.google-search-scraper runId:NKuYaaf4AYMrmeIb0][0m -> 2026-02-08T23:51:57.426Z (  ____ \(  ____ \(  ____ )(  ___  )(  ____ )\__   __/( (    /|(  ____ \
+[36m[apify.google-search-scraper runId:NKuYaaf4AYMrmeIb0][0m -> 2026-02-08T23:51:57.428Z | (    \/| (    \/| (    )|| (   ) || (    )|   ) (   |  \  ( || (    \/
+[36m[apify.google-search-scraper runId:NKuYaaf4AYMrmeIb0][0m -> 2026-02-08T23:51:57.430Z | (_____ | |      | (____)|| (___) || (____)|   | |   |   \ | || |
+[36m[apify.google-search-scraper runId:NKuYaaf4AYMrmeIb0][0m -> 2026-02-08T23:51:57.432Z (_____  )| |      |     __)|  ___  ||  _____)   | |   | (\ \) || | ____
+[36m[apify.google-search-scraper runId:NKuYaaf4AYMrmeIb0][0m -> 2026-02-08T23:51:57.434Z       ) || |      | (\ (   | (   ) || (         | |   | | \   || | \_  )
+[36m[apify.google-search-scraper runId:NKuYaaf4AYMrmeIb0][0m -> 2026-02-08T23:51:57.436Z /\____) || (____/\| ) \ \__| )   ( || )      ___) (___| )  \  || (___) |
+[36m[apify.google-search-scraper runId:NKuYaaf4AYMrmeIb0][0m -> 2026-02-08T23:51:57.437Z \_______)(_______/|/   \__/|/     \||/       \_______/|/    )_)(_______)
+[36m[apify.google-search-scraper runId:NKuYaaf4AYMrmeIb0][0m -> 2026-02-08T23:51:57.439Z
+[36m[apify.google-search-scraper runId:NKuYaaf4AYMrmeIb0][0m -> 2026-02-08T23:51:57.441Z  _______  _______  _______  _______  _        _______     _______  _______  _______
+[36m[apify.google-search-scraper runId:NKuYaaf4AYMrmeIb0][0m -> 2026-02-08T23:51:57.443Z (  ____ \(  ___  )(  ___  )(  ____ \( \      (  ____ \   (  ____ \(  ___  )(       )
+[36m[apify.google-search-scraper runId:NKuYaaf4AYMrmeIb0][0m -> 2026-02-08T23:51:57.445Z | (    \/| (   ) || (   ) || (    \/| (      | (    \/   | (    \/| (   ) || () () |
+[36m[apify.google-search-scraper runId:NKuYaaf4AYMrmeIb0][0m -> 2026-02-08T23:51:57.447Z | |      | |   | || |   | || |      | |      | (__       | |      | |   | || || || |
+[36m[apify.google-search-scraper runId:NKuYaaf4AYMrmeIb0][0m -> 2026-02-08T23:51:57.449Z | | ____ | |   | || |   | || | ____ | |      |  __)      | |      | |   | || |(_)| |
+[36m[apify.google-search-scraper runId:NKuYaaf4AYMrmeIb0][0m -> 2026-02-08T23:51:57.450Z | | \_  )| |   | || |   | || | \_  )| |      | (         | |      | |   | || |   | |
+[36m[apify.google-search-scraper runId:NKuYaaf4AYMrmeIb0][0m -> 2026-02-08T23:51:57.452Z | (___) || (___) || (___) || (___) || (____/\| (____/\ _ | (____/\| (___) || )   ( |
+[36m[apify.google-search-scraper runId:NKuYaaf4AYMrmeIb0][0m -> 2026-02-08T23:51:57.454Z (_______)(_______)(_______)(_______)(_______/(_______/(_)(_______/(_______)|/     \|
+[36m[apify.google-search-scraper runId:NKuYaaf4AYMrmeIb0][0m -> 2026-02-08T23:51:57.456Z
+[36m[apify.google-search-scraper runId:NKuYaaf4AYMrmeIb0][0m -> 2026-02-08T23:51:57.458Z [32mINFO[39m [33m CheerioCrawler:[39m Using the old RequestQueue implementation without request locking.
+[36m[apify.google-search-scraper runId:NKuYaaf4AYMrmeIb0][0m -> 2026-02-08T23:51:57.670Z [32mINFO[39m [33m CheerioCrawler:[39m Starting the crawler.
+[36m[apify.google-search-scraper runId:NKuYaaf4AYMrmeIb0][0m -> Status: RUNNING, Message: Starting the crawler.
+[36m[apify.google-search-scraper runId:NKuYaaf4AYMrmeIb0][0m -> 2026-02-08T23:51:57.731Z [32mINFO[39m  Querying "top branding agencies Austin" page 1 ...
+[36m[apify.google-search-scraper runId:NKuYaaf4AYMrmeIb0][0m -> 2026-02-08T23:52:04.681Z [32mINFO[39m  Not enqueueing next page for query "top branding agencies Austin" because the "maxPagesPerQuery" limit has been reached.
+[36m[apify.google-search-scraper runId:NKuYaaf4AYMrmeIb0][0m -> 2026-02-08T23:52:04.779Z [32mINFO[39m  Finished query "top branding agencies Austin" page 1 (organicResults: 10, paidResults: 0, paidProducts: 0, relatedQueries: 16, aiOverview: 1)
+[36m[apify.google-search-scraper runId:NKuYaaf4AYMrmeIb0][0m -> 2026-02-08T23:52:04.886Z [32mINFO[39m [33m CheerioCrawler:[39m All requests from the queue have been processed, the crawler will shut down.
+[36m[apify.google-search-scraper runId:NKuYaaf4AYMrmeIb0][0m -> 2026-02-08T23:52:04.960Z [32mINFO[39m [33m CheerioCrawler:[39m Final request statistics:[90m {"requestsFinished":1,"requestsFailed":0,"retryHistogram":[1],"requestAvgFailedDurationMillis":null,"requestAvgFinishedDurationMillis":7084,"requestsFinishedPerMinute":8,"requestsFailedPerMinute":0,"requestTotalDurationMillis":7084,"requestsTotal":1,"crawlerRuntimeMillis":7512}[39m
+[36m[apify.google-search-scraper runId:NKuYaaf4AYMrmeIb0][0m -> 2026-02-08T23:52:04.962Z [32mINFO[39m [33m CheerioCrawler:[39m Finished! Total 1 requests: 1 succeeded, 0 failed.[90m {"terminal":true}[39m
+[36m[apify.google-search-scraper runId:NKuYaaf4AYMrmeIb0][0m -> 2026-02-08T23:52:04.986Z [32mINFO[39m  Scraping is finished, see you next time.
+[36m[apify.google-search-scraper runId:NKuYaaf4AYMrmeIb0][0m -> 2026-02-08T23:52:04.988Z
+[36m[apify.google-search-scraper runId:NKuYaaf4AYMrmeIb0][0m -> 2026-02-08T23:52:04.990Z Full results in JSON format:
+[36m[apify.google-search-scraper runId:NKuYaaf4AYMrmeIb0][0m -> 2026-02-08T23:52:04.992Z https://api.apify.com/v2/datasets/PpyBlKMZvzeI9R2Wb/items?format=json
+[36m[apify.google-search-scraper runId:NKuYaaf4AYMrmeIb0][0m -> 2026-02-08T23:52:04.994Z
+[36m[apify.google-search-scraper runId:NKuYaaf4AYMrmeIb0][0m -> Status: RUNNING, Message: Finished! Total 1 requests: 1 succeeded, 0 failed.
+[36m[apify.google-search-scraper runId:NKuYaaf4AYMrmeIb0][0m -> 2026-02-08T23:52:04.996Z Simplified organic results in JSON format:
+[36m[apify.google-search-scraper runId:NKuYaaf4AYMrmeIb0][0m -> 2026-02-08T23:52:04.998Z https://api.apify.com/v2/datasets/PpyBlKMZvzeI9R2Wb/items?format=json&fields=searchQuery,organicResults&unwind=organicResults
+[36m[apify.google-search-scraper runId:NKuYaaf4AYMrmeIb0][0m -> 2026-02-08T23:52:05.055Z [32mINFO[39m  [Status message]: Processed 1 queries on 1 pages. Extracted: 10 organicResults, 0 paidResults, 0 paidProducts, 16 relatedQueries, 1 aiOverviews, 0 aiModeResults, 0 perplexitySearchResults, 0 chatGptSearchResults, 1 itemsPushed
+[36m[apify.google-search-scraper runId:DVOZ3gmPiaMzSDZVA][0m -> Status: RUNNING, Message: 
+[36m[apify.google-search-scraper runId:DVOZ3gmPiaMzSDZVA][0m -> 2026-02-08T23:52:17.241Z ACTOR: Pulling container image of build 7SQ7UrT5GX04y6g5S from registry.
+[36m[apify.google-search-scraper runId:DVOZ3gmPiaMzSDZVA][0m -> 2026-02-08T23:52:17.243Z ACTOR: Creating container.
+[36m[apify.google-search-scraper runId:DVOZ3gmPiaMzSDZVA][0m -> 2026-02-08T23:52:17.329Z ACTOR: Starting container.
+[36m[apify.google-search-scraper runId:DVOZ3gmPiaMzSDZVA][0m -> 2026-02-08T23:52:17.331Z ACTOR: Running under "LIMITED_PERMISSIONS" permission level.
+[36m[apify.google-search-scraper runId:DVOZ3gmPiaMzSDZVA][0m -> 2026-02-08T23:52:17.548Z Will run command: xvfb-run -a -s "-ac -screen 0 1920x1080x24+32 -nolisten tcp" /bin/sh -c node dist/src/main.js
+[36m[apify.google-search-scraper runId:DVOZ3gmPiaMzSDZVA][0m -> 2026-02-08T23:52:18.209Z [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[36m[apify.google-search-scraper runId:DVOZ3gmPiaMzSDZVA][0m -> 2026-02-08T23:52:18.375Z [32mINFO[39m  System info[90m {"apifyVersion":"3.5.1","apifyClientVersion":"2.18.0","crawleeVersion":"3.14.1","osType":"Linux","nodeVersion":"v20.20.0"}[39m
+[36m[apify.google-search-scraper runId:DVOZ3gmPiaMzSDZVA][0m -> 2026-02-08T23:52:18.521Z [32mINFO[39m
+[36m[apify.google-search-scraper runId:DVOZ3gmPiaMzSDZVA][0m -> 2026-02-08T23:52:18.523Z  _______  _______  _______  _______  _______ _________ _        _______
+[36m[apify.google-search-scraper runId:DVOZ3gmPiaMzSDZVA][0m -> 2026-02-08T23:52:18.525Z (  ____ \(  ____ \(  ____ )(  ___  )(  ____ )\__   __/( (    /|(  ____ \
+[36m[apify.google-search-scraper runId:DVOZ3gmPiaMzSDZVA][0m -> 2026-02-08T23:52:18.527Z | (    \/| (    \/| (    )|| (   ) || (    )|   ) (   |  \  ( || (    \/
+[36m[apify.google-search-scraper runId:DVOZ3gmPiaMzSDZVA][0m -> 2026-02-08T23:52:18.529Z | (_____ | |      | (____)|| (___) || (____)|   | |   |   \ | || |
+[36m[apify.google-search-scraper runId:DVOZ3gmPiaMzSDZVA][0m -> 2026-02-08T23:52:18.531Z (_____  )| |      |     __)|  ___  ||  _____)   | |   | (\ \) || | ____
+[36m[apify.google-search-scraper runId:DVOZ3gmPiaMzSDZVA][0m -> 2026-02-08T23:52:18.533Z       ) || |      | (\ (   | (   ) || (         | |   | | \   || | \_  )
+[36m[apify.google-search-scraper runId:DVOZ3gmPiaMzSDZVA][0m -> 2026-02-08T23:52:18.534Z /\____) || (____/\| ) \ \__| )   ( || )      ___) (___| )  \  || (___) |
+[36m[apify.google-search-scraper runId:DVOZ3gmPiaMzSDZVA][0m -> 2026-02-08T23:52:18.536Z \_______)(_______/|/   \__/|/     \||/       \_______/|/    )_)(_______)
+[36m[apify.google-search-scraper runId:DVOZ3gmPiaMzSDZVA][0m -> 2026-02-08T23:52:18.538Z
+[36m[apify.google-search-scraper runId:DVOZ3gmPiaMzSDZVA][0m -> 2026-02-08T23:52:18.540Z  _______  _______  _______  _______  _        _______     _______  _______  _______
+[36m[apify.google-search-scraper runId:DVOZ3gmPiaMzSDZVA][0m -> 2026-02-08T23:52:18.542Z (  ____ \(  ___  )(  ___  )(  ____ \( \      (  ____ \   (  ____ \(  ___  )(       )
+[36m[apify.google-search-scraper runId:DVOZ3gmPiaMzSDZVA][0m -> 2026-02-08T23:52:18.544Z | (    \/| (   ) || (   ) || (    \/| (      | (    \/   | (    \/| (   ) || () () |
+[36m[apify.google-search-scraper runId:DVOZ3gmPiaMzSDZVA][0m -> 2026-02-08T23:52:18.545Z | |      | |   | || |   | || |      | |      | (__       | |      | |   | || || || |
+[36m[apify.google-search-scraper runId:DVOZ3gmPiaMzSDZVA][0m -> 2026-02-08T23:52:18.547Z | | ____ | |   | || |   | || | ____ | |      |  __)      | |      | |   | || |(_)| |
+[36m[apify.google-search-scraper runId:DVOZ3gmPiaMzSDZVA][0m -> 2026-02-08T23:52:18.549Z | | \_  )| |   | || |   | || | \_  )| |      | (         | |      | |   | || |   | |
+[36m[apify.google-search-scraper runId:DVOZ3gmPiaMzSDZVA][0m -> 2026-02-08T23:52:18.551Z | (___) || (___) || (___) || (___) || (____/\| (____/\ _ | (____/\| (___) || )   ( |
+[36m[apify.google-search-scraper runId:DVOZ3gmPiaMzSDZVA][0m -> 2026-02-08T23:52:18.552Z (_______)(_______)(_______)(_______)(_______/(_______/(_)(_______/(_______)|/     \|
+[36m[apify.google-search-scraper runId:DVOZ3gmPiaMzSDZVA][0m -> 2026-02-08T23:52:18.554Z
+[36m[apify.google-search-scraper runId:DVOZ3gmPiaMzSDZVA][0m -> 2026-02-08T23:52:18.558Z [32mINFO[39m [33m CheerioCrawler:[39m Using the old RequestQueue implementation without request locking.
+[36m[apify.google-search-scraper runId:DVOZ3gmPiaMzSDZVA][0m -> 2026-02-08T23:52:18.711Z [32mINFO[39m [33m CheerioCrawler:[39m Starting the crawler.
+[36m[apify.google-search-scraper runId:DVOZ3gmPiaMzSDZVA][0m -> Status: RUNNING, Message: Starting the crawler.
+[36m[apify.google-search-scraper runId:DVOZ3gmPiaMzSDZVA][0m -> 2026-02-08T23:52:18.765Z [32mINFO[39m  Querying "top management consulting firms Houston" page 1 ...
+[36m[apify.google-search-scraper runId:DVOZ3gmPiaMzSDZVA][0m -> 2026-02-08T23:52:25.616Z [32mINFO[39m  Not enqueueing next page for query "top management consulting firms Houston" because the "maxPagesPerQuery" limit has been reached.
+[36m[apify.google-search-scraper runId:DVOZ3gmPiaMzSDZVA][0m -> 2026-02-08T23:52:25.691Z [32mINFO[39m  Finished query "top management consulting firms Houston" page 1 (organicResults: 10, paidResults: 0, paidProducts: 0, relatedQueries: 22, aiOverview: 1)
+[36m[apify.google-search-scraper runId:DVOZ3gmPiaMzSDZVA][0m -> 2026-02-08T23:52:25.773Z [32mINFO[39m [33m CheerioCrawler:[39m All requests from the queue have been processed, the crawler will shut down.
+[36m[apify.google-search-scraper runId:DVOZ3gmPiaMzSDZVA][0m -> 2026-02-08T23:52:25.937Z [32mINFO[39m [33m CheerioCrawler:[39m Final request statistics:[90m {"requestsFinished":1,"requestsFailed":0,"retryHistogram":[1],"requestAvgFailedDurationMillis":null,"requestAvgFinishedDurationMillis":6973,"requestsFinishedPerMinute":8,"requestsFailedPerMinute":0,"requestTotalDurationMillis":6973,"requestsTotal":1,"crawlerRuntimeMillis":7380}[39m
+[36m[apify.google-search-scraper runId:DVOZ3gmPiaMzSDZVA][0m -> 2026-02-08T23:52:25.939Z [32mINFO[39m [33m CheerioCrawler:[39m Finished! Total 1 requests: 1 succeeded, 0 failed.[90m {"terminal":true}[39m
+[36m[apify.google-search-scraper runId:DVOZ3gmPiaMzSDZVA][0m -> 2026-02-08T23:52:25.952Z [32mINFO[39m  Scraping is finished, see you next time.
+[36m[apify.google-search-scraper runId:DVOZ3gmPiaMzSDZVA][0m -> 2026-02-08T23:52:25.954Z
+[36m[apify.google-search-scraper runId:DVOZ3gmPiaMzSDZVA][0m -> 2026-02-08T23:52:25.956Z Full results in JSON format:
+[36m[apify.google-search-scraper runId:DVOZ3gmPiaMzSDZVA][0m -> 2026-02-08T23:52:25.958Z https://api.apify.com/v2/datasets/a2XI6xVb2bQTWwOAW/items?format=json
+[36m[apify.google-search-scraper runId:DVOZ3gmPiaMzSDZVA][0m -> 2026-02-08T23:52:25.959Z
+[36m[apify.google-search-scraper runId:DVOZ3gmPiaMzSDZVA][0m -> 2026-02-08T23:52:25.961Z Simplified organic results in JSON format:
+[36m[apify.google-search-scraper runId:DVOZ3gmPiaMzSDZVA][0m -> 2026-02-08T23:52:25.963Z https://api.apify.com/v2/datasets/a2XI6xVb2bQTWwOAW/items?format=json&fields=searchQuery,organicResults&unwind=organicResults
+[36m[apify.google-search-scraper runId:DVOZ3gmPiaMzSDZVA][0m -> 2026-02-08T23:52:25.965Z [32mINFO[39m  [Status message]: Processed 1 queries on 1 pages. Extracted: 10 organicResults, 0 paidResults, 0 paidProducts, 22 relatedQueries, 1 aiOverviews, 0 aiModeResults, 0 perplexitySearchResults, 0 chatGptSearchResults, 1 itemsPushed
+[36m[apify.google-search-scraper runId:DVOZ3gmPiaMzSDZVA][0m -> Status: SUCCEEDED, Message: Processed 1 queries on 1 pages. Extracted: 10 organicResults, 0 paidResults, 0 paidProducts, 22 relatedQueries, 1 aiOverviews, 0 aiModeResults, 0 perplexitySearchResults, 0 chatGptSearchResults, 1 itemsPushed
+[36m[apify.google-search-scraper runId:MNgVwv1Oo4ndmzo1U][0m -> Status: RUNNING, Message: 
+[36m[apify.google-search-scraper runId:MNgVwv1Oo4ndmzo1U][0m -> 2026-02-08T23:52:35.668Z ACTOR: Pulling container image of build 7SQ7UrT5GX04y6g5S from registry.
+[36m[apify.google-search-scraper runId:MNgVwv1Oo4ndmzo1U][0m -> 2026-02-08T23:52:35.670Z ACTOR: Creating container.
+[36m[apify.google-search-scraper runId:MNgVwv1Oo4ndmzo1U][0m -> 2026-02-08T23:52:35.735Z ACTOR: Starting container.
+[36m[apify.google-search-scraper runId:MNgVwv1Oo4ndmzo1U][0m -> 2026-02-08T23:52:35.736Z ACTOR: Running under "LIMITED_PERMISSIONS" permission level.
+[36m[apify.google-search-scraper runId:MNgVwv1Oo4ndmzo1U][0m -> 2026-02-08T23:52:35.928Z Will run command: xvfb-run -a -s "-ac -screen 0 1920x1080x24+32 -nolisten tcp" /bin/sh -c node dist/src/main.js
+[36m[apify.google-search-scraper runId:MNgVwv1Oo4ndmzo1U][0m -> 2026-02-08T23:52:36.587Z [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[36m[apify.google-search-scraper runId:MNgVwv1Oo4ndmzo1U][0m -> 2026-02-08T23:52:36.753Z [32mINFO[39m  System info[90m {"apifyVersion":"3.5.1","apifyClientVersion":"2.18.0","crawleeVersion":"3.14.1","osType":"Linux","nodeVersion":"v20.20.0"}[39m
+[36m[apify.google-search-scraper runId:MNgVwv1Oo4ndmzo1U][0m -> 2026-02-08T23:52:37.032Z [32mINFO[39m
+[36m[apify.google-search-scraper runId:MNgVwv1Oo4ndmzo1U][0m -> 2026-02-08T23:52:37.033Z  _______  _______  _______  _______  _______ _________ _        _______
+[36m[apify.google-search-scraper runId:MNgVwv1Oo4ndmzo1U][0m -> 2026-02-08T23:52:37.033Z (  ____ \(  ____ \(  ____ )(  ___  )(  ____ )\__   __/( (    /|(  ____ \
+[36m[apify.google-search-scraper runId:MNgVwv1Oo4ndmzo1U][0m -> 2026-02-08T23:52:37.034Z | (    \/| (    \/| (    )|| (   ) || (    )|   ) (   |  \  ( || (    \/
+[36m[apify.google-search-scraper runId:MNgVwv1Oo4ndmzo1U][0m -> 2026-02-08T23:52:37.035Z | (_____ | |      | (____)|| (___) || (____)|   | |   |   \ | || |
+[36m[apify.google-search-scraper runId:MNgVwv1Oo4ndmzo1U][0m -> 2026-02-08T23:52:37.036Z (_____  )| |      |     __)|  ___  ||  _____)   | |   | (\ \) || | ____
+[36m[apify.google-search-scraper runId:MNgVwv1Oo4ndmzo1U][0m -> 2026-02-08T23:52:37.037Z       ) || |      | (\ (   | (   ) || (         | |   | | \   || | \_  )
+[36m[apify.google-search-scraper runId:MNgVwv1Oo4ndmzo1U][0m -> 2026-02-08T23:52:37.038Z /\____) || (____/\| ) \ \__| )   ( || )      ___) (___| )  \  || (___) |
+[36m[apify.google-search-scraper runId:MNgVwv1Oo4ndmzo1U][0m -> 2026-02-08T23:52:37.039Z \_______)(_______/|/   \__/|/     \||/       \_______/|/    )_)(_______)
+[36m[apify.google-search-scraper runId:MNgVwv1Oo4ndmzo1U][0m -> 2026-02-08T23:52:37.040Z
+[36m[apify.google-search-scraper runId:MNgVwv1Oo4ndmzo1U][0m -> 2026-02-08T23:52:37.041Z  _______  _______  _______  _______  _        _______     _______  _______  _______
+[36m[apify.google-search-scraper runId:MNgVwv1Oo4ndmzo1U][0m -> 2026-02-08T23:52:37.042Z (  ____ \(  ___  )(  ___  )(  ____ \( \      (  ____ \   (  ____ \(  ___  )(       )
+[36m[apify.google-search-scraper runId:MNgVwv1Oo4ndmzo1U][0m -> 2026-02-08T23:52:37.043Z | (    \/| (   ) || (   ) || (    \/| (      | (    \/   | (    \/| (   ) || () () |
+[36m[apify.google-search-scraper runId:MNgVwv1Oo4ndmzo1U][0m -> 2026-02-08T23:52:37.043Z | |      | |   | || |   | || |      | |      | (__       | |      | |   | || || || |
+[36m[apify.google-search-scraper runId:MNgVwv1Oo4ndmzo1U][0m -> 2026-02-08T23:52:37.044Z | | ____ | |   | || |   | || | ____ | |      |  __)      | |      | |   | || |(_)| |
+[36m[apify.google-search-scraper runId:MNgVwv1Oo4ndmzo1U][0m -> 2026-02-08T23:52:37.045Z | | \_  )| |   | || |   | || | \_  )| |      | (         | |      | |   | || |   | |
+[36m[apify.google-search-scraper runId:MNgVwv1Oo4ndmzo1U][0m -> 2026-02-08T23:52:37.046Z | (___) || (___) || (___) || (___) || (____/\| (____/\ _ | (____/\| (___) || )   ( |
+[36m[apify.google-search-scraper runId:MNgVwv1Oo4ndmzo1U][0m -> 2026-02-08T23:52:37.054Z (_______)(_______)(_______)(_______)(_______/(_______/(_)(_______/(_______)|/     \|
+[36m[apify.google-search-scraper runId:MNgVwv1Oo4ndmzo1U][0m -> 2026-02-08T23:52:37.058Z
+[36m[apify.google-search-scraper runId:MNgVwv1Oo4ndmzo1U][0m -> 2026-02-08T23:52:37.069Z [32mINFO[39m [33m CheerioCrawler:[39m Using the old RequestQueue implementation without request locking.
+[36m[apify.google-search-scraper runId:MNgVwv1Oo4ndmzo1U][0m -> 2026-02-08T23:52:37.262Z [32mINFO[39m [33m CheerioCrawler:[39m Starting the crawler.
+[36m[apify.google-search-scraper runId:MNgVwv1Oo4ndmzo1U][0m -> Status: RUNNING, Message: Starting the crawler.
+[36m[apify.google-search-scraper runId:MNgVwv1Oo4ndmzo1U][0m -> Status: RUNNING, Message: Processed 0 queries on 0 pages. Extracted: 0 organicResults, 0 paidResults, 0 paidProducts, 0 relatedQueries, 0 aiOverviews, 0 aiModeResults, 0 perplexitySearchResults, 0 chatGptSearchResults, 0 itemsPushed
+[36m[apify.google-search-scraper runId:MNgVwv1Oo4ndmzo1U][0m -> 2026-02-08T23:52:37.366Z [32mINFO[39m  Querying "top strategy consulting firms San Francisco" page 1 ...
+[36m[apify.google-search-scraper runId:MNgVwv1Oo4ndmzo1U][0m -> 2026-02-08T23:52:54.872Z [32mINFO[39m  Not enqueueing next page for query "top strategy consulting firms San Francisco" because the "maxPagesPerQuery" limit has been reached.
+[36m[apify.google-search-scraper runId:MNgVwv1Oo4ndmzo1U][0m -> 2026-02-08T23:52:54.975Z [32mINFO[39m  Finished query "top strategy consulting firms San Francisco" page 1 (organicResults: 10, paidResults: 0, paidProducts: 0, relatedQueries: 16, aiOverview: 1)
+[36m[apify.google-search-scraper runId:MNgVwv1Oo4ndmzo1U][0m -> 2026-02-08T23:52:55.048Z [32mINFO[39m [33m CheerioCrawler:[39m All requests from the queue have been processed, the crawler will shut down.
+[36m[apify.google-search-scraper runId:MNgVwv1Oo4ndmzo1U][0m -> 2026-02-08T23:52:55.161Z [32mINFO[39m [33m CheerioCrawler:[39m Final request statistics:[90m {"requestsFinished":1,"requestsFailed":0,"retryHistogram":[1],"requestAvgFailedDurationMillis":null,"requestAvgFinishedDurationMillis":17651,"requestsFinishedPerMinute":3,"requestsFailedPerMinute":0,"requestTotalDurationMillis":17651,"requestsTotal":1,"crawlerRuntimeMillis":18093}[39m
+[36m[apify.google-search-scraper runId:MNgVwv1Oo4ndmzo1U][0m -> 2026-02-08T23:52:55.162Z [32mINFO[39m [33m CheerioCrawler:[39m Finished! Total 1 requests: 1 succeeded, 0 failed.[90m {"terminal":true}[39m
+[36m[apify.google-search-scraper runId:MNgVwv1Oo4ndmzo1U][0m -> 2026-02-08T23:52:55.196Z [32mINFO[39m  Scraping is finished, see you next time.
+[36m[apify.google-search-scraper runId:MNgVwv1Oo4ndmzo1U][0m -> 2026-02-08T23:52:55.197Z
+[36m[apify.google-search-scraper runId:MNgVwv1Oo4ndmzo1U][0m -> 2026-02-08T23:52:55.198Z Full results in JSON format:
+[36m[apify.google-search-scraper runId:MNgVwv1Oo4ndmzo1U][0m -> 2026-02-08T23:52:55.199Z https://api.apify.com/v2/datasets/kFeT7AEw9aPi9n2eF/items?format=json
+[36m[apify.google-search-scraper runId:MNgVwv1Oo4ndmzo1U][0m -> 2026-02-08T23:52:55.200Z
+[36m[apify.google-search-scraper runId:MNgVwv1Oo4ndmzo1U][0m -> 2026-02-08T23:52:55.201Z Simplified organic results in JSON format:
+[36m[apify.google-search-scraper runId:MNgVwv1Oo4ndmzo1U][0m -> 2026-02-08T23:52:55.202Z https://api.apify.com/v2/datasets/kFeT7AEw9aPi9n2eF/items?format=json&fields=searchQuery,organicResults&unwind=organicResults
+[36m[apify.google-search-scraper runId:MNgVwv1Oo4ndmzo1U][0m -> 2026-02-08T23:52:55.202Z [32mINFO[39m  [Status message]: Processed 1 queries on 1 pages. Extracted: 10 organicResults, 0 paidResults, 0 paidProducts, 16 relatedQueries, 1 aiOverviews, 0 aiModeResults, 0 perplexitySearchResults, 0 chatGptSearchResults, 1 itemsPushed
+[36m[apify.google-search-scraper runId:MNgVwv1Oo4ndmzo1U][0m -> Status: SUCCEEDED, Message: Processed 1 queries on 1 pages. Extracted: 10 organicResults, 0 paidResults, 0 paidProducts, 16 relatedQueries, 1 aiOverviews, 0 aiModeResults, 0 perplexitySearchResults, 0 chatGptSearchResults, 1 itemsPushed

@@ -1,0 +1,14 @@
+{
+    "name": "DigiCert",
+    "event_type": "TRIGGER_DETECTED",
+    "event_title": "Hiring Remote SDR",
+    "event_context": "Trigger detected: Hiring Remote SDR",
+    "event_source_url": "https://careers.digicert.com/",
+    "contacts": [
+        {
+            "name": "Amit Sinha",
+            "title": "CEO",
+            "email": "amit.sinha@digicert.com"
+        }
+    ]
+}

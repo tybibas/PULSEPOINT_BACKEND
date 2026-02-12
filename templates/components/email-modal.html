@@ -1,0 +1,400 @@
+<!-- 
+  Email Modal Component
+  PulsePoint Growth Design System
+-->
+<div class="modal-backdrop" aria-hidden="true"></div>
+
+<dialog class="modal email-modal" aria-labelledby="modal-title">
+    <!-- Modal Header -->
+    <header class="modal__header">
+        <div class="modal__title-group">
+            <h2 id="modal-title" class="modal__title">Edit Email for Brandon Maddox</h2>
+            <p class="modal__subtitle text-muted">Longfellow Real Estate Partners</p>
+        </div>
+        <button class="btn btn-icon btn-ghost modal__close" aria-label="Close modal">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="18" y1="6" x2="6" y2="18" />
+                <line x1="6" y1="6" x2="18" y2="18" />
+            </svg>
+        </button>
+    </header>
+
+    <!-- Recipient Info -->
+    <div class="email-modal__recipient">
+        <div class="avatar">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" opacity="0.6">
+                <path
+                    d="M12 12c2.7 0 5-2.3 5-5s-2.3-5-5-5-5 2.3-5 5 2.3 5 5 5zm0 2c-3.3 0-10 1.7-10 5v2h20v-2c0-3.3-6.7-5-10-5z" />
+            </svg>
+        </div>
+        <div class="recipient-info">
+            <span class="recipient-name">Brandon Maddox</span>
+            <span class="recipient-title text-muted text-sm">Senior Project Manager</span>
+            <span class="recipient-email text-accent text-sm">bmaddox@lfrep.com</span>
+        </div>
+        <button class="btn btn-ghost btn-sm">✏ Edit</button>
+    </div>
+
+    <!-- Modal Body -->
+    <div class="modal__body">
+        <!-- Compose / Preview Split -->
+        <div class="email-modal__split">
+            <!-- Compose Panel -->
+            <div class="email-panel email-panel--compose">
+                <div class="panel-header">
+                    <span class="panel-title text-label">COMPOSE</span>
+                    <button class="btn btn-icon btn-ghost btn-sm" aria-label="Expand compose">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M15 3h6v6M14 10l7-7M9 21H3v-6M10 14l-7 7" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="form-group">
+                    <label for="email-subject" class="form-label text-label">Email Subject</label>
+                    <input type="text" id="email-subject" class="input"
+                        value="Making SOVA the Campus Everyone Wants to Visit">
+                </div>
+
+                <div class="form-group">
+                    <label for="email-body" class="form-label text-label">Email Body</label>
+                    <textarea id="email-body" class="input textarea"
+                        rows="12">Hi Brandon,
+
+Saw that Centerpark Labs just won Life Science Campus of the Year – congrats to the whole team. Creating award-winning spaces is no small feat.
+
+As you continue shaping projects like SOVA and Bioterra, I wanted to share how hand-painted murals are helping similar campuses become destinations, not just buildings. We've been working with commercial developers across San Diego to create lobby experiences that tenants actually take photos in front of.
+
+I have some quick concepts for how environmental art could elevate your tenant amenity spaces. Would it be useful to see a mood board tailored to SOVA's vibe?</textarea>
+                </div>
+            </div>
+
+            <!-- Preview Panel -->
+            <div class="email-panel email-panel--preview">
+                <div class="panel-header">
+                    <span class="panel-title text-label">PREVIEW</span>
+                    <button class="btn btn-icon btn-ghost btn-sm" aria-label="Toggle preview mode">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                            <circle cx="12" cy="12" r="3" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="email-preview-content">
+                    <div class="preview-recipient">
+                        <span class="text-muted text-sm">To:</span>
+                        <span class="text-sm">Brandon Maddox &lt;bmaddox@lfrep.com&gt;</span>
+                    </div>
+                    <div class="preview-subject">
+                        <span class="text-muted text-sm">Subject:</span>
+                        <span class="text-sm font-medium">Making SOVA the Campus Everyone Wants to Visit</span>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="preview-body text-sm">
+                        <p>Hi Brandon,</p>
+                        <p>Saw that Centerpark Labs just won Life Science Campus of the Year – congrats to the whole
+                            team. Creating award-winning spaces is no small feat.</p>
+                        <p>As you continue shaping projects like SOVA and Bioterra, I wanted to share how hand-painted
+                            murals are helping similar campuses become destinations, not just buildings. We've been
+                            working with commercial developers across San Diego to create lobby experiences that tenants
+                            actually take photos in front of.</p>
+                        <p>I have some quick concepts for how environmental art could elevate your tenant amenity
+                            spaces. Would it be useful to see a mood board tailored to SOVA's vibe?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- AI Suggestions -->
+        <div class="email-modal__ai">
+            <div class="ai-header">
+                <span class="ai-icon">🤖</span>
+                <span class="ai-title text-label">AI SUGGESTIONS</span>
+            </div>
+            <ul class="ai-suggestions">
+                <li class="ai-suggestion">
+                    <button class="btn btn-ghost ai-suggestion-btn">
+                        <span class="suggestion-icon">💡</span>
+                        <span class="suggestion-text">Try a more casual opener: "Congrats on the big win!"</span>
+                        <span class="suggestion-action text-accent">Apply</span>
+                    </button>
+                </li>
+                <li class="ai-suggestion">
+                    <button class="btn btn-ghost ai-suggestion-btn">
+                        <span class="suggestion-icon">🎯</span>
+                        <span class="suggestion-text">Add specificity: mention the SOVA project by name</span>
+                        <span class="suggestion-action text-accent">Apply</span>
+                    </button>
+                </li>
+                <li class="ai-suggestion">
+                    <button class="btn btn-ghost ai-suggestion-btn">
+                        <span class="suggestion-icon">📊</span>
+                        <span class="suggestion-text">Include a stat: "increased tenant retention by 23%"</span>
+                        <span class="suggestion-action text-accent">Apply</span>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Modal Footer -->
+    <footer class="modal__footer">
+        <button class="btn btn-secondary">Cancel</button>
+        <button class="btn btn-secondary">Save Draft</button>
+        <button class="btn btn-primary">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="22" y1="2" x2="11" y2="13" />
+                <polygon points="22 2 15 22 11 13 2 9 22 2" />
+            </svg>
+            Send Email
+        </button>
+    </footer>
+</dialog>
+
+<style>
+    /* Modal Base Styles (extends design-system.css) */
+
+    .modal-backdrop {
+        position: fixed;
+        inset: 0;
+        background-color: rgba(0, 0, 0, 0.7);
+        backdrop-filter: blur(4px);
+        z-index: var(--z-modal-backdrop);
+        opacity: 0;
+        transition: opacity var(--transition-normal);
+    }
+
+    .modal-backdrop.active {
+        opacity: 1;
+    }
+
+    .modal {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: var(--color-bg-secondary);
+        border: 1px solid var(--color-border-default);
+        border-radius: var(--radius-xl);
+        box-shadow: var(--shadow-xl);
+        z-index: var(--z-modal);
+        max-height: 90vh;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .modal[open] {
+        animation: slideUp var(--transition-slow) ease forwards;
+    }
+
+    /* Email Modal Specific */
+    .email-modal {
+        width: 90vw;
+        max-width: 1000px;
+    }
+
+    /* Modal Header */
+    .modal__header {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding: var(--space-5) var(--space-6);
+        border-bottom: 1px solid var(--color-border-default);
+    }
+
+    .modal__title {
+        font-family: var(--font-display);
+        font-size: var(--text-xl);
+        font-weight: var(--font-semibold);
+        color: var(--color-text-primary);
+        margin-bottom: var(--space-1);
+    }
+
+    .modal__subtitle {
+        font-size: var(--text-sm);
+    }
+
+    /* Recipient */
+    .email-modal__recipient {
+        display: flex;
+        align-items: center;
+        gap: var(--space-3);
+        padding: var(--space-4) var(--space-6);
+        background-color: var(--color-bg-tertiary);
+        border-bottom: 1px solid var(--color-border-default);
+    }
+
+    .recipient-info {
+        display: flex;
+        flex-direction: column;
+        gap: var(--space-1);
+        flex: 1;
+    }
+
+    .recipient-name {
+        font-weight: var(--font-medium);
+        color: var(--color-text-primary);
+    }
+
+    /* Modal Body */
+    .modal__body {
+        flex: 1;
+        overflow-y: auto;
+        padding: var(--space-6);
+        display: flex;
+        flex-direction: column;
+        gap: var(--space-5);
+    }
+
+    /* Split Layout */
+    .email-modal__split {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: var(--space-5);
+        min-height: 350px;
+    }
+
+    .email-panel {
+        display: flex;
+        flex-direction: column;
+        gap: var(--space-4);
+        padding: var(--space-4);
+        background-color: var(--color-bg-tertiary);
+        border-radius: var(--radius-lg);
+        border: 1px solid var(--color-border-default);
+    }
+
+    .panel-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .panel-title {
+        color: var(--color-text-muted);
+    }
+
+    /* Form */
+    .form-group {
+        display: flex;
+        flex-direction: column;
+        gap: var(--space-2);
+    }
+
+    .form-label {
+        color: var(--color-text-secondary);
+    }
+
+    .textarea {
+        flex: 1;
+        resize: none;
+    }
+
+    /* Preview */
+    .email-preview-content {
+        display: flex;
+        flex-direction: column;
+        gap: var(--space-2);
+    }
+
+    .preview-recipient,
+    .preview-subject {
+        display: flex;
+        gap: var(--space-2);
+    }
+
+    .preview-body {
+        margin-top: var(--space-3);
+        line-height: var(--leading-relaxed);
+    }
+
+    .preview-body p {
+        margin-bottom: var(--space-3);
+    }
+
+    .font-medium {
+        font-weight: var(--font-medium);
+    }
+
+    /* AI Suggestions */
+    .email-modal__ai {
+        background-color: var(--color-bg-tertiary);
+        border-radius: var(--radius-lg);
+        border: 1px solid var(--color-border-default);
+        padding: var(--space-4);
+    }
+
+    .ai-header {
+        display: flex;
+        align-items: center;
+        gap: var(--space-2);
+        margin-bottom: var(--space-3);
+    }
+
+    .ai-icon {
+        font-size: var(--text-lg);
+    }
+
+    .ai-suggestions {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: var(--space-2);
+    }
+
+    .ai-suggestion-btn {
+        width: 100%;
+        justify-content: flex-start;
+        gap: var(--space-3);
+        padding: var(--space-3);
+        text-align: left;
+    }
+
+    .suggestion-icon {
+        font-size: var(--text-base);
+    }
+
+    .suggestion-text {
+        flex: 1;
+        color: var(--color-text-secondary);
+    }
+
+    .suggestion-action {
+        font-size: var(--text-xs);
+        font-weight: var(--font-semibold);
+    }
+
+    /* Modal Footer */
+    .modal__footer {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: var(--space-3);
+        padding: var(--space-4) var(--space-6);
+        border-top: 1px solid var(--color-border-default);
+        background-color: var(--color-bg-tertiary);
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+        .email-modal {
+            width: 100vw;
+            max-width: none;
+            height: 100vh;
+            max-height: none;
+            border-radius: 0;
+        }
+
+        .email-modal__split {
+            grid-template-columns: 1fr;
+        }
+
+        .email-panel--preview {
+            display: none;
+        }
+    }
+</style>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>BP Elite Report</title>
+    <link rel="stylesheet" href="../../assets/css/report_theme.css">
+    <style>
+        /* PDF Specific Overrides if needed, otherwise rely on report_theme.css */
+        @page {
+            size: letter;
+            margin: 0.5in;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <img src="../../assets/qf_logo_full_white.png" class="header-logo-img" alt="QuantiFire">
+        <div style="font-size: 10.5pt; color: white; font-weight: 700;">
+            PRIVATE & CONFIDENTIAL
+        </div>
+    </header>
+
+    <div class="content">
+
+        <div class="report-title-section">
+            <h1>Post-Earnings Sentiment Gap</h1>
+            <div class="ticker">
+                <strong>BP</strong> &nbsp;|&nbsp; STRATEGIC DIAGNOSTIC &middot; Q3 2024
+            </div>
+        </div>
+
+        <!-- Market Clarity Score -->
+        <div class="section-box">
+            <div class="section-title">MARKET CLARITY SCORE (0-10)</div>
+            <div class="section-subtitle">Comparing institutional conviction against peer benchmarks.</div>
+
+            <div class="chart-container">
+                <!-- Target -->
+                <div class="chart-row">
+                    <div class="chart-label">BP (Target)</div>
+                    <div class="bar-container">
+                        <div class="bar bar-amber" style="width: 65.0%;"></div>
+                    </div>
+                    <div class="bar-val-outside">6.5</div>
+                </div>
+
+                <!-- Peer 1 -->
+                <div class="chart-row">
+                    <div class="chart-label">SHELL PLC</div>
+                    <div class="bar-container">
+                        <div class="bar bar-green" style="width: 78.0%;"></div>
+                    </div>
+                    <div class="bar-val-outside">7.8</div>
+                </div>
+
+                <!-- Peer 2 -->
+                <div class="chart-row">
+                    <div class="chart-label">TOTALENERGIES</div>
+                    <div class="bar-container">
+                        <div class="bar bar-amber" style="width: 65.0%;"></div>
+                    </div>
+                    <div class="bar-val-outside">6.5</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Methodology & Peer Context -->
+        <div
+            style="background-color: #F8F9FA; padding: 15px; border-radius: 6px; margin-bottom: 40px; font-size: 9pt; color: #666; border-left: 2px solid #ccc;">
+            <strong>METHODOLOGY & PEER CONTEXT</strong><br>
+            The <strong>Market Clarity Score (0-10)</strong> quantifies the ratio of specific financial guidance to
+            ambiguous qualitative statements found in the latest earnings transcript.
+            Peers are selected based on sector alignment and comparable market capitalization.
+            <br>
+            <em>Target: BP &middot; Reference Peers: SHELL PLC, TOTALENERGIES</em>
+        </div>
+
+        <!-- Key Analyst Focus Areas (Callout) -->
+        <div class="callout-box">
+            <div class="callout-title">Key Analyst Focus Areas</div>
+            <div class="callout-body">
+                <ul><li>Refinement of green investment strategies amidst market skepticism.</li><li>Addressing the gap between operational performance metrics and market valuation.</li><li>Management's approach towards evolving energy market dynamics and investor sentiment.</li></ul>
+            </div>
+        </div>
+
+        <!-- Methodology Shield Testimonial -->
+        <div class="testimonial-quote">
+            "Authentic feedback with none of the problems that come with broker summaries."
+            <span class="testimonial-author">— Head of IR, FTSE 100</span>
+        </div>
+
+        <!-- AI Sentiment Audit (Refactored to Capsules) -->
+        <div class="section-box">
+            <div class="section-title">BOARD-LEVEL RISK AUDIT</div>
+            <div class="capsule-grid">
+                <div class="capsule high-risk"><div class="capsule-title">Q&A DIVERGENCE</div><div class="capsule-body">The contrast between scripted optimism and the Q&A session's focus on the reduction of green investments and challenges in refining margins suggests a credibility gap, potentially affecting investor confidence and <strong>$XX Impact</strong> on market valuation.</div></div><div class="capsule medium-risk"><div class="capsule-title">MARKET SENTIMENT AND VALUATION</div><div class="capsule-body">Despite showing solid fundamentals and a strategic pivot to traditional energy sources, BP's current valuation and the skepticism reflected in stock analyst downgrades highlight a narrative cession, risking a further <strong>$XX Impact</strong> on the stock’s performance.</div></div>
+            </div>
+        </div>
+
+        <!-- Q&A Divergence Visual (The "Under the Hood" Signal) -->
+        <div class="section-box" style="margin-top: 30px;">
+            <div class="section-title">CONFIDENTIALITY DELTA (SCRIPT VS TRUTH)</div>
+            <div class="section-subtitle">Comparing sentiment in Prepared Remarks against Unscripted Q&A.</div>
+
+            <div
+                style="display: flex; align-items: center; justify-content: space-between; margin-top: 15px; background: #f4f6f9; padding: 20px; border-radius: 8px;">
+                <div style="text-align: center; flex: 1;">
+                    <div style="font-size: 10pt; font-weight: 700; color: #1a2b4b;">PREPARED REMARKS</div>
+                    <div style="font-size: 9pt; color: #a1aab7;">(Optimistic / Scripted)</div>
+                </div>
+
+                <div
+                    style="flex: 2; margin: 0 20px; position: relative; height: 10px; background: #e0e0e0; border-radius: 5px;">
+                    <!-- The Delta Gradient Bar -->
+                    <div class="delta-bar {{ sentiment_delta_class }}"></div>
+                </div>
+
+                <div style="text-align: center; flex: 1;">
+                    <div style="font-size: 10pt; font-weight: 700; color: #1a2b4b;">Q&A FRICTION</div>
+                    <div style="font-size: 9pt; color: #a1aab7;">(Real-Time Defense)</div>
+                </div>
+            </div>
+
+            <div style="margin-top: 15px; font-size: 10pt; color: #444; line-height: 1.5; padding: 0 10px;">
+                {{ ai_audit_block }}
+            </div>
+        </div>
+
+        <!-- High-Conversion Footer -->
+        <div class="footer-cta">
+            <div class="cta-text">This audit identified the What. QuantiFire resolves the Why.</div>
+            <p style="font-size: 10.5pt; color: #666; margin-bottom: 20px;">
+                View a sample of the unvarnished, register-level insights your peers are already using to protect their
+                narrative.
+            </p>
+            <div class="footer-testimonial">
+                "The single most valuable thing in my IR tool set." — Join the leaders using Feedback Intelligence to
+                stabilize their narrative.
+            </div>
+        </div>
+
+        <div class="footer"
+            style="margin-top: 50px; border-top: 1px solid #eee; padding-top: 10px; font-size: 9pt; color: #999; text-align: center;">
+            Generated by QuantiFire AI &middot; Data extracted from official transcripts &middot; BP
+        </div>
+
+    </div>
+
+</body>
+
+</html>

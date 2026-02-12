@@ -1,0 +1,833 @@
+[
+  {
+    "company": "Adidas AG",
+    "ticker": "ADS.DE",
+    "domain": "adidas-group.com",
+    "performance": "+15.2% (52-wk)",
+    "contacts": [
+      {
+        "name": "Harm Ohlmeyer",
+        "role": "Chief Financial Officer",
+        "email": "harm.ohlmeyer@adidas-group.com"
+      },
+      {
+        "name": "Sebastian Steffen",
+        "role": "Head of Investor Relations",
+        "email": "sebastian.steffen@adidas-group.com"
+      }
+    ],
+    "primary_email": "harm.ohlmeyer@adidas-group.com",
+    "contact": {
+      "name": "Finance Leader",
+      "email": "ir@adidas-group.com"
+    },
+    "event": {
+      "event_type": "CFO Appointment",
+      "title": "Adidas appoints new CFO for 2026 strategy",
+      "detected_at": "2026-01-08T12:00:00",
+      "description": "Adidas supervisory board appoints new Chief Financial Officer to lead the next phase of growth."
+    },
+    "index_name": "DAX",
+    "draft_hook": "Hi Harm,\n\nCongratulations on your new role as CFO at Adidas AG; your arrival presents an ideal opportunity to strategically audit and refine the legacy perception you have inherited.\n\nWe specialize in \"Fiduciary Risk Audits\"\u2014measuring exactly where your management narrative diverges from market reality (the \"Narrative Gap\").\n\nMost Boards rely on feedback filtered through brokers, creating a blindspot on true investor sentiment. We fix that by analyzing the raw, unvarnished perception of your register.\n\nI have a Strategic Diagnostic prepared for Adidas AG that identifies specific friction points your current reporting may be missing.\n\nDo you want to see the audit before your next Board pack goes out?\n\nBest,\nYour Name\nQuantiFire",
+    "status": "needs_approval",
+    "email_drafts": [
+      {
+        "contact_name": "Harm Ohlmeyer",
+        "contact_role": "Chief Financial Officer",
+        "contact_email": "harm.ohlmeyer@adidas-group.com",
+        "draft": "Hi Harm,\n\nCongratulations on your new role as CFO at Adidas AG; your arrival presents an ideal opportunity to strategically audit and refine the legacy perception you have inherited.\n\nWe specialize in \"Fiduciary Risk Audits\"\u2014measuring exactly where your management narrative diverges from market reality (the \"Narrative Gap\").\n\nMost Boards rely on feedback filtered through brokers, creating a blindspot on true investor sentiment. We fix that by analyzing the raw, unvarnished perception of your register.\n\nI have a Strategic Diagnostic prepared for Adidas AG that identifies specific friction points your current reporting may be missing.\n\nDo you want to see the audit before your next Board pack goes out?\n\nBest,\nYour Name\nQuantiFire"
+      },
+      {
+        "contact_name": "Sebastian Steffen",
+        "contact_role": "Head of Investor Relations",
+        "contact_email": "sebastian.steffen@adidas-group.com",
+        "draft": "Hi Sebastian,\n\nCongratulations on your new role as CFO, Sebastian; now is the perfect moment to conduct a strategic audit of the legacy perceptions at Adidas AG to align them with your forward-looking vision.\n\nWe specialize in \"Fiduciary Risk Audits\"\u2014measuring exactly where your management narrative diverges from market reality (the \"Narrative Gap\").\n\nMost Boards rely on feedback filtered through brokers, creating a blindspot on true investor sentiment. We fix that by analyzing the raw, unvarnished perception of your register.\n\nI have a Strategic Diagnostic prepared for Adidas AG that identifies specific friction points your current reporting may be missing.\n\nDo you want to see the audit before your next Board pack goes out?\n\nBest,\nYour Name\nQuantiFire"
+      }
+    ],
+    "email_draft": "Hi Harm,\n\nCongratulations on your new role as CFO at Adidas AG; your arrival presents an ideal opportunity to strategically audit and refine the legacy perception you have inherited.\n\nWe specialize in \"Fiduciary Risk Audits\"\u2014measuring exactly where your management narrative diverges from market reality (the \"Narrative Gap\").\n\nMost Boards rely on feedback filtered through brokers, creating a blindspot on true investor sentiment. We fix that by analyzing the raw, unvarnished perception of your register.\n\nI have a Strategic Diagnostic prepared for Adidas AG that identifies specific friction points your current reporting may be missing.\n\nDo you want to see the audit before your next Board pack goes out?\n\nBest,\nYour Name\nQuantiFire"
+  },
+  {
+    "company": "Airbus SE",
+    "ticker": "AIR.DE",
+    "domain": "airbus.com",
+    "performance": "N/A",
+    "contacts": [
+      {
+        "name": "Thomas Toepfer",
+        "role": "Chief Financial Officer",
+        "email": "thomas.toepfer@airbus.com"
+      },
+      {
+        "name": "H\u00e9l\u00e8ne Le Gorgeu",
+        "role": "Head of Investor Relations",
+        "email": "helene.le-gorgeu@airbus.com"
+      },
+      {
+        "name": "Sara Corchete",
+        "role": "Company Secretary",
+        "email": "sara.corchete@airbus.com"
+      }
+    ],
+    "primary_email": "thomas.toepfer@airbus.com",
+    "event": {
+      "event_type": "Stock Drop",
+      "title": "Airbus shares dip 5% amid supply chain concerns",
+      "detected_at": "2026-01-08T12:05:00",
+      "index_name": "DAX"
+    },
+    "index_name": "DAX",
+    "draft_hook": "Subject: Navigating Supply Chain Concerns with Strategic Insights\n\nThomas, the recent 5% dip in Airbus shares due to supply chain issues highlights uncertainty. With substantial stock fluctuations, understanding stakeholder concerns is crucial. A Perception Study can illuminate key areas to address, aiding in steadying investor confidence and narrative coherence.",
+    "status": "needs_approval"
+  },
+  {
+    "company": "Allianz SE",
+    "ticker": "ALV.DE",
+    "domain": "allianz.com",
+    "performance": "+28.1% (52-wk)",
+    "contacts": [
+      {
+        "name": "Claire-Marie Coste-Lepoutre",
+        "role": "Chief Financial Officer",
+        "email": "claire.lepoutre@allianz.com",
+        "linkedin": "https://de.linkedin.com/in/claire-marie-coste-lepoutre-341080a"
+      },
+      {
+        "name": "Andrew Ritchie",
+        "role": "Head of Investor Relations",
+        "email": "andrew.ritchie@allianz.com"
+      }
+    ],
+    "primary_email": "claire.lepoutre@allianz.com",
+    "event": {
+      "company": "Allianz SE",
+      "ticker": "ALV.DE",
+      "website": "https://www.allianz.com",
+      "sector": "Financial Services",
+      "description": "Allianz Capital Markets Day. A. Agenda. Disclaimer. Investor Relations contacts. Page 3. Allianz Capital. Markets Day. Dieter Wemmer. CFO. Allianz SE. Berlin,\u00a0...Read more",
+      "index_name": "DAX",
+      "event_type": "Capital Markets Day",
+      "title": "Allianz Capital Markets Day",
+      "url": "https://www.allianz.com/content/dam/onemarketing/azcom/Allianz_com/investor-relations/en/conferences/capital_markets_days/2013_allianz_cmd.pdf",
+      "detected_at": "2026-01-08T13:14:27.229595"
+    },
+    "index_name": "DAX",
+    "draft_hook": "Hi Claire-Marie,\n\nClaire-Marie, with the intense scrutiny of your upcoming Capital Markets Day on January 8, 2026, ensuring absolute clarity in your message will be crucial to avoid any market misinterpretations.\n\nWe specialize in \"Fiduciary Risk Audits\"\u2014measuring exactly where your management narrative diverges from market reality (the \"Narrative Gap\").\n\nMost Boards rely on feedback filtered through brokers, creating a blindspot on true investor sentiment. We fix that by analyzing the raw, unvarnished perception of your register.\n\nI have a Strategic Diagnostic prepared for Allianz SE that identifies specific friction points your current reporting may be missing.\n\nDo you want to see the audit before your next Board pack goes out?\n\nBest,\nYour Name\nQuantiFire",
+    "status": "needs_approval",
+    "email_drafts": [
+      {
+        "contact_name": "Claire-Marie Coste-Lepoutre",
+        "contact_role": "Chief Financial Officer",
+        "contact_email": "claire.lepoutre@allianz.com",
+        "draft": "Hi Claire-Marie,\n\nClaire-Marie, with the intense scrutiny of your upcoming Capital Markets Day on January 8, 2026, ensuring absolute clarity in your message will be crucial to avoid any market misinterpretations.\n\nWe specialize in \"Fiduciary Risk Audits\"\u2014measuring exactly where your management narrative diverges from market reality (the \"Narrative Gap\").\n\nMost Boards rely on feedback filtered through brokers, creating a blindspot on true investor sentiment. We fix that by analyzing the raw, unvarnished perception of your register.\n\nI have a Strategic Diagnostic prepared for Allianz SE that identifies specific friction points your current reporting may be missing.\n\nDo you want to see the audit before your next Board pack goes out?\n\nBest,\nYour Name\nQuantiFire"
+      },
+      {
+        "contact_name": "Andrew Ritchie",
+        "contact_role": "Head of Investor Relations",
+        "contact_email": "andrew.ritchie@allianz.com",
+        "draft": "Hi Andrew,\n\nAndrew, as Allianz SE prepares for its pivotal Capital Markets Day on January 8, 2026, ensuring clarity and precision in your messaging is crucial to mitigate the inherent risk of market misinterpretation.\n\nWe specialize in \"Fiduciary Risk Audits\"\u2014measuring exactly where your management narrative diverges from market reality (the \"Narrative Gap\").\n\nMost Boards rely on feedback filtered through brokers, creating a blindspot on true investor sentiment. We fix that by analyzing the raw, unvarnished perception of your register.\n\nI have a Strategic Diagnostic prepared for Allianz SE that identifies specific friction points your current reporting may be missing.\n\nDo you want to see the audit before your next Board pack goes out?\n\nBest,\nYour Name\nQuantiFire"
+      }
+    ],
+    "email_draft": "Hi Claire-Marie,\n\nClaire-Marie, with the intense scrutiny of your upcoming Capital Markets Day on January 8, 2026, ensuring absolute clarity in your message will be crucial to avoid any market misinterpretations.\n\nWe specialize in \"Fiduciary Risk Audits\"\u2014measuring exactly where your management narrative diverges from market reality (the \"Narrative Gap\").\n\nMost Boards rely on feedback filtered through brokers, creating a blindspot on true investor sentiment. We fix that by analyzing the raw, unvarnished perception of your register.\n\nI have a Strategic Diagnostic prepared for Allianz SE that identifies specific friction points your current reporting may be missing.\n\nDo you want to see the audit before your next Board pack goes out?\n\nBest,\nYour Name\nQuantiFire"
+  },
+  {
+    "company": "BASF SE",
+    "ticker": "BAS.DE",
+    "domain": "basf.com",
+    "performance": "+5.4% (52-wk)",
+    "contacts": [
+      {
+        "name": "Dirk Elvermann",
+        "role": "Chief Financial Officer",
+        "email": "dirk.elvermann@basf.com",
+        "linkedin": "https://www.linkedin.com/in/dirk-elvermann/"
+      },
+      {
+        "name": "Stefanie Wettberg",
+        "role": "Head of Investor Relations",
+        "email": "stefanie.wettberg@basf.com",
+        "linkedin": "https://de.linkedin.com/in/stefanie-wettberg"
+      },
+      {
+        "name": "Manohar Kamath",
+        "role": "Company Secretary",
+        "email": "manohar.kamath@basf.com",
+        "linkedin": "https://in.linkedin.com/in/manohar-kamath-047320128"
+      }
+    ],
+    "primary_email": "dirk.elvermann@basf.com",
+    "event": {
+      "company": "BASF SE",
+      "ticker": "BAS.DE",
+      "website": "https://www.basf.com",
+      "sector": "Basic Materials",
+      "description": "BASF SE has today, October 28, 2025, resolved on a share buyback program ... It is part of the share buyback announced at the Capital Markets Day in\u00a0...Read more",
+      "index_name": "DAX",
+      "event_type": "Capital Markets Day",
+      "title": "Investor Releases",
+      "url": "https://www.basf.com/global/en/investors/calendar-and-publications/investor-releases",
+      "detected_at": "2026-01-08T13:14:45.260117"
+    },
+    "index_name": "DAX",
+    "draft_hook": "Subject: Enhancing Clarity Post-Capital Markets Day \n\nCapital Markets Day insights can sometimes lead to market uncertainty. With BASF SE\u2019s stock up 5.4% over 52 weeks, aligning investor perceptions is crucial. A targeted Perception Study can equip you with the data needed to maintain a consistent and confident narrative.",
+    "status": "needs_approval"
+  },
+  {
+    "company": "Henkel AG & Co. KGaA",
+    "ticker": "HEN3.DE",
+    "domain": "https://www.henkel.com",
+    "performance": "-18.9% (52-wk)",
+    "contacts": [
+      {
+        "name": "Marco Swoboda",
+        "role": "Chief Financial Officer",
+        "email": "marco.swoboda@henkel.com",
+        "linkedin": "https://de.linkedin.com/in/marco-swoboda-27273441"
+      },
+      {
+        "name": "Leslie Isabelle Iltgen",
+        "role": "Head of Investor Relations",
+        "email": "leslie.iltgen@henkel.com",
+        "linkedin": "https://de.linkedin.com/in/leslie-isabelle-iltgen-b11b6a122"
+      }
+    ],
+    "primary_email": "",
+    "event": {
+      "company": "Henkel AG & Co. KGaA",
+      "ticker": "HEN3.DE",
+      "website": "https://www.henkel.com",
+      "sector": "Consumer Defensive",
+      "description": "Henkel AG & Co. KGaA und sichert damit die weitere Verf\u00fcgbarkeit von ... Auf dem heutigen Capital Markets Day \"Generating Sustainable Value\" hat die\u00a0...",
+      "index_name": "DAX",
+      "event_type": "Capital Markets Day",
+      "title": "News - ECV: Tech4Pharma",
+      "url": "https://www.ecv.de/news-tech4pharma",
+      "detected_at": "2026-01-08T13:21:46.317032"
+    },
+    "index_name": "DAX",
+    "draft_hook": "Hi Marco,\n\nEnsuring clarity and alignment at your upcoming Capital Markets Day is crucial to avoid the pitfalls of misinterpretation that can impact stakeholder confidence.\n\nWe specialize in \"Fiduciary Risk Audits\"\u2014measuring exactly where your management narrative diverges from market reality (the \"Narrative Gap\").\n\nMost Boards rely on feedback filtered through brokers, creating a blindspot on true investor sentiment. We fix that by analyzing the raw, unvarnished perception of your register.\n\nI have a Strategic Diagnostic prepared for Henkel AG & Co. KGaA that identifies specific friction points your current reporting may be missing.\n\nDo you want to see the audit before your next Board pack goes out?\n\nBest,\nYour Name\nQuantiFire",
+    "status": "needs_approval",
+    "email_drafts": [
+      {
+        "contact_name": "Marco Swoboda",
+        "contact_role": "Chief Financial Officer",
+        "contact_email": "marco.swoboda@henkel.com",
+        "draft": "Hi Marco,\n\nEnsuring clarity and alignment at your upcoming Capital Markets Day is crucial to avoid the pitfalls of misinterpretation that can impact stakeholder confidence.\n\nWe specialize in \"Fiduciary Risk Audits\"\u2014measuring exactly where your management narrative diverges from market reality (the \"Narrative Gap\").\n\nMost Boards rely on feedback filtered through brokers, creating a blindspot on true investor sentiment. We fix that by analyzing the raw, unvarnished perception of your register.\n\nI have a Strategic Diagnostic prepared for Henkel AG & Co. KGaA that identifies specific friction points your current reporting may be missing.\n\nDo you want to see the audit before your next Board pack goes out?\n\nBest,\nYour Name\nQuantiFire"
+      },
+      {
+        "contact_name": "Leslie Isabelle Iltgen",
+        "contact_role": "Head of Investor Relations",
+        "contact_email": "leslie.iltgen@henkel.com",
+        "draft": "Hi Leslie,\n\nLeslie, as Henkel gears up for its pivotal Capital Markets Day on January 8, 2026, it's crucial to ensure our messaging is both compelling and clear to mitigate the risk of any market misinterpretation.\n\nWe specialize in \"Fiduciary Risk Audits\"\u2014measuring exactly where your management narrative diverges from market reality (the \"Narrative Gap\").\n\nMost Boards rely on feedback filtered through brokers, creating a blindspot on true investor sentiment. We fix that by analyzing the raw, unvarnished perception of your register.\n\nI have a Strategic Diagnostic prepared for Henkel AG & Co. KGaA that identifies specific friction points your current reporting may be missing.\n\nDo you want to see the audit before your next Board pack goes out?\n\nBest,\nYour Name\nQuantiFire"
+      }
+    ],
+    "email_draft": "Hi Marco,\n\nEnsuring clarity and alignment at your upcoming Capital Markets Day is crucial to avoid the pitfalls of misinterpretation that can impact stakeholder confidence.\n\nWe specialize in \"Fiduciary Risk Audits\"\u2014measuring exactly where your management narrative diverges from market reality (the \"Narrative Gap\").\n\nMost Boards rely on feedback filtered through brokers, creating a blindspot on true investor sentiment. We fix that by analyzing the raw, unvarnished perception of your register.\n\nI have a Strategic Diagnostic prepared for Henkel AG & Co. KGaA that identifies specific friction points your current reporting may be missing.\n\nDo you want to see the audit before your next Board pack goes out?\n\nBest,\nYour Name\nQuantiFire"
+  },
+  {
+    "company": "Commerzbank AG",
+    "ticker": "CBK.DE",
+    "domain": "https://www.commerzbank.com",
+    "performance": "+107.9% (52-wk)",
+    "contacts": [
+      {
+        "name": "Carsten Schmitt",
+        "role": "Chief Financial Officer",
+        "email": "carsten.schmitt@commerzbank.com",
+        "linkedin": "https://de.linkedin.com/in/christian-schmitt-33187a15b"
+      },
+      {
+        "name": "Christoph Wortig",
+        "role": "Head of Investor Relations",
+        "email": "christoph.wortig@commerzbank.com",
+        "linkedin": "https://de.linkedin.com/in/christoph-wortig-0b44b7121"
+      },
+      {
+        "name": "Bettina Orlopp",
+        "role": "Company Secretary",
+        "email": "bettina.orlopp@commerzbank.com",
+        "linkedin": "https://de.linkedin.com/in/bettina-orlopp"
+      }
+    ],
+    "primary_email": "",
+    "event": {
+      "company": "Commerzbank AG",
+      "ticker": "CBK.DE",
+      "website": "https://www.commerzbank.com",
+      "sector": "Financial Services",
+      "description": "Commerzbank AG Earnings Call Transcript. Feb 15, 2024. \u20ac11.04 (+4.94%). Earnings \u00b7 Earning Transcript Icon. Commerzbank AG Capital Markets Day Transcript. Nov\u00a0...Read more",
+      "index_name": "DAX",
+      "event_type": "Capital Markets Day",
+      "title": "Commerzbank AG (STU:CBK) Stock Earnings Transcripts",
+      "url": "https://www.gurufocus.com/stock/STU:CBK/transcripts",
+      "detected_at": "2026-01-08T13:16:07.342500"
+    },
+    "index_name": "DAX",
+    "draft_hook": "Hi Carsten,\n\nAs Commerzbank AG prepares for its pivotal Capital Markets Day on January 8, 2026, the challenge remains to ensure that the strategic vision is not only ambitious but also crystal clear to avoid any risk of misinterpretation.\n\nWe specialize in \"Fiduciary Risk Audits\"\u2014measuring exactly where your management narrative diverges from market reality (the \"Narrative Gap\").\n\nMost Boards rely on feedback filtered through brokers, creating a blindspot on true investor sentiment. We fix that by analyzing the raw, unvarnished perception of your register.\n\nI have a Strategic Diagnostic prepared for Commerzbank AG that identifies specific friction points your current reporting may be missing.\n\nDo you want to see the audit before your next Board pack goes out?\n\nBest,\nYour Name\nQuantiFire",
+    "status": "needs_approval",
+    "email_drafts": [
+      {
+        "contact_name": "Carsten Schmitt",
+        "contact_role": "Chief Financial Officer",
+        "contact_email": "carsten.schmitt@commerzbank.com",
+        "draft": "Hi Carsten,\n\nAs Commerzbank AG prepares for its pivotal Capital Markets Day on January 8, 2026, the challenge remains to ensure that the strategic vision is not only ambitious but also crystal clear to avoid any risk of misinterpretation.\n\nWe specialize in \"Fiduciary Risk Audits\"\u2014measuring exactly where your management narrative diverges from market reality (the \"Narrative Gap\").\n\nMost Boards rely on feedback filtered through brokers, creating a blindspot on true investor sentiment. We fix that by analyzing the raw, unvarnished perception of your register.\n\nI have a Strategic Diagnostic prepared for Commerzbank AG that identifies specific friction points your current reporting may be missing.\n\nDo you want to see the audit before your next Board pack goes out?\n\nBest,\nYour Name\nQuantiFire"
+      },
+      {
+        "contact_name": "Christoph Wortig",
+        "contact_role": "Head of Investor Relations",
+        "contact_email": "christoph.wortig@commerzbank.com",
+        "draft": "Hi Christoph,\n\nIn the high-stakes environment of your upcoming Capital Markets Day on January 8, 2026, ensuring clear and precise communication will be crucial to avoid any risk of misinterpretation by stakeholders.\n\nWe specialize in \"Fiduciary Risk Audits\"\u2014measuring exactly where your management narrative diverges from market reality (the \"Narrative Gap\").\n\nMost Boards rely on feedback filtered through brokers, creating a blindspot on true investor sentiment. We fix that by analyzing the raw, unvarnished perception of your register.\n\nI have a Strategic Diagnostic prepared for Commerzbank AG that identifies specific friction points your current reporting may be missing.\n\nDo you want to see the audit before your next Board pack goes out?\n\nBest,\nYour Name\nQuantiFire"
+      },
+      {
+        "contact_name": "Bettina Orlopp",
+        "contact_role": "Company Secretary",
+        "contact_email": "bettina.orlopp@commerzbank.com",
+        "draft": "Hi Bettina,\n\nAs Commerzbank AG prepares for the high-stakes Capital Markets Day on January 8, 2026, ensuring clarity and precision in your messaging will be crucial to mitigating the risk of misinterpretation among stakeholders.\n\nWe specialize in \"Fiduciary Risk Audits\"\u2014measuring exactly where your management narrative diverges from market reality (the \"Narrative Gap\").\n\nMost Boards rely on feedback filtered through brokers, creating a blindspot on true investor sentiment. We fix that by analyzing the raw, unvarnished perception of your register.\n\nI have a Strategic Diagnostic prepared for Commerzbank AG that identifies specific friction points your current reporting may be missing.\n\nDo you want to see the audit before your next Board pack goes out?\n\nBest,\nYour Name\nQuantiFire"
+      }
+    ],
+    "email_draft": "Hi Carsten,\n\nAs Commerzbank AG prepares for its pivotal Capital Markets Day on January 8, 2026, the challenge remains to ensure that the strategic vision is not only ambitious but also crystal clear to avoid any risk of misinterpretation.\n\nWe specialize in \"Fiduciary Risk Audits\"\u2014measuring exactly where your management narrative diverges from market reality (the \"Narrative Gap\").\n\nMost Boards rely on feedback filtered through brokers, creating a blindspot on true investor sentiment. We fix that by analyzing the raw, unvarnished perception of your register.\n\nI have a Strategic Diagnostic prepared for Commerzbank AG that identifies specific friction points your current reporting may be missing.\n\nDo you want to see the audit before your next Board pack goes out?\n\nBest,\nYour Name\nQuantiFire"
+  },
+  {
+    "company": "Continental Aktiengesellschaft",
+    "ticker": "CON.DE",
+    "domain": "https://www.continental.com",
+    "performance": "+6.9% (52-wk)",
+    "contacts": [
+      {
+        "name": "Roland Welzbacher",
+        "role": "Chief Financial Officer",
+        "email": "roland.welzbacher@continental.com"
+      }
+    ],
+    "primary_email": "",
+    "event": {
+      "company": "Continental Aktiengesellschaft",
+      "ticker": "CON.DE",
+      "website": "https://www.continental.com",
+      "sector": "Consumer Cyclical",
+      "description": "Continental Aktiengesellschaft (CTTAF) by TipRanks Dec 16, 2025 4:17pm ET ... CAPITAL MARKETS DAY TARGETING NEW HEIGHTS by GlobeNewswire Oct 09, 2025 4\u00a0...Read more",
+      "index_name": "DAX",
+      "event_type": "Capital Markets Day",
+      "title": "RACE Stock Quote Price and Forecast",
+      "url": "https://www.cnn.com/markets/stocks/RACE",
+      "detected_at": "2026-01-08T13:16:25.892019"
+    },
+    "index_name": "DAX",
+    "draft_hook": "Hi Roland,\n\nRoland, with the high stakes of your upcoming Capital Markets Day on January 8, 2026, the risk of miscommunication looms large, demanding precise, impactful messaging to align investor expectations.\n\nWe specialize in \"Fiduciary Risk Audits\"\u2014measuring exactly where your management narrative diverges from market reality (the \"Narrative Gap\").\n\nMost Boards rely on feedback filtered through brokers, creating a blindspot on true investor sentiment. We fix that by analyzing the raw, unvarnished perception of your register.\n\nI have a Strategic Diagnostic prepared for Continental Aktiengesellschaft that identifies specific friction points your current reporting may be missing.\n\nDo you want to see the audit before your next Board pack goes out?\n\nBest,\nYour Name\nQuantiFire",
+    "status": "needs_approval",
+    "email_drafts": [
+      {
+        "contact_name": "Roland Welzbacher",
+        "contact_role": "Chief Financial Officer",
+        "contact_email": "roland.welzbacher@continental.com",
+        "draft": "Hi Roland,\n\nRoland, with the high stakes of your upcoming Capital Markets Day on January 8, 2026, the risk of miscommunication looms large, demanding precise, impactful messaging to align investor expectations.\n\nWe specialize in \"Fiduciary Risk Audits\"\u2014measuring exactly where your management narrative diverges from market reality (the \"Narrative Gap\").\n\nMost Boards rely on feedback filtered through brokers, creating a blindspot on true investor sentiment. We fix that by analyzing the raw, unvarnished perception of your register.\n\nI have a Strategic Diagnostic prepared for Continental Aktiengesellschaft that identifies specific friction points your current reporting may be missing.\n\nDo you want to see the audit before your next Board pack goes out?\n\nBest,\nYour Name\nQuantiFire"
+      }
+    ],
+    "email_draft": "Hi Roland,\n\nRoland, with the high stakes of your upcoming Capital Markets Day on January 8, 2026, the risk of miscommunication looms large, demanding precise, impactful messaging to align investor expectations.\n\nWe specialize in \"Fiduciary Risk Audits\"\u2014measuring exactly where your management narrative diverges from market reality (the \"Narrative Gap\").\n\nMost Boards rely on feedback filtered through brokers, creating a blindspot on true investor sentiment. We fix that by analyzing the raw, unvarnished perception of your register.\n\nI have a Strategic Diagnostic prepared for Continental Aktiengesellschaft that identifies specific friction points your current reporting may be missing.\n\nDo you want to see the audit before your next Board pack goes out?\n\nBest,\nYour Name\nQuantiFire"
+  },
+  {
+    "company": "Deutsche Bank Aktiengesellschaft",
+    "ticker": "DBK.DE",
+    "domain": "https://www.db.com",
+    "performance": "+92.6% (52-wk)",
+    "contacts": [
+      {
+        "name": "Raja Akram",
+        "role": "Chief Financial Officer",
+        "email": "raja.akram@db.com"
+      },
+      {
+        "name": "Ioana Patriniche",
+        "role": "Head of Investor Relations",
+        "email": "ioana.patriniche@db.com"
+      }
+    ],
+    "primary_email": "",
+    "event": {
+      "company": "Deutsche Bank Aktiengesellschaft",
+      "ticker": "DBK.DE",
+      "website": "https://www.db.com",
+      "sector": "Financial Services",
+      "description": "Deutsche Bank Aktiengesellschaft Presentation Zafar Aziz Deutsche Bank Aktiengesellschaft Hello, and Welcome to Deutsche Bank's Virtual Investor Conference,\u00a0...Read more",
+      "index_name": "DAX",
+      "event_type": "Investor Conference",
+      "title": "HUTCHMED (China) Limited (HCM)",
+      "url": "https://www.kavout.com/stocks/nasdaq-hcm/hutchmed-(china)-limited/news",
+      "detected_at": "2026-01-08T13:18:02.886347"
+    },
+    "index_name": "DAX",
+    "draft_hook": "Hi Raja,\n\nNavigating the complexities of a Capital Markets Day on January 8, 2026, demands clarity and precision to avoid the pitfalls of misinterpretation and fully leverage the strategic opportunities it presents.\n\nWe specialize in \"Fiduciary Risk Audits\"\u2014measuring exactly where your management narrative diverges from market reality (the \"Narrative Gap\").\n\nMost Boards rely on feedback filtered through brokers, creating a blindspot on true investor sentiment. We fix that by analyzing the raw, unvarnished perception of your register.\n\nI have a Strategic Diagnostic prepared for Deutsche Bank Aktiengesellschaft that identifies specific friction points your current reporting may be missing.\n\nDo you want to see the audit before your next Board pack goes out?\n\nBest,\nYour Name\nQuantiFire",
+    "status": "needs_approval",
+    "email_drafts": [
+      {
+        "contact_name": "Raja Akram",
+        "contact_role": "Chief Financial Officer",
+        "contact_email": "raja.akram@db.com",
+        "draft": "Hi Raja,\n\nNavigating the complexities of a Capital Markets Day on January 8, 2026, demands clarity and precision to avoid the pitfalls of misinterpretation and fully leverage the strategic opportunities it presents.\n\nWe specialize in \"Fiduciary Risk Audits\"\u2014measuring exactly where your management narrative diverges from market reality (the \"Narrative Gap\").\n\nMost Boards rely on feedback filtered through brokers, creating a blindspot on true investor sentiment. We fix that by analyzing the raw, unvarnished perception of your register.\n\nI have a Strategic Diagnostic prepared for Deutsche Bank Aktiengesellschaft that identifies specific friction points your current reporting may be missing.\n\nDo you want to see the audit before your next Board pack goes out?\n\nBest,\nYour Name\nQuantiFire"
+      },
+      {
+        "contact_name": "Ioana Patriniche",
+        "contact_role": "Head of Investor Relations",
+        "contact_email": "ioana.patriniche@db.com",
+        "draft": "Hi Ioana,\n\nAs we anticipate Deutsche Bank's Capital Markets Day on January 8, 2026, let's ensure that the complexities of your strategic vision aren't lost in translation amidst the high-stakes discussions.\n\nWe specialize in \"Fiduciary Risk Audits\"\u2014measuring exactly where your management narrative diverges from market reality (the \"Narrative Gap\").\n\nMost Boards rely on feedback filtered through brokers, creating a blindspot on true investor sentiment. We fix that by analyzing the raw, unvarnished perception of your register.\n\nI have a Strategic Diagnostic prepared for Deutsche Bank Aktiengesellschaft that identifies specific friction points your current reporting may be missing.\n\nDo you want to see the audit before your next Board pack goes out?\n\nBest,\nYour Name\nQuantiFire"
+      }
+    ],
+    "email_draft": "Hi Raja,\n\nNavigating the complexities of a Capital Markets Day on January 8, 2026, demands clarity and precision to avoid the pitfalls of misinterpretation and fully leverage the strategic opportunities it presents.\n\nWe specialize in \"Fiduciary Risk Audits\"\u2014measuring exactly where your management narrative diverges from market reality (the \"Narrative Gap\").\n\nMost Boards rely on feedback filtered through brokers, creating a blindspot on true investor sentiment. We fix that by analyzing the raw, unvarnished perception of your register.\n\nI have a Strategic Diagnostic prepared for Deutsche Bank Aktiengesellschaft that identifies specific friction points your current reporting may be missing.\n\nDo you want to see the audit before your next Board pack goes out?\n\nBest,\nYour Name\nQuantiFire"
+  },
+  {
+    "company": "Deutsche B\u00f6rse AG",
+    "ticker": "DB1.DE",
+    "domain": "https://deutsche-boerse.com/dbg-de/",
+    "performance": "-6.5% (52-wk)",
+    "contacts": [
+      {
+        "name": "Investor Relations",
+        "role": "Generic",
+        "email": "ir@https://deutsche-boerse.com/dbg-de/",
+        "linkedin": "https://de.linkedin.com/in/svenja-jaschke-967464111"
+      }
+    ],
+    "primary_email": "",
+    "event": {
+      "company": "Deutsche B\u00f6rse AG",
+      "ticker": "DB1.DE",
+      "website": "https://deutsche-boerse.com/dbg-de/",
+      "sector": "Financial Services",
+      "description": "Leading the Transformation: Strategy for Sustained Growth to 2028 and Beyond. CAPITAL MARKETS DAY ... Deutsche B\u00f6rse AG. Last price. \u20ac 224.20. 29.12.2025 17:38\u00a0...Read more",
+      "index_name": "DAX",
+      "event_type": "Capital Markets Day",
+      "title": "Deutsche B\u00f6rse Group",
+      "url": "https://www.deutsche-boerse.com/dbg-en",
+      "detected_at": "2026-01-08T13:18:21.939907"
+    },
+    "index_name": "DAX",
+    "draft_hook": "Hi Investor,\n\nWith the upcoming Capital Markets Day on January 8, 2026, the stakes are high for Deutsche B\u00f6rse AG to clearly communicate its strategic vision and mitigate any risks of misinterpretation by investors.\n\nWe specialize in \"Fiduciary Risk Audits\"\u2014measuring exactly where your management narrative diverges from market reality (the \"Narrative Gap\").\n\nMost Boards rely on feedback filtered through brokers, creating a blindspot on true investor sentiment. We fix that by analyzing the raw, unvarnished perception of your register.\n\nI have a Strategic Diagnostic prepared for Deutsche B\u00f6rse AG that identifies specific friction points your current reporting may be missing.\n\nDo you want to see the audit before your next Board pack goes out?\n\nBest,\nYour Name\nQuantiFire",
+    "status": "needs_approval",
+    "email_drafts": [
+      {
+        "contact_name": "Investor Relations",
+        "contact_role": "Generic",
+        "contact_email": "ir@https://deutsche-boerse.com/dbg-de/",
+        "draft": "Hi Investor,\n\nWith the upcoming Capital Markets Day on January 8, 2026, the stakes are high for Deutsche B\u00f6rse AG to clearly communicate its strategic vision and mitigate any risks of misinterpretation by investors.\n\nWe specialize in \"Fiduciary Risk Audits\"\u2014measuring exactly where your management narrative diverges from market reality (the \"Narrative Gap\").\n\nMost Boards rely on feedback filtered through brokers, creating a blindspot on true investor sentiment. We fix that by analyzing the raw, unvarnished perception of your register.\n\nI have a Strategic Diagnostic prepared for Deutsche B\u00f6rse AG that identifies specific friction points your current reporting may be missing.\n\nDo you want to see the audit before your next Board pack goes out?\n\nBest,\nYour Name\nQuantiFire"
+      }
+    ],
+    "email_draft": "Hi Investor,\n\nWith the upcoming Capital Markets Day on January 8, 2026, the stakes are high for Deutsche B\u00f6rse AG to clearly communicate its strategic vision and mitigate any risks of misinterpretation by investors.\n\nWe specialize in \"Fiduciary Risk Audits\"\u2014measuring exactly where your management narrative diverges from market reality (the \"Narrative Gap\").\n\nMost Boards rely on feedback filtered through brokers, creating a blindspot on true investor sentiment. We fix that by analyzing the raw, unvarnished perception of your register.\n\nI have a Strategic Diagnostic prepared for Deutsche B\u00f6rse AG that identifies specific friction points your current reporting may be missing.\n\nDo you want to see the audit before your next Board pack goes out?\n\nBest,\nYour Name\nQuantiFire"
+  },
+  {
+    "company": "Deutsche Telekom AG",
+    "ticker": "DTE.DE",
+    "domain": "https://www.telekom.com",
+    "performance": "-6.7% (52-wk)",
+    "contacts": [
+      {
+        "name": "Christian P. Illek",
+        "role": "Chief Financial Officer",
+        "email": "christian.illek@telekom.de",
+        "linkedin": "https://de.linkedin.com/in/christianillek"
+      },
+      {
+        "name": "Hannes Wittig",
+        "role": "Head of Investor Relations",
+        "email": "hannes.wittig@telekom.de",
+        "linkedin": "https://de.linkedin.com/in/hannes-wittig-b15834111"
+      }
+    ],
+    "primary_email": "",
+    "event": {
+      "company": "Deutsche Telekom AG",
+      "ticker": "DTE.DE",
+      "website": "https://www.telekom.com",
+      "sector": "Communication Services",
+      "description": "Revenue CAGR \u2248 3.4 % At its October 2024 Capital Markets Day, management ... Deutsche Telekom AG (XTRA:DTE) commences an Equity Buyback Plan under the\u00a0...",
+      "index_name": "DAX",
+      "event_type": "Capital Markets Day",
+      "title": "Deutsche Telekom (XTRA:DTE) - Aktienanalyse",
+      "url": "https://simplywall.st/de/stocks/de/telecom/etr-dte/deutsche-telekom-shares",
+      "detected_at": "2026-01-08T13:19:08.743807"
+    },
+    "index_name": "DAX",
+    "draft_hook": "Hi Christian,\n\nWith the upcoming Capital Markets Day on January 8, 2026, we must ensure our messaging is precise and compelling to mitigate any potential misinterpretations that could impact investor confidence.\n\nWe specialize in \"Fiduciary Risk Audits\"\u2014measuring exactly where your management narrative diverges from market reality (the \"Narrative Gap\").\n\nMost Boards rely on feedback filtered through brokers, creating a blindspot on true investor sentiment. We fix that by analyzing the raw, unvarnished perception of your register.\n\nI have a Strategic Diagnostic prepared for Deutsche Telekom AG that identifies specific friction points your current reporting may be missing.\n\nDo you want to see the audit before your next Board pack goes out?\n\nBest,\nYour Name\nQuantiFire",
+    "status": "needs_approval",
+    "email_drafts": [
+      {
+        "contact_name": "Christian P. Illek",
+        "contact_role": "Chief Financial Officer",
+        "contact_email": "christian.illek@telekom.de",
+        "draft": "Hi Christian,\n\nWith the upcoming Capital Markets Day on January 8, 2026, we must ensure our messaging is precise and compelling to mitigate any potential misinterpretations that could impact investor confidence.\n\nWe specialize in \"Fiduciary Risk Audits\"\u2014measuring exactly where your management narrative diverges from market reality (the \"Narrative Gap\").\n\nMost Boards rely on feedback filtered through brokers, creating a blindspot on true investor sentiment. We fix that by analyzing the raw, unvarnished perception of your register.\n\nI have a Strategic Diagnostic prepared for Deutsche Telekom AG that identifies specific friction points your current reporting may be missing.\n\nDo you want to see the audit before your next Board pack goes out?\n\nBest,\nYour Name\nQuantiFire"
+      },
+      {
+        "contact_name": "Hannes Wittig",
+        "contact_role": "Head of Investor Relations",
+        "contact_email": "hannes.wittig@telekom.de",
+        "draft": "Hi Hannes,\n\nAs Deutsche Telekom AG prepares for the pivotal Capital Markets Day on January 8, 2026, it's crucial to ensure that our strategic messages are crystal clear to avoid any risk of misinterpretation in the high-stakes environment.\n\nWe specialize in \"Fiduciary Risk Audits\"\u2014measuring exactly where your management narrative diverges from market reality (the \"Narrative Gap\").\n\nMost Boards rely on feedback filtered through brokers, creating a blindspot on true investor sentiment. We fix that by analyzing the raw, unvarnished perception of your register.\n\nI have a Strategic Diagnostic prepared for Deutsche Telekom AG that identifies specific friction points your current reporting may be missing.\n\nDo you want to see the audit before your next Board pack goes out?\n\nBest,\nYour Name\nQuantiFire"
+      }
+    ],
+    "email_draft": "Hi Christian,\n\nWith the upcoming Capital Markets Day on January 8, 2026, we must ensure our messaging is precise and compelling to mitigate any potential misinterpretations that could impact investor confidence.\n\nWe specialize in \"Fiduciary Risk Audits\"\u2014measuring exactly where your management narrative diverges from market reality (the \"Narrative Gap\").\n\nMost Boards rely on feedback filtered through brokers, creating a blindspot on true investor sentiment. We fix that by analyzing the raw, unvarnished perception of your register.\n\nI have a Strategic Diagnostic prepared for Deutsche Telekom AG that identifies specific friction points your current reporting may be missing.\n\nDo you want to see the audit before your next Board pack goes out?\n\nBest,\nYour Name\nQuantiFire"
+  },
+  {
+    "company": "Fresenius SE & Co. KGaA",
+    "ticker": "FRE.DE",
+    "domain": "https://www.fresenius.com",
+    "performance": "+39.6% (52-wk)",
+    "contacts": [
+      {
+        "name": "Sara Hennicken",
+        "role": "Chief Financial Officer",
+        "email": "sara.hennicken@fresenius.com",
+        "linkedin": ""
+      },
+      {
+        "name": "Nick Stone",
+        "role": "Head of Investor Relations",
+        "email": "nick.stone@fresenius.com"
+      }
+    ],
+    "primary_email": "",
+    "event": {
+      "company": "Fresenius SE & Co. KGaA",
+      "ticker": "FRE.DE",
+      "website": "https://www.fresenius.com",
+      "sector": "Healthcare",
+      "description": "Capital Markets Day Fresenius Helios. More information \u00b7 Webcast (Replay) ... CONTACT US. Fresenius SE & Co. KGaA. Else-Kr\u00f6ner-Str. 1 61352 Bad Homburg\u00a0...Read more",
+      "index_name": "DAX",
+      "event_type": "Capital Markets Day",
+      "title": "Capital Markets Day | FSE",
+      "url": "https://www.fresenius.com/taxonomy/term/21",
+      "detected_at": "2026-01-08T13:20:10.616115"
+    },
+    "index_name": "DAX",
+    "draft_hook": "Hi Sara,\n\nSara, as Fresenius prepares for the high-stakes Capital Markets Day on January 8, 2026, it's crucial to ensure our narrative is crystal clear to avoid any potential misinterpretation by investors.\n\nWe specialize in \"Fiduciary Risk Audits\"\u2014measuring exactly where your management narrative diverges from market reality (the \"Narrative Gap\").\n\nMost Boards rely on feedback filtered through brokers, creating a blindspot on true investor sentiment. We fix that by analyzing the raw, unvarnished perception of your register.\n\nI have a Strategic Diagnostic prepared for Fresenius SE & Co. KGaA that identifies specific friction points your current reporting may be missing.\n\nDo you want to see the audit before your next Board pack goes out?\n\nBest,\nYour Name\nQuantiFire",
+    "status": "needs_approval",
+    "email_drafts": [
+      {
+        "contact_name": "Sara Hennicken",
+        "contact_role": "Chief Financial Officer",
+        "contact_email": "sara.hennicken@fresenius.com",
+        "draft": "Hi Sara,\n\nSara, as Fresenius prepares for the high-stakes Capital Markets Day on January 8, 2026, it's crucial to ensure our narrative is crystal clear to avoid any potential misinterpretation by investors.\n\nWe specialize in \"Fiduciary Risk Audits\"\u2014measuring exactly where your management narrative diverges from market reality (the \"Narrative Gap\").\n\nMost Boards rely on feedback filtered through brokers, creating a blindspot on true investor sentiment. We fix that by analyzing the raw, unvarnished perception of your register.\n\nI have a Strategic Diagnostic prepared for Fresenius SE & Co. KGaA that identifies specific friction points your current reporting may be missing.\n\nDo you want to see the audit before your next Board pack goes out?\n\nBest,\nYour Name\nQuantiFire"
+      },
+      {
+        "contact_name": "Nick Stone",
+        "contact_role": "Head of Investor Relations",
+        "contact_email": "nick.stone@fresenius.com",
+        "draft": "Hi Nick,\n\nAs Capital Markets Day approaches, it's crucial to ensure your strategic vision resonates clearly to avoid any potential misinterpretations that could impact investor confidence.\n\nWe specialize in \"Fiduciary Risk Audits\"\u2014measuring exactly where your management narrative diverges from market reality (the \"Narrative Gap\").\n\nMost Boards rely on feedback filtered through brokers, creating a blindspot on true investor sentiment. We fix that by analyzing the raw, unvarnished perception of your register.\n\nI have a Strategic Diagnostic prepared for Fresenius SE & Co. KGaA that identifies specific friction points your current reporting may be missing.\n\nDo you want to see the audit before your next Board pack goes out?\n\nBest,\nYour Name\nQuantiFire"
+      }
+    ],
+    "email_draft": "Hi Sara,\n\nSara, as Fresenius prepares for the high-stakes Capital Markets Day on January 8, 2026, it's crucial to ensure our narrative is crystal clear to avoid any potential misinterpretation by investors.\n\nWe specialize in \"Fiduciary Risk Audits\"\u2014measuring exactly where your management narrative diverges from market reality (the \"Narrative Gap\").\n\nMost Boards rely on feedback filtered through brokers, creating a blindspot on true investor sentiment. We fix that by analyzing the raw, unvarnished perception of your register.\n\nI have a Strategic Diagnostic prepared for Fresenius SE & Co. KGaA that identifies specific friction points your current reporting may be missing.\n\nDo you want to see the audit before your next Board pack goes out?\n\nBest,\nYour Name\nQuantiFire"
+  },
+  {
+    "company": "Merck KGaA",
+    "ticker": "MRK.DE",
+    "domain": "https://www.emdgroup.com",
+    "performance": "-10.3% (52-wk)",
+    "contacts": [
+      {
+        "name": "Florian Schraeder",
+        "role": "Head of Investor Relations",
+        "email": "florian.schraeder@emdgroup.com"
+      }
+    ],
+    "primary_email": "",
+    "event": {
+      "company": "Merck KGaA",
+      "ticker": "MRK.DE",
+      "website": "https://www.emdgroup.com",
+      "sector": "Healthcare",
+      "description": "German pharmaceuticals and technology company Merck KGaA gave a guidance for 2026 that sent its shares falling during its capital markets day on Thursday\u00a0...Read more",
+      "index_name": "DAX",
+      "event_type": "Capital Markets Day",
+      "title": "Merck KGaA",
+      "url": "https://www.reuters.com/company/merck-kgaa/",
+      "detected_at": "2026-01-08T13:23:47.429448"
+    },
+    "index_name": "DAX",
+    "draft_hook": "Hi Florian,\n\nFlorian, as Merck KGaA prepares for its pivotal Capital Markets Day on January 8, 2026, ensuring clarity in our strategic messaging is crucial to prevent any market misinterpretations.\n\nWe specialize in \"Fiduciary Risk Audits\"\u2014measuring exactly where your management narrative diverges from market reality (the \"Narrative Gap\").\n\nMost Boards rely on feedback filtered through brokers, creating a blindspot on true investor sentiment. We fix that by analyzing the raw, unvarnished perception of your register.\n\nI have a Strategic Diagnostic prepared for Merck KGaA that identifies specific friction points your current reporting may be missing.\n\nDo you want to see the audit before your next Board pack goes out?\n\nBest,\nYour Name\nQuantiFire",
+    "status": "needs_approval",
+    "email_drafts": [
+      {
+        "contact_name": "Florian Schraeder",
+        "contact_role": "Head of Investor Relations",
+        "contact_email": "florian.schraeder@emdgroup.com",
+        "draft": "Hi Florian,\n\nFlorian, as Merck KGaA prepares for its pivotal Capital Markets Day on January 8, 2026, ensuring clarity in our strategic messaging is crucial to prevent any market misinterpretations.\n\nWe specialize in \"Fiduciary Risk Audits\"\u2014measuring exactly where your management narrative diverges from market reality (the \"Narrative Gap\").\n\nMost Boards rely on feedback filtered through brokers, creating a blindspot on true investor sentiment. We fix that by analyzing the raw, unvarnished perception of your register.\n\nI have a Strategic Diagnostic prepared for Merck KGaA that identifies specific friction points your current reporting may be missing.\n\nDo you want to see the audit before your next Board pack goes out?\n\nBest,\nYour Name\nQuantiFire"
+      }
+    ],
+    "email_draft": "Hi Florian,\n\nFlorian, as Merck KGaA prepares for its pivotal Capital Markets Day on January 8, 2026, ensuring clarity in our strategic messaging is crucial to prevent any market misinterpretations.\n\nWe specialize in \"Fiduciary Risk Audits\"\u2014measuring exactly where your management narrative diverges from market reality (the \"Narrative Gap\").\n\nMost Boards rely on feedback filtered through brokers, creating a blindspot on true investor sentiment. We fix that by analyzing the raw, unvarnished perception of your register.\n\nI have a Strategic Diagnostic prepared for Merck KGaA that identifies specific friction points your current reporting may be missing.\n\nDo you want to see the audit before your next Board pack goes out?\n\nBest,\nYour Name\nQuantiFire"
+  },
+  {
+    "company": "Rheinmetall AG",
+    "ticker": "RHM.DE",
+    "domain": "https://www.rheinmetall.com",
+    "performance": "+181.1% (52-wk)",
+    "contacts": [
+      {
+        "name": "Dirk Winkels",
+        "role": "Head of Investor Relations",
+        "email": "dirk.winkels@rheinmetall.com",
+        "linkedin": "https://de.linkedin.com/in/dirk-winkels-7036737b"
+      },
+      {
+        "name": "Klaus Neumann",
+        "role": "Chief Financial Officer",
+        "email": "klaus.neumann@rheinmetall.com"
+      }
+    ],
+    "primary_email": "",
+    "event": {
+      "company": "Rheinmetall AG",
+      "ticker": "RHM.DE",
+      "website": "https://www.rheinmetall.com",
+      "sector": "Industrials",
+      "description": "Rheinmetall AG. Capital Markets Day \u2013 Rheinmetall Group \u2013 Webcast-Livestream from 09:00 am CET. Visit Website. Webcasts. 18. Nov 25. Rheinmetall AG. Capital\u00a0...Read more",
+      "index_name": "DAX",
+      "event_type": "Capital Markets Day",
+      "title": "Rheinmetall AG | Events",
+      "url": "https://www.eqs-news.com/company/rheinmetall-ag/events/5b71df83-ea7c-11e8-902f-2c44fd856d8c",
+      "detected_at": "2026-01-08T13:38:48.175608"
+    },
+    "index_name": "DAX",
+    "draft_hook": "Hi Dirk,\n\nWith the high stakes of your upcoming Capital Markets Day on January 8, 2026, clarity will be crucial to avoid any potential misunderstandings that could impact investor perception.\n\nWe specialize in \"Fiduciary Risk Audits\"\u2014measuring exactly where your management narrative diverges from market reality (the \"Narrative Gap\").\n\nMost Boards rely on feedback filtered through brokers, creating a blindspot on true investor sentiment. We fix that by analyzing the raw, unvarnished perception of your register.\n\nI have a Strategic Diagnostic prepared for Rheinmetall AG that identifies specific friction points your current reporting may be missing.\n\nDo you want to see the audit before your next Board pack goes out?\n\nBest,\nYour Name\nQuantiFire",
+    "status": "needs_approval",
+    "email_drafts": [
+      {
+        "contact_name": "Dirk Winkels",
+        "contact_role": "Head of Investor Relations",
+        "contact_email": "dirk.winkels@rheinmetall.com",
+        "draft": "Hi Dirk,\n\nWith the high stakes of your upcoming Capital Markets Day on January 8, 2026, clarity will be crucial to avoid any potential misunderstandings that could impact investor perception.\n\nWe specialize in \"Fiduciary Risk Audits\"\u2014measuring exactly where your management narrative diverges from market reality (the \"Narrative Gap\").\n\nMost Boards rely on feedback filtered through brokers, creating a blindspot on true investor sentiment. We fix that by analyzing the raw, unvarnished perception of your register.\n\nI have a Strategic Diagnostic prepared for Rheinmetall AG that identifies specific friction points your current reporting may be missing.\n\nDo you want to see the audit before your next Board pack goes out?\n\nBest,\nYour Name\nQuantiFire"
+      },
+      {
+        "contact_name": "Klaus Neumann",
+        "contact_role": "Chief Financial Officer",
+        "contact_email": "klaus.neumann@rheinmetall.com",
+        "draft": "Hi Klaus,\n\nAs we approach the pivotal Capital Markets Day on January 8, 2026, ensuring clear and compelling communication will be crucial in preventing any misinterpretation of Rheinmetall AG's strategic vision and market positioning.\n\nWe specialize in \"Fiduciary Risk Audits\"\u2014measuring exactly where your management narrative diverges from market reality (the \"Narrative Gap\").\n\nMost Boards rely on feedback filtered through brokers, creating a blindspot on true investor sentiment. We fix that by analyzing the raw, unvarnished perception of your register.\n\nI have a Strategic Diagnostic prepared for Rheinmetall AG that identifies specific friction points your current reporting may be missing.\n\nDo you want to see the audit before your next Board pack goes out?\n\nBest,\nYour Name\nQuantiFire"
+      }
+    ],
+    "email_draft": "Hi Dirk,\n\nWith the high stakes of your upcoming Capital Markets Day on January 8, 2026, clarity will be crucial to avoid any potential misunderstandings that could impact investor perception.\n\nWe specialize in \"Fiduciary Risk Audits\"\u2014measuring exactly where your management narrative diverges from market reality (the \"Narrative Gap\").\n\nMost Boards rely on feedback filtered through brokers, creating a blindspot on true investor sentiment. We fix that by analyzing the raw, unvarnished perception of your register.\n\nI have a Strategic Diagnostic prepared for Rheinmetall AG that identifies specific friction points your current reporting may be missing.\n\nDo you want to see the audit before your next Board pack goes out?\n\nBest,\nYour Name\nQuantiFire"
+  },
+  {
+    "company": "Scout24 SE",
+    "ticker": "G24.DE",
+    "domain": "https://www.scout24.com",
+    "performance": "-5.7% (52-wk)",
+    "contacts": [
+      {
+        "name": "Filip Lindvall",
+        "role": "Head of Investor Relations",
+        "email": "filip.lindvall@scout24.com"
+      }
+    ],
+    "primary_email": "",
+    "event": {
+      "company": "Scout24 SE",
+      "ticker": "G24.DE",
+      "website": "https://www.scout24.com",
+      "sector": "Communication Services",
+      "description": "Scout24 SE Announces New CFO Appointment. Scout24 SE has announced the appointment of Martin Mildner as the new Chief Financial Officer (CFO), effective 1\u00a0...Read more",
+      "index_name": "DAX",
+      "event_type": "CFO Appointment / Capital Markets Day",
+      "title": "Scout24 SE Announces New CFO Appointment - WebDisclosure",
+      "url": "https://www.webdisclosure.com/article/scout24-ag-etr-de000a12-scout24-se-announces-new-cfo-appointment-ptpTQZiglM5",
+      "detected_at": "2026-01-08T13:40:31.049631"
+    },
+    "index_name": "DAX",
+    "draft_hook": "Hi Filip,\n\nAs the anticipation builds for Scout24 SE's Capital Markets Day on January 8, 2026, it is crucial to ensure that your strategic narrative cuts through any potential noise to prevent misinterpretation of your growth initiatives.\n\nWe specialize in \"Fiduciary Risk Audits\"\u2014measuring exactly where your management narrative diverges from market reality (the \"Narrative Gap\").\n\nMost Boards rely on feedback filtered through brokers, creating a blindspot on true investor sentiment. We fix that by analyzing the raw, unvarnished perception of your register.\n\nI have a Strategic Diagnostic prepared for Scout24 SE that identifies specific friction points your current reporting may be missing.\n\nDo you want to see the audit before your next Board pack goes out?\n\nBest,\nYour Name\nQuantiFire",
+    "status": "needs_approval",
+    "email_drafts": [
+      {
+        "contact_name": "Filip Lindvall",
+        "contact_role": "Head of Investor Relations",
+        "contact_email": "filip.lindvall@scout24.com",
+        "draft": "Hi Filip,\n\nAs the anticipation builds for Scout24 SE's Capital Markets Day on January 8, 2026, it is crucial to ensure that your strategic narrative cuts through any potential noise to prevent misinterpretation of your growth initiatives.\n\nWe specialize in \"Fiduciary Risk Audits\"\u2014measuring exactly where your management narrative diverges from market reality (the \"Narrative Gap\").\n\nMost Boards rely on feedback filtered through brokers, creating a blindspot on true investor sentiment. We fix that by analyzing the raw, unvarnished perception of your register.\n\nI have a Strategic Diagnostic prepared for Scout24 SE that identifies specific friction points your current reporting may be missing.\n\nDo you want to see the audit before your next Board pack goes out?\n\nBest,\nYour Name\nQuantiFire"
+      }
+    ],
+    "email_draft": "Hi Filip,\n\nAs the anticipation builds for Scout24 SE's Capital Markets Day on January 8, 2026, it is crucial to ensure that your strategic narrative cuts through any potential noise to prevent misinterpretation of your growth initiatives.\n\nWe specialize in \"Fiduciary Risk Audits\"\u2014measuring exactly where your management narrative diverges from market reality (the \"Narrative Gap\").\n\nMost Boards rely on feedback filtered through brokers, creating a blindspot on true investor sentiment. We fix that by analyzing the raw, unvarnished perception of your register.\n\nI have a Strategic Diagnostic prepared for Scout24 SE that identifies specific friction points your current reporting may be missing.\n\nDo you want to see the audit before your next Board pack goes out?\n\nBest,\nYour Name\nQuantiFire"
+  },
+  {
+    "company": "Siemens Energy AG",
+    "ticker": "ENR.DE",
+    "domain": "https://www.siemens-energy.com",
+    "performance": "+149.3% (52-wk)",
+    "contacts": [
+      {
+        "name": "Maria Ferraro",
+        "role": "Chief Financial Officer",
+        "email": "maria.ferraro@siemens-energy.com"
+      },
+      {
+        "name": "Michael Hagmann",
+        "role": "Head of Investor Relations",
+        "email": "michael.hagmann@siemens-energy.com"
+      }
+    ],
+    "primary_email": "",
+    "event": {
+      "company": "Siemens Energy AG",
+      "ticker": "ENR.DE",
+      "website": "https://www.siemens-energy.com",
+      "sector": "Industrials",
+      "description": "Siemens Energy AG. +3.87%. Stock Siemens Energy AG \u00b7 Exxon Mobil Corporation ... \" A company spokesperson referred to the recent capital markets day, where\u00a0...Read more",
+      "index_name": "DAX",
+      "event_type": "Capital Markets Day",
+      "title": "Activist Investor Urges Siemens Energy to Spin Off Gamesa ...",
+      "url": "https://www.marketscreener.com/news/activist-investor-urges-siemens-energy-to-spin-off-gamesa-wind-division-ce7d51d2df89f123",
+      "detected_at": "2026-01-08T13:42:09.876595"
+    },
+    "index_name": "DAX",
+    "draft_hook": "Hi Maria,\n\nA successful Capital Markets Day hinges not just on the numbers presented, but on ensuring the narrative aligns with investor expectations, lest the opportunity turns into a risk of misinterpretation.\n\nWe specialize in \"Fiduciary Risk Audits\"\u2014measuring exactly where your management narrative diverges from market reality (the \"Narrative Gap\").\n\nMost Boards rely on feedback filtered through brokers, creating a blindspot on true investor sentiment. We fix that by analyzing the raw, unvarnished perception of your register.\n\nI have a Strategic Diagnostic prepared for Siemens Energy AG that identifies specific friction points your current reporting may be missing.\n\nDo you want to see the audit before your next Board pack goes out?\n\nBest,\nYour Name\nQuantiFire",
+    "status": "needs_approval",
+    "email_drafts": [
+      {
+        "contact_name": "Maria Ferraro",
+        "contact_role": "Chief Financial Officer",
+        "contact_email": "maria.ferraro@siemens-energy.com",
+        "draft": "Hi Maria,\n\nA successful Capital Markets Day hinges not just on the numbers presented, but on ensuring the narrative aligns with investor expectations, lest the opportunity turns into a risk of misinterpretation.\n\nWe specialize in \"Fiduciary Risk Audits\"\u2014measuring exactly where your management narrative diverges from market reality (the \"Narrative Gap\").\n\nMost Boards rely on feedback filtered through brokers, creating a blindspot on true investor sentiment. We fix that by analyzing the raw, unvarnished perception of your register.\n\nI have a Strategic Diagnostic prepared for Siemens Energy AG that identifies specific friction points your current reporting may be missing.\n\nDo you want to see the audit before your next Board pack goes out?\n\nBest,\nYour Name\nQuantiFire"
+      },
+      {
+        "contact_name": "Michael Hagmann",
+        "contact_role": "Head of Investor Relations",
+        "contact_email": "michael.hagmann@siemens-energy.com",
+        "draft": "Hi Michael,\n\nMichael, as Siemens Energy AG gears up for its pivotal Capital Markets Day on January 8, 2026, it's crucial to ensure that the strategic narrative is crystal clear to prevent any risk of market misinterpretation.\n\nWe specialize in \"Fiduciary Risk Audits\"\u2014measuring exactly where your management narrative diverges from market reality (the \"Narrative Gap\").\n\nMost Boards rely on feedback filtered through brokers, creating a blindspot on true investor sentiment. We fix that by analyzing the raw, unvarnished perception of your register.\n\nI have a Strategic Diagnostic prepared for Siemens Energy AG that identifies specific friction points your current reporting may be missing.\n\nDo you want to see the audit before your next Board pack goes out?\n\nBest,\nYour Name\nQuantiFire"
+      }
+    ],
+    "email_draft": "Hi Maria,\n\nA successful Capital Markets Day hinges not just on the numbers presented, but on ensuring the narrative aligns with investor expectations, lest the opportunity turns into a risk of misinterpretation.\n\nWe specialize in \"Fiduciary Risk Audits\"\u2014measuring exactly where your management narrative diverges from market reality (the \"Narrative Gap\").\n\nMost Boards rely on feedback filtered through brokers, creating a blindspot on true investor sentiment. We fix that by analyzing the raw, unvarnished perception of your register.\n\nI have a Strategic Diagnostic prepared for Siemens Energy AG that identifies specific friction points your current reporting may be missing.\n\nDo you want to see the audit before your next Board pack goes out?\n\nBest,\nYour Name\nQuantiFire"
+  },
+  {
+    "company": "Siemens Healthineers AG",
+    "ticker": "SHL.DE",
+    "domain": "https://www.siemens-healthineers.com",
+    "performance": "-9.3% (52-wk)",
+    "contacts": [
+      {
+        "name": "Jochen Schmitz",
+        "role": "Chief Financial Officer",
+        "email": "jochen.schmitz@siemens-healthineers.com",
+        "linkedin": "https://de.linkedin.com/in/jochen-schmitz"
+      },
+      {
+        "name": "Marc Koebernick",
+        "role": "Head of Investor Relations",
+        "email": "marc.koebernick@siemens-healthineers.com"
+      },
+      {
+        "name": "Dagmar Mundani",
+        "role": "Company Secretary",
+        "email": "dagmar.mundani@siemens.com",
+        "linkedin": "https://de.linkedin.com/in/dagmar-mundani-5612aa18a"
+      }
+    ],
+    "primary_email": "",
+    "event": {
+      "company": "Siemens Healthineers AG",
+      "ticker": "SHL.DE",
+      "website": "https://www.siemens-healthineers.com",
+      "sector": "Healthcare",
+      "description": "Siemens Healthineers AG ADR. 22.800. +0.200(+0.88%). \u0e27\u0e34\u0e40\u0e04\u0e23\u0e32\u0e30\u0e2b\u0e4c\u0e01\u0e23\u0e32\u0e1f. \u0e23\u0e32\u0e04\u0e32\u0e40\u0e1b\u0e34\u0e14 ... Capital Markets Day \u0e17\u0e35\u0e48\u0e25\u0e2d\u0e19\u0e14\u0e2d\u0e19... Investing.com. Nov 18, 2025. \u0e41\u0e2a\u0e14\u0e07\u0e02\u0e49\u0e2d\u0e21\u0e39\u0e25\u00a0...Read more",
+      "index_name": "DAX",
+      "event_type": "Capital Markets Day",
+      "title": "\u0e2b\u0e38\u0e49\u0e19 Siemens Healthineers AG ADR | \u0e23\u0e32\u0e04\u0e32\u0e2b\u0e38\u0e49\u0e19 SHL1y",
+      "url": "https://th.investing.com/equities/siemens-healthineers-adr",
+      "detected_at": "2026-01-08T13:42:39.062772"
+    },
+    "index_name": "DAX",
+    "draft_hook": "Subject: Navigate Uncertainty with Strategic Insights  \n  \nCapital Markets Day creates uncertainty, impacting perceptions. Siemens Healthineers AG has seen a -9.3% drop in stock over 52-weeks. A Perception Study can provide the strategic clarity needed to address market concerns and stabilize your narrative.",
+    "status": "needs_approval"
+  },
+  {
+    "company": "Volkswagen AG",
+    "ticker": "VOW3.DE",
+    "domain": "https://www.volkswagen-group.com",
+    "performance": "+13.9% (52-wk)",
+    "contacts": [
+      {
+        "name": "Arno Antlitz",
+        "role": "Chief Financial Officer",
+        "email": "arno.antlitz@volkswagen.de",
+        "linkedin": "https://de.linkedin.com/in/arno-antlitz"
+      },
+      {
+        "name": "Lars Korinth",
+        "role": "Head of Investor Relations",
+        "email": "lars.korinth@volkswagen.de",
+        "linkedin": "https://de.linkedin.com/in/lars-korinth-73535b147"
+      }
+    ],
+    "primary_email": "",
+    "event": {
+      "company": "Volkswagen AG",
+      "ticker": "VOW3.DE",
+      "website": "https://www.volkswagen-group.com",
+      "sector": "Consumer Cyclical",
+      "description": "Volkswagen AG (VWAGY) Annual Media Analyst and Investor Conference Transcript \u00b7 SA TranscriptsWed, Mar. 13, 2024. Save. Volkswagen AG 2023 Q4 - Results\u00a0...Read more",
+      "index_name": "DAX",
+      "event_type": "Capital Markets Day / Investor Conference",
+      "title": "VLKAF Volkswagen AG Earnings Call Transcripts",
+      "url": "https://seekingalpha.com/symbol/VLKAF/earnings/transcripts",
+      "detected_at": "2026-01-08T13:44:55.247894"
+    },
+    "index_name": "DAX",
+    "draft_hook": "Hi Arno,\n\nAs Volkswagen AG prepares for its pivotal Capital Markets Day on January 8, 2026, we must ensure that our strategic vision is communicated with precision to mitigate the risk of market misinterpretation.\n\nWe specialize in \"Fiduciary Risk Audits\"\u2014measuring exactly where your management narrative diverges from market reality (the \"Narrative Gap\").\n\nMost Boards rely on feedback filtered through brokers, creating a blindspot on true investor sentiment. We fix that by analyzing the raw, unvarnished perception of your register.\n\nI have a Strategic Diagnostic prepared for Volkswagen AG that identifies specific friction points your current reporting may be missing.\n\nDo you want to see the audit before your next Board pack goes out?\n\nBest,\nYour Name\nQuantiFire",
+    "status": "needs_approval",
+    "email_drafts": [
+      {
+        "contact_name": "Arno Antlitz",
+        "contact_role": "Chief Financial Officer",
+        "contact_email": "arno.antlitz@volkswagen.de",
+        "draft": "Hi Arno,\n\nAs Volkswagen AG prepares for its pivotal Capital Markets Day on January 8, 2026, we must ensure that our strategic vision is communicated with precision to mitigate the risk of market misinterpretation.\n\nWe specialize in \"Fiduciary Risk Audits\"\u2014measuring exactly where your management narrative diverges from market reality (the \"Narrative Gap\").\n\nMost Boards rely on feedback filtered through brokers, creating a blindspot on true investor sentiment. We fix that by analyzing the raw, unvarnished perception of your register.\n\nI have a Strategic Diagnostic prepared for Volkswagen AG that identifies specific friction points your current reporting may be missing.\n\nDo you want to see the audit before your next Board pack goes out?\n\nBest,\nYour Name\nQuantiFire"
+      },
+      {
+        "contact_name": "Lars Korinth",
+        "contact_role": "Head of Investor Relations",
+        "contact_email": "lars.korinth@volkswagen.de",
+        "draft": "Hi Lars,\n\nDear Lars, as Volkswagen AG prepares for the pivotal Capital Markets Day on January 8, 2026, the potential for transformative insights is matched only by the risk of misinterpretation in such a high-stakes setting.\n\nWe specialize in \"Fiduciary Risk Audits\"\u2014measuring exactly where your management narrative diverges from market reality (the \"Narrative Gap\").\n\nMost Boards rely on feedback filtered through brokers, creating a blindspot on true investor sentiment. We fix that by analyzing the raw, unvarnished perception of your register.\n\nI have a Strategic Diagnostic prepared for Volkswagen AG that identifies specific friction points your current reporting may be missing.\n\nDo you want to see the audit before your next Board pack goes out?\n\nBest,\nYour Name\nQuantiFire"
+      }
+    ],
+    "email_draft": "Hi Arno,\n\nAs Volkswagen AG prepares for its pivotal Capital Markets Day on January 8, 2026, we must ensure that our strategic vision is communicated with precision to mitigate the risk of market misinterpretation.\n\nWe specialize in \"Fiduciary Risk Audits\"\u2014measuring exactly where your management narrative diverges from market reality (the \"Narrative Gap\").\n\nMost Boards rely on feedback filtered through brokers, creating a blindspot on true investor sentiment. We fix that by analyzing the raw, unvarnished perception of your register.\n\nI have a Strategic Diagnostic prepared for Volkswagen AG that identifies specific friction points your current reporting may be missing.\n\nDo you want to see the audit before your next Board pack goes out?\n\nBest,\nYour Name\nQuantiFire"
+  },
+  {
+    "company": "Zalando SE",
+    "ticker": "ZAL.DE",
+    "domain": "https://corporate.zalando.com",
+    "performance": "-15.5% (52-wk)",
+    "contacts": [
+      {
+        "name": "Anna Dimitrova",
+        "role": "Chief Financial Officer",
+        "email": "anna.dimitrova@zalando.de",
+        "linkedin": "https://de.linkedin.com/in/andimitrova"
+      },
+      {
+        "name": "Patrick Kofler",
+        "role": "Head of Investor Relations",
+        "email": "patrick.kofler@zalando.de",
+        "linkedin": "https://de.linkedin.com/in/patrick-kofler-1b351b65"
+      }
+    ],
+    "primary_email": "",
+    "event": {
+      "company": "Zalando SE",
+      "ticker": "ZAL.DE",
+      "website": "https://corporate.zalando.com",
+      "sector": "Consumer Cyclical",
+      "description": "Zalando SE. ... Capital Markets Day \u00b7 Share \u00b7 Go to Share \u00b7 The Zalando share \u00b7 Shareholder structure \u00b7 Share buy-back \u00b7 Analysts \u00b7 IPO \u00b7 Convertible bond \u00b7 ABOUT\u00a0...Read more",
+      "index_name": "DAX",
+      "event_type": "Capital Markets Day",
+      "title": "We're all in to win. Our thoughts on Zalando's next chapter.",
+      "url": "https://corporate.zalando.com/en/company/were-all-win-our-thoughts-zalandos-next-chapter",
+      "detected_at": "2026-01-08T13:46:00.717489"
+    },
+    "index_name": "DAX",
+    "draft_hook": "Hi Anna,\n\nAnna, as Zalando prepares for its pivotal Capital Markets Day on January 8, 2026, how do you plan to ensure the narrative we present is not only compelling but also immune to misinterpretation?\n\nWe specialize in \"Fiduciary Risk Audits\"\u2014measuring exactly where your management narrative diverges from market reality (the \"Narrative Gap\").\n\nMost Boards rely on feedback filtered through brokers, creating a blindspot on true investor sentiment. We fix that by analyzing the raw, unvarnished perception of your register.\n\nI have a Strategic Diagnostic prepared for Zalando SE that identifies specific friction points your current reporting may be missing.\n\nDo you want to see the audit before your next Board pack goes out?\n\nBest,\nYour Name\nQuantiFire",
+    "status": "needs_approval",
+    "email_drafts": [
+      {
+        "contact_name": "Anna Dimitrova",
+        "contact_role": "Chief Financial Officer",
+        "contact_email": "anna.dimitrova@zalando.de",
+        "draft": "Hi Anna,\n\nAnna, as Zalando prepares for its pivotal Capital Markets Day on January 8, 2026, how do you plan to ensure the narrative we present is not only compelling but also immune to misinterpretation?\n\nWe specialize in \"Fiduciary Risk Audits\"\u2014measuring exactly where your management narrative diverges from market reality (the \"Narrative Gap\").\n\nMost Boards rely on feedback filtered through brokers, creating a blindspot on true investor sentiment. We fix that by analyzing the raw, unvarnished perception of your register.\n\nI have a Strategic Diagnostic prepared for Zalando SE that identifies specific friction points your current reporting may be missing.\n\nDo you want to see the audit before your next Board pack goes out?\n\nBest,\nYour Name\nQuantiFire"
+      },
+      {
+        "contact_name": "Patrick Kofler",
+        "contact_role": "Head of Investor Relations",
+        "contact_email": "patrick.kofler@zalando.de",
+        "draft": "Hi Patrick,\n\nWith the upcoming Capital Markets Day on January 8, 2026, the stakes are high for Zalando SE to clearly articulate its strategic vision and prevent any misinterpretations that could impact investor confidence.\n\nWe specialize in \"Fiduciary Risk Audits\"\u2014measuring exactly where your management narrative diverges from market reality (the \"Narrative Gap\").\n\nMost Boards rely on feedback filtered through brokers, creating a blindspot on true investor sentiment. We fix that by analyzing the raw, unvarnished perception of your register.\n\nI have a Strategic Diagnostic prepared for Zalando SE that identifies specific friction points your current reporting may be missing.\n\nDo you want to see the audit before your next Board pack goes out?\n\nBest,\nYour Name\nQuantiFire"
+      }
+    ],
+    "email_draft": "Hi Anna,\n\nAnna, as Zalando prepares for its pivotal Capital Markets Day on January 8, 2026, how do you plan to ensure the narrative we present is not only compelling but also immune to misinterpretation?\n\nWe specialize in \"Fiduciary Risk Audits\"\u2014measuring exactly where your management narrative diverges from market reality (the \"Narrative Gap\").\n\nMost Boards rely on feedback filtered through brokers, creating a blindspot on true investor sentiment. We fix that by analyzing the raw, unvarnished perception of your register.\n\nI have a Strategic Diagnostic prepared for Zalando SE that identifies specific friction points your current reporting may be missing.\n\nDo you want to see the audit before your next Board pack goes out?\n\nBest,\nYour Name\nQuantiFire"
+  }
+]

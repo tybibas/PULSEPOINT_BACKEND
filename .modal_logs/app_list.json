@@ -1,0 +1,42 @@
+[
+  {
+    "App ID": "ap-syNpfxIsudnHIcyLck7lUG",
+    "Description": "pathmatch-backend",
+    "State": "deployed",
+    "Tasks": "0",
+    "Created at": "2026-01-23 23:00:54-08:00",
+    "Stopped at": null
+  },
+  {
+    "App ID": "ap-81wQZtPsde7ein0zEA94xq",
+    "Description": "pulsepoint-email-dispatcher",
+    "State": "deployed",
+    "Tasks": "1",
+    "Created at": "2026-02-03 09:12:26-08:00",
+    "Stopped at": null
+  },
+  {
+    "App ID": "ap-7qJ3TaPmMQqIhGcxN8BwH3",
+    "Description": "pulsepoint-monitor-worker",
+    "State": "deployed",
+    "Tasks": "0",
+    "Created at": "2026-02-05 22:16:39-08:00",
+    "Stopped at": null
+  },
+  {
+    "App ID": "ap-N7NoXSETgCz5h8iR4ew7YH",
+    "Description": "email-tracker",
+    "State": "deployed",
+    "Tasks": "0",
+    "Created at": "2026-02-05 23:01:59-08:00",
+    "Stopped at": null
+  },
+  {
+    "App ID": "ap-p3g2gEEAUOzZXeW5EJG4zO",
+    "Description": "pulsepoint-enrichment-worker",
+    "State": "deployed",
+    "Tasks": "0",
+    "Created at": "2026-02-06 15:22:43-08:00",
+    "Stopped at": null
+  }
+]

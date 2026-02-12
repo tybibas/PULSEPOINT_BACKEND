@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ company_name }} Report</title>
+    <link rel="stylesheet" href="../css/report_theme.css">
+    <style>
+        /* Inline overrides if needed */
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="#0C2340" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M2 17L12 22L22 17" stroke="#0C2340" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M2 12L12 17L22 12" stroke="#0C2340" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            QUANTIFIRE
+        </div>
+        <div class="logo-subtext">FEEDBACK INTELLIGENCE</div>
+    </header>
+
+    <h1>Post-Earnings Sentiment Gap Analysis</h1>
+    <div class="ticker">{{ ticker }}</div>
+
+    <div class="section-title">MARKET CLARITY SCORE: "{{ topic }}" Q&A</div>
+    <div class="section-subtitle">{{ quarter }}</div>
+
+    <div class="chart-container">
+        <div class="delta-indicator">
+            <span class="delta-value">{{ delta_percent }}%</span>
+            <span class="delta-label">Lower Clarity</span>
+            <!-- Simple arrow representation -->
+             →
+        </div>
+
+        <!-- Target Company -->
+        <div class="bar-group">
+            <span class="bar-value">{{ target_score }}/10)</span>
+            <div class="bar target" style="height: {{ (target_score / 10) * 100 }}%;"></div>
+            <span class="bar-label">{{ ticker }}</span>
+        </div>
+
+        <!-- Peer 1 -->
+        <div class="bar-group">
+            <span class="bar-value">{{ peer1_score }}/10)</span>
+            <div class="bar peer-primary" style="height: {{ (peer1_score / 10) * 100 }}%;"></div>
+            <span class="bar-label">{{ peer1_name }}</span>
+        </div>
+
+        <!-- Peer 2 -->
+        <div class="bar-group">
+            <span class="bar-value">{{ peer2_score }}/10)</span>
+            <div class="bar" style="height: {{ (peer2_score / 10) * 100 }}%;"></div>
+            <span class="bar-label">{{ peer2_name }}</span>
+        </div>
+    </div>
+
+    <div class="audit-section">
+        <div class="section-title">AI SENTIMENT AUDIT: {{ ticker }}</div>
+        <p class="audit-text">
+            {{ sentiment_text }}
+        </p>
+    </div>
+
+</body>
+</html>

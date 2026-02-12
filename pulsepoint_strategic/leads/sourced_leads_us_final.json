@@ -1,0 +1,399 @@
+{
+  "_generated_at": "2026-02-06T11:41:06.556447",
+  "_icp_source": "pulsepoint_strategic/directives/icp_definition.md",
+  "client_name": "PulsePoint Strategic",
+  "client_context": "pulsepoint_strategic",
+  "companies": [
+    {
+      "name": "Lucid Leverage LLC",
+      "website": "",
+      "event_type": "Company Expansion",
+      "event_title": "Expansion of White-Label SEO Resellers Program",
+      "event_context": "Lucid Leverage LLC is expanding its white-label SEO resellers program to cater to the increasing demand from small to mid-sized marketing agencies seeking to enhance their digital visibility and competitiveness.",
+      "event_source_url": "https://www.knoxnews.com/press-release/story/125268/lucid-leverage-llc-expands-white-label-seo-resellers-program-to-meet-rising-agency-demand/",
+      "contacts": [
+        {
+          "name": "[TO BE ENRICHED]",
+          "title": "CEO",
+          "email": "",
+          "linkedin_url": "",
+          "needs_enrichment": true
+        }
+      ]
+    },
+    {
+      "name": "Notus",
+      "website": "",
+      "event_type": "Industry Discussion",
+      "event_title": "Discussion on the viability of small and mid-sized marketing agencies",
+      "event_context": "Luca Wetzel, in a post, discusses the changing landscape in the marketing industry and suggests that while specialists are thriving, mid-sized agencies need to adapt to succeed. This indicates a potential need for services that help with self-promotion and sales.",
+      "event_source_url": "https://www.linkedin.com/posts/lucawetzel_most-people-think-that-small-and-mid-sized-activity-7269606314970894336-6lr2",
+      "contacts": [
+        {
+          "name": "[TO BE ENRICHED]",
+          "title": "CEO",
+          "email": "",
+          "linkedin_url": "",
+          "needs_enrichment": true
+        }
+      ]
+    },
+    {
+      "name": "Lasso",
+      "website": "",
+      "event_type": "Company Branding and Motion Design Services",
+      "event_title": "About Lasso Studio's Services",
+      "event_context": "Lasso is a branding studio that focuses equally on branding and motion design, potentially indicating a need for efficient client acquisition strategies and self-promotion support, suited to mid-sized agencies predicated on referrals.",
+      "event_source_url": "https://www.lassostud.io/studio",
+      "contacts": [
+        {
+          "name": "[TO BE ENRICHED]",
+          "title": "CEO",
+          "email": "",
+          "linkedin_url": "",
+          "needs_enrichment": true
+        }
+      ]
+    },
+    {
+      "name": "Branding Studios Inc",
+      "website": "",
+      "event_type": "Company Info and Service Announcement",
+      "event_title": "Branding Studios Inc crafts unique brand identities",
+      "event_context": "The company specializes in creating brand identities and marketing strategies for businesses, which aligns with the needs of mid-sized marketing agencies. There's an emphasis on creativity and standing out, which fits the ICP criteria.",
+      "event_source_url": "https://clutch.co/profile/branding-studios",
+      "contacts": [
+        {
+          "name": "[TO BE ENRICHED]",
+          "title": "CEO",
+          "email": "",
+          "linkedin_url": "",
+          "needs_enrichment": true
+        }
+      ]
+    },
+    {
+      "name": "Branding Studios",
+      "website": "",
+      "event_type": "Brand identity design project",
+      "event_title": "Increased focus on brand identity",
+      "event_context": "The article discusses various design studios that are currently engaged in branding and brand identity design, indicating market activity in this area.",
+      "event_source_url": "https://bpando.org/branding-agency/page/4/",
+      "contacts": [
+        {
+          "name": "[TO BE ENRICHED]",
+          "title": "CEO",
+          "email": "",
+          "linkedin_url": "",
+          "needs_enrichment": true
+        }
+      ]
+    },
+    {
+      "name": "Upland Layer 2 - Dev Shops",
+      "website": "",
+      "event_type": "New Service Launch",
+      "event_title": "Introduction of 'Dev Shops' in Upland Layer 2",
+      "event_context": "Upland has introduced a new type of metaventure called 'Dev Shops', designated by a purple dot on their map, indicating a new service/feature aimed at Dev Shops.",
+      "event_source_url": "https://upland-guide.com/metaventures/layer-2-dev-shops/",
+      "contacts": [
+        {
+          "name": "[TO BE ENRICHED]",
+          "title": "CEO",
+          "email": "",
+          "linkedin_url": "",
+          "needs_enrichment": true
+        }
+      ]
+    },
+    {
+      "name": "Tabula Creative",
+      "website": "",
+      "event_type": "Merger",
+      "event_title": "Merger between Context and Tabula Creative",
+      "event_context": "Tabula Creative has merged with Context, reflecting a trend of marketing agencies and dev shops coming together to enhance service offerings.",
+      "event_source_url": "https://technical.ly/startups/tabula-creative-context-eastern-standard/",
+      "contacts": [
+        {
+          "name": "[TO BE ENRICHED]",
+          "title": "CEO",
+          "email": "",
+          "linkedin_url": "",
+          "needs_enrichment": true
+        }
+      ]
+    },
+    {
+      "name": "OneSeven Tech (OST)",
+      "website": "",
+      "event_type": "business growth potential",
+      "event_title": "AI search potential for dev shops",
+      "event_context": "Jason Patel highlights that dev shops, particularly those with strong reputations like OneSeven Tech, can significantly enhance their business through AI search. This suggests a growing interest in leveraging technology for business expansion.",
+      "event_source_url": "https://www.linkedin.com/posts/pateljason_dev-shops-especially-ones-with-strong-reputations-activity-7353770878519705605-bU7Y",
+      "contacts": [
+        {
+          "name": "[TO BE ENRICHED]",
+          "title": "CEO",
+          "email": "",
+          "linkedin_url": "",
+          "needs_enrichment": true
+        }
+      ]
+    },
+    {
+      "name": "mid-sized marketing agencies",
+      "website": "",
+      "event_type": "Industry Insight",
+      "event_title": "Google Ads Automation Signals Analysis",
+      "event_context": "The article discusses strategies and insights related to Google Ads automation for mid-sized marketing agencies, focusing on how everything serves as a potential signal in digital marketing strategies by 2026.",
+      "event_source_url": "https://searchengineland.com/in-google-ads-automation-everything-is-a-signal-in-2026-468218",
+      "contacts": [
+        {
+          "name": "[TO BE ENRICHED]",
+          "title": "CEO",
+          "email": "",
+          "linkedin_url": "",
+          "needs_enrichment": true
+        }
+      ]
+    },
+    {
+      "name": "Adalo",
+      "website": "",
+      "event_type": "Industry trend discussion",
+      "event_title": "Growth of no-code tools among agencies and dev shops",
+      "event_context": "The article discusses the anticipated increase in the adoption of no-code tools by agencies and development shops over the next two years, highlighting a shift in how agency work might be done more efficiently without traditional coding.",
+      "event_source_url": "https://www.adalo.com/the-future-is-no-code-questions/when-will-there-be-more-agencies-dev-shops-that-use-no-code-tools-that-dont",
+      "contacts": [
+        {
+          "name": "[TO BE ENRICHED]",
+          "title": "CEO",
+          "email": "",
+          "linkedin_url": "",
+          "needs_enrichment": true
+        }
+      ]
+    },
+    {
+      "name": "Haus Advisors",
+      "website": "",
+      "event_type": "Positioning Strategy Discussion",
+      "event_title": "Dev Agency Positioning Strategy: Stop Competing on Price",
+      "event_context": "A blog post from Haus Advisors discussing the challenges faced by development agencies, particularly around their positioning strategy and reliance on referrals.",
+      "event_source_url": "https://www.hausadvisors.com/blog/agency-positioning-strategy",
+      "contacts": [
+        {
+          "name": "[TO BE ENRICHED]",
+          "title": "CEO",
+          "email": "",
+          "linkedin_url": "",
+          "needs_enrichment": true
+        }
+      ]
+    },
+    {
+      "name": "Boostability",
+      "website": "",
+      "event_type": "Referral Partnership Opportunity",
+      "event_title": "Grow Your Revenue with Boostability's Referral Partner",
+      "event_context": "Boostability is actively seeking small to mid-sized marketing agencies to become referral partners, indicating a drive for growth and collaboration with firms that might rely on referral business.",
+      "event_source_url": "https://www.boostability.com/content/become-a-boostability-referral-partner/",
+      "contacts": [
+        {
+          "name": "[TO BE ENRICHED]",
+          "title": "CEO",
+          "email": "",
+          "linkedin_url": "",
+          "needs_enrichment": true
+        }
+      ]
+    },
+    {
+      "name": "ColinKurtis",
+      "website": "",
+      "event_type": "Partnership potential",
+      "event_title": "Advantages of Partnering with Mid-Sized Marketing Agencies",
+      "event_context": "The article discusses the benefits of engaging with mid-sized marketing agencies, which aligns with the ICP criteria for companies in the marketing industry. This indicates an ongoing need and awareness that could represent a potential trigger event.",
+      "event_source_url": "https://www.colinkurtis.com/the-advantages-of-partnering-with-a-mid-sized-marketing-agency/",
+      "contacts": [
+        {
+          "name": "[TO BE ENRICHED]",
+          "title": "CEO",
+          "email": "",
+          "linkedin_url": "",
+          "needs_enrichment": true
+        }
+      ]
+    },
+    {
+      "name": "Patrick Carter Design",
+      "website": "",
+      "event_type": "Branding Discussion",
+      "event_title": "How Self-Promotional Design Strengthens Modern Branding",
+      "event_context": "The article discusses the importance of self-promotional design for branding studios and emphasizes how these studios can enhance their own brand identity by showcasing their capabilities, similar to how they would work with clients.",
+      "event_source_url": "https://patrickcarterdesign.com/jacksonville-design-events-news/shared-vision-how-self-promotional-design-strengthens-brand-development-in-a-modern-branding-studio/",
+      "contacts": [
+        {
+          "name": "[TO BE ENRICHED]",
+          "title": "CEO",
+          "email": "",
+          "linkedin_url": "",
+          "needs_enrichment": true
+        }
+      ]
+    },
+    {
+      "name": "Agency Partners",
+      "website": "",
+      "event_type": "Collaboration Opportunity",
+      "event_title": "Work With Us - Agency Partners",
+      "event_context": "The company is actively seeking partnerships with digital agencies, digital product studios, and dev shops, indicating a collaborative approach to expand their business.",
+      "event_source_url": "https://www.agency.partners/work-with-us/",
+      "contacts": [
+        {
+          "name": "[TO BE ENRICHED]",
+          "title": "CEO",
+          "email": "",
+          "linkedin_url": "",
+          "needs_enrichment": true
+        }
+      ]
+    },
+    {
+      "name": "Pre.dev",
+      "website": "",
+      "event_type": "product launch or service introduction",
+      "event_title": "software planning tool for small dev shops",
+      "event_context": "Pre.dev is targeting small developer shops that may struggle with product management, indicating a potential match with companies that may need more organized software planning solutions.",
+      "event_source_url": "https://refreshmiami.com/news/pre-dev-will-make-your-software-planning-dreams-come-true-all-thanks-to-ai/",
+      "contacts": [
+        {
+          "name": "[TO BE ENRICHED]",
+          "title": "CEO",
+          "email": "",
+          "linkedin_url": "",
+          "needs_enrichment": true
+        }
+      ]
+    },
+    {
+      "name": "Alchemist Ventures",
+      "website": "",
+      "event_type": "Company Overview",
+      "event_title": "Alchemist Ventures develops AI-powered tools",
+      "event_context": "Alchemist Ventures is involved in developing AI tools for business operations and also focuses on incubating brands through its venture and branding studios, fitting categories aligned with marketing agencies and tech startups.",
+      "event_source_url": "https://www.crunchbase.com/organization/alchemist-ventures",
+      "contacts": [
+        {
+          "name": "[TO BE ENRICHED]",
+          "title": "CEO",
+          "email": "",
+          "linkedin_url": "",
+          "needs_enrichment": true
+        }
+      ]
+    },
+    {
+      "name": "AMLI Lenox",
+      "website": "",
+      "event_type": "Award Recognition",
+      "event_title": "News Design & Development Excellence Award",
+      "event_context": "AMLI Lenox received the News Design & Development Excellence Award in the Multifamily High-Rise Category, recognizing its architectural and design excellence.",
+      "event_source_url": "https://www.coopercarry.com/projects/amli-lenox/",
+      "contacts": [
+        {
+          "name": "[TO BE ENRICHED]",
+          "title": "CEO",
+          "email": "",
+          "linkedin_url": "",
+          "needs_enrichment": true
+        }
+      ]
+    },
+    {
+      "name": "Worklog360",
+      "website": "",
+      "event_type": "Product Launch",
+      "event_title": "Launch of Worklog360 as an Alternative to Tempo Timesheets",
+      "event_context": "Worklog360 recently launched a new blog detailing how it serves as an ideal alternative to Tempo Timesheets specifically for agencies and development shops, suggesting a focus on their target audience.",
+      "event_source_url": "https://worklog360.com/blog/",
+      "contacts": [
+        {
+          "name": "[TO BE ENRICHED]",
+          "title": "CEO",
+          "email": "",
+          "linkedin_url": "",
+          "needs_enrichment": true
+        }
+      ]
+    },
+    {
+      "name": "Larimer & Co/ Branding Studios",
+      "website": "",
+      "event_type": "Recent news mention",
+      "event_title": "Social Media Marketing Firms",
+      "event_context": "Larimer & Co/ Branding Studios was mentioned in the context of branding agencies, indicating relevance to the marketing agency sector.",
+      "event_source_url": "https://markets.financialcontent.com/newsok/news/category?Category=Larimer+%26+Co%2F+Branding+Studios",
+      "contacts": [
+        {
+          "name": "[TO BE ENRICHED]",
+          "title": "CEO",
+          "email": "",
+          "linkedin_url": "",
+          "needs_enrichment": true
+        }
+      ]
+    },
+    {
+      "name": "Franklin Co.",
+      "website": "",
+      "event_type": "Recognition in industry ranking",
+      "event_title": "Top Logo & Brand Identity Designers in NYC 2026",
+      "event_context": "Franklin Co. was recognized as one of the top boutique branding studios in New York City for their strategy-driven brand identities and visual design. This recognition could indicate growth and demand for their services.",
+      "event_source_url": "https://www.ebaqdesign.com/blog/top-logo-designers-nyc",
+      "contacts": [
+        {
+          "name": "[TO BE ENRICHED]",
+          "title": "CEO",
+          "email": "",
+          "linkedin_url": "",
+          "needs_enrichment": true
+        }
+      ]
+    },
+    {
+      "name": "Larimer & Co.",
+      "website": "",
+      "event_type": "Press Release/Announcement",
+      "event_title": "Company News Highlight",
+      "event_context": "Larimer & Co., a branding studio based in Orlando, is promoting its announcements and achievements, indicating activity in self-promotion and potentially responding to market pressures.",
+      "event_source_url": "https://www.bizjournals.com/orlando/press-release?pn=17",
+      "contacts": [
+        {
+          "name": "[TO BE ENRICHED]",
+          "title": "CEO",
+          "email": "",
+          "linkedin_url": "",
+          "needs_enrichment": true
+        }
+      ]
+    },
+    {
+      "name": "not specified",
+      "website": "",
+      "event_type": "company launch",
+      "event_title": "Launch of a digital agency",
+      "event_context": "Two technologists launched a digital agency aimed at bridging the gap between marketing and product development, contrasting with traditional dev-only or SEO shops.",
+      "event_source_url": "https://technical.ly/startups/two-technologists-launched-a-digital-agency-to-meet-the-intersection-of-marketing-and-product-development/",
+      "contacts": [
+        {
+          "name": "[TO BE ENRICHED]",
+          "title": "CEO",
+          "email": "",
+          "linkedin_url": "",
+          "needs_enrichment": true
+        }
+      ]
+    }
+  ]
+}

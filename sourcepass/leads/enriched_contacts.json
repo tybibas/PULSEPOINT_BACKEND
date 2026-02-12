@@ -1,0 +1,93 @@
+[
+  {
+    "company": "Penn State Health",
+    "domain": "pennstatehealth.org",
+    "trigger": "New CIO Appointed November 2025",
+    "contacts": [
+      {
+        "name": "Dennis Sutterfield",
+        "role": "SVP & CIO",
+        "email": "dennis.sutterfield@pennstatehealth.org",
+        "source": "pattern_guess",
+        "verified": false
+      }
+    ]
+  },
+  {
+    "company": "Allegheny Health Network",
+    "domain": "ahn.org",
+    "trigger": "New CDIO + Data Breach Feb 2025",
+    "contacts": [
+      {
+        "name": "Richard Medford",
+        "role": "Chief Digital Information Officer",
+        "email": "richard.medford@ahn.org",
+        "source": "pattern_guess",
+        "verified": false
+      },
+      {
+        "name": "John Gabrick",
+        "role": "VP Clinical Information Systems",
+        "email": "john.gabrick@ahn.org",
+        "source": "pattern_guess",
+        "verified": false
+      }
+    ]
+  },
+  {
+    "company": "Bayhealth Medical Center",
+    "domain": "bayhealth.org",
+    "trigger": "New CIO Jan 2026 + Breach Settlement",
+    "contacts": [
+      {
+        "name": "Thomas Marlow",
+        "role": "VP Chief Digital & Information Officer",
+        "email": "thomas.marlow@bayhealth.org",
+        "source": "pattern_guess",
+        "verified": false
+      },
+      {
+        "name": "Jonathan Kaufmann",
+        "role": "VP Chief Health Information Officer",
+        "email": "jonathan.kaufmann@bayhealth.org",
+        "source": "pattern_guess",
+        "verified": false
+      }
+    ]
+  },
+  {
+    "company": "Central Jersey Medical Center",
+    "domain": "cjmc.us",
+    "trigger": "Ransomware Attack Aug 2025",
+    "contacts": [
+      {
+        "name": "John O'Leary",
+        "role": "CEO",
+        "email": "john.o'leary@cjmc.us",
+        "source": "pattern_guess",
+        "verified": false
+      },
+      {
+        "name": "Thomas Boggiano",
+        "role": "COO/CFO",
+        "email": "thomas.boggiano@cjmc.us",
+        "source": "pattern_guess",
+        "verified": false
+      }
+    ]
+  },
+  {
+    "company": "Gaylord Specialty Healthcare",
+    "domain": "gaylord.org",
+    "trigger": "New CIO Jan 2025",
+    "contacts": [
+      {
+        "name": "VP & CIO",
+        "role": "VP & CIO",
+        "email": null,
+        "source": "pattern_guess",
+        "verified": false
+      }
+    ]
+  }
+]

@@ -1,0 +1,175 @@
+Analysis Error: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+Analysis Error: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+Analysis Error: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+      (No relevant triggers found)
+Analysis Error: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+      (No relevant triggers found)
+   POST / -> 200 OK  (duration: 5.53 s, execution: 152.7 ms)
+   POST / -> 200 OK  (duration: 5.01 s, execution: 123.1 ms)
+   POST / -> 200 OK  (duration: 4.43 s, execution: 270.9 ms)
+   POST / -> 200 OK  (duration: 1.80 s, execution: 211.4 ms)
+   POST / -> 200 OK  (duration: 4.45 s, execution: 138.4 ms)
+   POST / -> 200 OK  (duration: 1.13 s, execution: 118.8 ms)
+   POST / -> 200 OK  (duration: 303.1 ms, execution: 107.2 ms)
+🚀 Starting Monitoring Scan...
+
+   🔍 Deep scanning: Greentarget (pulsepoint_strategic)...
+🚀 Starting Monitoring Scan...
+🚀 Starting Monitoring Scan...
+
+   🔍 Deep scanning: Bottle Rocket Media (pulsepoint_strategic)...
+[36m[apify.google-search-scraper runId:Y6gBF3VJx36bsif7x][0m -> Status: RUNNING, Message:
+[36m[apify.google-search-scraper runId:lckeu5biuLIS484A4][0m -> Status: RUNNING, Message:
+
+   🔍 Deep scanning: Richter Studios (pulsepoint_strategic)...
+[36m[apify.google-search-scraper runId:Y6gBF3VJx36bsif7x][0m -> 2026-02-09T16:31:24.219Z ACTOR: Pulling container image of build 7SQ7UrT5GX04y6g5S from registry.
+[36m[apify.google-search-scraper runId:Y6gBF3VJx36bsif7x][0m -> 2026-02-09T16:31:24.222Z ACTOR: Creating container.
+[36m[apify.google-search-scraper runId:Y6gBF3VJx36bsif7x][0m -> 2026-02-09T16:31:24.260Z ACTOR: Starting container.
+[36m[apify.google-search-scraper runId:Y6gBF3VJx36bsif7x][0m -> 2026-02-09T16:31:24.262Z ACTOR: Running under "LIMITED_PERMISSIONS" permission level.
+[36m[apify.google-search-scraper runId:lckeu5biuLIS484A4][0m -> 2026-02-09T16:31:23.910Z ACTOR: Pulling container image of build 7SQ7UrT5GX04y6g5S from registry.
+[36m[apify.google-search-scraper runId:lckeu5biuLIS484A4][0m -> 2026-02-09T16:31:23.912Z ACTOR: Creating container.
+[36m[apify.google-search-scraper runId:lckeu5biuLIS484A4][0m -> 2026-02-09T16:31:23.956Z ACTOR: Starting container.
+--
+[36m[apify.google-search-scraper runId:Y6gBF3VJx36bsif7x][0m -> 2026-02-09T16:31:25.755Z [32mINFO[39m  Querying ""Bottle Rocket Media" ("appointed" OR "hired" OR "CMO" OR "VP Marketing" OR "rebranding" OR "launches" OR "expansion" OR "award") news" page 1 ...
+[36m[apify.google-search-scraper runId:Y6gBF3VJx36bsif7x][0m -> 2026-02-09T16:31:29.927Z [32mINFO[39m  Not enqueueing next page for query ""Bottle Rocket Media" ("appointed" OR "hired" OR "CMO" OR "VP Marketing" OR "rebranding" OR "launches" OR "expansion" OR "award") news" because the "maxPagesPerQuery" limit has been reached.
+[36m[apify.google-search-scraper runId:Y6gBF3VJx36bsif7x][0m -> 2026-02-09T16:31:30.004Z [32mINFO[39m  Finished query ""Bottle Rocket Media" ("appointed" OR "hired" OR "CMO" OR "VP Marketing" OR "rebranding" OR "launches" OR "expansion" OR "award") news" page 1 (organicResults: 10, paidResults: 0, paidProducts: 0, relatedQueries: 0, aiOverview: 0)
+[36m[apify.google-search-scraper runId:Y6gBF3VJx36bsif7x][0m -> 2026-02-09T16:31:30.120Z [32mINFO[39m [33m CheerioCrawler:[39m All requests from the queue have been processed, the crawler will shut down.
+[36m[apify.google-search-scraper runId:Y6gBF3VJx36bsif7x][0m -> 2026-02-09T16:31:30.260Z [32mINFO[39m [33m CheerioCrawler:[39m Final request statistics:[90m {"requestsFinished":1,"requestsFailed":0,"retryHistogram":[1],"requestAvgFailedDurationMillis":null,"requestAvgFinishedDurationMillis":4323,"requestsFinishedPerMinute":13,"requestsFailedPerMinute":0,"requestTotalDurationMillis":4323,"requestsTotal":1,"crawlerRuntimeMillis":4747}[39m
+[36m[apify.google-search-scraper runId:Y6gBF3VJx36bsif7x][0m -> 2026-02-09T16:31:30.262Z [32mINFO[39m [33m CheerioCrawler:[39m Finished! Total 1 requests: 1 succeeded, 0 failed.[90m {"terminal":true}[39m
+[36m[apify.google-search-scraper runId:Y6gBF3VJx36bsif7x][0m -> 2026-02-09T16:31:30.280Z [32mINFO[39m  Scraping is finished, see you next time.
+[36m[apify.google-search-scraper runId:Y6gBF3VJx36bsif7x][0m -> 2026-02-09T16:31:30.282Z
+[36m[apify.google-search-scraper runId:Y6gBF3VJx36bsif7x][0m -> 2026-02-09T16:31:30.284Z Full results in JSON format:
+[36m[apify.google-search-scraper runId:Y6gBF3VJx36bsif7x][0m -> 2026-02-09T16:31:30.286Z https://api.apify.com/v2/datasets/BTsL4JsrQ7r2v2Hc0/items?format=json
+[36m[apify.google-search-scraper runId:Y6gBF3VJx36bsif7x][0m -> 2026-02-09T16:31:30.288Z
+[36m[apify.google-search-scraper runId:Y6gBF3VJx36bsif7x][0m -> 2026-02-09T16:31:30.290Z Simplified organic results in JSON format:
+[36m[apify.google-search-scraper runId:Y6gBF3VJx36bsif7x][0m -> 2026-02-09T16:31:30.292Z https://api.apify.com/v2/datasets/BTsL4JsrQ7r2v2Hc0/items?format=json&fields=searchQuery,organicResults&unwind=organicResults
+[36m[apify.google-search-scraper runId:Y6gBF3VJx36bsif7x][0m -> Status: RUNNING, Message: Processed 1 queries on 1 pages. Extracted: 10 organicResults, 0 paidResults, 0 paidProducts, 0 relatedQueries, 0 aiOverviews, 0 aiModeResults, 0 perplexitySearchResults, 0 chatGptSearchResults, 1 itemsPushed
+[36m[apify.google-search-scraper runId:Y6gBF3VJx36bsif7x][0m -> 2026-02-09T16:31:30.295Z [32mINFO[39m  [Status message]: Processed 1 queries on 1 pages. Extracted: 10 organicResults, 0 paidResults, 0 paidProducts, 0 relatedQueries, 0 aiOverviews, 0 aiModeResults, 0 perplexitySearchResults, 0 chatGptSearchResults, 1 itemsPushed
+[36m[apify.google-search-scraper runId:lckeu5biuLIS484A4][0m -> 2026-02-09T16:31:25.397Z [32mINFO[39m  Querying ""Greentarget" ("appointed" OR "hired" OR "CMO" OR "VP Marketing" OR "rebranding" OR "launches" OR "expansion" OR "award") news" page 1 ...
+[36m[apify.google-search-scraper runId:lckeu5biuLIS484A4][0m -> 2026-02-09T16:31:34.372Z [32mINFO[39m  Not enqueueing next page for query ""Greentarget" ("appointed" OR "hired" OR "CMO" OR "VP Marketing" OR "rebranding" OR "launches" OR "expansion" OR "award") news" because the "maxPagesPerQuery" limit has been reached.
+[36m[apify.google-search-scraper runId:lckeu5biuLIS484A4][0m -> 2026-02-09T16:31:34.521Z [32mINFO[39m  Finished query ""Greentarget" ("appointed" OR "hired" OR "CMO" OR "VP Marketing" OR "rebranding" OR "launches" OR "expansion" OR "award") news" page 1 (organicResults: 10, paidResults: 0, paidProducts: 0, relatedQueries: 0, aiOverview: 1)
+[36m[apify.google-search-scraper runId:lckeu5biuLIS484A4][0m -> 2026-02-09T16:31:34.591Z [32mINFO[39m [33m CheerioCrawler:[39m All requests from the queue have been processed, the crawler will shut down.
+[36m[apify.google-search-scraper runId:lckeu5biuLIS484A4][0m -> 2026-02-09T16:31:34.709Z [32mINFO[39m [33m CheerioCrawler:[39m Final request statistics:[90m {"requestsFinished":1,"requestsFailed":0,"retryHistogram":[1],"requestAvgFailedDurationMillis":null,"requestAvgFinishedDurationMillis":9151,"requestsFinishedPerMinute":6,"requestsFailedPerMinute":0,"requestTotalDurationMillis":9151,"requestsTotal":1,"crawlerRuntimeMillis":9557}[39m
+[36m[apify.google-search-scraper runId:lckeu5biuLIS484A4][0m -> 2026-02-09T16:31:34.711Z [32mINFO[39m [33m CheerioCrawler:[39m Finished! Total 1 requests: 1 succeeded, 0 failed.[90m {"terminal":true}[39m
+[36m[apify.google-search-scraper runId:lckeu5biuLIS484A4][0m -> 2026-02-09T16:31:34.725Z [32mINFO[39m  Scraping is finished, see you next time.
+[36m[apify.google-search-scraper runId:lckeu5biuLIS484A4][0m -> 2026-02-09T16:31:34.727Z
+[36m[apify.google-search-scraper runId:lckeu5biuLIS484A4][0m -> 2026-02-09T16:31:34.729Z Full results in JSON format:
+[36m[apify.google-search-scraper runId:lckeu5biuLIS484A4][0m -> 2026-02-09T16:31:34.730Z https://api.apify.com/v2/datasets/pxOdeUIgli3n7A4t8/items?format=json
+[36m[apify.google-search-scraper runId:lckeu5biuLIS484A4][0m -> 2026-02-09T16:31:34.731Z
+[36m[apify.google-search-scraper runId:lckeu5biuLIS484A4][0m -> 2026-02-09T16:31:34.733Z Simplified organic results in JSON format:
+[36m[apify.google-search-scraper runId:lckeu5biuLIS484A4][0m -> 2026-02-09T16:31:34.734Z https://api.apify.com/v2/datasets/pxOdeUIgli3n7A4t8/items?format=json&fields=searchQuery,organicResults&unwind=organicResults
+[36m[apify.google-search-scraper runId:lckeu5biuLIS484A4][0m -> 2026-02-09T16:31:34.736Z [32mINFO[39m  [Status message]: Processed 1 queries on 1 pages. Extracted: 10 organicResults, 0 paidResults, 0 paidProducts, 0 relatedQueries, 1 aiOverviews, 0 aiModeResults, 0 perplexitySearchResults, 0 chatGptSearchResults, 1 itemsPushed
+[36m[apify.google-search-scraper runId:lckeu5biuLIS484A4][0m -> Status: SUCCEEDED, Message: Processed 1 queries on 1 pages. Extracted: 10 organicResults, 0 paidResults, 0 paidProducts, 0 relatedQueries, 1 aiOverviews, 0 aiModeResults, 0 perplexitySearchResults, 0 chatGptSearchResults, 1 itemsPushed
+[36m[apify.google-search-scraper runId:ybFbqTgQIiW2ghXZm][0m -> Status: RUNNING, Message: Processed 0 queries on 0 pages. Extracted: 0 organicResults, 0 paidResults, 0 paidProducts, 0 relatedQueries, 0 aiOverviews, 0 aiModeResults, 0 perplexitySearchResults, 0 chatGptSearchResults, 0 itemsPushed
+[36m[apify.google-search-scraper runId:XGYNBe3QoaOnOMAVz][0m -> Status: RUNNING, Message:
+[36m[apify.google-search-scraper runId:XGYNBe3QoaOnOMAVz][0m -> 2026-02-09T16:31:36.969Z ACTOR: Pulling container image of build 7SQ7UrT5GX04y6g5S from registry.
+--
+[36m[apify.google-search-scraper runId:dqtZ3As5YbTBykz1s][0m -> 2026-02-09T16:31:55.315Z [32mINFO[39m [33m CheerioCrawler:[39m Starting the crawler.
+[36m[apify.google-search-scraper runId:OSfMG3aRLZetT1HVO][0m -> 2026-02-09T16:31:55.431Z [32mINFO[39m  Finished query ""LAI Video" site:linkedin.com/posts OR site:linkedin.com/pulse" page 1 (organicResults: 10, paidResults: 0, paidProducts: 0, relatedQueries: 4, aiOverview: 0)
+[36m[apify.google-search-scraper runId:OSfMG3aRLZetT1HVO][0m -> 2026-02-09T16:31:55.500Z [32mINFO[39m [33m CheerioCrawler:[39m All requests from the queue have been processed, the crawler will shut down.
+[36m[apify.google-search-scraper runId:OSfMG3aRLZetT1HVO][0m -> 2026-02-09T16:31:55.629Z [32mINFO[39m [33m CheerioCrawler:[39m Final request statistics:[90m {"requestsFinished":1,"requestsFailed":0,"retryHistogram":[1],"requestAvgFailedDurationMillis":null,"requestAvgFinishedDurationMillis":4025,"requestsFinishedPerMinute":13,"requestsFailedPerMinute":0,"requestTotalDurationMillis":4025,"requestsTotal":1,"crawlerRuntimeMillis":4490}[39m
+[36m[apify.google-search-scraper runId:dqtZ3As5YbTBykz1s][0m -> Status: RUNNING, Message: Starting the crawler.
+[36m[apify.google-search-scraper runId:OSfMG3aRLZetT1HVO][0m -> 2026-02-09T16:31:55.630Z [32mINFO[39m [33m CheerioCrawler:[39m Finished! Total 1 requests: 1 succeeded, 0 failed.[90m {"terminal":true}[39m
+[36m[apify.google-search-scraper runId:OSfMG3aRLZetT1HVO][0m -> 2026-02-09T16:31:55.650Z [32mINFO[39m  Scraping is finished, see you next time.
+[36m[apify.google-search-scraper runId:OSfMG3aRLZetT1HVO][0m -> 2026-02-09T16:31:55.651Z
+[36m[apify.google-search-scraper runId:OSfMG3aRLZetT1HVO][0m -> 2026-02-09T16:31:55.651Z Full results in JSON format:
+[36m[apify.google-search-scraper runId:OSfMG3aRLZetT1HVO][0m -> 2026-02-09T16:31:55.651Z https://api.apify.com/v2/datasets/yPppidDuuPL8xVzqJ/items?format=json
+[36m[apify.google-search-scraper runId:OSfMG3aRLZetT1HVO][0m -> 2026-02-09T16:31:55.652Z
+[36m[apify.google-search-scraper runId:OSfMG3aRLZetT1HVO][0m -> 2026-02-09T16:31:55.652Z Simplified organic results in JSON format:
+[36m[apify.google-search-scraper runId:OSfMG3aRLZetT1HVO][0m -> 2026-02-09T16:31:55.652Z https://api.apify.com/v2/datasets/yPppidDuuPL8xVzqJ/items?format=json&fields=searchQuery,organicResults&unwind=organicResults
+[36m[apify.google-search-scraper runId:OSfMG3aRLZetT1HVO][0m -> 2026-02-09T16:31:55.652Z [32mINFO[39m  [Status message]: Processed 1 queries on 1 pages. Extracted: 10 organicResults, 0 paidResults, 0 paidProducts, 4 relatedQueries, 0 aiOverviews, 0 aiModeResults, 0 perplexitySearchResults, 0 chatGptSearchResults, 1 itemsPushed
+[36m[apify.google-search-scraper runId:OSfMG3aRLZetT1HVO][0m -> Status: SUCCEEDED, Message: Processed 1 queries on 1 pages. Extracted: 10 organicResults, 0 paidResults, 0 paidProducts, 4 relatedQueries, 0 aiOverviews, 0 aiModeResults, 0 perplexitySearchResults, 0 chatGptSearchResults, 1 itemsPushed
+[36m[apify.google-search-scraper runId:SomIll0yOHBfLteWm][0m -> 2026-02-09T16:31:42.735Z [32mINFO[39m  Querying ""Greentarget" site:linkedin.com/posts OR site:linkedin.com/pulse" page 1 ...
+[36m[apify.google-search-scraper runId:xySFTjSuFS8lKatNK][0m -> 2026-02-09T16:31:49.062Z [32mINFO[39m  Querying ""Richter Studios" site:linkedin.com/posts OR site:linkedin.com/pulse" page 1 ...
+[36m[apify.google-search-scraper runId:SomIll0yOHBfLteWm][0m -> 2026-02-09T16:31:57.330Z [32mINFO[39m  Results should be restricted to URL with prefixes: linkedin.com/posts, linkedin.com/pulse
+[36m[apify.google-search-scraper runId:xySFTjSuFS8lKatNK][0m -> 2026-02-09T16:31:57.375Z [32mINFO[39m  Results should be restricted to URL with prefixes: linkedin.com/posts, linkedin.com/pulse
+[36m[apify.google-search-scraper runId:xySFTjSuFS8lKatNK][0m -> 2026-02-09T16:31:57.408Z [32mINFO[39m  Not enqueueing next page for query ""Richter Studios" site:linkedin.com/posts OR site:linkedin.com/pulse" because the "maxPagesPerQuery" limit has been reached.
+[36m[apify.google-search-scraper runId:SomIll0yOHBfLteWm][0m -> 2026-02-09T16:31:57.384Z [32mINFO[39m  Not enqueueing next page for query ""Greentarget" site:linkedin.com/posts OR site:linkedin.com/pulse" because the "maxPagesPerQuery" limit has been reached.
+[36m[apify.google-search-scraper runId:SomIll0yOHBfLteWm][0m -> 2026-02-09T16:31:57.451Z [32mINFO[39m  Finished query ""Greentarget" site:linkedin.com/posts OR site:linkedin.com/pulse" page 1 (organicResults: 10, paidResults: 0, paidProducts: 0, relatedQueries: 0, aiOverview: 0)
+[36m[apify.google-search-scraper runId:xySFTjSuFS8lKatNK][0m -> 2026-02-09T16:31:57.499Z [32mINFO[39m  Finished query ""Richter Studios" site:linkedin.com/posts OR site:linkedin.com/pulse" page 1 (organicResults: 9, paidResults: 0, paidProducts: 0, relatedQueries: 4, aiOverview: 0)
+[36m[apify.google-search-scraper runId:xySFTjSuFS8lKatNK][0m -> 2026-02-09T16:31:57.577Z [32mINFO[39m [33m CheerioCrawler:[39m All requests from the queue have been processed, the crawler will shut down.
+[36m[apify.google-search-scraper runId:xySFTjSuFS8lKatNK][0m -> 2026-02-09T16:31:57.657Z [32mINFO[39m [33m CheerioCrawler:[39m Final request statistics:[90m {"requestsFinished":1,"requestsFailed":0,"retryHistogram":[1],"requestAvgFailedDurationMillis":null,"requestAvgFinishedDurationMillis":8469,"requestsFinishedPerMinute":7,"requestsFailedPerMinute":0,"requestTotalDurationMillis":8469,"requestsTotal":1,"crawlerRuntimeMillis":8845}[39m
+[36m[apify.google-search-scraper runId:xySFTjSuFS8lKatNK][0m -> 2026-02-09T16:31:57.659Z [32mINFO[39m [33m CheerioCrawler:[39m Finished! Total 1 requests: 1 succeeded, 0 failed.[90m {"terminal":true}[39m
+[36m[apify.google-search-scraper runId:xySFTjSuFS8lKatNK][0m -> 2026-02-09T16:31:57.675Z [32mINFO[39m  Scraping is finished, see you next time.
+[36m[apify.google-search-scraper runId:xySFTjSuFS8lKatNK][0m -> 2026-02-09T16:31:57.677Z
+[36m[apify.google-search-scraper runId:xySFTjSuFS8lKatNK][0m -> 2026-02-09T16:31:57.678Z Full results in JSON format:
+[36m[apify.google-search-scraper runId:xySFTjSuFS8lKatNK][0m -> 2026-02-09T16:31:57.680Z https://api.apify.com/v2/datasets/gkMYrggOryL4laIIV/items?format=json
+[36m[apify.google-search-scraper runId:xySFTjSuFS8lKatNK][0m -> 2026-02-09T16:31:57.682Z
+[36m[apify.google-search-scraper runId:xySFTjSuFS8lKatNK][0m -> 2026-02-09T16:31:57.683Z Simplified organic results in JSON format:
+[36m[apify.google-search-scraper runId:SomIll0yOHBfLteWm][0m -> 2026-02-09T16:31:57.543Z [32mINFO[39m [33m CheerioCrawler:[39m All requests from the queue have been processed, the crawler will shut down.
+[36m[apify.google-search-scraper runId:SomIll0yOHBfLteWm][0m -> 2026-02-09T16:31:57.619Z [32mINFO[39m [33m CheerioCrawler:[39m Final request statistics:[90m {"requestsFinished":1,"requestsFailed":0,"retryHistogram":[1],"requestAvgFailedDurationMillis":null,"requestAvgFinishedDurationMillis":14749,"requestsFinishedPerMinute":4,"requestsFailedPerMinute":0,"requestTotalDurationMillis":14749,"requestsTotal":1,"crawlerRuntimeMillis":15067}[39m
+[36m[apify.google-search-scraper runId:SomIll0yOHBfLteWm][0m -> 2026-02-09T16:31:57.620Z [32mINFO[39m [33m CheerioCrawler:[39m Finished! Total 1 requests: 1 succeeded, 0 failed.[90m {"terminal":true}[39m
+[36m[apify.google-search-scraper runId:SomIll0yOHBfLteWm][0m -> 2026-02-09T16:31:57.634Z [32mINFO[39m  Scraping is finished, see you next time.
+[36m[apify.google-search-scraper runId:SomIll0yOHBfLteWm][0m -> 2026-02-09T16:31:57.635Z
+--
+[36m[apify.google-search-scraper runId:dqtZ3As5YbTBykz1s][0m -> 2026-02-09T16:32:08.546Z Simplified organic results in JSON format:
+[36m[apify.google-search-scraper runId:aZVrIcpW7qpv3AUeC][0m -> 2026-02-09T16:32:08.516Z [32mINFO[39m  Finished query ""Umbrella" site:prnewswire.com OR site:businesswire.com OR site:globenewswire.com" page 1 (organicResults: 9, paidResults: 0, paidProducts: 0, relatedQueries: 0, aiOverview: 0)
+[36m[apify.google-search-scraper runId:dqtZ3As5YbTBykz1s][0m -> 2026-02-09T16:32:08.546Z https://api.apify.com/v2/datasets/8hZxE2teZgro3FBCQ/items?format=json&fields=searchQuery,organicResults&unwind=organicResults
+[36m[apify.google-search-scraper runId:aZVrIcpW7qpv3AUeC][0m -> 2026-02-09T16:32:08.580Z [32mINFO[39m [33m CheerioCrawler:[39m All requests from the queue have been processed, the crawler will shut down.
+[36m[apify.google-search-scraper runId:aZVrIcpW7qpv3AUeC][0m -> 2026-02-09T16:32:08.667Z [32mINFO[39m [33m CheerioCrawler:[39m Final request statistics:[90m {"requestsFinished":1,"requestsFailed":0,"retryHistogram":[1],"requestAvgFailedDurationMillis":null,"requestAvgFinishedDurationMillis":6412,"requestsFinishedPerMinute":9,"requestsFailedPerMinute":0,"requestTotalDurationMillis":6412,"requestsTotal":1,"crawlerRuntimeMillis":6711}[39m
+[36m[apify.google-search-scraper runId:aZVrIcpW7qpv3AUeC][0m -> 2026-02-09T16:32:08.669Z [32mINFO[39m [33m CheerioCrawler:[39m Finished! Total 1 requests: 1 succeeded, 0 failed.[90m {"terminal":true}[39m
+[36m[apify.google-search-scraper runId:aZVrIcpW7qpv3AUeC][0m -> 2026-02-09T16:32:08.689Z [32mINFO[39m  Scraping is finished, see you next time.
+[36m[apify.google-search-scraper runId:aZVrIcpW7qpv3AUeC][0m -> 2026-02-09T16:32:08.690Z
+[36m[apify.google-search-scraper runId:aZVrIcpW7qpv3AUeC][0m -> 2026-02-09T16:32:08.692Z Full results in JSON format:
+[36m[apify.google-search-scraper runId:aZVrIcpW7qpv3AUeC][0m -> 2026-02-09T16:32:08.693Z https://api.apify.com/v2/datasets/wER4VILDauZua5iMw/items?format=json
+[36m[apify.google-search-scraper runId:aZVrIcpW7qpv3AUeC][0m -> 2026-02-09T16:32:08.695Z
+[36m[apify.google-search-scraper runId:aZVrIcpW7qpv3AUeC][0m -> 2026-02-09T16:32:08.696Z Simplified organic results in JSON format:
+[36m[apify.google-search-scraper runId:aZVrIcpW7qpv3AUeC][0m -> 2026-02-09T16:32:08.698Z https://api.apify.com/v2/datasets/wER4VILDauZua5iMw/items?format=json&fields=searchQuery,organicResults&unwind=organicResults
+[36m[apify.google-search-scraper runId:dqtZ3As5YbTBykz1s][0m -> 2026-02-09T16:32:08.604Z [32mINFO[39m  [Status message]: Processed 1 queries on 1 pages. Extracted: 0 organicResults, 0 paidResults, 0 paidProducts, 4 relatedQueries, 0 aiOverviews, 0 aiModeResults, 0 perplexitySearchResults, 0 chatGptSearchResults, 1 itemsPushed
+[36m[apify.google-search-scraper runId:dqtZ3As5YbTBykz1s][0m -> Status: SUCCEEDED, Message: Processed 1 queries on 1 pages. Extracted: 0 organicResults, 0 paidResults, 0 paidProducts, 4 relatedQueries, 0 aiOverviews, 0 aiModeResults, 0 perplexitySearchResults, 0 chatGptSearchResults, 1 itemsPushed
+[36m[apify.google-search-scraper runId:Q5JhuH1QYQhOd2Syw][0m -> 2026-02-09T16:32:06.628Z [32mINFO[39m  Querying ""Greentarget" site:prnewswire.com OR site:businesswire.com OR site:globenewswire.com" page 1 ...
+[36m[apify.google-search-scraper runId:aZVrIcpW7qpv3AUeC][0m -> 2026-02-09T16:32:08.731Z [32mINFO[39m  [Status message]: Processed 1 queries on 1 pages. Extracted: 9 organicResults, 0 paidResults, 0 paidProducts, 0 relatedQueries, 0 aiOverviews, 0 aiModeResults, 0 perplexitySearchResults, 0 chatGptSearchResults, 1 itemsPushed
+[36m[apify.google-search-scraper runId:aZVrIcpW7qpv3AUeC][0m -> Status: RUNNING, Message: Processed 1 queries on 1 pages. Extracted: 9 organicResults, 0 paidResults, 0 paidProducts, 0 relatedQueries, 0 aiOverviews, 0 aiModeResults, 0 perplexitySearchResults, 0 chatGptSearchResults, 1 itemsPushed
+[36m[apify.google-search-scraper runId:TrAb7nWdEQ1jyJ6fu][0m -> 2026-02-09T16:32:03.811Z [32mINFO[39m  Querying ""LAI Video" site:prnewswire.com OR site:businesswire.com OR site:globenewswire.com" page 1 ...
+[36m[apify.google-search-scraper runId:Q5JhuH1QYQhOd2Syw][0m -> 2026-02-09T16:32:09.032Z [32mINFO[39m  Results should be restricted to URL with prefixes: prnewswire.com, businesswire.com, globenewswire.com
+[36m[apify.google-search-scraper runId:TrAb7nWdEQ1jyJ6fu][0m -> 2026-02-09T16:32:09.090Z [32mINFO[39m  Results should be restricted to URL with prefixes: prnewswire.com, businesswire.com, globenewswire.com
+[36m[apify.google-search-scraper runId:Q5JhuH1QYQhOd2Syw][0m -> 2026-02-09T16:32:09.062Z [32mINFO[39m  Not enqueueing next page for query ""Greentarget" site:prnewswire.com OR site:businesswire.com OR site:globenewswire.com" because the "maxPagesPerQuery" limit has been reached.
+[36m[apify.google-search-scraper runId:TrAb7nWdEQ1jyJ6fu][0m -> 2026-02-09T16:32:09.123Z [32mINFO[39m  This is the last page for query ""LAI Video" site:prnewswire.com OR site:businesswire.com OR site:globenewswire.com".Next page button was not rendered nor enough results were found.
+[36m[apify.google-search-scraper runId:Q5JhuH1QYQhOd2Syw][0m -> 2026-02-09T16:32:09.168Z [32mINFO[39m  Finished query ""Greentarget" site:prnewswire.com OR site:businesswire.com OR site:globenewswire.com" page 1 (organicResults: 10, paidResults: 0, paidProducts: 0, relatedQueries: 0, aiOverview: 0)
+[36m[apify.google-search-scraper runId:TrAb7nWdEQ1jyJ6fu][0m -> 2026-02-09T16:32:09.206Z [32mINFO[39m  Finished query ""LAI Video" site:prnewswire.com OR site:businesswire.com OR site:globenewswire.com" page 1 (organicResults: 5, paidResults: 0, paidProducts: 0, relatedQueries: 6, aiOverview: 0)
+[36m[apify.google-search-scraper runId:Q5JhuH1QYQhOd2Syw][0m -> 2026-02-09T16:32:09.272Z [32mINFO[39m [33m CheerioCrawler:[39m All requests from the queue have been processed, the crawler will shut down.
+[36m[apify.google-search-scraper runId:Q5JhuH1QYQhOd2Syw][0m -> 2026-02-09T16:32:09.394Z [32mINFO[39m [33m CheerioCrawler:[39m Final request statistics:[90m {"requestsFinished":1,"requestsFailed":0,"retryHistogram":[1],"requestAvgFailedDurationMillis":null,"requestAvgFinishedDurationMillis":2608,"requestsFinishedPerMinute":20,"requestsFailedPerMinute":0,"requestTotalDurationMillis":2608,"requestsTotal":1,"crawlerRuntimeMillis":2967}[39m
+[36m[apify.google-search-scraper runId:Q5JhuH1QYQhOd2Syw][0m -> 2026-02-09T16:32:09.394Z [32mINFO[39m [33m CheerioCrawler:[39m Finished! Total 1 requests: 1 succeeded, 0 failed.[90m {"terminal":true}[39m
+[36m[apify.google-search-scraper runId:Q5JhuH1QYQhOd2Syw][0m -> 2026-02-09T16:32:09.411Z [32mINFO[39m  Scraping is finished, see you next time.
+[36m[apify.google-search-scraper runId:Q5JhuH1QYQhOd2Syw][0m -> 2026-02-09T16:32:09.413Z
+[36m[apify.google-search-scraper runId:Q5JhuH1QYQhOd2Syw][0m -> 2026-02-09T16:32:09.413Z Full results in JSON format:
+[36m[apify.google-search-scraper runId:Q5JhuH1QYQhOd2Syw][0m -> 2026-02-09T16:32:09.413Z https://api.apify.com/v2/datasets/ZIkFv1sSqNfb0RDkF/items?format=json
+[36m[apify.google-search-scraper runId:Q5JhuH1QYQhOd2Syw][0m -> 2026-02-09T16:32:09.414Z
+[36m[apify.google-search-scraper runId:Q5JhuH1QYQhOd2Syw][0m -> 2026-02-09T16:32:09.414Z Simplified organic results in JSON format:
+[36m[apify.google-search-scraper runId:TrAb7nWdEQ1jyJ6fu][0m -> 2026-02-09T16:32:09.296Z [32mINFO[39m [33m CheerioCrawler:[39m All requests from the queue have been processed, the crawler will shut down.
+[36m[apify.google-search-scraper runId:TrAb7nWdEQ1jyJ6fu][0m -> 2026-02-09T16:32:09.454Z [32mINFO[39m [33m CheerioCrawler:[39m Final request statistics:[90m {"requestsFinished":1,"requestsFailed":0,"retryHistogram":[1],"requestAvgFailedDurationMillis":null,"requestAvgFinishedDurationMillis":5458,"requestsFinishedPerMinute":10,"requestsFailedPerMinute":0,"requestTotalDurationMillis":5458,"requestsTotal":1,"crawlerRuntimeMillis":5843}[39m
+[36m[apify.google-search-scraper runId:Q5JhuH1QYQhOd2Syw][0m -> 2026-02-09T16:32:09.415Z https://api.apify.com/v2/datasets/ZIkFv1sSqNfb0RDkF/items?format=json&fields=searchQuery,organicResults&unwind=organicResults
+[36m[apify.google-search-scraper runId:TrAb7nWdEQ1jyJ6fu][0m -> 2026-02-09T16:32:09.455Z [32mINFO[39m [33m CheerioCrawler:[39m Finished! Total 1 requests: 1 succeeded, 0 failed.[90m {"terminal":true}[39m
+[36m[apify.google-search-scraper runId:TrAb7nWdEQ1jyJ6fu][0m -> 2026-02-09T16:32:09.483Z [32mINFO[39m  Scraping is finished, see you next time.
+--
+[36m[apify.website-content-crawler runId:EvaLn2acRMBEgmAP4][0m -> 2026-02-09T16:34:02.299Z [32mINFO[39m [33m PlaywrightCrawler:[39m The crawler has been gracefully stopped.
+[36m[apify.website-content-crawler runId:EvaLn2acRMBEgmAP4][0m -> 2026-02-09T16:34:02.331Z [32mINFO[39m [33m PlaywrightCrawler:[39m No new requests are allowed because the `stop()` method has been called. Ongoing requests will be allowed to complete.
+[36m[apify.website-content-crawler runId:EvaLn2acRMBEgmAP4][0m -> 2026-02-09T16:34:02.333Z [32mINFO[39m [33m PlaywrightCrawler:[39m The crawler has finished all the remaining ongoing requests and will shut down now.
+[36m[apify.website-content-crawler runId:EvaLn2acRMBEgmAP4][0m -> 2026-02-09T16:34:02.467Z [33mWARN[39m  Main crawler processed all start URLs, checking if SitemapCrawler can be shut down...
+[36m[apify.website-content-crawler runId:EvaLn2acRMBEgmAP4][0m -> 2026-02-09T16:34:02.469Z [33mWARN[39m  Shutting down SitemapCrawler, waiting for the main crawler to finish...
+[36m[apify.website-content-crawler runId:EvaLn2acRMBEgmAP4][0m -> 2026-02-09T16:34:02.624Z [33mWARN[39m  Main crawler finished successfully, exiting the run...
+[36m[apify.website-content-crawler runId:EvaLn2acRMBEgmAP4][0m -> Status: SUCCEEDED, Message: Crawled 0/1 pages, 0 failed requests, desired concurrency 2.
+      ❌ Rejected (score: -1): Punch Media is a media company, which is considere...
+      📄 Extracting article: https://mediacareerng.org/new-editors-deputies-res...
+[36m[apify.website-content-crawler runId:YeRa1OEuwftKttHKc][0m -> Status: RUNNING, Message:
+[36m[apify.website-content-crawler runId:YeRa1OEuwftKttHKc][0m -> 2026-02-09T16:34:14.989Z ACTOR: Pulling container image of build xLInTJVbEejzGA9LL from registry.
+[36m[apify.website-content-crawler runId:YeRa1OEuwftKttHKc][0m -> 2026-02-09T16:34:14.992Z ACTOR: Creating container.
+[36m[apify.website-content-crawler runId:YeRa1OEuwftKttHKc][0m -> 2026-02-09T16:34:15.153Z ACTOR: Starting container.
+[36m[apify.website-content-crawler runId:YeRa1OEuwftKttHKc][0m -> 2026-02-09T16:34:15.153Z ACTOR: Running under "LIMITED_PERMISSIONS" permission level.
+      ✅ Approved (score: 8, date: 2026-02-01)
+      ✅ TRIGGER CONFIRMED: Greentarget, now GT, has rebranded and launched a new business line called GT Sage. (Date: 2026-02-01)
+[36m[apify.website-content-crawler runId:YeRa1OEuwftKttHKc][0m -> 2026-02-09T16:34:15.369Z Will run command: xvfb-run -a -s "-ac -screen 0 1920x1080x24+32 -nolisten tcp" /bin/sh -c ./start_xvfb_and_run_cmd.sh && ./run_protected.sh npm run start:prod --silent
+      Looking for contacts in: PULSEPOINT_STRATEGIC_TRIGGERED_LEADS
+Template fetch failed: {'message': 'relation "public.email_templates" does not exist', 'code': '42P01', 'hint': None, 'details': None}
+      No template found, using full AI draft
+[36m[apify.website-content-crawler runId:YeRa1OEuwftKttHKc][0m -> 2026-02-09T16:34:17.392Z [32mINFO[39m  System info[90m {"apifyVersion":"3.5.2","apifyClientVersion":"2.20.0","crawleeVersion":"3.15.4-beta.43","osType":"Linux","nodeVersion":"v22.20.0"}[39m
+[36m[apify.website-content-crawler runId:YeRa1OEuwftKttHKc][0m -> 2026-02-09T16:34:17.840Z [32mINFO[39m  Crawling will be started using 1 start URLs and 0 sitemap URLs
+[36m[apify.website-content-crawler runId:YeRa1OEuwftKttHKc][0m -> Status: RUNNING, Message: Starting the crawler.
+      ---> Draft Created for jcorey@greentarget.com
+Template fetch failed: {'message': 'relation "public.email_templates" does not exist', 'code': '42P01', 'hint': None, 'details': None}
+      No template found, using full AI draft
+      ---> Draft Created for eachler@greentarget.com
+[36m[apify.website-content-crawler runId:YeRa1OEuwftKttHKc][0m -> Status: RUNNING, Message: Crawled 0/1 pages, 0 failed requests, desired concurrency 2.
+[36m[apify.website-content-crawler runId:YeRa1OEuwftKttHKc][0m -> 2026-02-09T16:34:18.321Z [32mINFO[39m [33m PlaywrightCrawler:[39m Starting the crawler.
+[36m[apify.website-content-crawler runId:YeRa1OEuwftKttHKc][0m -> 2026-02-09T16:34:38.602Z [33mWARN[39m [33m PlaywrightCrawler:[39m Reached max crawl depth of 0 for https://mediacareerng.org/new-editors-deputies-resumes-july-14-at-the-punch/, not enqueueing from this URL.
+[36m[apify.website-content-crawler runId:YeRa1OEuwftKttHKc][0m -> 2026-02-09T16:34:38.802Z [32mINFO[39m [33m PlaywrightCrawler:[39m The crawler reached the maxCrawlDepth limit of 0 and no further requests will be enqueued.

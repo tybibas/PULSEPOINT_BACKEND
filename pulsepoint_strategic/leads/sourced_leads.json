@@ -1,0 +1,110 @@
+{
+  "_generated_at": "2026-02-06T11:09:49.028002",
+  "_icp_source": "pulsepoint_strategic/directives/icp_definition.md",
+  "client_name": "PulsePoint Strategic",
+  "client_context": "pulsepoint_strategic",
+  "companies": [
+    {
+      "name": "Crisp Productions",
+      "website": "",
+      "event_type": "Industry News",
+      "event_title": "Mastering the Art of Business Storytelling",
+      "event_context": "London's top branding studios, including Crisp Productions, are focusing on corporate video production to enhance brand narratives, indicating a trend in the marketing and branding industry towards effective storytelling.",
+      "event_source_url": "https://crispproductions.co.uk/londons-branding-studios-mastering-the-art-of-business-storytelling-through-film-and-video-production/",
+      "contacts": [
+        {
+          "name": "[TO BE ENRICHED]",
+          "title": "CEO",
+          "email": "",
+          "linkedin_url": "",
+          "needs_enrichment": true
+        }
+      ]
+    },
+    {
+      "name": "unknown",
+      "website": "",
+      "event_type": "negative sentiment",
+      "event_title": "Dev shops have a horrific reputation.",
+      "event_context": "A notable statement about the negative perception of dev shops indicates a potential crisis or challenge in attracting talent. This sentiment may highlight staffing issues that could motivate a need for improved outreach and reputation management.",
+      "event_source_url": "https://x.com/businessbarista/status/2019087590389932134",
+      "contacts": [
+        {
+          "name": "[TO BE ENRICHED]",
+          "title": "CEO",
+          "email": "",
+          "linkedin_url": "",
+          "needs_enrichment": true
+        }
+      ]
+    },
+    {
+      "name": "branding studios",
+      "website": "",
+      "event_type": "launching type foundries",
+      "event_title": "Branding studios starting their own type foundries",
+      "event_context": "Branding studios are beginning to establish their own type foundries to address demands in the design market. This move indicates a strategic effort to diversify services and enhance brand identity in a competitive landscape.",
+      "event_source_url": "https://www.designweek.co.uk/why-are-branding-studios-starting-their-own-type-foundries/",
+      "contacts": [
+        {
+          "name": "[TO BE ENRICHED]",
+          "title": "CEO",
+          "email": "",
+          "linkedin_url": "",
+          "needs_enrichment": true
+        }
+      ]
+    },
+    {
+      "name": "Branding Studios Inc",
+      "website": "",
+      "event_type": "Service Offering",
+      "event_title": "Branding and Marketing Strategy Development",
+      "event_context": "Branding Studios Inc is actively engaged in crafting unique brand identities, which aligns with the firm's target market of mid-sized marketing agencies and branding studios. Their services appear to cater to businesses looking to elevate their marketing strategies.",
+      "event_source_url": "https://clutch.co/profile/branding-studios",
+      "contacts": [
+        {
+          "name": "[TO BE ENRICHED]",
+          "title": "CEO",
+          "email": "",
+          "linkedin_url": "",
+          "needs_enrichment": true
+        }
+      ]
+    },
+    {
+      "name": "Stratedgy",
+      "website": "",
+      "event_type": "Company growth and establishment as a branding studio",
+      "event_title": "Startup rebranding and expansion",
+      "event_context": "A small design practice in Mumbai has grown into a boutique branding studio by capitalizing on opportunities. This indicates their adaptability and potential need for efficient growth strategies.",
+      "event_source_url": "https://stratedgy.in/about/",
+      "contacts": [
+        {
+          "name": "[TO BE ENRICHED]",
+          "title": "CEO",
+          "email": "",
+          "linkedin_url": "",
+          "needs_enrichment": true
+        }
+      ]
+    },
+    {
+      "name": "Branding Studios Promotional Products",
+      "website": "",
+      "event_type": "Company Overview",
+      "event_title": "Branding Studios specializes in promotional products",
+      "event_context": "The company focuses on enhancing brand visibility through its range of promotional products, which aligns with the services offered by mid-sized marketing agencies and branding studios.",
+      "event_source_url": "https://www.zoominfo.com/c/branding-studios-llc/355544999",
+      "contacts": [
+        {
+          "name": "[TO BE ENRICHED]",
+          "title": "CEO",
+          "email": "",
+          "linkedin_url": "",
+          "needs_enrichment": true
+        }
+      ]
+    }
+  ]
+}

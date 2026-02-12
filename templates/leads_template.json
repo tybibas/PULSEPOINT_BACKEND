@@ -1,0 +1,43 @@
+{
+    "_schema_version": "1.0",
+    "_description": "Template for client leads export. Fill this out and run: python execution/export_client_leads.py --client 'CLIENT_NAME' --input leads.json --output ~/Desktop/",
+    "client_name": "ACME Corp",
+    "client_context": "acme_corp",
+    "companies": [
+        {
+            "name": "Target Company Inc",
+            "website": "https://targetcompany.com",
+            "event_type": "FUNDING",
+            "event_title": "Series B: $50M Raised",
+            "event_context": "Target Company announced a $50M Series B led by Sequoia Capital to expand their AI platform.",
+            "event_source_url": "https://techcrunch.com/example-article",
+            "contacts": [
+                {
+                    "name": "John Smith",
+                    "title": "CEO",
+                    "email": "john@targetcompany.com",
+                    "linkedin_url": "https://linkedin.com/in/johnsmith",
+                    "email_subject": "Re: Series B momentum",
+                    "email_body": "Hi John,\n\nThe Series B news caught my eye—scaling engineering velocity usually becomes the bottleneck right around this stage.\n\nWe help funded startups ship 40% faster using AI-assisted development workflows. Worth a quick call if that resonates?\n\nBest,\n[Sender]"
+                },
+                {
+                    "name": "Jane Doe",
+                    "title": "VP Engineering",
+                    "email": "jane@targetcompany.com",
+                    "linkedin_url": "https://linkedin.com/in/janedoe",
+                    "email_subject": "Scaling post-Series B",
+                    "email_body": "Hi Jane,\n\n..."
+                }
+            ]
+        },
+        {
+            "name": "Another Company LLC",
+            "website": "https://anothercompany.com",
+            "event_type": "NEW_EXEC",
+            "event_title": "New CTO Appointed",
+            "event_context": "...",
+            "event_source_url": "https://...",
+            "contacts": []
+        }
+    ]
+}

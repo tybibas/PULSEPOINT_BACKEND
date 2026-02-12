@@ -1,0 +1,50 @@
+SOP-02: Strategic Research Source Protocols (High-Fidelity Data Stack)
+Objective: To define the specific data sources and extraction methodologies required to build the "Strategic Diagnostic." The goal is to bypass generic web scraping and access "Institutional-Grade" intelligence that reveals the "Shadow Narrative."
+Protocol: Do not rely on Google News or basic press releases. You must prioritize the following three data layers.
+Layer 1: The "Ground Truth" Stack (Qualitative Reality)
+Use these sources to expose the "Broker Filter" and hear what the market is actually saying.
+1. Expert Networks (Tegus / AlphaSense Stream / Third Bridge)
+Purpose: To access "unfiltered" due diligence interviews between investors and former employees, customers, or competitors .
+Search Protocol:
+Query: [Ticker] + "Former Employee" OR "Competitor"
+Extraction Target: Look for "friction points" (e.g., "culture issues," "sales cycle paralysis," "pricing pressure") that contradict management's public claims .
+Diagnostic Action: Compare these quotes against the Sell-Side research headlines. If they diverge, the "Sanitization Score" is high.
+2. Consensus Granularity (Visible Alpha)
+Purpose: To see the actual working models of sell-side analysts, not just their published price targets .
+Search Protocol:
+Drill-Down: Do not look at "Total Revenue." Look at specific operational drivers (e.g., "iPhone Units Sold," "Subscription Churn," "Widget Pricing").
+Extraction Target: Identify line items where the "Consensus Model" is flat or declining while Management Guidance is rising.
+Diagnostic Action: This divergence identifies exactly where the "Broker Filter" is failing to convey the strategy .
+Layer 2: The "Valuation" Stack (Quantitative Reality)
+Use these sources to dollarize the "Narrative Gap."
+1. Driver-Based Modeling (Canalyst)
+Purpose: To "redrive" the company's valuation by manipulating underlying assumptions .
+Methodology (The "What-If" Test):
+Action: Take the Canalyst model and input Management's internal budget assumptions (e.g., "10% Growth").
+Compare: Contrast the resulting implied share price against the current market trading price.
+Diagnostic Action: If the implied price is higher than the trading price, calculate the difference. Label this the "Cost of Misunderstanding" (e.g., "$400M Market Cap Opportunity") .
+2. Peer Benchmarking (S&P Capital IQ)
+Purpose: To contextualize the gap against competitors.
+Methodology (Data Arbitrage):
+Action: Compare the target's "Detailed Estimates" against peer averages.
+Extraction Target: Look for "Revision Trends." If peers are seeing upward revisions while the target is seeing downward revisions despite positive news, credibility is eroding.
+Layer 3: The "Sentiment & Risk" Stack (The Vibe)
+Use these sources to detect "Spin" and "Vulnerability."
+1. Audio Biomarkers (Aiera / Quartr)
+Purpose: To analyze how management speaks, not just what they say.
+Methodology (The Divergence Trap):
+Action: Compare the NLP sentiment score of "Prepared Remarks" (Scripted) vs. "Q&A" (Unscripted).
+Advanced Extraction: Use Aiera to detect "Incongruence"—where positive words are spoken with "uncertainty" (shaky pitch, hesitation) .
+Diagnostic Action: If Unscripted Sentiment is significantly lower than Scripted, flag as a "Short Seller Trigger" .
+2. Activism Screens (FactSet SharkRepellent / Diligent)
+Purpose: To determine if the company is "structurally vulnerable" to a hostile takeover.
+Search Protocol:
+Check Defenses: Does the company have a "Staggered Board" or "Poison Pill"?.
+Check History: Has an activist targeted a peer with a similar financial profile (e.g., High Cash, Low Growth)? .
+Diagnostic Action: If Vulnerability is High + Valuation is Low, trigger the "Activism Alarm" .
+Summary of Execution Logic
+Start with Visible Alpha to find the math error.
+Verify with Tegus to find the human reason.
+Dollarize with Canalyst to show the cost.
+Confirm Risk with Aiera and SharkRepellent to show the urgency.
+

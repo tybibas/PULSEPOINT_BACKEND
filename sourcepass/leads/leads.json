@@ -1,0 +1,106 @@
+{
+    "client_name": "Sourcepass",
+    "companies": [
+        {
+            "name": "Penn State Health",
+            "event_type": "LEADERSHIP_CHANGE",
+            "event_title": "New CIO Dennis Sutterfield Appointed",
+            "event_context": "Dennis Sutterfield was appointed Senior Vice President and Chief Information Officer in November 2025, responsible for strategic and operational direction of IT, including data analytics, health information management, clinical engineering, and digital transformation initiatives.",
+            "event_source_url": "https://www.pennstatehealth.org/news",
+            "contacts": [
+                {
+                    "name": "Dennis Sutterfield",
+                    "title": "SVP & Chief Information Officer",
+                    "email": "dennis.sutterfield@pennstatehealth.org",
+                    "email_subject": "90-Day IT Assessment Support",
+                    "email_body": "Hi Dennis,\n\nCongratulations on your appointment as CIO at Penn State Health. The first 90 days in a new CIO role are often about understanding what's working, what's not, and where the gaps are.\n\nAt Sourcepass, we work with healthcare IT leaders who are navigating exactly this—inheriting complex environments and needing a trusted partner who can provide both strategic guidance and hands-on support.\n\nWe're currently supporting several academic health systems with their digital transformation and cybersecurity initiatives. Given your focus on data analytics and clinical engineering, I thought it might be worth a quick conversation.\n\nWould a 15-minute call next week make sense to explore how we might support your priorities?\n\nBest,\n[SOURCEPASS REP]"
+                }
+            ]
+        },
+        {
+            "name": "Allegheny Health Network",
+            "event_type": "LEADERSHIP_CHANGE",
+            "event_title": "New Chief Digital Information Officer + Data Breach Response",
+            "event_context": "Richard Medford, MD was appointed Chief Digital Information Officer in August 2025. In February 2025, AHN notified 292,773 patients of a data breach stemming from a cyberattack on third-party contractor IntraSystems.",
+            "event_source_url": "https://www.beckershospitalreview.com/",
+            "contacts": [
+                {
+                    "name": "Richard Medford",
+                    "title": "Chief Digital Information Officer",
+                    "email": "richard.medford@ahn.org",
+                    "email_subject": "Third-Party Risk After the IntraSystems Incident",
+                    "email_body": "Hi Richard,\n\nCongratulations on your role as CDIO at Allegheny Health Network. I imagine the IntraSystems incident earlier this year has made third-party vendor risk a top-of-mind issue for the leadership team.\n\nAt Sourcepass, we've been helping healthcare organizations strengthen their security posture—particularly around vendor management and MDR (Managed Detection and Response). Our Quest platform gives IT leaders real-time visibility into their environment, which is especially valuable after a breach event.\n\nI'd love to share how we've helped similar health systems rebuild trust and demonstrate security maturity. Would a brief call be helpful?\n\nBest,\n[SOURCEPASS REP]"
+                },
+                {
+                    "name": "John Gabrick",
+                    "title": "VP Clinical Information Systems",
+                    "email": "john.gabrick@ahn.org",
+                    "email_subject": "Strengthening Clinical Systems Security",
+                    "email_body": "Hi John,\n\nWith the recent focus on cybersecurity at AHN following the IntraSystems incident, I wanted to reach out about how we support clinical information systems teams.\n\nAt Sourcepass, we specialize in healthcare IT—HIPAA compliance, MDR, and proactive monitoring for clinical environments. We understand that uptime and data integrity are non-negotiable for patient care.\n\nI'd be happy to share some examples of how we've helped similar organizations. Would a quick call be useful?\n\nBest,\n[SOURCEPASS REP]"
+                }
+            ]
+        },
+        {
+            "name": "Bayhealth Medical Center",
+            "event_type": "LEADERSHIP_CHANGE",
+            "event_title": "New CIO Thomas Marlow Starts + Breach Settlement",
+            "event_context": "Thomas (Mac) Marlow began as VP, Chief Digital and Information Officer on January 5, 2026, coming from UT Southwestern. In September 2025, Bayhealth agreed to a preliminary settlement in a class-action lawsuit from a 2024 Rhysida ransomware attack affecting nearly 500,000 individuals.",
+            "event_source_url": "https://www.capegazette.com/",
+            "contacts": [
+                {
+                    "name": "Thomas Marlow",
+                    "title": "VP, Chief Digital & Information Officer",
+                    "email": "thomas.marlow@bayhealth.org",
+                    "email_subject": "Welcome to Bayhealth – Here to Support Your Priorities",
+                    "email_body": "Hi Mac,\n\nWelcome to Bayhealth. Starting a CIO role in the aftermath of a major breach settlement is no small undertaking—I imagine security posture and organizational trust are at the top of your agenda.\n\nAt Sourcepass, we've helped healthcare organizations in similar situations rebuild their cybersecurity foundation while also driving digital transformation. Our approach is people-first: we become an extension of your team, not just another vendor.\n\nI'd love to introduce you to how we work with health systems on MDR, compliance, and IT strategy. Would a brief conversation be helpful as you assess your environment?\n\nBest,\n[SOURCEPASS REP]"
+                },
+                {
+                    "name": "Jonathan Kaufmann",
+                    "title": "VP, Chief Health Information Officer",
+                    "email": "jonathan.kaufmann@bayhealth.org",
+                    "email_subject": "Supporting Bayhealth's Informatics & Security Goals",
+                    "email_body": "Hi Jonathan,\n\nWith Bayhealth's focus on strengthening its cybersecurity posture after the recent settlement, I wanted to reach out about how we support health informatics leaders.\n\nAt Sourcepass, we understand that CHIO roles sit at the intersection of clinical operations and technology—you need partners who get both. Our healthcare-focused IT services include HIPAA compliance, EMR security, and digital health initiatives.\n\nI'd be happy to share how we've helped similar organizations. Would a quick call make sense?\n\nBest,\n[SOURCEPASS REP]"
+                }
+            ]
+        },
+        {
+            "name": "Central Jersey Medical Center",
+            "event_type": "CYBERSECURITY_INCIDENT",
+            "event_title": "Ransomware Attack by Sinobi Group",
+            "event_context": "On August 25, 2025, the Sinobi ransomware group attacked CJMC's dental server network, claiming exfiltration of 930 GB of data including SSNs, health insurance info, and treatment histories.",
+            "event_source_url": "https://www.hipaajournal.com/",
+            "contacts": [
+                {
+                    "name": "John O'Leary",
+                    "title": "Chief Executive Officer",
+                    "email": "joleary@cjmc.us",
+                    "email_subject": "Post-Incident IT Support for CJMC",
+                    "email_body": "Hi John,\n\nI wanted to reach out following the cybersecurity incident at Central Jersey Medical Center. Recovering from a ransomware attack—especially one involving patient data—is incredibly challenging, and I imagine IT security is now a board-level priority.\n\nAt Sourcepass, we specialize in helping healthcare organizations like CJMC strengthen their security posture after an incident. Our services include MDR (Managed Detection and Response), HIPAA compliance, and 24/7 monitoring.\n\nI'd be happy to share how we've helped similar FQHCs rebuild trust and prevent future attacks. Would a brief conversation be helpful?\n\nBest,\n[SOURCEPASS REP]"
+                },
+                {
+                    "name": "Thomas Boggiano",
+                    "title": "COO/CFO",
+                    "email": "tboggiano@cjmc.us",
+                    "email_subject": "IT Security Investment After the Incident",
+                    "email_body": "Hi Thomas,\n\nFollowing the recent cybersecurity incident at CJMC, I imagine there are difficult conversations happening about IT security investment and vendor relationships.\n\nAt Sourcepass, we work with healthcare organizations to provide managed IT and cybersecurity services that don't break the budget. Our approach focuses on proactive protection and compliance—so you're not just reacting to threats.\n\nI'd be happy to discuss how we've helped similar organizations balance security needs with financial realities. Would a call be useful?\n\nBest,\n[SOURCEPASS REP]"
+                }
+            ]
+        },
+        {
+            "name": "Gaylord Specialty Healthcare",
+            "event_type": "LEADERSHIP_CHANGE",
+            "event_title": "New VP & CIO Appointed",
+            "event_context": "Ms. Avellino was appointed VP & CIO in January 2025, bringing two decades of IT leadership experience from Moses Weitzman Health System in Connecticut.",
+            "event_source_url": "https://www.beckershospitalreview.com/",
+            "contacts": [
+                {
+                    "name": "IT Leadership",
+                    "title": "VP & CIO",
+                    "email": "info@gaylord.org",
+                    "email_subject": "IT Partnership for Specialty Healthcare",
+                    "email_body": "Hi,\n\nI'm reaching out to the IT leadership team at Gaylord Specialty Healthcare. With a new CIO now a year into the role, I imagine you're well into executing on your digital strategy.\n\nAt Sourcepass, we specialize in managed IT and cybersecurity for healthcare organizations—including specialty and rehabilitation facilities. Our approach is people-first: we become an extension of your team.\n\nI'd love to introduce how we support healthcare IT leaders. Would a brief conversation be helpful?\n\nBest,\n[SOURCEPASS REP]"
+                }
+            ]
+        }
+    ]
+}

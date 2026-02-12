@@ -1,0 +1,95 @@
+{
+  "meta": {
+    "ticker": "MSFT",
+    "generated_at": "2026-01-06T10:55:41.526265",
+    "version": "1.0 (Live/Sanitized)"
+  },
+  "data": {
+    "sanitization": {
+      "sanitization_score": 0.75,
+      "is_high_distortion": true,
+      "key_quote": "The positive sell-side perspective on Microsoft's stock contrasts sharply with employee concerns about its internal culture and management practices.",
+      "ticker": "MSFT",
+      "sources": {
+        "sell_side": "Analyst Consensus",
+        "expert_network": "OSINT (Glassdoor/Blind)"
+      }
+    },
+    "sentiment_velocity": {
+      "prepared_remarks_sentiment": 0.85,
+      "qa_sentiment": 0.65,
+      "sentiment_drop_percent": 1.0,
+      "credibility_gap_detected": true,
+      "ticker": "MSFT",
+      "source": "OSINT (Public Transcript)"
+    },
+    "strategy": {
+      "pillar": "AI Integration Across Services",
+      "description": "Microsoft is focusing on integrating AI capabilities across its product suite to enhance user experience and create new value.",
+      "source": "Q3 Earnings Call"
+    },
+    "consensus_divergence": {
+      "divergence_line_items": [
+        {
+          "item": "Revenue Growth",
+          "consensus": "11%",
+          "guidance": "10%",
+          "divergence": true
+        },
+        {
+          "item": "EPS",
+          "consensus": "$10.50",
+          "guidance": "$10.30",
+          "divergence": true
+        }
+      ],
+      "ticker": "MSFT",
+      "source": "Synthetic Analyst (OSINT Estimates)"
+    },
+    "valuation_gap": {
+      "ticker": "MSFT",
+      "trading_price": 150.0,
+      "implied_price": 165.0,
+      "narrative_gap_per_share": 15.0,
+      "assumption_used": "10% Growth (Automated Probe)",
+      "methodology": "To estimate the implied price, I used the Driver-Based Modeling approach with the assumption that the market credits the 10% growth assumption. Starting with the current price of MSFT at $150, the current P/E ratio is 25. If the market fully credits the 10% growth assumption, the earnings are expected to grow by 10%. With this growth rate, the new earnings can be estimated to reflect this change, and the current P/E ratio is maintained to calculate the future price. So, the adjusted price is calculated as $150 * 1.10, resulting in an implied price of $165. The methodology used involves applying the growth rate directly to the current price, assuming the P/E ratio remains constant.",
+      "source": "Synthetic Analyst (OpenAI + FMP)"
+    },
+    "activism_risk": {
+      "vulnerability_score": "Low",
+      "governance_gaps": [],
+      "summary": "Microsoft Corporation (MSFT) has a governance structure that is generally considered resilient against shareholder activism. The company has a declassified board, allowing for all directors to be elected annually, which promotes accountability but also provides fewer hurdles for activist investors to replace board members. However,...",
+      "ticker": "MSFT",
+      "source": "Synthetic Analyst (OpenAI Knowledge)"
+    },
+    "peers": {
+      "result": [
+        {
+          "ticker": "GOOGL",
+          "name": "Alphabet Inc.",
+          "reason": "Alphabet competes with Microsoft in cloud computing, productivity software, and AI technologies."
+        },
+        {
+          "ticker": "AAPL",
+          "name": "Apple Inc.",
+          "reason": "Apple competes with Microsoft in operating systems, software, and hardware solutions."
+        },
+        {
+          "ticker": "AMZN",
+          "name": "Amazon.com Inc.",
+          "reason": "Amazon is a direct competitor in cloud computing with its AWS services, competing with Microsoft's Azure."
+        },
+        {
+          "ticker": "ORCL",
+          "name": "Oracle Corporation",
+          "reason": "Oracle competes with Microsoft in database management systems and enterprise software solutions."
+        },
+        {
+          "ticker": "IBM",
+          "name": "International Business Machines Corporation",
+          "reason": "IBM competes with Microsoft in cloud services, AI technology, and enterprise software."
+        }
+      ]
+    }
+  }
+}

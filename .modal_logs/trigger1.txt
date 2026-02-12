@@ -1,0 +1,271 @@
+      Found 21 unique results across 3 queries
+Analysis Error: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+Analysis Error: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+Analysis Error: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+Analysis Error: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+      (No relevant triggers found)
+Analysis Error: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+      Found 30 unique results across 3 queries
+Analysis Error: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+Analysis Error: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+      (No relevant triggers found)
+Analysis Error: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+Analysis Error: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+Analysis Error: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+Analysis Error: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+[36m[apify.google-search-scraper runId:TEozzZL1jAMWnawDT][0m -> 2026-02-09T16:29:05.980Z [32mINFO[39m  Querying ""Osborne Northwest Public Relations" site:prnewswire.com OR site:businesswire.com OR site:globenewswire.com" page 1 ...
+Analysis Error: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+[36m[apify.google-search-scraper runId:TEozzZL1jAMWnawDT][0m -> 2026-02-09T16:29:20.354Z [32mINFO[39m  Results should be restricted to URL with prefixes: prnewswire.com, businesswire.com, globenewswire.com
+[36m[apify.google-search-scraper runId:TEozzZL1jAMWnawDT][0m -> 2026-02-09T16:29:20.412Z [32mINFO[39m  This is the last page for query ""Osborne Northwest Public Relations" site:prnewswire.com OR site:businesswire.com OR site:globenewswire.com".Next page button was not rendered nor enough results were found.
+      Found 28 unique results across 3 queries
+Analysis Error: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+[36m[apify.google-search-scraper runId:TEozzZL1jAMWnawDT][0m -> 2026-02-09T16:29:20.825Z [32mINFO[39m  Finished query ""Osborne Northwest Public Relations" site:prnewswire.com OR site:businesswire.com OR site:globenewswire.com" page 1 (organicResults: 6, paidResults: 0, paidProducts: 0, relatedQueries: 0, aiOverview: 0)
+[36m[apify.google-search-scraper runId:TEozzZL1jAMWnawDT][0m -> 2026-02-09T16:29:20.925Z [32mINFO[39m [33m CheerioCrawler:[39m All requests from the queue have been processed, the crawler will shut down.
+[36m[apify.google-search-scraper runId:TEozzZL1jAMWnawDT][0m -> 2026-02-09T16:29:20.994Z [32mINFO[39m [33m CheerioCrawler:[39m Final request statistics:[90m {"requestsFinished":1,"requestsFailed":0,"retryHistogram":[1],"requestAvgFailedDurationMillis":null,"requestAvgFinishedDurationMillis":14878,"requestsFinishedPerMinute":4,"requestsFailedPerMinute":0,"requestTotalDurationMillis":14878,"requestsTotal":1,"crawlerRuntimeMillis":15224}[39m
+[36m[apify.google-search-scraper runId:TEozzZL1jAMWnawDT][0m -> 2026-02-09T16:29:20.996Z [32mINFO[39m [33m CheerioCrawler:[39m Finished! Total 1 requests: 1 succeeded, 0 failed.[90m {"terminal":true}[39m
+[36m[apify.google-search-scraper runId:TEozzZL1jAMWnawDT][0m -> 2026-02-09T16:29:21.024Z [32mINFO[39m  Scraping is finished, see you next time.
+[36m[apify.google-search-scraper runId:TEozzZL1jAMWnawDT][0m -> 2026-02-09T16:29:21.026Z
+[36m[apify.google-search-scraper runId:TEozzZL1jAMWnawDT][0m -> 2026-02-09T16:29:21.027Z Full results in JSON format:
+[36m[apify.google-search-scraper runId:TEozzZL1jAMWnawDT][0m -> 2026-02-09T16:29:21.029Z https://api.apify.com/v2/datasets/4w0c7B8Hj0H6ik6nS/items?format=json
+[36m[apify.google-search-scraper runId:TEozzZL1jAMWnawDT][0m -> 2026-02-09T16:29:21.031Z
+[36m[apify.google-search-scraper runId:TEozzZL1jAMWnawDT][0m -> 2026-02-09T16:29:21.033Z Simplified organic results in JSON format:
+[36m[apify.google-search-scraper runId:TEozzZL1jAMWnawDT][0m -> 2026-02-09T16:29:21.035Z https://api.apify.com/v2/datasets/4w0c7B8Hj0H6ik6nS/items?format=json&fields=searchQuery,organicResults&unwind=organicResults
+[36m[apify.google-search-scraper runId:TEozzZL1jAMWnawDT][0m -> Status: RUNNING, Message: Processed 1 queries on 1 pages. Extracted: 6 organicResults, 0 paidResults, 0 paidProducts, 0 relatedQueries, 0 aiOverviews, 0 aiModeResults, 0 perplexitySearchResults, 0 chatGptSearchResults, 1 itemsPushed
+Analysis Error: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+Analysis Error: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+[36m[apify.google-search-scraper runId:TEozzZL1jAMWnawDT][0m -> 2026-02-09T16:29:21.037Z [32mINFO[39m  [Status message]: Processed 1 queries on 1 pages. Extracted: 6 organicResults, 0 paidResults, 0 paidProducts, 0 relatedQueries, 0 aiOverviews, 0 aiModeResults, 0 perplexitySearchResults, 0 chatGptSearchResults, 1 itemsPushed
+      Found 28 unique results across 3 queries
+--
+[36m[apify.google-search-scraper runId:lckeu5biuLIS484A4][0m -> 2026-02-09T16:31:25.137Z
+🚀 Starting Monitoring Scan...
+[36m[apify.google-search-scraper runId:ybFbqTgQIiW2ghXZm][0m -> 2026-02-09T16:31:24.732Z ACTOR: Pulling container image of build 7SQ7UrT5GX04y6g5S from registry.
+[36m[apify.google-search-scraper runId:ybFbqTgQIiW2ghXZm][0m -> 2026-02-09T16:31:24.735Z ACTOR: Creating container.
+[36m[apify.google-search-scraper runId:ybFbqTgQIiW2ghXZm][0m -> 2026-02-09T16:31:24.788Z ACTOR: Starting container.
+[36m[apify.google-search-scraper runId:ybFbqTgQIiW2ghXZm][0m -> 2026-02-09T16:31:24.790Z ACTOR: Running under "LIMITED_PERMISSIONS" permission level.
+🚀 Starting Monitoring Scan...
+[36m[apify.google-search-scraper runId:Y6gBF3VJx36bsif7x][0m -> 2026-02-09T16:31:25.132Z [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+
+   🔍 Deep scanning: Punch Media (pulsepoint_strategic)...
+[36m[apify.google-search-scraper runId:lckeu5biuLIS484A4][0m -> 2026-02-09T16:31:25.152Z [32mINFO[39m [33m CheerioCrawler:[39m Using the old RequestQueue implementation without request locking.
+[36m[apify.google-search-scraper runId:lckeu5biuLIS484A4][0m -> 2026-02-09T16:31:25.323Z [32mINFO[39m [33m CheerioCrawler:[39m Starting the crawler.
+
+   🔍 Deep scanning: Umbrella (pulsepoint_strategic)...
+
+   🔍 Deep scanning: Osborne Northwest Public Relations (pulsepoint_strategic)...
+[36m[apify.google-search-scraper runId:Y6gBF3VJx36bsif7x][0m -> 2026-02-09T16:31:25.332Z [32mINFO[39m  System info[90m {"apifyVersion":"3.5.1","apifyClientVersion":"2.18.0","crawleeVersion":"3.14.1","osType":"Linux","nodeVersion":"v20.20.0"}[39m
+[36m[apify.google-search-scraper runId:Y6gBF3VJx36bsif7x][0m -> 2026-02-09T16:31:25.472Z [32mINFO[39m
+[36m[apify.google-search-scraper runId:Y6gBF3VJx36bsif7x][0m -> 2026-02-09T16:31:25.474Z  _______  _______  _______  _______  _______ _________ _        _______
+[36m[apify.google-search-scraper runId:Y6gBF3VJx36bsif7x][0m -> 2026-02-09T16:31:25.476Z (  ____ \(  ____ \(  ____ )(  ___  )(  ____ )\__   __/( (    /|(  ____ \
+[36m[apify.google-search-scraper runId:Y6gBF3VJx36bsif7x][0m -> 2026-02-09T16:31:25.477Z | (    \/| (    \/| (    )|| (   ) || (    )|   ) (   |  \  ( || (    \/
+[36m[apify.google-search-scraper runId:Y6gBF3VJx36bsif7x][0m -> 2026-02-09T16:31:25.479Z | (_____ | |      | (____)|| (___) || (____)|   | |   |   \ | || |
+[36m[apify.google-search-scraper runId:Y6gBF3VJx36bsif7x][0m -> 2026-02-09T16:31:25.481Z (_____  )| |      |     __)|  ___  ||  _____)   | |   | (\ \) || | ____
+[36m[apify.google-search-scraper runId:Y6gBF3VJx36bsif7x][0m -> 2026-02-09T16:31:25.483Z       ) || |      | (\ (   | (   ) || (         | |   | | \   || | \_  )
+[36m[apify.google-search-scraper runId:Y6gBF3VJx36bsif7x][0m -> 2026-02-09T16:31:25.484Z /\____) || (____/\| ) \ \__| )   ( || )      ___) (___| )  \  || (___) |
+[36m[apify.google-search-scraper runId:Y6gBF3VJx36bsif7x][0m -> 2026-02-09T16:31:25.486Z \_______)(_______/|/   \__/|/     \||/       \_______/|/    )_)(_______)
+[36m[apify.google-search-scraper runId:Y6gBF3VJx36bsif7x][0m -> 2026-02-09T16:31:25.488Z
+[36m[apify.google-search-scraper runId:Y6gBF3VJx36bsif7x][0m -> 2026-02-09T16:31:25.490Z  _______  _______  _______  _______  _        _______     _______  _______  _______
+[36m[apify.google-search-scraper runId:Y6gBF3VJx36bsif7x][0m -> 2026-02-09T16:31:25.492Z (  ____ \(  ___  )(  ___  )(  ____ \( \      (  ____ \   (  ____ \(  ___  )(       )
+[36m[apify.google-search-scraper runId:Y6gBF3VJx36bsif7x][0m -> 2026-02-09T16:31:25.494Z | (    \/| (   ) || (   ) || (    \/| (      | (    \/   | (    \/| (   ) || () () |
+[36m[apify.google-search-scraper runId:Y6gBF3VJx36bsif7x][0m -> 2026-02-09T16:31:25.495Z | |      | |   | || |   | || |      | |      | (__       | |      | |   | || || || |
+--
+[36m[apify.google-search-scraper runId:JsRDvkF5PWmM29JYF][0m -> 2026-02-09T16:31:38.999Z [32mINFO[39m  Not enqueueing next page for query ""Punch Media" ("appointed" OR "hired" OR "CMO" OR "VP Marketing" OR "rebranding" OR "launches" OR "expansion" OR "award") news" because the "maxPagesPerQuery" limit has been reached.
+[36m[apify.google-search-scraper runId:JsRDvkF5PWmM29JYF][0m -> 2026-02-09T16:31:39.105Z [32mINFO[39m  Finished query ""Punch Media" ("appointed" OR "hired" OR "CMO" OR "VP Marketing" OR "rebranding" OR "launches" OR "expansion" OR "award") news" page 1 (organicResults: 10, paidResults: 0, paidProducts: 0, relatedQueries: 0, aiOverview: 1)
+[36m[apify.google-search-scraper runId:JsRDvkF5PWmM29JYF][0m -> 2026-02-09T16:31:39.220Z [32mINFO[39m [33m CheerioCrawler:[39m All requests from the queue have been processed, the crawler will shut down.
+[36m[apify.google-search-scraper runId:JsRDvkF5PWmM29JYF][0m -> 2026-02-09T16:31:39.366Z [32mINFO[39m [33m CheerioCrawler:[39m Final request statistics:[90m {"requestsFinished":1,"requestsFailed":0,"retryHistogram":[1],"requestAvgFailedDurationMillis":null,"requestAvgFinishedDurationMillis":11827,"requestsFinishedPerMinute":5,"requestsFailedPerMinute":0,"requestTotalDurationMillis":11827,"requestsTotal":1,"crawlerRuntimeMillis":12301}[39m
+[36m[apify.google-search-scraper runId:JsRDvkF5PWmM29JYF][0m -> 2026-02-09T16:31:39.367Z [32mINFO[39m [33m CheerioCrawler:[39m Finished! Total 1 requests: 1 succeeded, 0 failed.[90m {"terminal":true}[39m
+[36m[apify.google-search-scraper runId:JsRDvkF5PWmM29JYF][0m -> 2026-02-09T16:31:39.383Z [32mINFO[39m  Scraping is finished, see you next time.
+[36m[apify.google-search-scraper runId:JsRDvkF5PWmM29JYF][0m -> 2026-02-09T16:31:39.384Z
+[36m[apify.google-search-scraper runId:JsRDvkF5PWmM29JYF][0m -> 2026-02-09T16:31:39.385Z Full results in JSON format:
+[36m[apify.google-search-scraper runId:JsRDvkF5PWmM29JYF][0m -> 2026-02-09T16:31:39.385Z https://api.apify.com/v2/datasets/CNkNaATn3fj2bI7Yo/items?format=json
+[36m[apify.google-search-scraper runId:JsRDvkF5PWmM29JYF][0m -> 2026-02-09T16:31:39.386Z
+[36m[apify.google-search-scraper runId:JsRDvkF5PWmM29JYF][0m -> 2026-02-09T16:31:39.387Z Simplified organic results in JSON format:
+[36m[apify.google-search-scraper runId:JsRDvkF5PWmM29JYF][0m -> 2026-02-09T16:31:39.387Z https://api.apify.com/v2/datasets/CNkNaATn3fj2bI7Yo/items?format=json&fields=searchQuery,organicResults&unwind=organicResults
+[36m[apify.google-search-scraper runId:KajAejdrkax0aN7zD][0m -> Status: RUNNING, Message: Processed 0 queries on 0 pages. Extracted: 0 organicResults, 0 paidResults, 0 paidProducts, 0 relatedQueries, 0 aiOverviews, 0 aiModeResults, 0 perplexitySearchResults, 0 chatGptSearchResults, 0 itemsPushed
+[36m[apify.google-search-scraper runId:JsRDvkF5PWmM29JYF][0m -> 2026-02-09T16:31:39.388Z [32mINFO[39m  [Status message]: Processed 1 queries on 1 pages. Extracted: 10 organicResults, 0 paidResults, 0 paidProducts, 0 relatedQueries, 1 aiOverviews, 0 aiModeResults, 0 perplexitySearchResults, 0 chatGptSearchResults, 1 itemsPushed
+[36m[apify.google-search-scraper runId:JsRDvkF5PWmM29JYF][0m -> Status: SUCCEEDED, Message: Processed 1 queries on 1 pages. Extracted: 10 organicResults, 0 paidResults, 0 paidProducts, 0 relatedQueries, 1 aiOverviews, 0 aiModeResults, 0 perplexitySearchResults, 0 chatGptSearchResults, 1 itemsPushed
+[36m[apify.google-search-scraper runId:6UmwMIxxdHukTcuke][0m -> 2026-02-09T16:31:27.803Z [32mINFO[39m  Querying ""Osborne Northwest Public Relations" ("appointed" OR "hired" OR "CMO" OR "VP Marketing" OR "rebranding" OR "launches" OR "expansion" OR "award") news" page 1 ...
+[36m[apify.google-search-scraper runId:6UmwMIxxdHukTcuke][0m -> 2026-02-09T16:31:40.134Z [32mINFO[39m  Not enqueueing next page for query ""Osborne Northwest Public Relations" ("appointed" OR "hired" OR "CMO" OR "VP Marketing" OR "rebranding" OR "launches" OR "expansion" OR "award") news" because the "maxPagesPerQuery" limit has been reached.
+[36m[apify.google-search-scraper runId:6UmwMIxxdHukTcuke][0m -> 2026-02-09T16:31:40.227Z [32mINFO[39m  Finished query ""Osborne Northwest Public Relations" ("appointed" OR "hired" OR "CMO" OR "VP Marketing" OR "rebranding" OR "launches" OR "expansion" OR "award") news" page 1 (organicResults: 10, paidResults: 0, paidProducts: 0, relatedQueries: 16, aiOverview: 1)
+[36m[apify.google-search-scraper runId:ybFbqTgQIiW2ghXZm][0m -> 2026-02-09T16:31:26.291Z [32mINFO[39m  Querying ""Richter Studios" ("appointed" OR "hired" OR "CMO" OR "VP Marketing" OR "rebranding" OR "launches" OR "expansion" OR "award") news" page 1 ...
+[36m[apify.google-search-scraper runId:6UmwMIxxdHukTcuke][0m -> 2026-02-09T16:31:40.339Z [32mINFO[39m [33m CheerioCrawler:[39m All requests from the queue have been processed, the crawler will shut down.
+[36m[apify.google-search-scraper runId:6UmwMIxxdHukTcuke][0m -> 2026-02-09T16:31:40.450Z [32mINFO[39m [33m CheerioCrawler:[39m Final request statistics:[90m {"requestsFinished":1,"requestsFailed":0,"retryHistogram":[1],"requestAvgFailedDurationMillis":null,"requestAvgFinishedDurationMillis":12455,"requestsFinishedPerMinute":5,"requestsFailedPerMinute":0,"requestTotalDurationMillis":12455,"requestsTotal":1,"crawlerRuntimeMillis":12855}[39m
+[36m[apify.google-search-scraper runId:6UmwMIxxdHukTcuke][0m -> 2026-02-09T16:31:40.451Z [32mINFO[39m [33m CheerioCrawler:[39m Finished! Total 1 requests: 1 succeeded, 0 failed.[90m {"terminal":true}[39m
+[36m[apify.google-search-scraper runId:6UmwMIxxdHukTcuke][0m -> 2026-02-09T16:31:40.461Z [32mINFO[39m  Scraping is finished, see you next time.
+[36m[apify.google-search-scraper runId:6UmwMIxxdHukTcuke][0m -> 2026-02-09T16:31:40.461Z
+[36m[apify.google-search-scraper runId:6UmwMIxxdHukTcuke][0m -> 2026-02-09T16:31:40.462Z Full results in JSON format:
+[36m[apify.google-search-scraper runId:6UmwMIxxdHukTcuke][0m -> 2026-02-09T16:31:40.464Z https://api.apify.com/v2/datasets/yYhavnA1L82Jdg6zs/items?format=json
+[36m[apify.google-search-scraper runId:6UmwMIxxdHukTcuke][0m -> 2026-02-09T16:31:40.465Z
+[36m[apify.google-search-scraper runId:6UmwMIxxdHukTcuke][0m -> 2026-02-09T16:31:40.465Z Simplified organic results in JSON format:
+[36m[apify.google-search-scraper runId:ybFbqTgQIiW2ghXZm][0m -> 2026-02-09T16:31:40.256Z [32mINFO[39m  Not enqueueing next page for query ""Richter Studios" ("appointed" OR "hired" OR "CMO" OR "VP Marketing" OR "rebranding" OR "launches" OR "expansion" OR "award") news" because the "maxPagesPerQuery" limit has been reached.
+[36m[apify.google-search-scraper runId:6UmwMIxxdHukTcuke][0m -> 2026-02-09T16:31:40.466Z https://api.apify.com/v2/datasets/yYhavnA1L82Jdg6zs/items?format=json&fields=searchQuery,organicResults&unwind=organicResults
+[36m[apify.google-search-scraper runId:ybFbqTgQIiW2ghXZm][0m -> 2026-02-09T16:31:40.483Z [32mINFO[39m  Finished query ""Richter Studios" ("appointed" OR "hired" OR "CMO" OR "VP Marketing" OR "rebranding" OR "launches" OR "expansion" OR "award") news" page 1 (organicResults: 10, paidResults: 0, paidProducts: 0, relatedQueries: 0, aiOverview: 1)
+[36m[apify.google-search-scraper runId:ybFbqTgQIiW2ghXZm][0m -> 2026-02-09T16:31:40.571Z [32mINFO[39m [33m CheerioCrawler:[39m All requests from the queue have been processed, the crawler will shut down.
+[36m[apify.google-search-scraper runId:ybFbqTgQIiW2ghXZm][0m -> 2026-02-09T16:31:40.697Z [32mINFO[39m [33m CheerioCrawler:[39m Final request statistics:[90m {"requestsFinished":1,"requestsFailed":0,"retryHistogram":[1],"requestAvgFailedDurationMillis":null,"requestAvgFinishedDurationMillis":14238,"requestsFinishedPerMinute":4,"requestsFailedPerMinute":0,"requestTotalDurationMillis":14238,"requestsTotal":1,"crawlerRuntimeMillis":14683}[39m
+--
+[36m[apify.google-search-scraper runId:OSfMG3aRLZetT1HVO][0m -> 2026-02-09T16:31:51.095Z       ) || |      | (\ (   | (   ) || (         | |   | | \   || | \_  )
+[36m[apify.google-search-scraper runId:OSfMG3aRLZetT1HVO][0m -> 2026-02-09T16:31:51.095Z /\____) || (____/\| ) \ \__| )   ( || )      ___) (___| )  \  || (___) |
+[36m[apify.google-search-scraper runId:OSfMG3aRLZetT1HVO][0m -> 2026-02-09T16:31:51.096Z \_______)(_______/|/   \__/|/     \||/       \_______/|/    )_)(_______)
+[36m[apify.google-search-scraper runId:OSfMG3aRLZetT1HVO][0m -> 2026-02-09T16:31:51.097Z
+[36m[apify.google-search-scraper runId:OSfMG3aRLZetT1HVO][0m -> 2026-02-09T16:31:51.097Z  _______  _______  _______  _______  _        _______     _______  _______  _______
+[36m[apify.google-search-scraper runId:OSfMG3aRLZetT1HVO][0m -> 2026-02-09T16:31:51.098Z (  ____ \(  ___  )(  ___  )(  ____ \( \      (  ____ \   (  ____ \(  ___  )(       )
+[36m[apify.google-search-scraper runId:OSfMG3aRLZetT1HVO][0m -> 2026-02-09T16:31:51.100Z | (    \/| (   ) || (   ) || (    \/| (      | (    \/   | (    \/| (   ) || () () |
+[36m[apify.google-search-scraper runId:OSfMG3aRLZetT1HVO][0m -> 2026-02-09T16:31:51.101Z | |      | |   | || |   | || |      | |      | (__       | |      | |   | || || || |
+[36m[apify.google-search-scraper runId:OSfMG3aRLZetT1HVO][0m -> 2026-02-09T16:31:51.101Z | | ____ | |   | || |   | || | ____ | |      |  __)      | |      | |   | || |(_)| |
+[36m[apify.google-search-scraper runId:OSfMG3aRLZetT1HVO][0m -> 2026-02-09T16:31:51.102Z | | \_  )| |   | || |   | || | \_  )| |      | (         | |      | |   | || |   | |
+[36m[apify.google-search-scraper runId:OSfMG3aRLZetT1HVO][0m -> 2026-02-09T16:31:51.103Z | (___) || (___) || (___) || (___) || (____/\| (____/\ _ | (____/\| (___) || )   ( |
+[36m[apify.google-search-scraper runId:OSfMG3aRLZetT1HVO][0m -> 2026-02-09T16:31:51.104Z (_______)(_______)(_______)(_______)(_______/(_______/(_)(_______/(_______)|/     \|
+[36m[apify.google-search-scraper runId:OSfMG3aRLZetT1HVO][0m -> 2026-02-09T16:31:51.105Z
+[36m[apify.google-search-scraper runId:OSfMG3aRLZetT1HVO][0m -> 2026-02-09T16:31:51.142Z [32mINFO[39m [33m CheerioCrawler:[39m Using the old RequestQueue implementation without request locking.
+[36m[apify.google-search-scraper runId:OSfMG3aRLZetT1HVO][0m -> 2026-02-09T16:31:51.335Z [32mINFO[39m [33m CheerioCrawler:[39m Starting the crawler.
+[36m[apify.google-search-scraper runId:3DCjGeAogUrIhNcTk][0m -> 2026-02-09T16:31:49.002Z [32mINFO[39m  Querying ""Osborne Northwest Public Relations" site:linkedin.com/posts OR site:linkedin.com/pulse" page 1 ...
+[36m[apify.google-search-scraper runId:3DCjGeAogUrIhNcTk][0m -> 2026-02-09T16:31:52.101Z [32mINFO[39m  Results should be restricted to URL with prefixes: linkedin.com/posts, linkedin.com/pulse
+[36m[apify.google-search-scraper runId:3DCjGeAogUrIhNcTk][0m -> 2026-02-09T16:31:52.118Z [32mINFO[39m  Not enqueueing next page for query ""Osborne Northwest Public Relations" site:linkedin.com/posts OR site:linkedin.com/pulse" because the "maxPagesPerQuery" limit has been reached.
+[36m[apify.google-search-scraper runId:OSfMG3aRLZetT1HVO][0m -> Status: RUNNING, Message: Starting the crawler.
+[36m[apify.google-search-scraper runId:3DCjGeAogUrIhNcTk][0m -> 2026-02-09T16:31:52.199Z [32mINFO[39m  Finished query ""Osborne Northwest Public Relations" site:linkedin.com/posts OR site:linkedin.com/pulse" page 1 (organicResults: 8, paidResults: 0, paidProducts: 0, relatedQueries: 0, aiOverview: 0)
+[36m[apify.google-search-scraper runId:3DCjGeAogUrIhNcTk][0m -> 2026-02-09T16:31:52.350Z [32mINFO[39m [33m CheerioCrawler:[39m All requests from the queue have been processed, the crawler will shut down.
+[36m[apify.google-search-scraper runId:3DCjGeAogUrIhNcTk][0m -> 2026-02-09T16:31:52.463Z [32mINFO[39m [33m CheerioCrawler:[39m Final request statistics:[90m {"requestsFinished":1,"requestsFailed":0,"retryHistogram":[1],"requestAvgFailedDurationMillis":null,"requestAvgFinishedDurationMillis":3300,"requestsFinishedPerMinute":16,"requestsFailedPerMinute":0,"requestTotalDurationMillis":3300,"requestsTotal":1,"crawlerRuntimeMillis":3777}[39m
+[36m[apify.google-search-scraper runId:3DCjGeAogUrIhNcTk][0m -> 2026-02-09T16:31:52.464Z [32mINFO[39m [33m CheerioCrawler:[39m Finished! Total 1 requests: 1 succeeded, 0 failed.[90m {"terminal":true}[39m
+[36m[apify.google-search-scraper runId:3DCjGeAogUrIhNcTk][0m -> 2026-02-09T16:31:52.480Z [32mINFO[39m  Scraping is finished, see you next time.
+[36m[apify.google-search-scraper runId:3DCjGeAogUrIhNcTk][0m -> 2026-02-09T16:31:52.481Z
+[36m[apify.google-search-scraper runId:3DCjGeAogUrIhNcTk][0m -> 2026-02-09T16:31:52.482Z Full results in JSON format:
+[36m[apify.google-search-scraper runId:3DCjGeAogUrIhNcTk][0m -> 2026-02-09T16:31:52.483Z https://api.apify.com/v2/datasets/bW3dyD8cchazcAhsR/items?format=json
+[36m[apify.google-search-scraper runId:3DCjGeAogUrIhNcTk][0m -> 2026-02-09T16:31:52.484Z
+[36m[apify.google-search-scraper runId:3DCjGeAogUrIhNcTk][0m -> 2026-02-09T16:31:52.485Z Simplified organic results in JSON format:
+[36m[apify.google-search-scraper runId:3DCjGeAogUrIhNcTk][0m -> 2026-02-09T16:31:52.486Z https://api.apify.com/v2/datasets/bW3dyD8cchazcAhsR/items?format=json&fields=searchQuery,organicResults&unwind=organicResults
+[36m[apify.google-search-scraper runId:cEM9Z8iaQLnka13zP][0m -> 2026-02-09T16:31:47.785Z [32mINFO[39m  Querying ""Punch Media" site:linkedin.com/posts OR site:linkedin.com/pulse" page 1 ...
+[36m[apify.google-search-scraper runId:cEM9Z8iaQLnka13zP][0m -> 2026-02-09T16:31:52.736Z [32mINFO[39m  Results should be restricted to URL with prefixes: linkedin.com/posts, linkedin.com/pulse
+[36m[apify.google-search-scraper runId:cEM9Z8iaQLnka13zP][0m -> 2026-02-09T16:31:52.768Z [32mINFO[39m  Not enqueueing next page for query ""Punch Media" site:linkedin.com/posts OR site:linkedin.com/pulse" because the "maxPagesPerQuery" limit has been reached.
+[36m[apify.google-search-scraper runId:3DCjGeAogUrIhNcTk][0m -> 2026-02-09T16:31:52.487Z [32mINFO[39m  [Status message]: Processed 1 queries on 1 pages. Extracted: 8 organicResults, 0 paidResults, 0 paidProducts, 0 relatedQueries, 0 aiOverviews, 0 aiModeResults, 0 perplexitySearchResults, 0 chatGptSearchResults, 1 itemsPushed
+[36m[apify.google-search-scraper runId:cEM9Z8iaQLnka13zP][0m -> 2026-02-09T16:31:52.834Z [32mINFO[39m  Finished query ""Punch Media" site:linkedin.com/posts OR site:linkedin.com/pulse" page 1 (organicResults: 9, paidResults: 0, paidProducts: 0, relatedQueries: 0, aiOverview: 0)
+--
+[36m[apify.google-search-scraper runId:BqUYnuTjYH5izJir1][0m -> 2026-02-09T16:32:04.841Z https://api.apify.com/v2/datasets/Oeu4jMVy4T6qympX3/items?format=json
+[36m[apify.google-search-scraper runId:BqUYnuTjYH5izJir1][0m -> 2026-02-09T16:32:04.841Z
+[36m[apify.google-search-scraper runId:BqUYnuTjYH5izJir1][0m -> 2026-02-09T16:32:04.842Z Simplified organic results in JSON format:
+[36m[apify.google-search-scraper runId:BqUYnuTjYH5izJir1][0m -> 2026-02-09T16:32:04.843Z https://api.apify.com/v2/datasets/Oeu4jMVy4T6qympX3/items?format=json&fields=searchQuery,organicResults&unwind=organicResults
+[36m[apify.google-search-scraper runId:BqUYnuTjYH5izJir1][0m -> Status: RUNNING, Message: Processed 1 queries on 1 pages. Extracted: 3 organicResults, 0 paidResults, 0 paidProducts, 0 relatedQueries, 0 aiOverviews, 0 aiModeResults, 0 perplexitySearchResults, 0 chatGptSearchResults, 1 itemsPushed
+[36m[apify.google-search-scraper runId:Q5JhuH1QYQhOd2Syw][0m -> Status: RUNNING, Message:
+[36m[apify.google-search-scraper runId:J69wsudnVdT90m5tB][0m -> 2026-02-09T16:32:04.569Z ACTOR: Pulling container image of build 7SQ7UrT5GX04y6g5S from registry.
+[36m[apify.google-search-scraper runId:J69wsudnVdT90m5tB][0m -> 2026-02-09T16:32:04.570Z ACTOR: Creating container.
+[36m[apify.google-search-scraper runId:J69wsudnVdT90m5tB][0m -> 2026-02-09T16:32:04.612Z ACTOR: Starting container.
+[36m[apify.google-search-scraper runId:J69wsudnVdT90m5tB][0m -> 2026-02-09T16:32:04.614Z ACTOR: Running under "LIMITED_PERMISSIONS" permission level.
+[36m[apify.google-search-scraper runId:BqUYnuTjYH5izJir1][0m -> 2026-02-09T16:32:04.845Z [32mINFO[39m  [Status message]: Processed 1 queries on 1 pages. Extracted: 3 organicResults, 0 paidResults, 0 paidProducts, 0 relatedQueries, 0 aiOverviews, 0 aiModeResults, 0 perplexitySearchResults, 0 chatGptSearchResults, 1 itemsPushed
+[36m[apify.google-search-scraper runId:Q5JhuH1QYQhOd2Syw][0m -> 2026-02-09T16:32:04.739Z ACTOR: Pulling container image of build 7SQ7UrT5GX04y6g5S from registry.
+[36m[apify.google-search-scraper runId:Q5JhuH1QYQhOd2Syw][0m -> 2026-02-09T16:32:04.740Z ACTOR: Creating container.
+[36m[apify.google-search-scraper runId:Q5JhuH1QYQhOd2Syw][0m -> 2026-02-09T16:32:04.808Z ACTOR: Starting container.
+[36m[apify.google-search-scraper runId:Q5JhuH1QYQhOd2Syw][0m -> 2026-02-09T16:32:04.809Z ACTOR: Running under "LIMITED_PERMISSIONS" permission level.
+[36m[apify.google-search-scraper runId:XqsWqWFP60bzynDVu][0m -> 2026-02-09T16:32:01.428Z [32mINFO[39m  Querying ""Osborne Northwest Public Relations" site:prnewswire.com OR site:businesswire.com OR site:globenewswire.com" page 1 ...
+[36m[apify.google-search-scraper runId:XqsWqWFP60bzynDVu][0m -> 2026-02-09T16:32:05.331Z [32mINFO[39m  Results should be restricted to URL with prefixes: prnewswire.com, businesswire.com, globenewswire.com
+[36m[apify.google-search-scraper runId:XqsWqWFP60bzynDVu][0m -> 2026-02-09T16:32:05.348Z [32mINFO[39m  This is the last page for query ""Osborne Northwest Public Relations" site:prnewswire.com OR site:businesswire.com OR site:globenewswire.com".Next page button was not rendered nor enough results were found.
+[36m[apify.google-search-scraper runId:J69wsudnVdT90m5tB][0m -> 2026-02-09T16:32:04.803Z Will run command: xvfb-run -a -s "-ac -screen 0 1920x1080x24+32 -nolisten tcp" /bin/sh -c node dist/src/main.js
+[36m[apify.google-search-scraper runId:XqsWqWFP60bzynDVu][0m -> 2026-02-09T16:32:05.442Z [32mINFO[39m  Finished query ""Osborne Northwest Public Relations" site:prnewswire.com OR site:businesswire.com OR site:globenewswire.com" page 1 (organicResults: 5, paidResults: 0, paidProducts: 0, relatedQueries: 0, aiOverview: 0)
+[36m[apify.google-search-scraper runId:XqsWqWFP60bzynDVu][0m -> 2026-02-09T16:32:05.518Z [32mINFO[39m [33m CheerioCrawler:[39m All requests from the queue have been processed, the crawler will shut down.
+[36m[apify.google-search-scraper runId:XqsWqWFP60bzynDVu][0m -> 2026-02-09T16:32:05.628Z [32mINFO[39m [33m CheerioCrawler:[39m Final request statistics:[90m {"requestsFinished":1,"requestsFailed":0,"retryHistogram":[1],"requestAvgFailedDurationMillis":null,"requestAvgFinishedDurationMillis":4052,"requestsFinishedPerMinute":14,"requestsFailedPerMinute":0,"requestTotalDurationMillis":4052,"requestsTotal":1,"crawlerRuntimeMillis":4393}[39m
+[36m[apify.google-search-scraper runId:J69wsudnVdT90m5tB][0m -> 2026-02-09T16:32:05.405Z [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[36m[apify.google-search-scraper runId:XqsWqWFP60bzynDVu][0m -> 2026-02-09T16:32:05.630Z [32mINFO[39m [33m CheerioCrawler:[39m Finished! Total 1 requests: 1 succeeded, 0 failed.[90m {"terminal":true}[39m
+[36m[apify.google-search-scraper runId:XqsWqWFP60bzynDVu][0m -> 2026-02-09T16:32:05.644Z [32mINFO[39m  Scraping is finished, see you next time.
+[36m[apify.google-search-scraper runId:XqsWqWFP60bzynDVu][0m -> 2026-02-09T16:32:05.646Z
+[36m[apify.google-search-scraper runId:XqsWqWFP60bzynDVu][0m -> 2026-02-09T16:32:05.647Z Full results in JSON format:
+[36m[apify.google-search-scraper runId:XqsWqWFP60bzynDVu][0m -> 2026-02-09T16:32:05.649Z https://api.apify.com/v2/datasets/tgeFu7BZGbdKiT0uh/items?format=json
+[36m[apify.google-search-scraper runId:XqsWqWFP60bzynDVu][0m -> 2026-02-09T16:32:05.650Z
+[36m[apify.google-search-scraper runId:XqsWqWFP60bzynDVu][0m -> 2026-02-09T16:32:05.652Z Simplified organic results in JSON format:
+[36m[apify.google-search-scraper runId:XqsWqWFP60bzynDVu][0m -> 2026-02-09T16:32:05.653Z https://api.apify.com/v2/datasets/tgeFu7BZGbdKiT0uh/items?format=json&fields=searchQuery,organicResults&unwind=organicResults
+[36m[apify.google-search-scraper runId:J69wsudnVdT90m5tB][0m -> 2026-02-09T16:32:05.588Z [32mINFO[39m  System info[90m {"apifyVersion":"3.5.1","apifyClientVersion":"2.18.0","crawleeVersion":"3.14.1","osType":"Linux","nodeVersion":"v20.20.0"}[39m
+[36m[apify.google-search-scraper runId:J69wsudnVdT90m5tB][0m -> 2026-02-09T16:32:05.715Z [32mINFO[39m
+[36m[apify.google-search-scraper runId:J69wsudnVdT90m5tB][0m -> 2026-02-09T16:32:05.717Z  _______  _______  _______  _______  _______ _________ _        _______
+[36m[apify.google-search-scraper runId:J69wsudnVdT90m5tB][0m -> 2026-02-09T16:32:05.719Z (  ____ \(  ____ \(  ____ )(  ___  )(  ____ )\__   __/( (    /|(  ____ \
+--
+      ❌ Rejected: Awards without context: The news item mentions Bottle Rocket Media receiving awa...
+[36m[apify.website-content-crawler runId:3ZsHNmL5TAROLbLeS][0m -> 2026-02-09T16:32:17.756Z Will run command: xvfb-run -a -s "-ac -screen 0 1920x1080x24+32 -nolisten tcp" /bin/sh -c ./start_xvfb_and_run_cmd.sh && ./run_protected.sh npm run start:prod --silent
+      Found 25 unique results across 3 queries
+      ❌ Rejected: This news item appears to be a project showcase or portfolio page, which falls u...
+[36m[apify.website-content-crawler runId:3ZsHNmL5TAROLbLeS][0m -> 2026-02-09T16:32:20.225Z [32mINFO[39m  System info[90m {"apifyVersion":"3.5.2","apifyClientVersion":"2.20.0","crawleeVersion":"3.15.4-beta.43","osType":"Linux","nodeVersion":"v22.20.0"}[39m
+[36m[apify.website-content-crawler runId:3ZsHNmL5TAROLbLeS][0m -> 2026-02-09T16:32:20.915Z [32mINFO[39m  Crawling will be started using 1 start URLs and 0 sitemap URLs
+[36m[apify.website-content-crawler runId:NMDoWaHqSa89GCe7w][0m -> 2026-02-09T16:32:18.492Z Will run command: xvfb-run -a -s "-ac -screen 0 1920x1080x24+32 -nolisten tcp" /bin/sh -c ./start_xvfb_and_run_cmd.sh && ./run_protected.sh npm run start:prod --silent
+[36m[apify.website-content-crawler runId:3ZsHNmL5TAROLbLeS][0m -> Status: RUNNING, Message: Starting the crawler.
+      ❌ Rejected: The content does not describe a specific recent event that matches valid trigger...
+      ❌ Rejected: The news item appears to be an overview or promotional piece about Osborne North...
+      ❌ Rejected: AWARDS WITHOUT CONTEXT: It's an award but there's no clear indication of when it...
+[36m[apify.website-content-crawler runId:NMDoWaHqSa89GCe7w][0m -> 2026-02-09T16:32:21.699Z [32mINFO[39m  System info[90m {"apifyVersion":"3.5.2","apifyClientVersion":"2.20.0","crawleeVersion":"3.15.4-beta.43","osType":"Linux","nodeVersion":"v22.20.0"}[39m
+      ❌ Rejected: AWARDS WITHOUT CONTEXT: The article provides no clear indication of when the awa...
+[36m[apify.website-content-crawler runId:NMDoWaHqSa89GCe7w][0m -> 2026-02-09T16:32:22.199Z [32mINFO[39m  Crawling will be started using 1 start URLs and 0 sitemap URLs
+[36m[apify.website-content-crawler runId:NMDoWaHqSa89GCe7w][0m -> Status: RUNNING, Message: Starting the crawler.
+      ❌ Rejected: COMPANY NOT THE SUBJECT: Osborne Northwest Public Relations is mentioned but is ...
+      ❌ Rejected: AWARDS WITHOUT CONTEXT: The news item mentions awards but does not provide clear...
+      ❌ Rejected: The news item seems to be about a speaker event involving Steve Robinson, rather...
+      ❌ Rejected: The news item is likely related to a portfolio/project showcase and doesn't prov...
+      📄 Extracting article: https://ec.linkedin.com/company/onpublicrelations...
+[36m[apify.website-content-crawler runId:cWO0hvbbtXhibzwtg][0m -> Status: RUNNING, Message:
+[36m[apify.website-content-crawler runId:cWO0hvbbtXhibzwtg][0m -> 2026-02-09T16:32:24.860Z ACTOR: Pulling container image of build xLInTJVbEejzGA9LL from registry.
+[36m[apify.website-content-crawler runId:cWO0hvbbtXhibzwtg][0m -> 2026-02-09T16:32:24.863Z ACTOR: Creating container.
+[36m[apify.website-content-crawler runId:cWO0hvbbtXhibzwtg][0m -> 2026-02-09T16:32:24.923Z ACTOR: Starting container.
+[36m[apify.website-content-crawler runId:cWO0hvbbtXhibzwtg][0m -> 2026-02-09T16:32:24.923Z ACTOR: Running under "LIMITED_PERMISSIONS" permission level.
+      ❌ Rejected: The article does not mention a recent or specific event related to Bottle Rocket...
+      ❌ Rejected: The news item does not mention any specific valid trigger such as a new executiv...
+      ❌ Rejected: The award is mentioned without a clear indication of when it was received or ann...
+[36m[apify.website-content-crawler runId:cWO0hvbbtXhibzwtg][0m -> 2026-02-09T16:32:25.115Z Will run command: xvfb-run -a -s "-ac -screen 0 1920x1080x24+32 -nolisten tcp" /bin/sh -c ./start_xvfb_and_run_cmd.sh && ./run_protected.sh npm run start:prod --silent
+[36m[apify.website-content-crawler runId:cWO0hvbbtXhibzwtg][0m -> 2026-02-09T16:32:26.743Z [32mINFO[39m  System info[90m {"apifyVersion":"3.5.2","apifyClientVersion":"2.20.0","crawleeVersion":"3.15.4-beta.43","osType":"Linux","nodeVersion":"v22.20.0"}[39m
+      📄 Extracting article: https://www.zoominfo.com/c/lai-video/1195910304...
+--
+[36m[apify.website-content-crawler runId:WnjVVTqATVo85bK4A][0m -> 2026-02-09T16:32:59.021Z ACTOR: Pulling container image of build xLInTJVbEejzGA9LL from registry.
+[36m[apify.website-content-crawler runId:WnjVVTqATVo85bK4A][0m -> 2026-02-09T16:32:59.024Z ACTOR: Creating container.
+[36m[apify.website-content-crawler runId:WnjVVTqATVo85bK4A][0m -> 2026-02-09T16:32:59.069Z ACTOR: Starting container.
+[36m[apify.website-content-crawler runId:WnjVVTqATVo85bK4A][0m -> 2026-02-09T16:32:59.071Z ACTOR: Running under "LIMITED_PERMISSIONS" permission level.
+[36m[apify.website-content-crawler runId:APEnEtRpH4TxvuJqx][0m -> 2026-02-09T16:32:59.670Z [32mINFO[39m  Crawling will be started using 1 start URLs and 0 sitemap URLs
+[36m[apify.website-content-crawler runId:APEnEtRpH4TxvuJqx][0m -> Status: RUNNING, Message: Starting the crawler.
+      ❌ Rejected: The article refers to an award but does not provide clear context, timing, or pr...
+[36m[apify.website-content-crawler runId:WnjVVTqATVo85bK4A][0m -> 2026-02-09T16:32:59.237Z Will run command: xvfb-run -a -s "-ac -screen 0 1920x1080x24+32 -nolisten tcp" /bin/sh -c ./start_xvfb_and_run_cmd.sh && ./run_protected.sh npm run start:prod --silent
+[36m[apify.website-content-crawler runId:WnjVVTqATVo85bK4A][0m -> 2026-02-09T16:33:00.973Z [32mINFO[39m  System info[90m {"apifyVersion":"3.5.2","apifyClientVersion":"2.20.0","crawleeVersion":"3.15.4-beta.43","osType":"Linux","nodeVersion":"v22.20.0"}[39m
+[36m[apify.website-content-crawler runId:WnjVVTqATVo85bK4A][0m -> 2026-02-09T16:33:01.453Z [32mINFO[39m  Crawling will be started using 1 start URLs and 0 sitemap URLs
+[36m[apify.website-content-crawler runId:WnjVVTqATVo85bK4A][0m -> Status: RUNNING, Message: Starting the crawler.
+      ❌ Rejected: The news item appears to largely focus on CREST Award levels and support, and do...
+      ❌ Rejected (score: 5): Date of event is unknown, resulting in insufficien...
+      ❌ Rejected: The event specifies a reorganization of WPP's agencies and does not directly men...
+      📄 Extracting article: https://www.linkedin.com/posts/umbrella-entertainm...
+      ❌ Rejected: AWARDS WITHOUT CONTEXT: There's no clear indication of when Osborne Northwest Pu...
+[36m[apify.website-content-crawler runId:0hgzhjXXahQtCIxiQ][0m -> Status: RUNNING, Message:
+[36m[apify.website-content-crawler runId:0hgzhjXXahQtCIxiQ][0m -> 2026-02-09T16:33:06.297Z ACTOR: Pulling container image of build xLInTJVbEejzGA9LL from registry.
+[36m[apify.website-content-crawler runId:0hgzhjXXahQtCIxiQ][0m -> 2026-02-09T16:33:06.300Z ACTOR: Creating container.
+[36m[apify.website-content-crawler runId:0hgzhjXXahQtCIxiQ][0m -> 2026-02-09T16:33:06.411Z ACTOR: Starting container.
+[36m[apify.website-content-crawler runId:0hgzhjXXahQtCIxiQ][0m -> 2026-02-09T16:33:06.412Z ACTOR: Running under "LIMITED_PERMISSIONS" permission level.
+[36m[apify.website-content-crawler runId:0hgzhjXXahQtCIxiQ][0m -> 2026-02-09T16:33:06.600Z Will run command: xvfb-run -a -s "-ac -screen 0 1920x1080x24+32 -nolisten tcp" /bin/sh -c ./start_xvfb_and_run_cmd.sh && ./run_protected.sh npm run start:prod --silent
+[36m[apify.website-content-crawler runId:0hgzhjXXahQtCIxiQ][0m -> 2026-02-09T16:33:08.639Z [32mINFO[39m  System info[90m {"apifyVersion":"3.5.2","apifyClientVersion":"2.20.0","crawleeVersion":"3.15.4-beta.43","osType":"Linux","nodeVersion":"v22.20.0"}[39m
+[36m[apify.website-content-crawler runId:0hgzhjXXahQtCIxiQ][0m -> 2026-02-09T16:33:09.303Z [32mINFO[39m  Crawling will be started using 1 start URLs and 0 sitemap URLs
+[36m[apify.website-content-crawler runId:0hgzhjXXahQtCIxiQ][0m -> Status: RUNNING, Message: Starting the crawler.
+[36m[apify.website-content-crawler runId:APEnEtRpH4TxvuJqx][0m -> Status: RUNNING, Message: Crawled 0/1 pages, 0 failed requests, desired concurrency 2.
+[36m[apify.website-content-crawler runId:WnjVVTqATVo85bK4A][0m -> Status: RUNNING, Message: Crawled 0/1 pages, 0 failed requests, desired concurrency 2.
+      📄 Extracting article: https://www.zoominfo.com/c/osborne-northwest-publi...
+[36m[apify.website-content-crawler runId:zQBtMI7I2HQDBE3ix][0m -> Status: RUNNING, Message:
+[36m[apify.website-content-crawler runId:zQBtMI7I2HQDBE3ix][0m -> 2026-02-09T16:33:13.767Z ACTOR: Pulling container image of build xLInTJVbEejzGA9LL from registry.
+[36m[apify.website-content-crawler runId:zQBtMI7I2HQDBE3ix][0m -> 2026-02-09T16:33:13.770Z ACTOR: Creating container.
+--
+      ❌ Rejected: The content appears to be about industry regulations and not a specific business...
+[36m[apify.website-content-crawler runId:EvaLn2acRMBEgmAP4][0m -> Status: RUNNING, Message:
+[36m[apify.website-content-crawler runId:EvaLn2acRMBEgmAP4][0m -> 2026-02-09T16:33:44.658Z ACTOR: Pulling container image of build xLInTJVbEejzGA9LL from registry.
+[36m[apify.website-content-crawler runId:EvaLn2acRMBEgmAP4][0m -> 2026-02-09T16:33:44.661Z ACTOR: Creating container.
+[36m[apify.website-content-crawler runId:EvaLn2acRMBEgmAP4][0m -> 2026-02-09T16:33:44.703Z ACTOR: Starting container.
+[36m[apify.website-content-crawler runId:EvaLn2acRMBEgmAP4][0m -> 2026-02-09T16:33:44.705Z ACTOR: Running under "LIMITED_PERMISSIONS" permission level.
+      ❌ Rejected: The event is the hiring of a minor role (Junior Business Development Manager), w...
+[36m[apify.website-content-crawler runId:EvaLn2acRMBEgmAP4][0m -> 2026-02-09T16:33:44.883Z Will run command: xvfb-run -a -s "-ac -screen 0 1920x1080x24+32 -nolisten tcp" /bin/sh -c ./start_xvfb_and_run_cmd.sh && ./run_protected.sh npm run start:prod --silent
+[36m[apify.website-content-crawler runId:EvaLn2acRMBEgmAP4][0m -> 2026-02-09T16:33:46.547Z [32mINFO[39m  System info[90m {"apifyVersion":"3.5.2","apifyClientVersion":"2.20.0","crawleeVersion":"3.15.4-beta.43","osType":"Linux","nodeVersion":"v22.20.0"}[39m
+      ❌ Rejected: The news item lacks specific details about any valid trigger events and appears ...
+[36m[apify.website-content-crawler runId:EvaLn2acRMBEgmAP4][0m -> 2026-02-09T16:33:47.079Z [32mINFO[39m  Crawling will be started using 1 start URLs and 0 sitemap URLs
+      (No relevant triggers found)
+[36m[apify.website-content-crawler runId:EvaLn2acRMBEgmAP4][0m -> Status: RUNNING, Message: Starting the crawler.
+[36m[apify.website-content-crawler runId:rEMrvrRfzeNyFM8L4][0m -> Status: RUNNING, Message: Crawled 0/1 pages, 0 failed requests, desired concurrency 2.
+      ✅ Approved (score: 8, date: 2026-02-09)
+      ✅ TRIGGER CONFIRMED: Osborne Northwest Public Relations is launching a new product and expanding. (Date: 2026-02-09)
+      Looking for contacts in: PULSEPOINT_STRATEGIC_TRIGGERED_LEADS
+Template fetch failed: {'message': 'relation "public.email_templates" does not exist', 'code': '42P01', 'hint': None, 'details': None}
+      No template found, using full AI draft
+[36m[apify.website-content-crawler runId:rEMrvrRfzeNyFM8L4][0m -> 2026-02-09T16:33:41.554Z [32mINFO[39m [33m PlaywrightCrawler:[39m Starting the crawler.
+      ---> Draft Created for erin@onpublicrelations.com
+[36m[apify.website-content-crawler runId:EvaLn2acRMBEgmAP4][0m -> Status: RUNNING, Message: Crawled 0/1 pages, 0 failed requests, desired concurrency 2.
+[36m[apify.website-content-crawler runId:rEMrvrRfzeNyFM8L4][0m -> 2026-02-09T16:33:58.033Z [33mWARN[39m [33m PlaywrightCrawler:[39m The start URL "https://www.icirnigeria.org/adeyeye-joseph-appointed-managing-director-editor-in-chief-of-punch-as-osinubi-bows-out/" has been redirected to "https://www.icirnigeria.org/adeyeye-joseph-appointed-managing-director-editor-in-chief-of-punch-as-osinubi-bows-out/?tztc=1". Processing the redirected URL...
+[36m[apify.website-content-crawler runId:rEMrvrRfzeNyFM8L4][0m -> 2026-02-09T16:33:59.082Z [33mWARN[39m [33m PlaywrightCrawler:[39m Reached max crawl depth of 0 for https://www.icirnigeria.org/adeyeye-joseph-appointed-managing-director-editor-in-chief-of-punch-as-osinubi-bows-out/, not enqueueing from this URL.
+[36m[apify.website-content-crawler runId:rEMrvrRfzeNyFM8L4][0m -> 2026-02-09T16:33:59.126Z [32mINFO[39m [33m PlaywrightCrawler:[39m The crawler reached the maxCrawlDepth limit of 0 and no further requests will be enqueued.
+[36m[apify.website-content-crawler runId:rEMrvrRfzeNyFM8L4][0m -> 2026-02-09T16:33:59.133Z [32mINFO[39m [33m PlaywrightCrawler:[39m The crawler has been gracefully stopped.
+[36m[apify.website-content-crawler runId:rEMrvrRfzeNyFM8L4][0m -> 2026-02-09T16:33:59.167Z [32mINFO[39m [33m PlaywrightCrawler:[39m No new requests are allowed because the `stop()` method has been called. Ongoing requests will be allowed to complete.
+[36m[apify.website-content-crawler runId:rEMrvrRfzeNyFM8L4][0m -> 2026-02-09T16:33:59.168Z [32mINFO[39m [33m PlaywrightCrawler:[39m The crawler has finished all the remaining ongoing requests and will shut down now.
+[36m[apify.website-content-crawler runId:rEMrvrRfzeNyFM8L4][0m -> 2026-02-09T16:33:59.539Z [33mWARN[39m  Main crawler processed all start URLs, checking if SitemapCrawler can be shut down...
+[36m[apify.website-content-crawler runId:rEMrvrRfzeNyFM8L4][0m -> 2026-02-09T16:33:59.540Z [33mWARN[39m  Shutting down SitemapCrawler, waiting for the main crawler to finish...
+[36m[apify.website-content-crawler runId:rEMrvrRfzeNyFM8L4][0m -> 2026-02-09T16:33:59.731Z [33mWARN[39m  Main crawler finished successfully, exiting the run...

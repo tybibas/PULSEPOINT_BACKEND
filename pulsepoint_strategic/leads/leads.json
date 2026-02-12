@@ -1,0 +1,485 @@
+{
+  "client_name": "PulsePoint Strategic",
+  "companies": [
+    {
+      "name": "Chetu",
+      "event_type": "TRIGGER_DETECTED",
+      "event_title": "Hiring Business Development Representative",
+      "event_context": "Trigger detected: Hiring Business Development Representative",
+      "event_source_url": "https://www.chetu.com/careers",
+      "contacts": [
+        {
+          "name": "Atal Bansal",
+          "title": "CEO",
+          "email": "atalb@chetu.com",
+          "email_subject": "USC Student / Alternative to your Business Development Representative hire",
+          "email_body": "Hi Atal,\n\nI\u2019m a student at USC studying automation.\n\nI saw you are hiring for a Business Development Representative to grind out outreach. My system actually found that job post automatically\u2014which is exactly how I found you.\n\nI built a \"Sniper Engine\" that listens for buying signals (like your hiring post) and instantly drafts the outreach for you.\n\nBasically, it automates the 3 hours of research a human SDR does, so you just have to click \"Approve.\" It gives you the output of 2 reps for 1/10th the cost.\n\nI\u2019m not trying to sell a subscription. I just want to show a founder how to replace \"Spray and Pray\" with \"Sniper Operations.\"\n\nMind if I send a 60-second Loom showing the backend?\n\nBest,\nTy"
+        }
+      ]
+    },
+    {
+      "name": "DigiCert",
+      "event_type": "TRIGGER_DETECTED",
+      "event_title": "Hiring Remote SDR",
+      "event_context": "Trigger detected: Hiring Remote SDR",
+      "event_source_url": "https://careers.digicert.com/",
+      "contacts": [
+        {
+          "name": "Amit Sinha",
+          "title": "CEO",
+          "email": "amit.sinha@digicert.com",
+          "email_subject": "USC Student / Alternative to your Remote SDR hire",
+          "email_body": "Hi Amit,\n\nI\u2019m a student at USC studying automation.\n\nI saw you are hiring for a Remote SDR to grind out outreach. My system actually found that job post automatically\u2014which is exactly how I found you.\n\nI built a \"Sniper Engine\" that listens for buying signals (like your hiring post) and instantly drafts the outreach for you.\n\nBasically, it automates the 3 hours of research a human SDR does, so you just have to click \"Approve.\" It gives you the output of 2 reps for 1/10th the cost.\n\nI\u2019m not trying to sell a subscription. I just want to show a founder how to replace \"Spray and Pray\" with \"Sniper Operations.\"\n\nMind if I send a 60-second Loom showing the backend?\n\nBest,\nTy"
+        }
+      ]
+    },
+    {
+      "name": "Flagright",
+      "event_type": "TRIGGER_DETECTED",
+      "event_title": "Hiring Sales Development Representative",
+      "event_context": "Trigger detected: Hiring Sales Development Representative",
+      "event_source_url": "https://flagright.com/careers",
+      "contacts": [
+        {
+          "name": "Baran Ozkan",
+          "title": "CEO",
+          "email": "baran.ozkan@flagright.com",
+          "email_subject": "USC Student / Alternative to your Sales Development Representative hire",
+          "email_body": "Hi Baran,\n\nI\u2019m a student at USC studying automation.\n\nI saw you are hiring for a Sales Development Representative to grind out outreach. My system actually found that job post automatically\u2014which is exactly how I found you.\n\nI built a \"Sniper Engine\" that listens for buying signals (like your hiring post) and instantly drafts the outreach for you.\n\nBasically, it automates the 3 hours of research a human SDR does, so you just have to click \"Approve.\" It gives you the output of 2 reps for 1/10th the cost.\n\nI\u2019m not trying to sell a subscription. I just want to show a founder how to replace \"Spray and Pray\" with \"Sniper Operations.\"\n\nMind if I send a 60-second Loom showing the backend?\n\nBest,\nTy"
+        }
+      ]
+    },
+    {
+      "name": "Hightouch",
+      "event_type": "TRIGGER_DETECTED",
+      "event_title": "Hiring Sales Development Representative",
+      "event_context": "Trigger detected: Hiring Sales Development Representative",
+      "event_source_url": "https://hightouch.com/careers",
+      "contacts": [
+        {
+          "name": "Kashish Gupta",
+          "title": "Co-CEO",
+          "email": "kashishgupta@hightouch.com",
+          "email_subject": "USC Student / Alternative to your Sales Development Representative hire",
+          "email_body": "Hi Kashish,\n\nI\u2019m a student at USC studying automation.\n\nI saw you are hiring for a Sales Development Representative to grind out outreach. My system actually found that job post automatically\u2014which is exactly how I found you.\n\nI built a \"Sniper Engine\" that listens for buying signals (like your hiring post) and instantly drafts the outreach for you.\n\nBasically, it automates the 3 hours of research a human SDR does, so you just have to click \"Approve.\" It gives you the output of 2 reps for 1/10th the cost.\n\nI\u2019m not trying to sell a subscription. I just want to show a founder how to replace \"Spray and Pray\" with \"Sniper Operations.\"\n\nMind if I send a 60-second Loom showing the backend?\n\nBest,\nTy"
+        }
+      ]
+    },
+    {
+      "name": "Capital One Software",
+      "event_type": "TRIGGER_DETECTED",
+      "event_title": "Hiring Enterprise SDR",
+      "event_context": "Trigger detected: Hiring Enterprise SDR",
+      "event_source_url": "https://www.capitalonecareers.com/",
+      "contacts": [
+        {
+          "name": "Ravi Raghu",
+          "title": "Head of Software",
+          "email": "ravi.raghu@capitalone.com",
+          "email_subject": "USC Student / Alternative to your Enterprise SDR hire",
+          "email_body": "Hi Ravi,\n\nI\u2019m a student at USC studying automation.\n\nI saw you are hiring for a Enterprise SDR to grind out outreach. My system actually found that job post automatically\u2014which is exactly how I found you.\n\nI built a \"Sniper Engine\" that listens for buying signals (like your hiring post) and instantly drafts the outreach for you.\n\nBasically, it automates the 3 hours of research a human SDR does, so you just have to click \"Approve.\" It gives you the output of 2 reps for 1/10th the cost.\n\nI\u2019m not trying to sell a subscription. I just want to show a founder how to replace \"Spray and Pray\" with \"Sniper Operations.\"\n\nMind if I send a 60-second Loom showing the backend?\n\nBest,\nTy"
+        }
+      ]
+    },
+    {
+      "name": "ScaleneWorks",
+      "event_type": "TRIGGER_DETECTED",
+      "event_title": "Hiring B2B Sales Development Representative",
+      "event_context": "Trigger detected: Hiring B2B Sales Development Representative",
+      "event_source_url": "https://www.scaleneworks.com/careers",
+      "contacts": [
+        {
+          "name": "Sanjay Shelvankar",
+          "title": "CEO",
+          "email": "sanjays@scaleneworks.com",
+          "email_subject": "USC Student / Alternative to your B2B Sales Development Representative hire",
+          "email_body": "Hi Sanjay,\n\nI\u2019m a student at USC studying automation.\n\nI saw you are hiring for a B2B Sales Development Representative to grind out outreach. My system actually found that job post automatically\u2014which is exactly how I found you.\n\nI built a \"Sniper Engine\" that listens for buying signals (like your hiring post) and instantly drafts the outreach for you.\n\nBasically, it automates the 3 hours of research a human SDR does, so you just have to click \"Approve.\" It gives you the output of 2 reps for 1/10th the cost.\n\nI\u2019m not trying to sell a subscription. I just want to show a founder how to replace \"Spray and Pray\" with \"Sniper Operations.\"\n\nMind if I send a 60-second Loom showing the backend?\n\nBest,\nTy"
+        }
+      ]
+    },
+    {
+      "name": "OutSystems",
+      "event_type": "TRIGGER_DETECTED",
+      "event_title": "Hiring Lead SDR Operations Specialist",
+      "event_context": "Trigger detected: Hiring Lead SDR Operations Specialist",
+      "event_source_url": "https://www.outsystems.com/careers/",
+      "contacts": [
+        {
+          "name": "Paulo Rosado",
+          "title": "CEO",
+          "email": "paulo.rosado@outsystems.com",
+          "email_subject": "USC Student / Alternative to your Lead SDR Operations Specialist hire",
+          "email_body": "Hi Paulo,\n\nI\u2019m a student at USC studying automation.\n\nI saw you are hiring for a Lead SDR Operations Specialist to grind out outreach. My system actually found that job post automatically\u2014which is exactly how I found you.\n\nI built a \"Sniper Engine\" that listens for buying signals (like your hiring post) and instantly drafts the outreach for you.\n\nBasically, it automates the 3 hours of research a human SDR does, so you just have to click \"Approve.\" It gives you the output of 2 reps for 1/10th the cost.\n\nI\u2019m not trying to sell a subscription. I just want to show a founder how to replace \"Spray and Pray\" with \"Sniper Operations.\"\n\nMind if I send a 60-second Loom showing the backend?\n\nBest,\nTy"
+        }
+      ]
+    },
+    {
+      "name": "Ramp",
+      "event_type": "TRIGGER_DETECTED",
+      "event_title": "Hiring Sales Development Representative",
+      "event_context": "Trigger detected: Hiring Sales Development Representative",
+      "event_source_url": "https://ramp.com/careers",
+      "contacts": [
+        {
+          "name": "Eric Glyman",
+          "title": "CEO",
+          "email": "eric.glyman@ramp.com",
+          "email_subject": "USC Student / Alternative to your Sales Development Representative hire",
+          "email_body": "Hi Eric,\n\nI\u2019m a student at USC studying automation.\n\nI saw you are hiring for a Sales Development Representative to grind out outreach. My system actually found that job post automatically\u2014which is exactly how I found you.\n\nI built a \"Sniper Engine\" that listens for buying signals (like your hiring post) and instantly drafts the outreach for you.\n\nBasically, it automates the 3 hours of research a human SDR does, so you just have to click \"Approve.\" It gives you the output of 2 reps for 1/10th the cost.\n\nI\u2019m not trying to sell a subscription. I just want to show a founder how to replace \"Spray and Pray\" with \"Sniper Operations.\"\n\nMind if I send a 60-second Loom showing the backend?\n\nBest,\nTy"
+        }
+      ]
+    },
+    {
+      "name": "Hostaway",
+      "event_type": "TRIGGER_DETECTED",
+      "event_title": "Hiring Remote Sales Development Representative",
+      "event_context": "Trigger detected: Hiring Remote Sales Development Representative",
+      "event_source_url": "https://www.hostaway.com/careers/",
+      "contacts": [
+        {
+          "name": "Marcus R\u00e4der",
+          "title": "CEO",
+          "email": "marcus.rader@hostaway.com",
+          "email_subject": "USC Student / Alternative to your Remote Sales Development Representative hire",
+          "email_body": "Hi Marcus,\n\nI\u2019m a student at USC studying automation.\n\nI saw you are hiring for a Remote Sales Development Representative to grind out outreach. My system actually found that job post automatically\u2014which is exactly how I found you.\n\nI built a \"Sniper Engine\" that listens for buying signals (like your hiring post) and instantly drafts the outreach for you.\n\nBasically, it automates the 3 hours of research a human SDR does, so you just have to click \"Approve.\" It gives you the output of 2 reps for 1/10th the cost.\n\nI\u2019m not trying to sell a subscription. I just want to show a founder how to replace \"Spray and Pray\" with \"Sniper Operations.\"\n\nMind if I send a 60-second Loom showing the backend?\n\nBest,\nTy"
+        }
+      ]
+    },
+    {
+      "name": "Atlassian",
+      "event_type": "TRIGGER_DETECTED",
+      "event_title": "Hiring Mid Market SDR",
+      "event_context": "Trigger detected: Hiring Mid Market SDR",
+      "event_source_url": "https://www.atlassian.com/company/careers",
+      "contacts": [
+        {
+          "name": "Mike Cannon-Brookes",
+          "title": "Co-CEO",
+          "email": "mcannon@atlassian.com",
+          "email_subject": "USC Student / Alternative to your Mid Market SDR hire",
+          "email_body": "Hi Mike,\n\nI\u2019m a student at USC studying automation.\n\nI saw you are hiring for a Mid Market SDR to grind out outreach. My system actually found that job post automatically\u2014which is exactly how I found you.\n\nI built a \"Sniper Engine\" that listens for buying signals (like your hiring post) and instantly drafts the outreach for you.\n\nBasically, it automates the 3 hours of research a human SDR does, so you just have to click \"Approve.\" It gives you the output of 2 reps for 1/10th the cost.\n\nI\u2019m not trying to sell a subscription. I just want to show a founder how to replace \"Spray and Pray\" with \"Sniper Operations.\"\n\nMind if I send a 60-second Loom showing the backend?\n\nBest,\nTy"
+        }
+      ]
+    },
+    {
+      "name": "Everway",
+      "event_type": "TRIGGER_DETECTED",
+      "event_title": "Hiring Remote SDR (Neurotech)",
+      "event_context": "Trigger detected: Hiring Remote SDR (Neurotech)",
+      "event_source_url": "https://www.everway.com/careers",
+      "contacts": [
+        {
+          "name": "Martin McKay",
+          "title": "Executive Chairman",
+          "email": "m.mckay@everway.com",
+          "email_subject": "USC Student / Alternative to your Remote SDR (Neurotech) hire",
+          "email_body": "Hi Martin,\n\nI\u2019m a student at USC studying automation.\n\nI saw you are hiring for a Remote SDR (Neurotech) to grind out outreach. My system actually found that job post automatically\u2014which is exactly how I found you.\n\nI built a \"Sniper Engine\" that listens for buying signals (like your hiring post) and instantly drafts the outreach for you.\n\nBasically, it automates the 3 hours of research a human SDR does, so you just have to click \"Approve.\" It gives you the output of 2 reps for 1/10th the cost.\n\nI\u2019m not trying to sell a subscription. I just want to show a founder how to replace \"Spray and Pray\" with \"Sniper Operations.\"\n\nMind if I send a 60-second Loom showing the backend?\n\nBest,\nTy"
+        }
+      ]
+    },
+    {
+      "name": "Veeva",
+      "event_type": "TRIGGER_DETECTED",
+      "event_title": "Hiring Remote SDR",
+      "event_context": "Trigger detected: Hiring Remote SDR",
+      "event_source_url": "https://careers.veeva.com/",
+      "contacts": [
+        {
+          "name": "Peter Gassner",
+          "title": "CEO",
+          "email": "peter.gassner@veeva.com",
+          "email_subject": "USC Student / Alternative to your Remote SDR hire",
+          "email_body": "Hi Peter,\n\nI\u2019m a student at USC studying automation.\n\nI saw you are hiring for a Remote SDR to grind out outreach. My system actually found that job post automatically\u2014which is exactly how I found you.\n\nI built a \"Sniper Engine\" that listens for buying signals (like your hiring post) and instantly drafts the outreach for you.\n\nBasically, it automates the 3 hours of research a human SDR does, so you just have to click \"Approve.\" It gives you the output of 2 reps for 1/10th the cost.\n\nI\u2019m not trying to sell a subscription. I just want to show a founder how to replace \"Spray and Pray\" with \"Sniper Operations.\"\n\nMind if I send a 60-second Loom showing the backend?\n\nBest,\nTy"
+        }
+      ]
+    },
+    {
+      "name": "Hopper",
+      "event_type": "TRIGGER_DETECTED",
+      "event_title": "Hiring Founding SDR",
+      "event_context": "Trigger detected: Hiring Founding SDR",
+      "event_source_url": "https://www.hopper.com/careers",
+      "contacts": [
+        {
+          "name": "Frederic Lalonde",
+          "title": "CEO",
+          "email": "flalonde@hopper.com",
+          "email_subject": "USC Student / Alternative to your Founding SDR hire",
+          "email_body": "Hi Frederic,\n\nI\u2019m a student at USC studying automation.\n\nI saw you are hiring for a Founding SDR to grind out outreach. My system actually found that job post automatically\u2014which is exactly how I found you.\n\nI built a \"Sniper Engine\" that listens for buying signals (like your hiring post) and instantly drafts the outreach for you.\n\nBasically, it automates the 3 hours of research a human SDR does, so you just have to click \"Approve.\" It gives you the output of 2 reps for 1/10th the cost.\n\nI\u2019m not trying to sell a subscription. I just want to show a founder how to replace \"Spray and Pray\" with \"Sniper Operations.\"\n\nMind if I send a 60-second Loom showing the backend?\n\nBest,\nTy"
+        }
+      ]
+    },
+    {
+      "name": "Deepgram",
+      "event_type": "TRIGGER_DETECTED",
+      "event_title": "Hiring Remote SDR",
+      "event_context": "Trigger detected: Hiring Remote SDR",
+      "event_source_url": "https://deepgram.com/careers",
+      "contacts": [
+        {
+          "name": "Scott Stephenson",
+          "title": "CEO",
+          "email": "scott@deepgram.com",
+          "email_subject": "USC Student / Alternative to your Remote SDR hire",
+          "email_body": "Hi Scott,\n\nI\u2019m a student at USC studying automation.\n\nI saw you are hiring for a Remote SDR to grind out outreach. My system actually found that job post automatically\u2014which is exactly how I found you.\n\nI built a \"Sniper Engine\" that listens for buying signals (like your hiring post) and instantly drafts the outreach for you.\n\nBasically, it automates the 3 hours of research a human SDR does, so you just have to click \"Approve.\" It gives you the output of 2 reps for 1/10th the cost.\n\nI\u2019m not trying to sell a subscription. I just want to show a founder how to replace \"Spray and Pray\" with \"Sniper Operations.\"\n\nMind if I send a 60-second Loom showing the backend?\n\nBest,\nTy"
+        }
+      ]
+    },
+    {
+      "name": "Skanska",
+      "event_type": "TRIGGER_DETECTED",
+      "event_title": "Won $228M Data Center Contract",
+      "event_context": "Trigger detected: Won $228M Data Center Contract",
+      "event_source_url": "https://www.skanska.com/",
+      "contacts": [
+        {
+          "name": "Richard Kennedy",
+          "title": "CEO",
+          "email": "richard.kennedy@skanska.com",
+          "email_subject": "Your $228M Data Center Contract case study",
+          "email_body": "Hi Richard,\n\nI\u2019m a student at USC studying automation.\n\nI saw the announcement for $228M Data Center Contract and wanted to reach out\u2014congratulations.\n\nI\u2019ve been studying high-end firms and noticed a specific bottleneck: sustaining the momentum from a \"flagship win\" usually requires bloating your sales overhead to find the next one.\n\nMy partner and I built a \"Sniper Engine\" to fix this.\n\nIt scans for market signals to time outreach perfectly. In fact, my system flagged your project this morning\u2014which is exactly how I found you.\n\nI\u2019m not trying to sell a subscription. I just want to show you how this same engine can identify developers who need exactly what you just delivered.\n\nMind if I run a quick scan and send you a list of 5 companies that fit that criteria?\n\nBest, \nTy"
+        }
+      ]
+    },
+    {
+      "name": "Parsons Transportation Group",
+      "event_type": "TRIGGER_DETECTED",
+      "event_title": "Won $60M Metro A Line Contract",
+      "event_context": "Trigger detected: Won $60M Metro A Line design contract",
+      "event_source_url": "https://www.parsons.com/news/",
+      "contacts": [
+        {
+          "name": "Carey Smith",
+          "title": "CEO",
+          "email": "carey.smith@parsons.com",
+          "email_subject": "Your $60M Metro A Line Contract case study",
+          "email_body": "Hi Carey,\n\nI\u2019m a student at USC studying automation.\n\nI saw the announcement for $60M Metro A Line Contract and wanted to reach out\u2014congratulations.\n\nI\u2019ve been studying high-end firms and noticed a specific bottleneck: sustaining the momentum from a \"flagship win\" usually requires bloating your sales overhead to find the next one.\n\nMy partner and I built a \"Sniper Engine\" to fix this.\n\nIt scans for market signals to time outreach perfectly. In fact, my system flagged your project this morning\u2014which is exactly how I found you.\n\nI\u2019m not trying to sell a subscription. I just want to show you how this same engine can identify developers who need exactly what you just delivered.\n\nMind if I run a quick scan and send you a list of 5 companies that fit that criteria?\n\nBest, \nTy"
+        }
+      ]
+    },
+    {
+      "name": "Costain",
+      "event_type": "TRIGGER_DETECTED",
+      "event_title": "Won \u00a3100M M5 Junction Contract",
+      "event_context": "Trigger detected: Won \u00a3100M M5 junction contract",
+      "event_source_url": "https://www.costain.com/news/",
+      "contacts": [
+        {
+          "name": "Alex Vaughan",
+          "title": "CEO",
+          "email": "alex.vaughan@costain.com",
+          "email_subject": "Your \u00a3100M M5 Junction Contract case study",
+          "email_body": "Hi Alex,\n\nI\u2019m a student at USC studying automation.\n\nI saw the announcement for \u00a3100M M5 Junction Contract and wanted to reach out\u2014congratulations.\n\nI\u2019ve been studying high-end firms and noticed a specific bottleneck: sustaining the momentum from a \"flagship win\" usually requires bloating your sales overhead to find the next one.\n\nMy partner and I built a \"Sniper Engine\" to fix this.\n\nIt scans for market signals to time outreach perfectly. In fact, my system flagged your project this morning\u2014which is exactly how I found you.\n\nI\u2019m not trying to sell a subscription. I just want to show you how this same engine can identify developers who need exactly what you just delivered.\n\nMind if I run a quick scan and send you a list of 5 companies that fit that criteria?\n\nBest, \nTy"
+        }
+      ]
+    },
+    {
+      "name": "Levellr",
+      "event_type": "TRIGGER_DETECTED",
+      "event_title": "$2.5M Seed Funding",
+      "event_context": "Trigger detected: $2.5M Seed Funding",
+      "event_source_url": "https://levellr.com/blog",
+      "contacts": [
+        {
+          "name": "Tom Gayner",
+          "title": "CEO",
+          "email": "tomgayner@levellr.com",
+          "email_subject": "Your $2.5M Seed Funding case study",
+          "email_body": "Hi Tom,\n\nI\u2019m a student at USC studying automation.\n\nI saw the announcement for $2.5M Seed Funding and wanted to reach out\u2014congratulations.\n\nI\u2019ve been studying high-end firms and noticed a specific bottleneck: sustaining the momentum from a \"flagship win\" usually requires bloating your sales overhead to find the next one.\n\nMy partner and I built a \"Sniper Engine\" to fix this.\n\nIt scans for market signals to time outreach perfectly. In fact, my system flagged your project this morning\u2014which is exactly how I found you.\n\nI\u2019m not trying to sell a subscription. I just want to show you how this same engine can identify developers who need exactly what you just delivered.\n\nMind if I run a quick scan and send you a list of 5 companies that fit that criteria?\n\nBest, \nTy"
+        }
+      ]
+    },
+    {
+      "name": "Legato",
+      "event_type": "TRIGGER_DETECTED",
+      "event_title": "$7M Seed Funding",
+      "event_context": "Trigger detected: $7M Seed Funding",
+      "event_source_url": "https://legato.com/news",
+      "contacts": [
+        {
+          "name": "Dana Rochman",
+          "title": "CEO",
+          "email": "dana.rochman@legato.com",
+          "email_subject": "Your $7M Seed Funding case study",
+          "email_body": "Hi Dana,\n\nI\u2019m a student at USC studying automation.\n\nI saw the announcement for $7M Seed Funding and wanted to reach out\u2014congratulations.\n\nI\u2019ve been studying high-end firms and noticed a specific bottleneck: sustaining the momentum from a \"flagship win\" usually requires bloating your sales overhead to find the next one.\n\nMy partner and I built a \"Sniper Engine\" to fix this.\n\nIt scans for market signals to time outreach perfectly. In fact, my system flagged your project this morning\u2014which is exactly how I found you.\n\nI\u2019m not trying to sell a subscription. I just want to show you how this same engine can identify developers who need exactly what you just delivered.\n\nMind if I run a quick scan and send you a list of 5 companies that fit that criteria?\n\nBest, \nTy"
+        }
+      ]
+    },
+    {
+      "name": "Materialspace",
+      "event_type": "TRIGGER_DETECTED",
+      "event_title": "$7M Seed Funding",
+      "event_context": "Trigger detected: $7M Seed Funding",
+      "event_source_url": "https://materialspace.com",
+      "contacts": [
+        {
+          "name": "Yoash Palmor",
+          "title": "CEO",
+          "email": "yoash.palmor@materialspace.com",
+          "email_subject": "Your $7M Seed Funding case study",
+          "email_body": "Hi Yoash,\n\nI\u2019m a student at USC studying automation.\n\nI saw the announcement for $7M Seed Funding and wanted to reach out\u2014congratulations.\n\nI\u2019ve been studying high-end firms and noticed a specific bottleneck: sustaining the momentum from a \"flagship win\" usually requires bloating your sales overhead to find the next one.\n\nMy partner and I built a \"Sniper Engine\" to fix this.\n\nIt scans for market signals to time outreach perfectly. In fact, my system flagged your project this morning\u2014which is exactly how I found you.\n\nI\u2019m not trying to sell a subscription. I just want to show you how this same engine can identify developers who need exactly what you just delivered.\n\nMind if I run a quick scan and send you a list of 5 companies that fit that criteria?\n\nBest, \nTy"
+        }
+      ]
+    },
+    {
+      "name": "Larsen & Toubro",
+      "event_type": "TRIGGER_DETECTED",
+      "event_title": "Won Riyadh Metro Contract",
+      "event_context": "Trigger detected: Won Major Riyadh Metro Contract",
+      "event_source_url": "https://www.larsentoubro.com/corporate/news-events/news/",
+      "contacts": [
+        {
+          "name": "S.N. Subrahmanyan",
+          "title": "CEO",
+          "email": "ss@larsentoubro.com",
+          "email_subject": "Your Riyadh Metro Contract case study",
+          "email_body": "Hi S.N.,\n\nI\u2019m a student at USC studying automation.\n\nI saw the announcement for Riyadh Metro Contract and wanted to reach out\u2014congratulations.\n\nI\u2019ve been studying high-end firms and noticed a specific bottleneck: sustaining the momentum from a \"flagship win\" usually requires bloating your sales overhead to find the next one.\n\nMy partner and I built a \"Sniper Engine\" to fix this.\n\nIt scans for market signals to time outreach perfectly. In fact, my system flagged your project this morning\u2014which is exactly how I found you.\n\nI\u2019m not trying to sell a subscription. I just want to show you how this same engine can identify developers who need exactly what you just delivered.\n\nMind if I run a quick scan and send you a list of 5 companies that fit that criteria?\n\nBest, \nTy"
+        }
+      ]
+    },
+    {
+      "name": "Egis",
+      "event_type": "TRIGGER_DETECTED",
+      "event_title": "Won Kuwait Port Project Management",
+      "event_context": "Trigger detected: Won Kuwait Port Project Management",
+      "event_source_url": "https://www.egis-group.com/news",
+      "contacts": [
+        {
+          "name": "Laurent Germain",
+          "title": "CEO",
+          "email": "laurent.germain@egis-group.com",
+          "email_subject": "Your Kuwait Port Project Management case study",
+          "email_body": "Hi Laurent,\n\nI\u2019m a student at USC studying automation.\n\nI saw the announcement for Kuwait Port Project Management and wanted to reach out\u2014congratulations.\n\nI\u2019ve been studying high-end firms and noticed a specific bottleneck: sustaining the momentum from a \"flagship win\" usually requires bloating your sales overhead to find the next one.\n\nMy partner and I built a \"Sniper Engine\" to fix this.\n\nIt scans for market signals to time outreach perfectly. In fact, my system flagged your project this morning\u2014which is exactly how I found you.\n\nI\u2019m not trying to sell a subscription. I just want to show you how this same engine can identify developers who need exactly what you just delivered.\n\nMind if I run a quick scan and send you a list of 5 companies that fit that criteria?\n\nBest, \nTy"
+        }
+      ]
+    },
+    {
+      "name": "AECOM",
+      "event_type": "TRIGGER_DETECTED",
+      "event_title": "Won $95M NAVFAC Contract",
+      "event_context": "Trigger detected: Won $95M NAVFAC Contract",
+      "event_source_url": "https://aecom.com/news/",
+      "contacts": [
+        {
+          "name": "Troy Rudd",
+          "title": "CEO",
+          "email": "troy.rudd@aecom.com",
+          "email_subject": "Your $95M NAVFAC Contract case study",
+          "email_body": "Hi Troy,\n\nI\u2019m a student at USC studying automation.\n\nI saw the announcement for $95M NAVFAC Contract and wanted to reach out\u2014congratulations.\n\nI\u2019ve been studying high-end firms and noticed a specific bottleneck: sustaining the momentum from a \"flagship win\" usually requires bloating your sales overhead to find the next one.\n\nMy partner and I built a \"Sniper Engine\" to fix this.\n\nIt scans for market signals to time outreach perfectly. In fact, my system flagged your project this morning\u2014which is exactly how I found you.\n\nI\u2019m not trying to sell a subscription. I just want to show you how this same engine can identify developers who need exactly what you just delivered.\n\nMind if I run a quick scan and send you a list of 5 companies that fit that criteria?\n\nBest, \nTy"
+        }
+      ]
+    },
+    {
+      "name": "Duvall Decker",
+      "event_type": "TRIGGER_DETECTED",
+      "event_title": "Won 2026 AIA Architecture Firm Award",
+      "event_context": "Trigger detected: Won 2026 AIA Architecture Firm Award",
+      "event_source_url": "https://duvalldecker.com/news/",
+      "contacts": [
+        {
+          "name": "Anne Marie Duvall Decker",
+          "title": "Principal",
+          "email": "amd@duvalldecker.com",
+          "email_subject": "Your 2026 AIA Architecture Firm Award case study",
+          "email_body": "Hi Anne,\n\nI\u2019m a student at USC studying automation.\n\nI saw the announcement for 2026 AIA Architecture Firm Award and wanted to reach out\u2014congratulations.\n\nI\u2019ve been studying high-end firms and noticed a specific bottleneck: sustaining the momentum from a \"flagship win\" usually requires bloating your sales overhead to find the next one.\n\nMy partner and I built a \"Sniper Engine\" to fix this.\n\nIt scans for market signals to time outreach perfectly. In fact, my system flagged your project this morning\u2014which is exactly how I found you.\n\nI\u2019m not trying to sell a subscription. I just want to show you how this same engine can identify developers who need exactly what you just delivered.\n\nMind if I run a quick scan and send you a list of 5 companies that fit that criteria?\n\nBest, \nTy"
+        }
+      ]
+    },
+    {
+      "name": "Architectus",
+      "event_type": "TRIGGER_DETECTED",
+      "event_title": "Won UN Africa Hall Renewal Award",
+      "event_context": "Trigger detected: Won UN Africa Hall Renewal Award",
+      "event_source_url": "https://architectus.com.au/news/",
+      "contacts": [
+        {
+          "name": "Ray Brown",
+          "title": "CEO",
+          "email": "ray.brown@architectus.com.au",
+          "email_subject": "Your UN Africa Hall Renewal Award case study",
+          "email_body": "Hi Ray,\n\nI\u2019m a student at USC studying automation.\n\nI saw the announcement for UN Africa Hall Renewal Award and wanted to reach out\u2014congratulations.\n\nI\u2019ve been studying high-end firms and noticed a specific bottleneck: sustaining the momentum from a \"flagship win\" usually requires bloating your sales overhead to find the next one.\n\nMy partner and I built a \"Sniper Engine\" to fix this.\n\nIt scans for market signals to time outreach perfectly. In fact, my system flagged your project this morning\u2014which is exactly how I found you.\n\nI\u2019m not trying to sell a subscription. I just want to show you how this same engine can identify developers who need exactly what you just delivered.\n\nMind if I run a quick scan and send you a list of 5 companies that fit that criteria?\n\nBest, \nTy"
+        }
+      ]
+    },
+    {
+      "name": "LimX Dynamics",
+      "event_type": "TRIGGER_DETECTED",
+      "event_title": "$200M Series B Funding",
+      "event_context": "Trigger detected: $200M Series B Funding",
+      "event_source_url": "https://www.limxdynamics.com/en/news",
+      "contacts": [
+        {
+          "name": "Wei Zhang",
+          "title": "Founder",
+          "email": "zhangwei@limxdynamics.com",
+          "email_subject": "Your $200M Series B Funding case study",
+          "email_body": "Hi Wei,\n\nI\u2019m a student at USC studying automation.\n\nI saw the announcement for $200M Series B Funding and wanted to reach out\u2014congratulations.\n\nI\u2019ve been studying high-end firms and noticed a specific bottleneck: sustaining the momentum from a \"flagship win\" usually requires bloating your sales overhead to find the next one.\n\nMy partner and I built a \"Sniper Engine\" to fix this.\n\nIt scans for market signals to time outreach perfectly. In fact, my system flagged your project this morning\u2014which is exactly how I found you.\n\nI\u2019m not trying to sell a subscription. I just want to show you how this same engine can identify developers who need exactly what you just delivered.\n\nMind if I run a quick scan and send you a list of 5 companies that fit that criteria?\n\nBest, \nTy"
+        }
+      ]
+    },
+    {
+      "name": "Talos",
+      "event_type": "TRIGGER_DETECTED",
+      "event_title": "$150M Series B Funding",
+      "event_context": "Trigger detected: $150M Series B Funding",
+      "event_source_url": "https://talos.com/news",
+      "contacts": [
+        {
+          "name": "Anton Katz",
+          "title": "CEO",
+          "email": "anton.katz@talos.com",
+          "email_subject": "Your $150M Series B Funding case study",
+          "email_body": "Hi Anton,\n\nI\u2019m a student at USC studying automation.\n\nI saw the announcement for $150M Series B Funding and wanted to reach out\u2014congratulations.\n\nI\u2019ve been studying high-end firms and noticed a specific bottleneck: sustaining the momentum from a \"flagship win\" usually requires bloating your sales overhead to find the next one.\n\nMy partner and I built a \"Sniper Engine\" to fix this.\n\nIt scans for market signals to time outreach perfectly. In fact, my system flagged your project this morning\u2014which is exactly how I found you.\n\nI\u2019m not trying to sell a subscription. I just want to show you how this same engine can identify developers who need exactly what you just delivered.\n\nMind if I run a quick scan and send you a list of 5 companies that fit that criteria?\n\nBest, \nTy"
+        }
+      ]
+    },
+    {
+      "name": "Sixfold",
+      "event_type": "TRIGGER_DETECTED",
+      "event_title": "$30M Series B Funding",
+      "event_context": "Trigger detected: $30M Series B Funding",
+      "event_source_url": "https://sixfold.ai/blog",
+      "contacts": [
+        {
+          "name": "Alex Schmelkin",
+          "title": "CEO",
+          "email": "alex@sixfold.ai",
+          "email_subject": "Your $30M Series B Funding case study",
+          "email_body": "Hi Alex,\n\nI\u2019m a student at USC studying automation.\n\nI saw the announcement for $30M Series B Funding and wanted to reach out\u2014congratulations.\n\nI\u2019ve been studying high-end firms and noticed a specific bottleneck: sustaining the momentum from a \"flagship win\" usually requires bloating your sales overhead to find the next one.\n\nMy partner and I built a \"Sniper Engine\" to fix this.\n\nIt scans for market signals to time outreach perfectly. In fact, my system flagged your project this morning\u2014which is exactly how I found you.\n\nI\u2019m not trying to sell a subscription. I just want to show you how this same engine can identify developers who need exactly what you just delivered.\n\nMind if I run a quick scan and send you a list of 5 companies that fit that criteria?\n\nBest, \nTy"
+        }
+      ]
+    },
+    {
+      "name": "Zocks",
+      "event_type": "TRIGGER_DETECTED",
+      "event_title": "$45M Series B Funding",
+      "event_context": "Trigger detected: $45M Series B Funding",
+      "event_source_url": "https://zocks.io/blog",
+      "contacts": [
+        {
+          "name": "Mark Gilbert",
+          "title": "CEO",
+          "email": "mark.gilbert@zocks.io",
+          "email_subject": "Your $45M Series B Funding case study",
+          "email_body": "Hi Mark,\n\nI\u2019m a student at USC studying automation.\n\nI saw the announcement for $45M Series B Funding and wanted to reach out\u2014congratulations.\n\nI\u2019ve been studying high-end firms and noticed a specific bottleneck: sustaining the momentum from a \"flagship win\" usually requires bloating your sales overhead to find the next one.\n\nMy partner and I built a \"Sniper Engine\" to fix this.\n\nIt scans for market signals to time outreach perfectly. In fact, my system flagged your project this morning\u2014which is exactly how I found you.\n\nI\u2019m not trying to sell a subscription. I just want to show you how this same engine can identify developers who need exactly what you just delivered.\n\nMind if I run a quick scan and send you a list of 5 companies that fit that criteria?\n\nBest, \nTy"
+        }
+      ]
+    },
+    {
+      "name": "Datadog",
+      "event_type": "TRIGGER_DETECTED",
+      "event_title": "Hiring Sales Development Representative",
+      "event_context": "Trigger detected: Hiring Sales Development Representative",
+      "event_source_url": "https://careers.datadoghq.com/",
+      "contacts": [
+        {
+          "name": "Olivier Pomel",
+          "title": "CEO",
+          "email": "olivier.pomel@datadoghq.com",
+          "email_subject": "USC Student / Alternative to your Sales Development Representative hire",
+          "email_body": "Hi Olivier,\n\nI\u2019m a student at USC studying automation.\n\nI saw you are hiring for a Sales Development Representative to grind out outreach. My system actually found that job post automatically\u2014which is exactly how I found you.\n\nI built a \"Sniper Engine\" that listens for buying signals (like your hiring post) and instantly drafts the outreach for you.\n\nBasically, it automates the 3 hours of research a human SDR does, so you just have to click \"Approve.\" It gives you the output of 2 reps for 1/10th the cost.\n\nI\u2019m not trying to sell a subscription. I just want to show a founder how to replace \"Spray and Pray\" with \"Sniper Operations.\"\n\nMind if I send a 60-second Loom showing the backend?\n\nBest,\nTy"
+        }
+      ]
+    }
+  ]
+}
