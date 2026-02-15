@@ -2,7 +2,19 @@ import time
 import functools
 import random
 
-def retry_with_backoff(max_retries=3, initial_delay=1, backoff_factor=2, exceptions=(Exception,)):
+
+def _is_rate_limit_error(exc: Exception) -> bool:
+    """Detect 429 / rate-limit errors to apply extended backoff."""
+    s = str(exc).lower()
+    if "429" in s or "rate limit" in s or "rate_limit" in s or "too many requests" in s:
+        return True
+    if getattr(exc, "code", None) == "rate_limit_exceeded":
+        return True
+    return False
+
+
+def retry_with_backoff(max_retries=3, initial_delay=1, backoff_factor=2,
+                       rate_limit_initial=15, rate_limit_factor=3, exceptions=(Exception,)):
     """
     Decorator to retry a function call with exponential backoff.
     
@@ -26,15 +38,18 @@ def retry_with_backoff(max_retries=3, initial_delay=1, backoff_factor=2, excepti
                     if attempt == max_retries:
                         print(f"      ❌ [Resilience] {func.__name__} failed after {max_retries} retries. Error: {e}")
                         raise last_exception
-                    
-                    # Log the retry
-                    print(f"      ⚠️ [Resilience] {func.__name__} failed (Attempt {attempt + 1}/{max_retries}). Retrying in {delay}s... Error: {e}")
-                    
-                    # Sleep with simple jitter
+
+                    if _is_rate_limit_error(e):
+                        delay = rate_limit_initial * (rate_limit_factor ** attempt)
+                        print(f"      ⚠️ [Resilience] Rate limit (429). Backing off {delay:.0f}s...")
+                    else:
+                        print(f"      ⚠️ [Resilience] {func.__name__} failed (Attempt {attempt + 1}/{max_retries}). Retrying in {delay}s... Error: {e}")
+
                     sleep_time = delay + random.uniform(0, 0.5)
                     time.sleep(sleep_time)
-                    
-                    delay *= backoff_factor
+
+                    if not _is_rate_limit_error(e):
+                        delay *= backoff_factor
             
             return None # Should not be reached
         return wrapper
