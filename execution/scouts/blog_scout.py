@@ -125,7 +125,7 @@ def find_blog_url_via_apify(company_name, domain, apify_client, widen=False):
         print(f"      [BlogScout] Search failed: {e}")
         return None
 
-def scout_latest_blog_posts(company_name, company_website, apify_client):
+def scout_latest_blog_posts(company_name, company_website, apify_client, cached_blog_url=None):
     """
     Refined BlogScout:
     1. Sitemap/RSS Priority.
@@ -139,7 +139,11 @@ def scout_latest_blog_posts(company_name, company_website, apify_client):
     base_url = f"https://{domain}"
     
     # --- Step 1: Discover Blog/Hub URL ---
-    blog_url = find_blog_url_via_apify(company_name, domain, apify_client)
+    blog_url = cached_blog_url
+    if blog_url:
+        print(f"      💾 [BlogScout] Using cached blog URL: {blog_url}")
+    else:
+        blog_url = find_blog_url_via_apify(company_name, domain, apify_client)
     if not blog_url:
         blog_url = urljoin(base_url, "/blog")
         print(f"      ⚠️ No blog found, using fallback: {blog_url}")

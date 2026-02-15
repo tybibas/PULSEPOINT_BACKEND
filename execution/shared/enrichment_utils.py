@@ -10,6 +10,15 @@ import re
 import requests
 from urllib.parse import urlparse
 
+try:
+    from shared.enrichment_waterfall import EnrichmentClient
+except ImportError:
+    try:
+        from execution.shared.enrichment_waterfall import EnrichmentClient
+    except ImportError:
+        EnrichmentClient = None
+        print("⚠️ Could not import EnrichmentClient. Waterfall disabled.")
+
 
 # ===== NAME VALIDATION =====
 
@@ -167,8 +176,11 @@ def find_decision_makers(company_name: str, apify_client, max_candidates: int = 
                 if "linkedin.com/in/" not in url:
                     continue
 
-                # Strict company match check
-                if not company_matches(title, company_name):
+                description = res.get("description", "")
+                
+                # Strict company match check (Title OR Description)
+                # Google snippet often contains the company name even if title doesn't (e.g. "CEO at [Company]")
+                if not company_matches(title, company_name) and not company_matches(description, company_name):
                     continue
 
                 # Extract name (before first separator)
@@ -211,18 +223,29 @@ def find_decision_makers(company_name: str, apify_client, max_candidates: int = 
 
 def verify_email(name: str, domain: str, api_key: str = None) -> str | None:
     """
-    Verifies/finds an email address via Anymailfinder.
+    Verifies/finds an email address via Waterfall (Anymailfinder -> Hunter -> Apollo).
     Returns the email string or None.
     
     Args:
         name: Full name of the person
         domain: Company domain (e.g. 'example.com')
-        api_key: Anymailfinder API key. Falls back to ANYMAILFINDER_API_KEY env var.
+        api_key: Legacy arg (ignored, uses env vars via EnrichmentClient)
     """
+    if EnrichmentClient:
+        try:
+            client = EnrichmentClient()
+            email, source = client.find_email(name, domain)
+            if email:
+                print(f"      ✅ Email found via {source}: {email}")
+                return email
+        except Exception as e:
+            print(f"      ⚠️ Waterfall error: {e}")
+            
+    # Fallback to legacy Anymailfinder direct call if Client fails (or not imported)
     if not api_key:
         api_key = os.environ.get("ANYMAILFINDER_API_KEY")
     if not api_key:
-        print("    ⚠️ No Anymailfinder API key available")
+        print("    ⚠️ No Anymailfinder API key available (Legacy Fallback)")
         return None
 
     try:
@@ -230,12 +253,12 @@ def verify_email(name: str, domain: str, api_key: str = None) -> str | None:
             "https://api.anymailfinder.com/v5.0/search/person.json",
             headers={"Authorization": api_key},
             json={"full_name": name, "domain": domain},
-            timeout=15
+            timeout=30
         )
         data = resp.json()
         return data.get("results", {}).get("email")
     except Exception as e:
-        print(f"    ⚠️ Email verify error for {name}@{domain}: {e}")
+        print(f"      ⚠️ Email verify error for {name}@{domain}: {e}")
     return None
 
 

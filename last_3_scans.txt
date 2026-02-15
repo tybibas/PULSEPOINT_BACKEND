@@ -1,0 +1,38 @@
+🔍 Auditing Last 3 Scans...
+Found 3 logs.
+
+=== SCAN 1: Sprout Studios ===
+Time: 2026-02-15T02:01:30.59397+00:00 -> 2026-02-15T02:05:37.13535+00:00
+Status: crashed
+❌ ERROR: TimeoutError: 1 (of 2) futures unfinished
+Efficiency: Apify=0, LLM=0, Pages=0
+Result: Trigger Found? False (None)
+Analysis Log (0 items):
+----------------------------------------
+=== SCAN 2: Lindsay Hill Design ===
+Time: 2026-02-15T02:01:22.518385+00:00 -> 2026-02-15T02:04:17.258316+00:00
+Status: success
+Efficiency: Apify=1, LLM=5, Pages=0
+Result: Trigger Found? False (None)
+Analysis Log (6 items):
+  ❌ [gpt-4o] REJECTED (Conf: 7)
+     Title: Studio Updates: What We've Been Up To Lately...
+  ❌ [gpt-4o] REJECTED (Conf: 8)
+     Title: Opening Remark: Technology is Dead by Chris Colber...
+  ❌ [gpt-4o] REJECTED (Conf: 4)
+     Title: Charlestown News: One Thompson Square Open House –...
+  ❌ [gpt-4o] REJECTED (Conf: 8)
+     Title: 140 Spirits, Wine & Beer Packaging ideas to save t...
+  ❌ [gpt-4o] REJECTED (Conf: 8)
+     Title: New mural adds botanical flair to Adams Corner...
+  ❌ [gpt-4o] REJECTED (Conf: 7)
+     Title: Portfolio Page: https://www.lindsayhilldesign.com/...
+----------------------------------------
+=== SCAN 3: Treebird Branding ===
+Time: 2026-02-14T14:00:46.918539+00:00 -> 2026-02-15T02:01:17.515297+00:00
+Status: stale_timeout
+❌ ERROR: Scan did not complete within 20 minutes — likely crashed or timed out
+Efficiency: Apify=0, LLM=0, Pages=0
+Result: Trigger Found? False (None)
+Analysis Log (0 items):
+----------------------------------------

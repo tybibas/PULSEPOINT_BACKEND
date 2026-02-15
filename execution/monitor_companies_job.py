@@ -83,6 +83,53 @@ def merge_score_factors(supabase: Client, company_id: str, delta: dict) -> None:
         return
     supabase.rpc("merge_score_factors", {"p_company_id": company_id, "p_delta": delta}).execute()
 
+def compute_deal_score(confidence, signal_type, signal_date_str, icp_match_score=5):
+    """
+    Computes a deterministic Deal Score (0-100).
+    """
+    # 1. Confidence Component (Max 40)
+    try:
+        conf = float(confidence)
+    except:
+        conf = 0.0
+    conf_comp = round((min(max(conf, 0), 10) / 10) * 40)
+    
+    # 2. Trigger Weight Component (Max 30)
+    weights = {
+        "REAL_TIME_DETECTED": 30,
+        "LINKEDIN_ACTIVITY": 18,
+        "CONTEXT_ANCHOR": 15
+    }
+    stype = str(signal_type).upper() if signal_type else "UNKNOWN"
+    weight_comp = weights.get(stype, 10)
+    
+    # 3. Recency Component (Max 20)
+    if not signal_date_str:
+        recency_comp = 0
+    else:
+        try:
+            # Handle YYYY-MM-DD or ISO format
+            ds = str(signal_date_str)[:10]
+            dt = datetime.strptime(ds, "%Y-%m-%d")
+            delta = (datetime.now() - dt).days
+            if delta <= 7:
+                recency_comp = 20
+            elif delta <= 14:
+                recency_comp = 15
+            elif delta <= 30:
+                recency_comp = 8
+            else:
+                recency_comp = 0
+        except:
+            recency_comp = 0 # Fail safe
+            
+    # 4. ICP Match Component (Max 10)
+    icp_comp = min(max(icp_match_score, 0), 10)
+    
+    total = conf_comp + weight_comp + recency_comp + icp_comp
+    return min(max(total, 0), 100)
+
+
 def get_due_companies(supabase: Client):
     """
     Fetches companies that are 'active' and due for a scan.
@@ -978,7 +1025,7 @@ def generate_draft(company_name, event, contact_name, client_context, openai_key
 
 # ==================== JUST-IN-TIME CONTACT ENRICHMENT ====================
 
-def enrich_company_contacts(company_id: str, company_name: str, existing_website: str, client_context: str, apify_client, supabase) -> list:
+def enrich_company_contacts(company_id: str, company_name: str, existing_website: str, client_context: str, apify_client, supabase, signal_context=None) -> list:
     """
     Just-in-time contact enrichment for a single company.
     Uses shared enrichment_utils for website finding, decision maker search, and email verification.
@@ -991,6 +1038,7 @@ def enrich_company_contacts(company_id: str, company_name: str, existing_website
     """
     ANYMAILFINDER_KEY = os.environ.get("ANYMAILFINDER_API_KEY")
     strategy = CLIENT_STRATEGIES.get(client_context, CLIENT_STRATEGIES["pulsepoint_strategic"])
+
     leads_table = strategy.get("leads_table", "PULSEPOINT_STRATEGIC_TRIGGERED_LEADS")
     
     print(f"      🔍 Enriching contacts for: {company_name}")
@@ -1029,14 +1077,20 @@ def enrich_company_contacts(company_id: str, company_name: str, existing_website
 
         # Insert into leads table
         try:
-            supabase.table(leads_table).insert({
+            lead_data = {
                 "triggered_company_id": company_id,
                 "name": person['name'],
                 "title": person['title'],
                 "email": final_email,
                 "linkedin_url": person['linkedin'],
                 "contact_status": status
-            }).execute()
+            }
+            # Add Signal Intelligence if available
+            if signal_context:
+                lead_data.update(signal_context)
+                
+            supabase.table(leads_table).insert(lead_data).execute()
+
             
             enriched_contacts.append({
                 "name": person['name'],
@@ -1521,6 +1575,29 @@ def process_company_scan(comp: dict, apify_client, supabase, openai_key: str, fo
                     "monitoring_status": "triggered"
                 }).eq("id", comp['id']).execute()
                 
+                # --- SIGNAL INTELLIGENCE LAYER ---
+                # Compute Deal Score & Context
+                sig_date = res.get('date') or datetime.now().isoformat()
+                deal_score = compute_deal_score(
+                    confidence=analysis.get('confidence', 0),
+                    signal_type="REAL_TIME_DETECTED",
+                    signal_date_str=sig_date
+                )
+                
+                # Prepare Signal Context for Leads
+                signal_context = {
+                    "signal_type": "REAL_TIME_DETECTED",
+                    "confidence_score": analysis.get('confidence', 0),
+                    "deal_score": deal_score,
+                    "signal_date": str(sig_date)[:10],
+                    "recency_days": (datetime.now() - datetime.strptime(str(sig_date)[:10], "%Y-%m-%d")).days,
+                    "why_now": analysis.get('summary', '')[:300], # Trucate to 300 chars
+                    "evidence_quote": analysis.get('evidence_excerpt', '') or analysis.get('description', ''),
+                    "source_url": res.get('url')
+                }
+                print(f"      🧠 Signal Intelligence: Deal Score {deal_score}/100 | Conf {signal_context['confidence_score']}")
+
+                
                 # Record Dedup
                 try:
                     supabase.table("trigger_dedup").insert({
@@ -1545,11 +1622,24 @@ def process_company_scan(comp: dict, apify_client, supabase, openai_key: str, fo
                         existing_website=comp.get('website'),
                         client_context=client_context,
                         apify_client=apify_client,
-                        supabase=supabase
+                        supabase=supabase,
+                        signal_context=signal_context
                     )
                     # Re-fetch
                     contacts_resp = supabase.table(leads_table).select("*").eq("triggered_company_id", comp['id']).execute()
                     contacts = contacts_resp.data
+                else:
+                    # UPDATE EXISTING CONTACTS with new signal data
+                    print(f"      🔄 Updating {len(contacts)} existing contacts with new signal data...")
+                    for c in contacts:
+                        try:
+                            supabase.table(leads_table).update(signal_context).eq("id", c['id']).execute()
+                        except Exception as e:
+                            print(f"      ⚠️ Failed to update contact signal: {e}")
+                    # Re-fetch to have latest data in memory
+                    contacts_resp = supabase.table(leads_table).select("*").eq("triggered_company_id", comp['id']).execute()
+                    contacts = contacts_resp.data
+
                 
                 # Generate Drafts
                 for contact in contacts:
