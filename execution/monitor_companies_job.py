@@ -2112,6 +2112,17 @@ def run_monitoring_scan(company_id: str = None, force_rescan: bool = False):
     elapsed = int(time.time() - scan_start)
     print(f"✅ Spawning complete in {elapsed}s — {total_spawned} tasks launched (batch: {scan_batch_id[:8]})")
     
+    # SAFETY CLEANUP: Run one last stale check to catch any immediate failures
+    try:
+        cleanup_cutoff = (datetime.utcnow() - timedelta(minutes=45)).isoformat()
+        supabase.table("monitor_scan_log").update({
+            "status": "stale_timeout",
+            "completed_at": "now()",
+            "error": "Safety Cleanup: Scan exceeded 45m timeout."
+        }).eq("status", "running").lt("started_at", cleanup_cutoff).execute()
+    except Exception:
+        pass
+    
     # Note: We fire-and-forget. Results tracked in 'monitor_scan_log' table.
     # Stale cleanup at the START of each run ensures orphaned rows get resolved.
 
