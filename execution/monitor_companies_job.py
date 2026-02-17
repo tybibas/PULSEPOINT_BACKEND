@@ -83,9 +83,10 @@ def merge_score_factors(supabase: Client, company_id: str, delta: dict) -> None:
         return
     supabase.rpc("merge_score_factors", {"p_company_id": company_id, "p_delta": delta}).execute()
 
-def compute_deal_score(confidence, signal_type, signal_date_str, icp_match_score=5):
+def compute_deal_score(confidence, signal_type, signal_date_str, icp_match_score=5, scoring_config=None):
     """
     Computes a deterministic Deal Score (0-100).
+    Uses dynamic signal weights from scoring_config if available.
     """
     # 1. Confidence Component (Max 40)
     try:
@@ -95,11 +96,25 @@ def compute_deal_score(confidence, signal_type, signal_date_str, icp_match_score
     conf_comp = round((min(max(conf, 0), 10) / 10) * 40)
     
     # 2. Trigger Weight Component (Max 30)
-    weights = {
+    default_weights = {
         "REAL_TIME_DETECTED": 30,
         "LINKEDIN_ACTIVITY": 18,
         "CONTEXT_ANCHOR": 15
     }
+    
+    # Merge/Override with config weights
+    weights = default_weights.copy()
+    if scoring_config and scoring_config.get("signal_weights"):
+        # Map specific signal types or use broad categories
+        custom_weights = scoring_config.get("signal_weights", {})
+        # If we have specific overrides, apply them. 
+        # Note: The database schema uses keys like "funding", "hiring". 
+        # We need to map "REAL_TIME_DETECTED" to those? 
+        # Actually, "REAL_TIME_DETECTED" is the EVENT TYPE. The AI analysis result has 'trigger_type'.
+        # For now, let's keep using EVENT_TYPE weights but allow overrides.
+        if "REAL_TIME_DETECTED" in custom_weights:
+             weights["REAL_TIME_DETECTED"] = custom_weights["REAL_TIME_DETECTED"]
+
     stype = str(signal_type).upper() if signal_type else "UNKNOWN"
     weight_comp = weights.get(stype, 10)
     
@@ -207,16 +222,44 @@ CLIENT_STRATEGIES = {}
 def fetch_client_strategies(supabase: Client):
     """
     Populates the global CLIENT_STRATEGIES table from the database.
+    Now joins with `client_profiles` to load Voice, Scoring, and Commercial configs.
     """
     global CLIENT_STRATEGIES
     try:
-        print("   📥 Fetching Client Strategies from Database...")
-        resp = supabase.table("client_strategies").select("*").execute()
+        print("   📥 Fetching Client Strategies & Profiles from Database...")
+        # Join with client_profiles
+        resp = supabase.table("client_strategies")\
+            .select("*, client_profiles(*)")\
+            .execute()
+            
         if resp.data:
             for row in resp.data:
                 slug = row.get("slug")
-                config = row.get("config", {})
+                # Base config from strategy table (legacy support)
+                config = row.get("config") or {}
+                
+                # Merge Profile Data if available
+                profiles = row.get("client_profiles")
+                # Supabase returns array or object depending on relationship. 
+                # Since it's 1:1, usually object or list of 1.
+                profile = None
+                if isinstance(profiles, list) and len(profiles) > 0:
+                    profile = profiles[0]
+                elif isinstance(profiles, dict):
+                    profile = profiles
+                
+                if profile:
+                    config["voice_config"] = profile.get("voice_config")
+                    config["scoring_config"] = profile.get("scoring_config")
+                    config["commercial_config"] = profile.get("commercial_config")
+                    # Also map 'hook_context' to value_proposition if missing
+                    if not config.get("hook_context") and profile.get("voice_config"):
+                         val_prop = profile.get("voice_config", {}).get("value_proposition", "")
+                         tone = profile.get("voice_config", {}).get("tone", "")
+                         config["hook_context"] = f"Tone: {tone}. Value Prop: {val_prop}"
+
                 CLIENT_STRATEGIES[slug] = config
+                
             print(f"   ✅ Loaded {len(CLIENT_STRATEGIES)} strategies: {list(CLIENT_STRATEGIES.keys())}")
         else:
             print("   ⚠️ No strategies found in DB! Using default/empty.")
@@ -719,12 +762,12 @@ Return ONLY valid JSON:
                     print(f"      ⚠️ Date parse failed '{event_date_str}'. Downgrading to PENDING_REVIEW.")
                     result["classification"] = "PENDING_REVIEW"
             else:
-                # No date extracted
-                print(f"      ⛔ HARD REJECT: No date extracted.")
-                result["is_relevant"] = False
-                result["classification"] = "REJECTED"
-                result["rejection_reason"] = "No date extracted"
-                return result
+                # No date extracted associated with a relevant signal
+                # STRICTNESS FIX: Don't hard reject. Downgrade to PENDING_REVIEW for manual check.
+                print(f"      ⚠️ Ghost Date: No date found, but signal deemed relevant. Downgrading to PENDING_REVIEW.")
+                result["classification"] = "PENDING_REVIEW"
+                result["rejection_reason"] = "Ghost Date (No specific date found)"
+                # Keep is_relevant = True so it passes to the next stage (Draft generation might skip or adapt)
         
         if not result.get("is_relevant"):
             rejection = result.get("rejection_reason", "unknown")
@@ -935,10 +978,25 @@ def generate_draft(company_name, event, contact_name, client_context, openai_key
     1. If user has a template with {{ai_hook}} placeholder -> generate hook + apply to template
     2. If no template -> generate full AI draft (legacy behavior)
     
-    Phase 8: Implements CTA Downshifting based on buying_window and uses outcome_delta.
+    Phase 8: Implements CTA Downshifting based on buying_window and passes outcome_delta.
+    Phase 9 (Tone Training): Supports 'force_full_draft' and 'voice_examples' (Few-Shot).
     """
     strategy = CLIENT_STRATEGIES.get(client_context, CLIENT_STRATEGIES["pulsepoint_strategic"])
     
+    # Load Voice Config
+    voice_config = strategy.get("voice_config", {})
+    tone = voice_config.get("tone", "Professional, slightly restrained")
+    forbidden_phrases = voice_config.get("forbidden_phrases", [])
+    val_prop = voice_config.get("value_proposition", "")
+    
+    # Phase 9: Force Full Draft & Examples
+    force_full_draft = voice_config.get("force_full_draft", False)
+    voice_examples = voice_config.get("examples", [])
+    
+    forbidden_instruction = ""
+    if forbidden_phrases:
+        forbidden_instruction = f"DO NOT USE these phrases: {', '.join(forbidden_phrases)}"
+
     # 1. Determine CTA Strategy based on Buying Window
     cta_strategy = "Soft Ask (Conversation/Perspective)"
     if buying_window == 'Execution':
@@ -946,9 +1004,9 @@ def generate_draft(company_name, event, contact_name, client_context, openai_key
     elif buying_window == 'Transition':
         cta_strategy = "Priority Check (Is this a focus?)"
     
-    # Try to get user's template first
+    # Try to get user's template first (UNLESS FORCE FULL DRAFT IS ON)
     template = None
-    if supabase:
+    if not force_full_draft and supabase:
         template = get_client_template(supabase, client_context, "initial_outreach")
     
     if template and template.get("content"):
@@ -962,10 +1020,11 @@ def generate_draft(company_name, event, contact_name, client_context, openai_key
         Buying Window: {buying_window}
         
         RULES:
+        - Tone: {tone}
         - Be observational, not matching.
         - Reference the outcome/implication, not just the news.
-        - Tone: Professional, slightly restrained.
         - No generic fluff.
+        - {forbidden_instruction}
         """
         
         try:
@@ -982,19 +1041,34 @@ def generate_draft(company_name, event, contact_name, client_context, openai_key
                 contact_name, 
                 company_name
             )
-            
-            # Note: We don't dynamically change the template CTA here yet, 
-            # but we can append the CTA strategy guidance if needed or rely on the hook to pivot.
             return email_body
         except Exception as e:
             print(f"Hook generation failed: {e}")
             return f"Hi {contact_name}, I saw the news regarding {company_name} and wanted to reach out."
     else:
-        # LEGACY MODE: Full AI Draft
-        print(f"      No template found, using full AI draft (Window: {buying_window})")
+        # FULL AI DRAFT MODE (Legacy OR Forced)
+        if force_full_draft:
+            print(f"      forcing FULL DRAFT (Template bypassed) - Training on {len(voice_examples)} examples")
+        else:
+            print(f"      No template found, using full AI draft (Window: {buying_window})")
+            
+        # Construct Few-Shot Context
+        dataset_context = ""
+        if voice_examples:
+            examples_text = "\n\n--- EXAMPLE ---\n".join(voice_examples)
+            dataset_context = f"""
+            CRITICAL - MIMIC THIS VOICE:
+            Here are valid examples of successful emails from this sender.
+            You MUST mimic their structure, brevity, and specific tone exactly.
+            
+            --- EXAMPLES START ---
+            {examples_text}
+            --- EXAMPLES END ---
+            """
+
         client = OpenAI(api_key=openai_key)
         prompt = f"""
-        Write a SHORT personalized cold email to {contact_name} at {company_name}.
+        Write a PERSONALISED cold email to {contact_name} at {company_name}.
         
         TRIGGER: {event}
         STRATEGIC IMPLICATION: {outcome_delta if outcome_delta else "Growth opportunity."}
@@ -1002,11 +1076,18 @@ def generate_draft(company_name, event, contact_name, client_context, openai_key
         BUYING WINDOW: {buying_window}
         REQUIRED CTA: {cta_strategy}
         
+        CLIENT VOICE:
+        - Tone: {tone}
+        - Value Prop: {val_prop}
+        - {forbidden_instruction}
+        
+        {dataset_context}
+        
         {strategy.get('hook_context', '')}
-        {strategy['draft_context']}
+        {strategy.get('draft_context', '')}
         
         GUIDELINES:
-        - Under 120 words.
+        - Mimic the length and style of the provided examples (if any).
         - Use the implication to bridge to the value prop.
         - NO fluff.
         - Respect the CTA strategy strictly.
@@ -1488,9 +1569,11 @@ def process_company_scan(comp: dict, apify_client, supabase, openai_key: str, fo
                 else:
                     print(f"      📅 Date verified: {pre_check_date_str}")
             else:
-                 # GHOST DATE PROTECTION
-                 print(f"      ⛔ REJECT: No date found in text (Ghost Date Protection)")
-                 continue
+
+                 # GHOST DATE PROTECTION - RELAXED
+                 # If simple extractor fails, let the LLM try.
+                 print(f"      ⚠️ No date found in pre-check. Proceeding to Deep Analysis (LLM) for verification.")
+                 # continue  <-- REMOVED TO ALLOW LLM CHECK
             
             # Deep Analysis
             # Double check LLM budget before 2nd call
@@ -1581,7 +1664,8 @@ def process_company_scan(comp: dict, apify_client, supabase, openai_key: str, fo
                 deal_score = compute_deal_score(
                     confidence=analysis.get('confidence', 0),
                     signal_type="REAL_TIME_DETECTED",
-                    signal_date_str=sig_date
+                    signal_date_str=sig_date,
+                    scoring_config=strategy.get("scoring_config")
                 )
                 
                 # Prepare Signal Context for Leads

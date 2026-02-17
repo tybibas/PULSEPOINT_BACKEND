@@ -13,7 +13,14 @@ Company: [COMPANY NAME]
 Website: [COMPANY WEBSITE]
 Past Clients: [LIST 2-3 PAST CLIENTS OR TESTIMONIALS]
 Geographic Focus: [CITY/REGION]
-Additional Instructions: [OPTIONAL - ANY SPECIAL REQUIREMENTS]
+
+--- New CIP Config ---
+Tone: [e.g. Consultative, Direct, Professional]
+Value Proposition: [1-2 sentences on the core problem solved]
+Forbidden Phrases: [Comma-separated list]
+Avg Deal Size: [Amount in USD]
+Sales Cycle: [Days]
+Target Titles: [List of decision maker titles]
 ```
 
 > The agent will scrape the website to understand all services/offerings.
@@ -27,6 +34,7 @@ Additional Instructions: [OPTIONAL - ANY SPECIAL REQUIREMENTS]
 - Company name and website
 - 2-3 past clients or testimonial examples
 - Target geography (e.g., "San Diego, CA")
+- **CIP Configuration:** Tone, Value Prop, Forbidden Phrases, Deal Info, Titles.
 
 **Actions:**
 1. Scrape the client's website thoroughly (homepage, about, services, portfolio)
@@ -52,7 +60,18 @@ Additional Instructions: [OPTIONAL - ANY SPECIAL REQUIREMENTS]
 
 ---
 
-### Phase 3: Trigger Event Strategy (15 min)
+### Phase 3: Client Intelligence Profile (10 min)
+**Actions:**
+1. Generate SQL migration `01_create_client_profile.sql`
+2. Insert/Update `client_strategies` and `client_profiles` tables in Supabase.
+3. Verify connection.
+
+**Output:**
+- Database records in `client_strategies` and `client_profiles`.
+
+---
+
+### Phase 4: Trigger Event Strategy (15 min)
 **Actions:**
 1. Based on ICP and service type, identify 2-5 trigger event categories
 2. Examples by industry:
