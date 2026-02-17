@@ -1,34 +1,49 @@
-# ICP Definition: PulsePoint Strategic
+# Ideal Customer Profile (ICP) Definition
+## Client: PulsePoint Strategic
 
-## Primary Segments
+### Primary Segments (Industry Types)
+- Creative Agencies
+- Branding Agencies
+- Design Agencies
+- Digital Agencies
+- Advertising Agencies
+- UX Consultancies
+- Product Design Consultancies
+- Experiential Marketing Agencies
+- Strategic Consultancies
 
-### 1. "Feast or Famine" Agencies
-- **Types:** Mid-sized Marketing Agencies, Dev Shops, Branding Studios.
-- **Pain Point:** Great at client work, terrible at self-promotion/sales. Rely on referrals. Panic when pipeline dries up.
+### Target Titles (Decision Makers)
+- Founder / Co-Founder
+- CEO
+- Managing Director
+- Partner / Principal
+- Head of Growth
+- VP Marketing
+- Chief Strategy Officer
+- Head of Client Services
 
-### 2. Boutique Consulting Firms
-- **Types:** HR Consulting, Financial Consulting, Management Consulting, Strategy Firms.
-- **Pain Point:** Massive deal sizes ($50k+). Need few meetings to succeed. Dislike "spammy" tactics, want "dignified" outreach.
+### Company Size Indicators
+- **Team Size**: 5 - 200 employees (Sweet spot: 10-50, "Boutique to Mid-size")
+- **Revenue**: Likely $2M - $50M range
+- **Structure**: Independent (Not WPP/Omnicom holding co owned)
 
-### 3. Design Businesses
-- **Types:** Branding Studios, Graphic Design Firms, UX/UI Agencies.
-- **Pain Point:** Need to differentiate from generic agencies. Value high-quality, strategic partnerships.
+### Geographic Scope
+- **Primary**: United States
+- **Secondary**: Canada, UK (English-speaking markets only)
 
-### 3. B2B Tech & SaaS (Seed to Series B)
-- **Types:** Startups selling software to other businesses.
-- **Pain Point:** Investor pressure to grow aggressively. Limited runway. Need efficiency.
+### Keywords for News/Trigger Searches
+- "New Account Win"
+- "Agency of Record"
+- "Rebranding"
+- "New Website Launch"
+- "Hiring Head of Design"
+- "Hiring Head of Product"
+- "Series A Funding"
+- "Series B Funding"
+- "Strategic Partnership"
 
-## Target Titles (Decision Makers)
-- CEO / Founder (Agencies, Boutique Firms)
-- VP of Sales / Head of Sales (Tech, SaaS)
-- Business Development Director (Construction, Architecture)
-- Managing Partner (Consultancies)
-
-## Company Size Indicators
-- **Agencies:** 10–50 employees.
-- **Tech/SaaS:** Seed to Series B funding.
-- **General:** Average deal size >$10k. Avoiding low-ticket businesses.
-
-## Geographic Scope
-- **Focus:** United States Only (Strict). Do not include international leads.
-- **Note:** "Geographic Focus: N/A" suggests broadly applicable, likely remote-friendly or nationwide.
+### Negative Match (Avoid)
+- Early-stage startups (<10 employees)
+- Micro-agencies (<5 people)
+- Massive Enterprise Holding Companies (WPP, Publicis, etc.)
+- In-house creative departments of non-agencies

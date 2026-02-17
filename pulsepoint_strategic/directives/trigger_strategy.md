@@ -1,21 +1,31 @@
-# Trigger Strategy: PulsePoint Strategic
+# Trigger Strategy
+## Client: PulsePoint Strategic
 
-## 1. Hiring for Sales/SDR
-- **Search Logic:** Companies posting jobs for "Sales Development Representative", "BDR", "Account Executive" (junior), or "Business Development Manager".
-- **Rationale:** They are about to spend ~$60k/year + management time.
-- **Pitch Angle:** Identify companies hiring sales roles and offer a system that does the job for 1/10th the cost and "never sleeps".
+### 1. New Client Win / Agency of Record (AOR)
+*   **Definition:** An agency announces they have won a new major account or been named AOR.
+*   **Why it fits:** They need to staff up, stabilize operations, or ensure they don't fumble the new relationship. High pressure moment.
+*   **Keywords:** "named AOR", "won account", "selected as agency partner", "new client partnership"
+*   **Ignore:** "We are proud to work with" (could be old), small project wins.
 
-## 2. Recent Big Project / Case Study (Service Firms)
-- **Search Logic:** News or posts about "Completed HQ build", "Major Rebrand", "New Client Win", "Case Study released".
-- **Rationale:** Proof of competence and high-ticket delivery. They have momentum but might need more of that specific type of work.
-- **Pitch Angle:** "Congrats on [Project]. I built a list of similar companies who need exactly that."
+### 2. Executive Hiring (Strategy/Design)
+*   **Definition:** Hiring a new C-level or VP-level leader in Strategy, Design, or Client Services.
+*   **Why it fits:** New leaders often have a mandate to change processes or bring in new tools. They are "change agents".
+*   **Keywords:** "welcomes new Chief Strategy Officer", "appointed VP of Design", "Head of Client Services joins"
+*   **Ignore:** Junior hires, interns, promotions (sometimes, though promotions can still be good).
 
-## 3. New VP of Sales / Head of Sales (Tech/SaaS)
-- **Search Logic:** "New VP of Sales" appointments, LinkedIn updates for "Head of Sales" (past 90 days).
-- **Rationale:** New leaders want to make their mark and buy tools to improve efficiency.
-- **Pitch Angle:** Optimize their new tenure with better infrastructure.
+### 3. Funding / Acquisition
+*   **Definition:** The agency (or a consultancy) receives investment or acquires another shop.
+*   **Why it fits:** They have capital and a mandate to grow/scale efficiently.
+*   **Keywords:** "raises Series A", "strategic investment", "acquires", "merges with"
+*   **Ignore:** 
 
-## 4. Recent Funding (Seed / Series A)
-- **Search Logic:** Companies that announced Seed or Series A funding in the last 3-6 months.
-- **Rationale:** Pressure to grow, cash in hand, risk of burning it on headcount inefficiently.
-- **Pitch Angle:** "Don't burn it all on headcount. Build a signal-based engine first."
+### 4. Rebranding / Repositioning
+*   **Definition:** The agency launches a new brand identity or pivots their market focus.
+*   **Why it fits:** Indicates a desire to change perception and attract a different caliber of client. Good time to align with their "new" mission.
+*   **Keywords:** "launches new brand identity", "unveils new look", "repositions as"
+*   **Ignore:** Minor logo tweaks.
+
+### 5. Product/Service Expansion
+*   **Definition:** Launching a new division (e.g., "Health", "Sustainability") or offering.
+*   **Why it fits:** New complexity requires new systems.
+*   **Keywords:** "launches health division", "expands into", "new practice area"
