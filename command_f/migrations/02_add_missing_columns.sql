@@ -1,0 +1,23 @@
+-- Add missing columns to Command F leads table
+-- These are required by the frontend (TriggeredCompanies.tsx)
+
+ALTER TABLE "COMMAND_F_TRIGGERED_LEADS"
+ADD COLUMN IF NOT EXISTS deal_score NUMERIC,
+ADD COLUMN IF NOT EXISTS confidence_score NUMERIC,
+ADD COLUMN IF NOT EXISTS signal_type TEXT,
+ADD COLUMN IF NOT EXISTS why_now TEXT,
+ADD COLUMN IF NOT EXISTS evidence_quote TEXT,
+ADD COLUMN IF NOT EXISTS intent_score TEXT,
+ADD COLUMN IF NOT EXISTS thread_id TEXT,
+ADD COLUMN IF NOT EXISTS last_message_id TEXT,
+ADD COLUMN IF NOT EXISTS last_sent_at TIMESTAMPTZ,
+ADD COLUMN IF NOT EXISTS nudge_count INTEGER DEFAULT 0,
+ADD COLUMN IF NOT EXISTS next_nudge_at TIMESTAMPTZ,
+ADD COLUMN IF NOT EXISTS replied_at TIMESTAMPTZ,
+ADD COLUMN IF NOT EXISTS bounced_at TIMESTAMPTZ,
+ADD COLUMN IF NOT EXISTS linkedin_profile_picture_url TEXT,
+ADD COLUMN IF NOT EXISTS linkedin_comment_draft TEXT,
+ADD COLUMN IF NOT EXISTS video_script TEXT,
+ADD COLUMN IF NOT EXISTS loom_link TEXT,
+ADD COLUMN IF NOT EXISTS last_linkedin_interaction_at TIMESTAMPTZ,
+ADD COLUMN IF NOT EXISTS video_pitch_sent BOOLEAN DEFAULT false;
