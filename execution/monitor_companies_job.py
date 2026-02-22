@@ -20,7 +20,15 @@ if os.path.exists(os.path.join(os.path.dirname(__file__), "execution")):
 from scouts.blog_scout import scout_latest_blog_posts
 from scouts.social_scout import scout_executive_social_activity
 from scouts.linkedin_scout import scout_linkedin_activity
+from scouts.hiring_scout import scout_hiring_activity
+from scouts.webchange_scout import scout_website_changes
 from resilience import retry_with_backoff, CircuitBreaker
+from v6_signal_pipeline import (
+    extract_evidence_objects, classify_evidence,
+    persist_classified_signals, v6_to_v5_result,
+)
+from composite_scorer import run_composite_scoring
+from stage_2_5_synthesis_engine import run_stage_2_5_synthesis
 from shared.enrichment_utils import (
     is_valid_full_name, normalize_company, company_matches,
     find_website, find_decision_makers, verify_email, is_junk_company_name
@@ -248,15 +256,20 @@ def fetch_client_strategies(supabase: Client):
                 elif isinstance(profiles, dict):
                     profile = profiles
                 
-                if profile:
-                    config["voice_config"] = profile.get("voice_config")
-                    config["scoring_config"] = profile.get("scoring_config")
-                    config["commercial_config"] = profile.get("commercial_config")
-                    # Also map 'hook_context' to value_proposition if missing
-                    if not config.get("hook_context") and profile.get("voice_config"):
-                         val_prop = profile.get("voice_config", {}).get("value_proposition", "")
-                         tone = profile.get("voice_config", {}).get("tone", "")
-                         config["hook_context"] = f"Tone: {tone}. Value Prop: {val_prop}"
+                    if profile:
+                        config["voice_config"] = profile.get("voice_config")
+                        config["scoring_config"] = profile.get("scoring_config")
+                        config["commercial_config"] = profile.get("commercial_config")
+                        config["service_implication"] = profile.get("service_implication")
+                        config["social_proof"] = profile.get("social_proof")
+                        config["intelligence_profile"] = profile.get("intelligence_profile") or {}
+                        # Also map 'hook_context' to value_proposition if missing
+                        if not config.get("hook_context") and profile.get("voice_config"):
+                             val_prop = profile.get("voice_config", {}).get("value_proposition", "")
+                             tone = profile.get("voice_config", {}).get("tone", "")
+                             config["hook_context"] = f"Tone: {tone}. Value Prop: {val_prop}"
+                    
+                    config["sourcing_criteria"] = row.get("sourcing_criteria", {})
 
                 CLIENT_STRATEGIES[slug] = config
                 
@@ -645,19 +658,76 @@ def call_openai_analysis(item: dict, sys_prompt: str, openai_key: str, model: st
             "summary": f"Unscored signal from {item.get('url', 'unknown source')}"
         }
 
-def analyze_with_article_context(news_item: dict, article_text: str, company_name: str, client_context: str, openai_key: str) -> dict:
+def analyze_with_article_context(news_item: dict, article_text: str, company_name: str, client_context: str, openai_key: str, account_id: str = None, supabase_client = None, signal_collection_list: list = None) -> dict:
     """
-    ADVANCED AI TRIGGER ANALYSIS with:
-    - Chain-of-thought reasoning
-    - Weighted scoring rubric
-    - Few-shot examples
-    - Injected current date for precise recency checks
+    ADVANCED AI TRIGGER ANALYSIS — Backward-Compatible Wrapper.
+
+    When use_v6_pipeline=True in client config:
+      → Routes to two-stage V6 pipeline (Stage 1: extraction, Stage 2: classification)
+      → Persists classified signals to account_context_signals
+      → Returns V5-shaped dict for caller compatibility
+
+    When use_v6_pipeline=False (default):
+      → Runs the existing single-pass analysis (V5 behavior, unchanged)
     """
     from datetime import datetime, timedelta
     from openai import OpenAI
     
     strategy = CLIENT_STRATEGIES.get(client_context, CLIENT_STRATEGIES["pulsepoint_strategic"])
     client = OpenAI(api_key=openai_key)
+
+    # ── V6 PIPELINE DISPATCH ──
+    if strategy.get("use_v6_pipeline", False) and account_id:
+        try:
+            print(f"      🔬 [V6] Two-stage pipeline active for {company_name}")
+            source_scout = "GoogleSearch"  # Default for news search results
+            if news_item.get("is_scouted_blog"):
+                source_scout = "BlogScout"
+            elif news_item.get("is_scouted_social"):
+                source_scout = "LinkedInScout"
+
+            # Stage 1: Evidence Extraction (gpt-4o-mini)
+            stage1 = extract_evidence_objects(
+                text=article_text,
+                company_name=company_name,
+                source_url=news_item.get("url", ""),
+                source_scout=source_scout,
+                account_id=account_id,
+                client_id=client_context,
+                openai_client=client,
+                llm_breaker=GLOBAL_LLM_BREAKER,
+            )
+            print(f"      🔬 [V6 Stage 1] Extracted {len(stage1.get('evidence_objects', []))} evidence objects")
+
+            # Stage 2: ICP Classification (gpt-4o)
+            classifications = classify_evidence(
+                stage1_result=stage1,
+                company_name=company_name,
+                strategy=strategy,
+                openai_client=client,
+                llm_breaker=GLOBAL_LLM_BREAKER,
+            )
+            trigger_count = sum(1 for c in classifications if c.get("classification") == "TRIGGER")
+            context_count = sum(1 for c in classifications if c.get("classification") == "CONTEXT_ONLY")
+            print(f"      🔬 [V6 Stage 2] Classified: {trigger_count} TRIGGER, {context_count} CONTEXT_ONLY, {len(classifications) - trigger_count - context_count} REJECTED")
+
+            # Persist all signals to account_context_signals
+            if supabase_client and classifications:
+                inserted = persist_classified_signals(classifications, supabase_client)
+                print(f"      🔬 [V6] Persisted {inserted} signals to account_context_signals")
+
+            # V6 signal accumulation buffer — append for Stage 2.5 synthesis
+            if signal_collection_list is not None:
+                signal_collection_list.extend(classifications)
+
+            # Return V5-shaped dict for backward compatibility
+            return v6_to_v5_result(classifications)
+            
+        except Exception as e:
+            print(f"      ⚠️ [V6 Fallback] V6 pipeline or table access failed ({e}). Falling back to V5 legacy path.")
+            # Let execution fall through to V5 legacy path below
+
+    # ── V5 LEGACY PATH (unchanged) ──
     
     # Inject current date for precise recency checks
     today = datetime.now()
@@ -972,137 +1042,367 @@ def apply_template_with_hook(template_body, hook, contact_name, company_name, se
     return result
 
 
-def generate_draft(company_name, event, contact_name, client_context, openai_key, supabase=None, buying_window='Exploration', outcome_delta=None):
-    """
-    Generates a personalized email draft using HYBRID approach:
-    1. If user has a template with {{ai_hook}} placeholder -> generate hook + apply to template
-    2. If no template -> generate full AI draft (legacy behavior)
-    
-    Phase 8: Implements CTA Downshifting based on buying_window and passes outcome_delta.
-    Phase 9 (Tone Training): Supports 'force_full_draft' and 'voice_examples' (Few-Shot).
-    """
-    strategy = CLIENT_STRATEGIES.get(client_context, CLIENT_STRATEGIES["pulsepoint_strategic"])
-    
-    # Load Voice Config
-    voice_config = strategy.get("voice_config", {})
-    tone = voice_config.get("tone", "Professional, slightly restrained")
-    forbidden_phrases = voice_config.get("forbidden_phrases", [])
-    val_prop = voice_config.get("value_proposition", "")
-    
-    # Phase 9: Force Full Draft & Examples
-    force_full_draft = voice_config.get("force_full_draft", False)
-    voice_examples = voice_config.get("examples", [])
-    
-    forbidden_instruction = ""
-    if forbidden_phrases:
-        forbidden_instruction = f"DO NOT USE these phrases: {', '.join(forbidden_phrases)}"
+# ==================== PROSPECT STYLE EXTRACTION (HEURISTIC — NO LLM) ====================
 
-    # 1. Determine CTA Strategy based on Buying Window
-    cta_strategy = "Soft Ask (Conversation/Perspective)"
-    if buying_window == 'Execution':
-        cta_strategy = "Direct Ask (Pilot/Demo/Audit)"
-    elif buying_window == 'Transition':
-        cta_strategy = "Priority Check (Is this a focus?)"
-    
-    # Try to get user's template first (UNLESS FORCE FULL DRAFT IS ON)
-    template = None
-    if not force_full_draft and supabase:
-        template = get_client_template(supabase, client_context, "initial_outreach")
-    
-    if template and template.get("content"):
-        # HYBRID MODE: Template + AI Hook
-        print(f"      Using template: {template.get('name', 'default')} (Window: {buying_window})")
-        # We need a hook that respects the window
-        hook_prompt = f"""
-        Generate a 1-sentence personalized hook for {contact_name} at {company_name}.
-        Trigger: {event}
-        Outcome Delta (Strategic Implication): {outcome_delta if outcome_delta else "Strategic growth opportunity."}
-        Buying Window: {buying_window}
-        
-        RULES:
-        - Tone: {tone}
-        - Be observational, not matching.
-        - Reference the outcome/implication, not just the news.
-        - No generic fluff.
-        - {forbidden_instruction}
-        """
-        
-        try:
-            client = OpenAI(api_key=openai_key)
-            resp = client.chat.completions.create(
-                model="gpt-4o-mini",
-                messages=[{"role": "user", "content": hook_prompt}]
-            )
-            hook = resp.choices[0].message.content.strip('"')
-            
-            email_body = apply_template_with_hook(
-                template["content"], 
-                hook, 
-                contact_name, 
-                company_name
-            )
-            return email_body
-        except Exception as e:
-            print(f"Hook generation failed: {e}")
-            return f"Hi {contact_name}, I saw the news regarding {company_name} and wanted to reach out."
+def extract_prospect_style(comp: dict) -> dict:
+    """
+    Heuristic prospect style extractor. No LLM call.
+    Derives communication style signals from company metadata already in triggered_companies.
+    Returns a dict stored in triggered_companies.prospect_style.
+    """
+    trigger_type = (comp.get("event_title") or "").lower()
+    industry_hint = (comp.get("industry") or "").lower()
+    website = comp.get("website") or ""
+
+    is_financial_event = any(k in trigger_type for k in [
+        "funding", "acquisition", "merger", "series", "ipo", "raise"
+    ])
+    is_expansion_event = any(k in trigger_type for k in [
+        "hiring", "expansion", "new office", "headcount", "team growth", "scaling"
+    ])
+    is_client_win_event = any(k in trigger_type for k in [
+        "new client", "client win", "partnership", "awarded", "selected"
+    ])
+    is_migration_event = any(k in trigger_type for k in [
+        "migration", "switch", "adopting", "moving from", "replacing"
+    ])
+    is_service_firm = any(k in industry_hint for k in [
+        "agency", "consulting", "consultancy", "advisory", "studio", "creative", "marketing"
+    ])
+
+    return {
+        "preferred_framing": (
+            "efficiency_pressure" if is_expansion_event else
+            "execution_proof" if is_client_win_event else
+            "friction_specificity" if is_migration_event else
+            "momentum_leverage" if is_financial_event else
+            "operational_implication"
+        ),
+        "formality": "warm_professional" if is_service_firm else "direct_professional",
+        "event_category": (
+            "financial_event" if is_financial_event else
+            "expansion" if is_expansion_event else
+            "client_win" if is_client_win_event else
+            "tool_migration" if is_migration_event else
+            "general_signal"
+        ),
+        "company_name": comp.get("company", ""),
+        "has_website": bool(website),
+    }
+
+
+# ==================== EMAIL PROMPT BUILDER ====================
+
+def build_email_prompt(
+    contact_name: str,
+    company_name: str,
+    trigger_type_matched: str,
+    primary_evidence_quote: str,
+    buying_window: str,
+    outcome_delta: str,
+    client_profile: dict,
+    prospect_style: dict,
+) -> str:
+    """
+    Constructs the full GPT-4o prompt for the 4-sentence email framework.
+    Pulls from intelligence_profile, prospect_style, and second-order tensions.
+    """
+    ip = client_profile.get("intelligence_profile") or {}
+    service_implication = client_profile.get("service_implication", "")
+    social_proof = client_profile.get("social_proof", "")
+    tone = (client_profile.get("voice_config") or {}).get("tone", "Direct, specific, no fluff")
+
+    # Case study context
+    best_cs = ip.get("best_case_study") or {}
+    cs_block = ""
+    if best_cs.get("result"):
+        cs_block = (
+            f"Best Case Study: {best_cs.get('client_type', 'client')} — "
+            f"{best_cs.get('situation', '')}. "
+            f"Result: {best_cs.get('result', '')}."
+        )
+        if best_cs.get("quote"):
+            cs_block += f" Their words: \"{best_cs['quote']}\""
+
+    # Second-order tension for this trigger type
+    tensions = ip.get("trigger_second_order_tensions") or {}
+    # Normalise trigger key: "New Client Win" -> "new_client_win"
+    trigger_key = trigger_type_matched.lower().replace(" ", "_").replace("-", "_")
+    tension = tensions.get(trigger_key) or next(iter(tensions.values()), "")
+
+    # Intelligence fields
+    differentiating_insight = ip.get("differentiating_insight") or ""
+    ideal_first_reply      = ip.get("ideal_first_reply") or ""
+    objection_to_preempt   = ip.get("objection_to_preempt") or ""
+    client_voice           = "\n".join(ip.get("client_voice_examples") or [])
+    forbidden_phrases      = ", ".join(ip.get("forbidden_phrases") or [])
+
+    # Proof point rule
+    if social_proof:
+        proof_point_rule = f"Sentence 3 — Credibility Bridge: Use exactly this proof point: '{social_proof}'"
+        if cs_block:
+            proof_point_rule += f"\n  Supporting context (do NOT copy verbatim — let it inform sentence 3): {cs_block}"
     else:
-        # FULL AI DRAFT MODE (Legacy OR Forced)
-        if force_full_draft:
-            print(f"      forcing FULL DRAFT (Template bypassed) - Training on {len(voice_examples)} examples")
-        else:
-            print(f"      No template found, using full AI draft (Window: {buying_window})")
-            
-        # Construct Few-Shot Context
-        dataset_context = ""
-        if voice_examples:
-            examples_text = "\n\n--- EXAMPLE ---\n".join(voice_examples)
-            dataset_context = f"""
-            CRITICAL - MIMIC THIS VOICE:
-            Here are valid examples of successful emails from this sender.
-            You MUST mimic their structure, brevity, and specific tone exactly.
-            
-            --- EXAMPLES START ---
-            {examples_text}
-            --- EXAMPLES END ---
-            """
+        proof_point_rule = "OMIT Sentence 3 entirely. Write only Sentences 1, 2, and 4. The email is exactly 3 sentences."
 
-        client = OpenAI(api_key=openai_key)
-        prompt = f"""
-        Write a PERSONALISED cold email to {contact_name} at {company_name}.
-        
-        TRIGGER: {event}
-        STRATEGIC IMPLICATION: {outcome_delta if outcome_delta else "Growth opportunity."}
-        
-        BUYING WINDOW: {buying_window}
-        REQUIRED CTA: {cta_strategy}
-        
-        CLIENT VOICE:
-        - Tone: {tone}
-        - Value Prop: {val_prop}
-        - {forbidden_instruction}
-        
-        {dataset_context}
-        
-        {strategy.get('hook_context', '')}
-        {strategy.get('draft_context', '')}
-        
-        GUIDELINES:
-        - Mimic the length and style of the provided examples (if any).
-        - Use the implication to bridge to the value prop.
-        - NO fluff.
-        - Respect the CTA strategy strictly.
-        
-        Return only the body text.
-        """
+    framing  = prospect_style.get("preferred_framing", "operational_implication")
+    formality = prospect_style.get("formality", "direct_professional")
+
+    prompt = f"""Write a 4-sentence personalised cold email to {contact_name} at {company_name}.
+Adhere strictly to the PulsePoint Email Framework. Return ONLY valid JSON — nothing else.
+
+=== TRIGGER CONTEXT ===
+Trigger Type: {trigger_type_matched}
+Evidence: "{primary_evidence_quote}"
+Second-Order Tension (what this trigger creates internally): {tension}
+Buying Window: {buying_window}
+Strategic Outcome Delta: {outcome_delta}
+
+=== CLIENT INTELLIGENCE ===
+Preferred Framing: {framing}
+Tone / Formality: {tone} / {formality}
+Service Implication: {service_implication}
+Differentiating Insight (do NOT quote directly — let it inform sentence 2): {differentiating_insight}
+Ideal First Reply we want to produce: {ideal_first_reply}
+Objection to preempt in sentence 4 (implicitly, not explicitly): {objection_to_preempt}
+{f"Voice Examples (match this register and cadence):{chr(10)}{client_voice}" if client_voice else ""}
+{f"Forbidden Phrases (never use): {forbidden_phrases}" if forbidden_phrases else ""}
+
+=== HARD CONSTRAINTS ===
+1. Body must be exactly 4 sentences (or 3 if Sentence 3 is omitted per the rule below).
+2. NEVER start with: "I noticed", "I saw", "Congratulations", "I wanted to reach out", "Hope this finds you", "Hi", "Hello".
+3. NEVER use: "insights", "synergies", "touch base", "circle back", "leverage", "game-changer", "innovative", "exciting opportunity".
+4. NEVER describe the prospect's company back to them.
+5. The prospect's name must NOT be the first word of the body.
+6. Sentence 4 must be a genuine question. Exactly ONE question mark in the entire body. No rhetorical questions.
+7. No sentence over 30 words.
+
+=== FRAMEWORK ===
+Sentence 1 — Situational Mirror: Name what is happening operationally inside {company_name} right now based on the trigger evidence. Frame it from the inside — what they are experiencing — not as a news observation. The evidence is the proof behind your statement, not the statement itself.
+Sentence 2 — Implication: State the second-order pressure or opportunity that trigger creates. Use the tension: {tension}
+{proof_point_rule}
+Sentence 4 — Soft Ask: A single genuine question about whether the Sentence 2 implication is on their radar. Zero commitment, high curiosity. Never "book a call." Ask about their situation, not your product.
+
+=== SUBJECT LINES ===
+Three options. Each must feel like it could only be written about this company at this moment. Format: specific observation + implied question. NO generic subject lines.
+
+=== CONSTRAINT CHECK ===
+After writing the body, self-check and return these fields honestly:
+- first_word: the first word of the email body (just the word, no punctuation)
+- word_count: total word count of the body
+- question_mark_count: count of question marks in the body
+- contains_forbidden_phrase: true if the body contains any of the listed forbidden phrases, false otherwise
+
+=== OUTPUT FORMAT ===
+Return ONLY valid JSON:
+{{
+  "body": "The email body text",
+  "subject_options": ["subject 1", "subject 2", "subject 3"],
+  "sentence_breakdown": {{
+    "s1": "exact text of sentence 1",
+    "s2": "exact text of sentence 2",
+    "s3": "exact text of sentence 3 or null if omitted",
+    "s4": "exact text of sentence 4"
+  }},
+  "constraint_check": {{
+    "first_word": "string",
+    "word_count": 0,
+    "question_mark_count": 0,
+    "contains_forbidden_phrase": false
+  }}
+}}"""
+    return prompt
+
+
+# ==================== PROFILE COMPLETENESS SCORER ====================
+
+def _score_profile_completeness(ip: dict) -> dict:
+    """
+    Compute a numeric completeness score for the intelligence_profile.
+    Mirrors the frontend computeScore() logic.
+    """
+    score = 0
+    if (ip.get("best_case_study") or {}).get("result"): score += 3
+    if ip.get("differentiating_insight"):               score += 2
+    if ip.get("trigger_second_order_tensions"):          score += 2
+    if ip.get("client_voice_examples"):                 score += 1
+    if ip.get("ideal_first_reply"):                     score += 1
+    if ip.get("objection_to_preempt"):                  score += 1
+    label = "full" if score >= 8 else "partial" if score >= 4 else "minimal"
+    return {"score": score, "max": 10, "label": label}
+
+
+# ==================== EMAIL DRAFT GENERATOR ====================
+
+BANNED_OPENERS = {
+    "i", "hi", "hello", "hey", "congratulations", "congrats", "hope",
+    "just", "wanted", "reaching", "excited", "thrilled", "delighted",
+}
+
+def generate_draft(
+    company_name: str,
+    trigger_type_matched: str,
+    primary_evidence_quote: str,
+    contact_name: str,
+    client_context: str,
+    openai_key: str,
+    supabase=None,
+    buying_window: str = "Exploration",
+    outcome_delta: str = None,
+    prospect_style: dict = None,
+    client_profile: dict = None,
+):
+    """
+    Generates a personalised email draft using the strict PulsePoint Email Framework.
+
+    New in V2:
+    - Pulls full intelligence_profile from client_profile for case studies, tensions, voice
+    - Calls build_email_prompt() to construct the richer prompt
+    - Constraint retry loop (up to 3 attempts) validates constraint_check from the LLM response
+    - Returns enriched payload: body, subject_options, sentence_breakdown, constraint_check,
+      profile_completeness, attempt_count
+
+    Returns None if intelligence_profile is empty or service_implication is missing.
+    """
+    import json
+
+    # ── Resolve profile ──────────────────────────────────────────────────────
+    if client_profile is None:
+        client_profile = CLIENT_STRATEGIES.get(client_context, CLIENT_STRATEGIES.get("pulsepoint_strategic", {}))
+
+    ip = client_profile.get("intelligence_profile") or {}
+    service_implication = client_profile.get("service_implication")
+
+    # ── Guard: skip if intelligence_profile is empty ─────────────────────────
+    if not ip:
+        print(f"      [Draft Gen Warning] intelligence_profile is empty for context '{client_context}'. "
+              f"Cannot generate V2 email. Run the NL parser or fill Email Intelligence in Settings.")
+        return None
+
+    if not service_implication:
+        print(f"      [Draft Gen Warning] Missing 'service_implication' for context '{client_context}'.")
+        return None
+
+    # ── Resolve prospect style (fallback to empty dict) ───────────────────────
+    if prospect_style is None:
+        prospect_style = {}
+
+    # ── Profile completeness score (logged + stored in metadata) ─────────────
+    completeness = _score_profile_completeness(ip)
+    print(f"      [Draft Gen] Profile completeness: {completeness['label']} ({completeness['score']}/{completeness['max']})")
+
+    # ── Build prompt ─────────────────────────────────────────────────────────
+    prompt = build_email_prompt(
+        contact_name=contact_name,
+        company_name=company_name,
+        trigger_type_matched=trigger_type_matched,
+        primary_evidence_quote=primary_evidence_quote,
+        buying_window=buying_window,
+        outcome_delta=outcome_delta or "",
+        client_profile=client_profile,
+        prospect_style=prospect_style,
+    )
+
+    forbidden_phrases_list = [
+        p.strip().lower()
+        for p in (ip.get("forbidden_phrases") or [])
+    ] + ["insights", "synergies", "touch base", "circle back", "leverage",
+         "game-changer", "innovative", "exciting opportunity"]
+
+    openai_client = OpenAI(api_key=openai_key)
+    MAX_ATTEMPTS = 3
+
+    last_result = None
+    last_constraint_check = None
+
+    for attempt in range(1, MAX_ATTEMPTS + 1):
         try:
-            resp = client.chat.completions.create(
-                model="gpt-4o",
-                messages=[{"role": "user", "content": prompt}]
-            )
-            return resp.choices[0].message.content
+            def _call_gpt():
+                return openai_client.chat.completions.create(
+                    model="gpt-4o",
+                    messages=[{"role": "user", "content": prompt}],
+                    response_format={"type": "json_object"},
+                    temperature=0.4,
+                )
+
+            completion = GLOBAL_LLM_BREAKER.call(_call_gpt)
+            if not completion:
+                print(f"      [Draft Gen] Circuit breaker open on attempt {attempt}.")
+                break
+
+            result = json.loads(completion.choices[0].message.content)
+            body = result.get("body", "")
+            cc = result.get("constraint_check") or {}
+
+            # ── Constraint validation ────────────────────────────────────────
+            first_word   = (cc.get("first_word") or body.split()[0] if body else "").lower().strip(".,!?")
+            word_count   = cc.get("word_count") or len(body.split())
+            qmark_count  = cc.get("question_mark_count") if cc.get("question_mark_count") is not None else body.count("?")
+            has_forbidden = cc.get("contains_forbidden_phrase", False)
+
+            # Also verify forbidden phrases ourselves (don't trust the model fully)
+            body_lower = body.lower()
+            if not has_forbidden:
+                has_forbidden = any(fp in body_lower for fp in forbidden_phrases_list)
+
+            violations = []
+            if first_word in BANNED_OPENERS:
+                violations.append(f"banned_opener: '{first_word}'")
+            if word_count > 110:
+                violations.append(f"word_count too high: {word_count}")
+            if qmark_count != 1:
+                violations.append(f"question_mark_count: {qmark_count} (expected 1)")
+            if has_forbidden:
+                violations.append("contains_forbidden_phrase")
+
+            # ── Normalise constraint_check with ground-truth values ───────────
+            last_constraint_check = {
+                "first_word": first_word,
+                "word_count": word_count,
+                "question_mark_count": qmark_count,
+                "contains_forbidden_phrase": has_forbidden,
+                "violations": violations,
+                "attempt": attempt,
+            }
+
+            last_result = result
+
+            if not violations:
+                print(f"      [Draft Gen] ✅ Constraints passed on attempt {attempt}. "
+                      f"word_count={word_count}, q_marks={qmark_count}")
+                return {
+                    "body": body,
+                    "subject_options": result.get("subject_options", [f"Observation regarding {company_name}"]),
+                    "sentence_breakdown": result.get("sentence_breakdown"),
+                    "constraint_check": last_constraint_check,
+                    "profile_completeness": completeness,
+                    "attempt_count": attempt,
+                }
+            else:
+                print(f"      [Draft Gen] ⚠️ Attempt {attempt}/{MAX_ATTEMPTS} failed constraints: {violations}. Retrying...")
+
         except Exception as e:
-            print(f"Draft generation failed: {e}")
-            return f"Hi {contact_name}, I wanted to reach out regarding recent growth signals at {company_name}."
+            print(f"      [Draft Gen Error] Attempt {attempt}: {e}")
+            last_result = None
+
+    # ── All attempts exhausted — return best result with violation flag ───────
+    if last_result:
+        body = last_result.get("body", "")
+        print(f"      [Draft Gen] ⚠️ Returning best result after {MAX_ATTEMPTS} attempts "
+              f"(constraints not fully satisfied: {last_constraint_check.get('violations', [])})")
+        return {
+            "body": body,
+            "subject_options": last_result.get("subject_options", [f"Observation regarding {company_name}"]),
+            "sentence_breakdown": last_result.get("sentence_breakdown"),
+            "constraint_check": last_constraint_check,
+            "profile_completeness": completeness,
+            "attempt_count": MAX_ATTEMPTS,
+        }
+
+    # ── Total failure — return None to skip draft ─────────────────────────────
+    print(f"      [Draft Gen] ❌ All {MAX_ATTEMPTS} attempts failed completely. Skipping draft.")
+    return None
+
 
 # ==================== JUST-IN-TIME CONTACT ENRICHMENT ====================
 
@@ -1269,6 +1569,28 @@ def process_company_scan(comp: dict, apify_client, supabase, openai_key: str, fo
         _finalize_scan_log("failed_no_strategy")
         return
 
+    # ── V6: Fetch velocity baseline BEFORE scouts run
+    # Must be available at Stage 2.5 call site — fetched here so scouts don't delay it.
+    v6_velocity_ratio = 1.0  # Default: no spike
+    if strategy.get("use_v6_pipeline", False) and comp.get('id'):
+        try:
+            strategy_slug_for_baseline = comp.get("client_context", "pulsepoint_strategic")
+            baseline_resp = (
+                supabase.table("account_signal_baselines")
+                .select("velocity_ratio")
+                .eq("account_id", comp['id'])
+                .eq("client_id", strategy_slug_for_baseline)
+                .execute()
+            )
+            if baseline_resp.data:
+                v6_velocity_ratio = float(baseline_resp.data[0].get("velocity_ratio", 1.0) or 1.0)
+            print(f"      📊 [V6] Velocity ratio: {v6_velocity_ratio:.2f}x baseline")
+        except Exception as e:
+            print(f"      ⚠️ [V6] Baseline lookup failed (non-fatal): {e}")
+
+    # Buffer for Stage 2.5: collects all classified signals from this scan pass
+    all_v6_classified_signals = []
+
     # 1. Build Queries and Search
     queries = build_search_queries(comp.get('company'), strategy, website=comp.get('website'))
     
@@ -1427,8 +1749,58 @@ def process_company_scan(comp: dict, apify_client, supabase, openai_key: str, fo
                     
             except Exception as e:
                 print(f"      ⚠️ LinkedIn Scout setup failed: {e}")
-        except Exception as e:
-            print(f"      ⚠️ LinkedIn Scout setup failed: {e}")
+
+        # 4. HiringScout (V6 — Throttled: 7 Days)
+        if strategy.get("use_v6_pipeline", False) and comp.get('website'):
+            try:
+                last_hiring = score_factors.get('last_hiring_scout_at')
+                should_run_hiring = True
+                if last_hiring and not force_rescan:
+                    try:
+                        last_date = datetime.fromisoformat(last_hiring)
+                        if (datetime.now(timezone.utc) - last_date).days < 7:
+                            print(f"      💰 Skipping Hiring Scout (Throttled: Last ran {last_hiring[:10]})")
+                            should_run_hiring = False
+                    except: pass
+
+                if should_run_hiring:
+                    merge_score_factors(supabase, comp['id'], {"last_hiring_scout_at": datetime.now(timezone.utc).isoformat()})
+                    futures[executor.submit(
+                        scout_hiring_activity,
+                        comp['company'],
+                        comp['website'],
+                        apify_client,
+                        supabase,
+                        comp.get('id')
+                    )] = 'hiring'
+            except Exception as e:
+                print(f"      ⚠️ Hiring Scout setup failed: {e}")
+
+        # 5. WebChangeScout (V6 — Throttled: 14 Days)
+        if strategy.get("use_v6_pipeline", False) and comp.get('website'):
+            try:
+                last_webchange = score_factors.get('last_webchange_scout_at')
+                should_run_webchange = True
+                if last_webchange and not force_rescan:
+                    try:
+                        last_date = datetime.fromisoformat(last_webchange)
+                        if (datetime.now(timezone.utc) - last_date).days < 14:
+                            print(f"      💰 Skipping WebChange Scout (Throttled: Last ran {last_webchange[:10]})")
+                            should_run_webchange = False
+                    except: pass
+
+                if should_run_webchange:
+                    merge_score_factors(supabase, comp['id'], {"last_webchange_scout_at": datetime.now(timezone.utc).isoformat()})
+                    futures[executor.submit(
+                        scout_website_changes,
+                        comp['company'],
+                        comp['website'],
+                        apify_client,
+                        supabase,
+                        comp.get('id')
+                    )] = 'webchange'
+            except Exception as e:
+                print(f"      ⚠️ WebChange Scout setup failed: {e}")
 
         # Collect results
         try:
@@ -1478,6 +1850,24 @@ def process_company_scan(comp: dict, apify_client, supabase, openai_key: str, fo
                                     "person_name": item.get('person_name'),
                                     "verification_status": "verified",  # Direct scrape = verified
                                     "event_type": "LINKEDIN_ACTIVITY"
+                                })
+                            elif scout_type == 'hiring':
+                                all_results.append({
+                                    "url": item.get('url', ''),
+                                    "title": item.get('title', ''),
+                                    "description": item.get('description', item.get('text', '')[:300]),
+                                    "is_scouted_hiring": True,
+                                    "verification_status": "verified",
+                                    "event_type": "HIRING_SIGNAL"
+                                })
+                            elif scout_type == 'webchange':
+                                all_results.append({
+                                    "url": item.get('url', ''),
+                                    "title": item.get('title', ''),
+                                    "description": item.get('description', item.get('text', '')[:300]),
+                                    "is_scouted_webchange": True,
+                                    "verification_status": "verified",
+                                    "event_type": "WEB_CHANGE"
                                 })
                 except Exception as e:
                     print(f"      ⚠️ {scout_type} scout failed: {e}")
@@ -1582,7 +1972,9 @@ def process_company_scan(comp: dict, apify_client, supabase, openai_key: str, fo
                  break
                  
             analysis = analyze_with_article_context(
-                news_item, article_text, comp['company'], client_context, openai_key
+                news_item, article_text, comp['company'], client_context, openai_key,
+                account_id=comp.get('id'), supabase_client=supabase,
+                signal_collection_list=all_v6_classified_signals
             )
             llm_calls += 1
 
@@ -1730,41 +2122,63 @@ def process_company_scan(comp: dict, apify_client, supabase, openai_key: str, fo
                     contact_email = contact.get('email')
                     if contact_email:
                         contact_name = contact.get('name', 'there') or 'there'
-                        
-                        # Phase 8: Pass Buying Window & Outcome Delta to Generator
-                        draft_body = generate_draft(
-                            comp['company'], 
-                            analysis['summary'], 
-                            contact_name, 
-                            client_context, 
-                            openai_key, 
-                            supabase, 
+
+                        # Heuristic prospect style extraction — no LLM call
+                        prospect_style = extract_prospect_style(comp)
+                        # Persist to triggered_companies.prospect_style for observability
+                        try:
+                            supabase.table("triggered_companies").update(
+                                {"prospect_style": prospect_style}
+                            ).eq("id", comp["id"]).execute()
+                        except Exception as ps_err:
+                            print(f"      ⚠️ Failed to persist prospect_style: {ps_err}")
+
+                        # V2 draft generation — passes intelligence_profile, tensions, and prospect style
+                        draft_payload = generate_draft(
+                            company_name=comp['company'],
+                            trigger_type_matched=analysis.get('trigger_type', 'Growth Signal'),
+                            primary_evidence_quote=analysis.get('evidence_excerpt', analysis.get('summary', '')),
+                            contact_name=contact_name,
+                            client_context=client_context,
+                            openai_key=openai_key,
+                            supabase=supabase,
                             buying_window=analysis.get('buying_window', 'Exploration'),
-                            outcome_delta=analysis.get('outcome_delta')
+                            outcome_delta=analysis.get('outcome_delta'),
+                            prospect_style=prospect_style,
+                            client_profile=strategy,
                         )
-                        
+
+                        if draft_payload is None:
+                            print(f"      ---> Draft skipped for {contact_email} (intelligence_profile empty or service_implication missing)")
+                            continue
+
+                        draft_body = draft_payload.get("body", "")
+                        subjects = draft_payload.get("subject_options", [])
+                        email_subject = subjects[0] if subjects else f"Observation regarding {comp['company']}"
+
                         # Phase 8: Determine Status (Approval Mode)
                         status = "draft"
                         if strategy.get('approval_mode'):
                             status = "pending_approval"
-                            
-                        # Phase 8: Attribution
-                        # We store attribution in metadata/notes or overload source for now?
-                        # Plan said: Store hook_type and cta_type in pulsepoint_email_queue.
-                        # We will assume we can't add columns easily, so we'll just not store them explicitly in columns yet
-                        # OR we could add them to a JSON column if it existed.
-                        # Wait, we can't see the schema of email_queue fully.
-                        # Let's just create the draft and rely on the strategy logic.
-                        
+
+                        # Save Draft — enriched metadata includes sentence breakdown, constraint check, and profile score
                         supabase.table("pulsepoint_email_queue").insert({
                             "triggered_company_id": comp['id'],
                             "lead_id": contact.get('id'),
                             "email_to": contact_email,
-                            "email_subject": f"Idea for {comp['company']} ({analysis.get('trigger_type', 'Growth Signal')})",
+                            "email_subject": email_subject,
                             "email_body": draft_body,
+                            "metadata": {
+                                "subject_options": subjects,
+                                "sentence_breakdown": draft_payload.get("sentence_breakdown"),
+                                "constraint_check": draft_payload.get("constraint_check"),
+                                "profile_completeness": draft_payload.get("profile_completeness"),
+                                "prospect_style": prospect_style,
+                                "attempt_count": draft_payload.get("attempt_count", 1),
+                            },
                             "status": status,
                             "source": "monitor_auto",
-                            "user_id": comp.get('user_id') 
+                            "user_id": comp.get('user_id')
                         }).execute()
                         print(f"      ---> Draft Created for {contact_email} (Status: {status})")
 
@@ -1951,6 +2365,88 @@ def process_company_scan(comp: dict, apify_client, supabase, openai_key: str, fo
                     print("      ⚠️ Scout modules not found (ImportError). skipping.")
                 except Exception as e:
                     print(f"      ⚠️ Context Anchor Scout failed: {e}")
+
+    # ==================== V6 COMPOSITE + STAGE 2.5 SYNTHESIS ====================
+    if strategy.get("use_v6_pipeline", False):
+
+        # ── Stage 2.5: Cross-scout narrative synthesis (cost-gated) ──
+        synthesis_result = None
+        if all_v6_classified_signals:
+            print(f"      🔬 [V6 Stage 2.5] Running cross-scout synthesis for {comp.get('company')}...")
+            try:
+                synthesis_result = run_stage_2_5_synthesis(
+                    account={
+                        "account_id": comp["id"],
+                        "company_name": comp.get("company", ""),
+                        "domain": comp.get("website", ""),
+                        "industry": comp.get("industry", "unknown"),
+                    },
+                    classified_signals=all_v6_classified_signals,
+                    client_context=strategy,
+                    velocity_ratio=v6_velocity_ratio,
+                )
+            except Exception as e:
+                print(f"      ⚠️ [Stage 2.5] Synthesis failed (non-fatal): {e}")
+
+        if synthesis_result and not synthesis_result.get("error"):
+            nc = synthesis_result.get("narrative_confidence", 0)
+            headline = synthesis_result.get("story_headline", "")
+            s_urgency = synthesis_result.get("composite_urgency", "MONITOR")
+            print(f"      🔬 [Stage 2.5] Confidence: {nc:.2f} | Urgency: {s_urgency} | '{headline}'")
+
+            # Synthesis-driven escalation
+            if synthesis_result.get("composite_escalate") and not trigger_found:
+                trigger_found = True
+                trigger_type_found = "STAGE_2_5_SYNTHESIS"
+                print(f"      🚀 [Stage 2.5] SYNTHESIS ESCALATION: Composite narrative triggered outreach!")
+
+            # Persist synthesis output to score_factors
+            try:
+                existing_resp = (
+                    supabase.table("triggered_companies")
+                    .select("score_factors")
+                    .eq("id", comp["id"])
+                    .execute()
+                )
+                sf = {}
+                if existing_resp.data:
+                    sf = existing_resp.data[0].get("score_factors", {}) or {}
+                if not isinstance(sf, dict):
+                    sf = {}
+                from datetime import datetime as _dt, timezone as _tz
+                sf["v6_synthesis"] = {
+                    "story_headline": synthesis_result.get("story_headline"),
+                    "composite_brief": synthesis_result.get("composite_brief"),
+                    "outreach_angle": synthesis_result.get("outreach_angle"),
+                    "recommended_subject_lines": synthesis_result.get("recommended_subject_lines", []),
+                    "primary_evidence_quote": synthesis_result.get("primary_evidence_quote"),
+                    "window_closes_in_days": synthesis_result.get("window_closes_in_days"),
+                    "urgency_label": synthesis_result.get("urgency_label"),
+                    "narrative_confidence": nc,
+                    "composite_escalate": synthesis_result.get("composite_escalate"),
+                    "synthesized_at": _dt.now(_tz.utc).isoformat(),
+                }
+                supabase.table("triggered_companies").update({"score_factors": sf}).eq("id", comp["id"]).execute()
+            except Exception as e:
+                print(f"      ⚠️ [Stage 2.5] Failed to persist synthesis: {e}")
+        elif all_v6_classified_signals:
+            print(f"      🔬 [Stage 2.5] Gate not triggered (insufficient signal density)")
+
+        # ── Composite scoring (rule-based, seeded by synthesis if available) ──
+        print(f"      🔬 [V6] Running composite signal scoring for {comp.get('company')}...")
+        composite_result = run_composite_scoring(comp['id'], client_context, supabase, synthesis_result=synthesis_result)
+        if composite_result:
+            score = composite_result.get('composite_trigger_score', 0)
+            urgency = composite_result.get('composite_urgency', 'MONITOR')
+            signals = composite_result.get('signal_count', 0)
+            escalated = composite_result.get('escalated_from_context_only', False)
+            print(f"      🔬 [V6 Composite] Score: {score}, Urgency: {urgency}, Signals: {signals}, Escalated: {escalated}")
+            if escalated and not trigger_found:
+                trigger_found = True
+                trigger_type_found = "COMPOSITE_ESCALATION"
+                print(f"      🚀 [V6] COMPOSITE ESCALATION: CONTEXT_ONLY accumulation triggered outreach!")
+        else:
+            print(f"      🔬 [V6 Composite] No signals in analysis window — skipped.")
 
     # OBSERVABILITY: Finalize scan log
     scan_counters = {
